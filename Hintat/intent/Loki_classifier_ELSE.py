@@ -19,6 +19,19 @@
 from random import sample
 import json
 import os
+import re
+from ArticutAPI import Articut
+BASE_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+try:
+    accountInfo = json.load(open(os.path.join(BASE_PATH, "account.info"), encoding="utf-8"))
+    USERNAME = accountInfo["username"]
+    API_KEY = accountInfo["api_key"]
+except Exception as e:
+    print("[ERROR] AccountInfo => {}".format(str(e)))
+    USERNAME = ""
+    API_KEY = ""
+
+articut = Articut(USERNAME, API_KEY)
 
 DEBUG = True
 CHATBOT_MODE = False
@@ -52,6 +65,41 @@ def getResponse(utterance, args):
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
     if utterance == "一瓶":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "多瓶":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "很大台":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pat = re.compile(pattern)  #<DegreeP>([^<]+)</DegreeP>
+            try:
+                posSTR = articut.parse(inputSTR)["result_pos"][0]
+                termSTR = list(pat.finditer(posSTR))[0].group(1)  # termSTR => 很大瓶
+                termSTR = f"一{termSTR[-1]}"# termSTR => 一瓶
+                posSTR = articut.parse(termSTR)["result_pos"][0]  # posSTR => <ENTITY_classifier>一瓶</ENTITY_classifier>
+                if posSTR.startswith("<ENTITY_classifier>"):
+                    resultDICT["量-特"].append(1)
+                else:
+                    pass
+            except:
+                pass
+
+    if utterance == "很少瓶":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "第二關":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

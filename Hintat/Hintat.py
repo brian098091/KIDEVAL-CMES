@@ -352,8 +352,8 @@ if __name__ == "__main__":
         "連謂/兼語":[]
     }
 
-    #inputSTR = "有一個小朋友，早上起床，肚子很餓，他下床，走到房間外面，他打開冰箱，拿出一瓶牛奶，把牛奶倒進杯子，拿起來喝，喝完了。講完了"
-    inputSTR = open("./inputSTR.txt", "r", encoding="utf-8").read()
+    inputSTR = "很大吧"
+    # inputSTR = open("./inputSTR.txt", "r", encoding="utf-8").read()
     resultDICT = execLoki(content=inputSTR, splitLIST=splitLIST, refDICT=refDICT)
     #pprint(resultDICT)
     itemScoreDICT = {k:sum(resultDICT[k]) for k in resultDICT}
