@@ -14,6 +14,14 @@
         ]
     },
     "utterance": {
+        "住了": {
+            "id": "21bbf79c-2478-4af4-9d3a-7580e5542c12",
+            "pos": "<VerbP>住了</VerbP>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(住了|待了|居住了|坐了|等待了|躺了|度過了|住|逗留了|停留了|休息了)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+了</(ACTION_verb|VerbP)>"
+        },
         "有人": {
             "id": "e3be5f9a-a164-4925-8c9b-435c9f8e15d1",
             "pos": "<ACTION_verb>有</ACTION_verb><ENTITY_noun>人</ENTITY_noun>",

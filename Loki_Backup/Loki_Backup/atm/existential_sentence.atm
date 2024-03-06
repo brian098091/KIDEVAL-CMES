@@ -6,6 +6,10 @@
             "id": "db91f883-6ed3-48cc-916e-0847732a5576",
             "utterance": "有錢"
         },
+        "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+了</(ACTION_verb|VerbP)>": {
+            "id": "21bbf79c-2478-4af4-9d3a-7580e5542c12",
+            "utterance": "住了"
+        },
         "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>有</(ACTION_verb|VerbP)>(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<ENTITY_classifier>[^<]+</ENTITY_classifier>": {
             "id": "24a13d25-154b-493c-ae5e-65fe45de0d3b",
             "utterance": "有一瓶"
