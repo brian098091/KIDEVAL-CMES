@@ -1,0 +1,37 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "version": {
+        "atk": "v269",
+        "intent": "1.0"
+    },
+    "user_defined": {
+        "_asNoun": [
+            "杯子"
+        ],
+        "_asVerb": [
+            "下床"
+        ]
+    },
+    "utterance": {
+        "有吃": {
+            "id": "5fd34a11-a931-4bcd-9b08-abe344999048",
+            "pos": "<ACTION_verb>有吃</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有吃|常吃|愛吃|想吃|吃了|吃|吃著|有喝|禁吃|改吃|有烤)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>有[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "喝完了": {
+            "id": "00d7609b-c702-423f-8de0-a7527d90f2db",
+            "pos": "<VerbP>喝完了</VerbP>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(喝完了|沐浴膠|燒炙|喝滾|浸著|燒沸|炒蜆|挑入|延榆|摻了|摸出來)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+[了過]</(ACTION_verb|VerbP)>"
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}

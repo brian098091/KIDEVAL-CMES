@@ -1,0 +1,10 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "pattern": {
+        "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+[上下直歪亂正斷濕乾淨髒空滿鬆緊遠近大小穩善淨楚齊黑白開完好壞掉住成著了過]</(ACTION_verb|VerbP)>": {
+            "id": "b24d267f-8a96-4d34-83b3-edf71b635881",
+            "utterance": "打開"
+        }
+    }
+}
