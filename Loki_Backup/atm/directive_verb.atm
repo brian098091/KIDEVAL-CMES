@@ -1,0 +1,14 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "pattern": {
+        "<(ACTION_verb|VerbP)>[^<]+[進出來去上下遠近走]</(ACTION_verb|VerbP)>": {
+            "id": "4b32a57b-71f7-4d38-b1e0-bf3b075155df",
+            "utterance": "倒進"
+        },
+        "<(ACTION_verb|VerbP)>[^<讀看聽]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>下去</(ACTION_verb|VerbP)>": {
+            "id": "662160a3-ecb2-4ba8-a8aa-0c65cad304f8",
+            "utterance": "漂下去"
+        }
+    }
+}

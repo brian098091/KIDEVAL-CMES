@@ -1,0 +1,30 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "version": {
+        "atk": "v269",
+        "intent": "1.0"
+    },
+    "user_defined": {
+        "_asNoun": [
+            "杯子"
+        ],
+        "_asVerb": [
+            "下床"
+        ]
+    },
+    "utterance": {
+        "拿起來喝": {
+            "id": "197e19df-ddd2-401e-849c-1cf2a3ebc8e1",
+            "pos": "<ACTION_verb>拿起來</ACTION_verb><ACTION_verb>喝</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(拿起來|翻過來|拿下來|撿起來|收起來|捲起來|拉起來|拿出來|擦乾|送出去|買回家)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(喝|喝了|吃|喝完|喝著|喝到|想喝|有喝|喝下|喝水|喝酒)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}

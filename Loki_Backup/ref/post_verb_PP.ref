@@ -1,0 +1,37 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "version": {
+        "atk": "v269",
+        "intent": "1.0"
+    },
+    "user_defined": {
+        "_asNoun": [
+            "杯子"
+        ],
+        "_asVerb": [
+            "下床"
+        ]
+    },
+    "utterance": {
+        "睡在床上": {
+            "id": "61bf2f33-df7f-40e2-989c-141a27c6bebf",
+            "pos": "<ACTION_verb>睡</ACTION_verb><FUNC_inner>在</FUNC_inner><ENTITY_nouny>床</ENTITY_nouny><RANGE_locality>上</RANGE_locality>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(睡|沉睡|仰躺|坐落|埋伏|平伏|平躺|橫躺|沉潛|趴伏|躺倒)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><RANGE_locality>[^<]+</RANGE_locality>"
+        },
+        "到房間外面": {
+            "id": "52735d3d-c9df-4474-8176-668d530fb630",
+            "pos": "<ACTION_verb>到</ACTION_verb><ENTITY_nouny>房間</ENTITY_nouny><RANGE_locality>外面</RANGE_locality>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(到|到了|到約|到受|到離|到包|到經過|到回|到隨|到死|到愛)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><RANGE_locality>[^<]+</RANGE_locality>"
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}

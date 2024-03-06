@@ -1,0 +1,59 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "version": {
+        "atk": "v269",
+        "intent": "1.0"
+    },
+    "user_defined": {
+        "_asNoun": [
+            "杯子"
+        ],
+        "_asVerb": [
+            "下床"
+        ]
+    },
+    "utterance": {
+        "把他": {
+            "id": "151becda-52a7-4115-bd80-1125b4d0878c",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_pronoun>他</ENTITY_pronoun>",
+            "lexy": [],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_pronoun>[^<]+</ENTITY_pronoun>"
+        },
+        "把昨天": {
+            "id": "f4847650-d21d-48ee-b75e-330958bc1a6a",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><TIME_day>昨天</TIME_day>",
+            "lexy": [],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(<TIME_(holiday|justtime|day|week|month|season|year|decade)>[^<]+</TIME_(holiday|justtime|day|week|month|season|year|decade)>){1,10}"
+        },
+        "把牛奶": {
+            "id": "86726e16-cf0d-444f-af0c-8f28355076a6",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_noun>牛奶</ENTITY_noun>",
+            "lexy": [],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "把買的": {
+            "id": "2152bc11-3c3b-40b2-b491-dae2cff35207",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ACTION_verb>買</ACTION_verb><FUNC_inner>的</FUNC_inner>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(買|採買|收買|買進|購買|採辦|購得|買到|買不到|買東西|吃)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>[^<]+</ACTION_lightVerb><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?"
+        },
+        "把輕鬆": {
+            "id": "f9b0a5e8-0766-4a95-ac7d-34396f16289c",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><MODIFIER>輕鬆</MODIFIER>",
+            "lexy": [],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>"
+        },
+        "把紅色的": {
+            "id": "d9a6104e-b750-4742-90a4-854b00e24235",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><MODIFIER_color>紅色</MODIFIER_color><FUNC_inner>的</FUNC_inner>",
+            "lexy": [],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><MODIFIER_color>[^<]+</MODIFIER_color>"
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}
