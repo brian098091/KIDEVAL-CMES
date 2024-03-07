@@ -46,6 +46,7 @@ from copy import deepcopy
 from glob import glob
 from importlib import import_module
 from pathlib import Path
+from pprint import pprint
 from requests import post
 from requests import codes
 import json
@@ -187,7 +188,7 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
     lokiRst = LokiResult(inputLIST, filterLIST)
     if lokiRst.getStatus():
         for index, key in enumerate(inputLIST):
-            lokiResultDICT = {k: [] for k in refDICT}
+            lokiResultDICT = {k:[] for k in refDICT}
             for resultIndex in range(0, lokiRst.getLokiLen(index)):
                 if lokiRst.getIntent(index, resultIndex) in lokiIntentDICT:
                     lokiResultDICT = lokiIntentDICT[lokiRst.getIntent(index, resultIndex)].getResult(
@@ -268,16 +269,10 @@ def testLoki(inputLIST, filterLIST):
         print(resultDICT["msg"])
 
 def testIntent():
-    # BA
-    print("[TEST] BA")
-    inputLIST = ['把他','把昨天','把牛奶','把買的','把輕鬆','把紅色的']
-    testLoki(inputLIST, ['BA'])
-    print("")
-
-    # aspectual_verb
-    print("[TEST] aspectual_verb")
-    inputLIST = ['有吃','喝完了']
-    testLoki(inputLIST, ['aspectual_verb'])
+    # classifier_ge
+    print("[TEST] classifier_ge")
+    inputLIST = ['一個','那個']
+    testLoki(inputLIST, ['classifier_ge'])
     print("")
 
     # classifier_ELSE
@@ -286,28 +281,34 @@ def testIntent():
     testLoki(inputLIST, ['classifier_ELSE'])
     print("")
 
+    # directional
+    print("[TEST] directional")
+    inputLIST = ['外面']
+    testLoki(inputLIST, ['directional'])
+    print("")
+
+    # resultative_verb
+    print("[TEST] resultative_verb")
+    inputLIST = ['打開']
+    testLoki(inputLIST, ['resultative_verb'])
+    print("")
+
     # directive_verb
     print("[TEST] directive_verb")
     inputLIST = ['倒進','漂下去']
     testLoki(inputLIST, ['directive_verb'])
     print("")
 
+    # aspectual_verb
+    print("[TEST] aspectual_verb")
+    inputLIST = ['有吃','喝完了']
+    testLoki(inputLIST, ['aspectual_verb'])
+    print("")
+
     # sequential_verb
     print("[TEST] sequential_verb")
     inputLIST = ['拿起來喝']
     testLoki(inputLIST, ['sequential_verb'])
-    print("")
-
-    # classifier_ge
-    print("[TEST] classifier_ge")
-    inputLIST = ['一個','那個']
-    testLoki(inputLIST, ['classifier_ge'])
-    print("")
-
-    # directional
-    print("[TEST] directional")
-    inputLIST = ['外面']
-    testLoki(inputLIST, ['directional'])
     print("")
 
     # existential_sentence
@@ -322,30 +323,52 @@ def testIntent():
     testLoki(inputLIST, ['post_verb_PP'])
     print("")
 
-    # resultative_verb
-    print("[TEST] resultative_verb")
-    inputLIST = ['打開']
-    testLoki(inputLIST, ['resultative_verb'])
-    print("")
-
-    # passive_sentence
-    print("[TEST] passive_sentence")
-    inputLIST = ['被我用光了']
-    testLoki(inputLIST, ['passive_sentence'])
+    # BA
+    print("[TEST] BA")
+    inputLIST = ['把他','把昨天','把牛奶','把買的','把輕鬆','把紅色的']
+    testLoki(inputLIST, ['BA'])
     print("")
 
 
 if __name__ == "__main__":
     # 測試所有意圖
-    testIntent()
+    #testIntent()
 
     # 測試其它句子
     filterLIST = []
     splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
     # 設定參考資料
-    refDICT = { # value 必須為 list
-        #"key": []
+    # refDICT = {"key":[]} #refDICT 指定 key 需為字串 str，其值為一空列表 list
+    refDICT = {
+        "量-個":[],
+        "量-特":[],
+        "方位" :[],
+        "體貌" :[],
+        "結果補語":[],
+        "趨向補語":[],
+        "動後PP":[],
+        "把字句":[],
+        "被字句": [],
+        "存現句":[],
+        "連謂/兼語":[],
+        "帶連詞複句": []
     }
-    resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, refDICT=refDICT)                      # output => {"key": ["今天天氣"]}
-    resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, splitLIST=splitLIST, refDICT=refDICT) # output => {"key": ["今天天氣", "後天氣象"]}
-    resultDICT = execLoki(["今天天氣如何？", "後天氣象如何？"], filterLIST=filterLIST, refDICT=refDICT)                # output => {"key": ["今天天氣", "後天氣象"]}
+
+    #inputSTR = "有一個小朋友，早上起床，肚子很餓，他下床，走到房間外面，他打開冰箱，拿出一瓶牛奶，把牛奶倒進杯子，拿起來喝，喝完了。講完了"
+    inputSTR = open("./inputSTR.txt", "r", encoding="utf-8").read()
+    resultDICT = execLoki(content=inputSTR, splitLIST=splitLIST, refDICT=refDICT)
+    #pprint(resultDICT)
+    itemScoreDICT = {k:sum(resultDICT[k]) for k in resultDICT}
+    print("項目總分：")
+    pprint(itemScoreDICT)
+
+    print("=====")
+    print("類型總分")
+    categoryScoreDICT = deepcopy(itemScoreDICT)
+    for k, v in categoryScoreDICT.items():
+        if categoryScoreDICT[k]-2 >= 0:
+            categoryScoreDICT[k] = 2
+        else:
+            pass
+    pprint(categoryScoreDICT)
+

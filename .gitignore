@@ -1,8 +1,3 @@
-#ignore account.info
+#ignore account.info, inputSTR
 account.info
-
-#ignore pycache
-CampBot/__pycache__/
-CampBot/intentAGE/__pycache__/
-CampBot/intentTWOFOUR/__pycache__/
-CampBot/intentFIVENINE/__pycache__/
+inputSTR.txt
