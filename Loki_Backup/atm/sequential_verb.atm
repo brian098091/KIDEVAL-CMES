@@ -2,10 +2,6 @@
     "language": "zh-tw",
     "type": "advance",
     "pattern": {
-        "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>": {
-            "id": "197e19df-ddd2-401e-849c-1cf2a3ebc8e1",
-            "utterance": "拿起來喝"
-        },
         "<(ACTION_verb|VerbP)>去</(ACTION_verb|VerbP)>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>|<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>)*?<FUNC_inner>等</FUNC_inner>": {
             "id": "073ce37d-1955-4c8b-95d4-3ea34c61386e",
             "utterance": "你先去外面等一下"
