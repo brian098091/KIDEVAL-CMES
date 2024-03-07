@@ -1,0 +1,10 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "pattern": {
+        "(<(ACTION_verb|VerbP)>(想|覺得|想要|知道|聽到|猜猜看|記得|希望)</(ACTION_verb|VerbP)>|<ACTION_quantifiedVerb>猜猜看</ACTION_quantifiedVerb>)": {
+            "id": "8f1604d1-5844-4c52-ae37-464fd9e70f8d",
+            "utterance": "我覺得這樣子形狀有點不一樣"
+        }
+    }
+}
