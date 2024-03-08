@@ -28,7 +28,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(下雨|降雨|降水|放晴|結霜|降雪|起霧|結冰|漲潮|開燈|下雪)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<FUNC_in(ner|ter)>(因為|所以|如果|除非|但是|否則|不過)</FUNC_in(ner|ter)>"
+            "pattern": "<FUNC_inter>(因為|所以|如果|除非|但是|否則|不過)</FUNC_inter>"
         }
     },
     "alias": {},
