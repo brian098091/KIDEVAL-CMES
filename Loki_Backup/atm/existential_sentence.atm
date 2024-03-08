@@ -17,6 +17,10 @@
         "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>有</(ACTION_verb|VerbP)>(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>": {
             "id": "e3be5f9a-a164-4925-8c9b-435c9f8e15d1",
             "utterance": "有人"
+        },
+        "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><RANGE_(locality|period)>[^<]+</RANGE_(locality|period)><(ACTION_verb|VerbP)>[^<]+著</(ACTION_verb|VerbP)><ENTITY_classifier>[^<]+</ENTITY_classifier><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>": {
+            "id": "5df2f194-31d2-4740-a0e5-653b3b376c3d",
+            "utterance": "地上躺著一隻狗"
         }
     }
 }
