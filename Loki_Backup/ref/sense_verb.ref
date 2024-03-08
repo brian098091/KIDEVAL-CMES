@@ -23,7 +23,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(覺得|察覺|感覺|感覺到|懂得|覺察|企盼|估摸|假想|假設|冥想)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(<(ACTION_verb|VerbP)>(想|覺得|想要|知道|聽到|猜猜看|記得|希望)</(ACTION_verb|VerbP)>|<ACTION_quantifiedVerb>猜猜看</ACTION_quantifiedVerb>)"
+            "pattern": "(<(ACTION_verb|VerbP)>(知道|以為|想|覺得|想要|知道|聽到|記得|希望|發現|看到|聽到|聞到)</(ACTION_verb|VerbP)>|<ACTION_quantifiedVerb>[猜聞聽]{2,2}看</ACTION_quantifiedVerb>)"
         }
     },
     "alias": {},
