@@ -188,7 +188,7 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
     lokiRst = LokiResult(inputLIST, filterLIST)
     if lokiRst.getStatus():
         for index, key in enumerate(inputLIST):
-            lokiResultDICT = {k:[] for k in refDICT}
+            lokiResultDICT = {k: [] for k in refDICT}
             for resultIndex in range(0, lokiRst.getLokiLen(index)):
                 if lokiRst.getIntent(index, resultIndex) in lokiIntentDICT:
                     lokiResultDICT = lokiIntentDICT[lokiRst.getIntent(index, resultIndex)].getResult(
@@ -269,16 +269,10 @@ def testLoki(inputLIST, filterLIST):
         print(resultDICT["msg"])
 
 def testIntent():
-    # classifier_ge
-    print("[TEST] classifier_ge")
-    inputLIST = ['一個','那個']
-    testLoki(inputLIST, ['classifier_ge'])
-    print("")
-
-    # classifier_ELSE
-    print("[TEST] classifier_ELSE")
-    inputLIST = ['一瓶','那瓶']
-    testLoki(inputLIST, ['classifier_ELSE'])
+    # directive_verb
+    print("[TEST] directive_verb")
+    inputLIST = ['倒進','漂下去']
+    testLoki(inputLIST, ['directive_verb'])
     print("")
 
     # directional
@@ -287,33 +281,33 @@ def testIntent():
     testLoki(inputLIST, ['directional'])
     print("")
 
-    # resultative_verb
-    print("[TEST] resultative_verb")
-    inputLIST = ['打開']
-    testLoki(inputLIST, ['resultative_verb'])
-    print("")
-
-    # directive_verb
-    print("[TEST] directive_verb")
-    inputLIST = ['倒進','漂下去']
-    testLoki(inputLIST, ['directive_verb'])
-    print("")
-
     # aspectual_verb
     print("[TEST] aspectual_verb")
     inputLIST = ['有吃','喝完了']
     testLoki(inputLIST, ['aspectual_verb'])
     print("")
 
-    # sequential_verb
-    print("[TEST] sequential_verb")
-    inputLIST = ['拿起來喝']
-    testLoki(inputLIST, ['sequential_verb'])
+    # BA
+    print("[TEST] BA")
+    inputLIST = ['把他','把昨天','把牛奶','把買的','把輕鬆','把紅色的']
+    testLoki(inputLIST, ['BA'])
+    print("")
+
+    # classifier_ELSE
+    print("[TEST] classifier_ELSE")
+    inputLIST = ['一瓶','那瓶']
+    testLoki(inputLIST, ['classifier_ELSE'])
+    print("")
+
+    # classifier_ge
+    print("[TEST] classifier_ge")
+    inputLIST = ['一個','那個']
+    testLoki(inputLIST, ['classifier_ge'])
     print("")
 
     # existential_sentence
     print("[TEST] existential_sentence")
-    inputLIST = ['有人','有錢','有一瓶']
+    inputLIST = ['住了','有人','有錢','有一瓶']
     testLoki(inputLIST, ['existential_sentence'])
     print("")
 
@@ -323,10 +317,22 @@ def testIntent():
     testLoki(inputLIST, ['post_verb_PP'])
     print("")
 
-    # BA
-    print("[TEST] BA")
-    inputLIST = ['把他','把昨天','把牛奶','把買的','把輕鬆','把紅色的']
-    testLoki(inputLIST, ['BA'])
+    # resultative_verb
+    print("[TEST] resultative_verb")
+    inputLIST = ['打開']
+    testLoki(inputLIST, ['resultative_verb'])
+    print("")
+
+    # sequential_verb
+    print("[TEST] sequential_verb")
+    inputLIST = ['去鐵路上載客人','你先去外面等一下']
+    testLoki(inputLIST, ['sequential_verb'])
+    print("")
+
+    # sense_verb
+    print("[TEST] sense_verb")
+    inputLIST = ['我覺得這樣子形狀有點不一樣']
+    testLoki(inputLIST, ['sense_verb'])
     print("")
 
 
@@ -353,7 +359,7 @@ if __name__ == "__main__":
         "感知/心理狀態": []
     }
 
-    inputSTR = "有一個小朋友，早上起床，肚子很餓，他下床，走到房間外面，他打開冰箱，拿出一瓶牛奶，把牛奶倒進杯子，拿起來喝，喝完了。講完了"
+    inputSTR = "有一個小朋友，早上起床，覺得肚子很餓，他下床，走到房間外面，他打開冰箱，拿出一瓶牛奶，把牛奶倒進杯子，拿起來喝，喝完了。講完了"
     #inputSTR = open("./inputSTR.txt", "r", encoding="utf-8").read()
     resultDICT = execLoki(content=inputSTR, splitLIST=splitLIST, refDICT=refDICT)
     #pprint(resultDICT)
@@ -370,4 +376,3 @@ if __name__ == "__main__":
         else:
             pass
     pprint(categoryScoreDICT)
-
