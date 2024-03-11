@@ -1,0 +1,10 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "pattern": {
+        "(.+)?<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)>(?!<ASPECT>了</ASPECT>|<CLAUSE_particle>[^<]+</CLAUSE_particle>|<CLAUSE_YesNoQ>[^<]+</CLAUSE_YesNoQ>)(.+)": {
+            "id": "8082291e-9ab7-4ade-8d3c-c2b1a02d8ae7",
+            "utterance": "我的東西"
+        }
+    }
+}
