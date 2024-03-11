@@ -6,7 +6,7 @@
             "id": "073ce37d-1955-4c8b-95d4-3ea34c61386e",
             "utterance": "你先去外面等一下"
         },
-        "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>|<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>)*?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>": {
+        "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>|<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>)*?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>": {
             "id": "bd17df7f-4243-480a-ac82-9c2d03d7ff28",
             "utterance": "去鐵路上載客人"
         }
