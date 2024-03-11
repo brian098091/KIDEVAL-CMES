@@ -55,32 +55,24 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
+            resultDICT["X的"].append(1)
 
     if utterance == "我的了":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
+            resultDICT["X的"].append(1)
 
     if utterance == "我的喔":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
+            resultDICT["X的"].append(1)
 
     if utterance == "我的嗎":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
+            resultDICT["X的"].append(1)
 
     return resultDICT

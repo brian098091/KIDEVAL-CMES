@@ -349,10 +349,12 @@ if __name__ == "__main__":
         "動後PP":[],
         "把字句":[],
         "存現句":[],
-        "連謂/兼語":[]
+        "連謂/兼語":[],
+        "X的":[],
+        "X的Y":[]
     }
 
-    inputSTR = "很大吧"
+    inputSTR = "這是我的東西了!"
     # inputSTR = open("./inputSTR.txt", "r", encoding="utf-8").read()
     resultDICT = execLoki(content=inputSTR, splitLIST=splitLIST, refDICT=refDICT)
     #pprint(resultDICT)
