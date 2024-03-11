@@ -1,0 +1,74 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "version": {
+        "atk": "v269",
+        "intent": "1.0"
+    },
+    "user_defined": {
+        "_asNoun": [
+            "杯子"
+        ],
+        "_asVerb": [
+            "下床"
+        ]
+    },
+    "utterance": {
+        "越挖越大": {
+            "id": "d810207d-b296-461f-99c0-bc8c0e22cd03",
+            "pos": "<ACTION_verb>越挖</ACTION_verb><MODIFIER>越大</MODIFIER>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(越挖|越拉|越開|越陷|越養|越積|越賭|越滾|越變|越走|越打)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(越|愈)+[^<]+</(ACTION_verb|VerbP)><(MODIFIER|ModifierP)>(越|愈)+[^<]+</(MODIFIER|ModifierP)>"
+        },
+        "想吃什麼都可以吃": {
+            "id": "d7d18f52-2eee-418b-8114-536aa756968d",
+            "pos": "<ACTION_verb>想吃</ACTION_verb><CLAUSE_WhatQ>什麼</CLAUSE_WhatQ><QUANTIFIER>都</QUANTIFIER><MODAL>可以</MODAL><ACTION_verb>吃</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(想吃|愛吃|常吃|吃著|想喝|想買|煮了|吃過|愛喝|吃了|有吃)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃|吃掉|吸收|攝入|耗損|花掉|吃著|煮|啃|喝|吃了)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><CLAUSE_WhatQ>[^<]+</CLAUSE_WhatQ>(<QUANTIFIER>[^<]+</QUANTIFIER>)?<MODAL>[^<]+</MODAL><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "你早點來你就看到他": {
+            "id": "8f1bc626-974c-4865-986e-3a6cdda442e4",
+            "pos": "<ENTITY_pronoun>你</ENTITY_pronoun><TIME_day>早</TIME_day><QUANTIFIER>點</QUANTIFIER><ACTION_verb>來</ACTION_verb><ENTITY_pronoun>你</ENTITY_pronoun><FUNC_inner>就</FUNC_inner><ACTION_verb>看到</ACTION_verb><ENTITY_pronoun>他</ENTITY_pronoun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(來|上來|下來|來到|前來|回來|進來|值來|性來|出來|去)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(看到|看見|見到|睇見|瞅見|瞧見|看過|看到了|聽到|聽見|看著)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?(.+)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?(.+)?<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?"
+        },
+        "想要蓋什麼就蓋什麼": {
+            "id": "9a25ad10-ce41-4ec5-a0af-b85f9bbf96f4",
+            "pos": "<ACTION_verb>想要</ACTION_verb><ACTION_verb>蓋</ACTION_verb><CLAUSE_WhatQ>什麼</CLAUSE_WhatQ><FUNC_inner>就</FUNC_inner><ACTION_verb>蓋</ACTION_verb><CLAUSE_WhatQ>什麼</CLAUSE_WhatQ>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(想要|想拿|想買|需要|希望|試圖|想讓|願意|打算|試著|想)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(蓋|罩住|蓋建|蓋了|拱頂|加蓋|鋪上|蓋起|蓋滿|拆下來|沾)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><CLAUSE_WhatQ>[^<]+</CLAUSE_WhatQ>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<CLAUSE_WhatQ>[^<]+</CLAUSE_WhatQ>)?"
+        },
+        " 你有煮什麼我就吃什麼": {
+            "id": "0591c5c7-a8df-4bda-8990-107e5810c346",
+            "pos": "<ENTITY_pronoun>你</ENTITY_pronoun><ACTION_verb>有煮</ACTION_verb><CLAUSE_WhatQ>什麼</CLAUSE_WhatQ><ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>就</FUNC_inner><ACTION_verb>吃</ACTION_verb><CLAUSE_WhatQ>什麼</CLAUSE_WhatQ>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有煮|炒蜆|朝騎|炒完|煮起來|抱け|扶安|安執|煮魚|親嘗|控え)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃|吃掉|吸收|攝入|耗損|花掉|吃著|煮|啃|喝|吃了)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<CLAUSE_WhatQ>[^<]+</CLAUSE_WhatQ>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<CLAUSE_WhatQ>[^<]+</CLAUSE_WhatQ>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)"
+        },
+        "小狗看到爸爸小狗才離開": {
+            "id": "0c7c5591-b545-4808-b08c-2c86d4c996ad",
+            "pos": "<ENTITY_nouny>小狗</ENTITY_nouny><ACTION_verb>看到</ACTION_verb><ENTITY_pronoun>爸爸</ENTITY_pronoun><ENTITY_nouny>小狗</ENTITY_nouny><MODAL>才</MODAL><ACTION_verb>離開</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(看到|看見|見到|睇見|瞅見|瞧見|看到了|看見了|感覺到|看過|看著)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(離開|分離|離任|離休|離去|離港|離職|駛離|出走|撤出|放棄)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?<MODAL>[^<]+</MODAL><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}
