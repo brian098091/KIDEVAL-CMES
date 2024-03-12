@@ -46,9 +46,9 @@ from copy import deepcopy
 from glob import glob
 from importlib import import_module
 from pathlib import Path
-from pprint import pprint
 from requests import post
 from requests import codes
+from pprint import pprint
 import json
 import math
 import os
@@ -269,10 +269,10 @@ def testLoki(inputLIST, filterLIST):
         print(resultDICT["msg"])
 
 def testIntent():
-    # directive_verb
-    print("[TEST] directive_verb")
-    inputLIST = ['倒進','漂下去']
-    testLoki(inputLIST, ['directive_verb'])
+    # BA
+    print("[TEST] BA")
+    inputLIST = ['把']
+    testLoki(inputLIST, ['BA'])
     print("")
 
     # directional
@@ -283,32 +283,56 @@ def testIntent():
 
     # aspectual_verb
     print("[TEST] aspectual_verb")
-    inputLIST = ['有吃','喝完了']
+    inputLIST = ['在看','好了','有吃','喝完了','在尿尿','看一看']
     testLoki(inputLIST, ['aspectual_verb'])
     print("")
 
-    # BA
-    print("[TEST] BA")
-    inputLIST = ['把他','把昨天','把牛奶','把買的','把輕鬆','把紅色的']
-    testLoki(inputLIST, ['BA'])
+    # cause_effect_sentence
+    print("[TEST] cause_effect_sentence")
+    inputLIST = ['只要','因為下雨']
+    testLoki(inputLIST, ['cause_effect_sentence'])
     print("")
 
     # classifier_ELSE
     print("[TEST] classifier_ELSE")
-    inputLIST = ['一瓶','那瓶']
+    inputLIST = ['一瓶','多瓶','那瓶','很大台','很少瓶','第二關']
     testLoki(inputLIST, ['classifier_ELSE'])
     print("")
 
     # classifier_ge
     print("[TEST] classifier_ge")
-    inputLIST = ['一個','那個']
+    inputLIST = ['一個','多個','那個','很少個']
     testLoki(inputLIST, ['classifier_ge'])
+    print("")
+
+    # compact_sentence
+    print("[TEST] compact_sentence")
+    inputLIST = ['越挖越大','想吃什麼都可以吃','你早點來你就看到他','想要蓋什麼就蓋什麼',' 你有煮什麼我就吃什麼','小狗看到爸爸小狗才離開']
+    testLoki(inputLIST, ['compact_sentence'])
+    print("")
+
+    # De
+    print("[TEST] De")
+    inputLIST = ['我的','我的了','我的喔','我的嗎']
+    testLoki(inputLIST, ['De'])
+    print("")
+
+    # directive_verb
+    print("[TEST] directive_verb")
+    inputLIST = ['倒進','漂下去']
+    testLoki(inputLIST, ['directive_verb'])
     print("")
 
     # existential_sentence
     print("[TEST] existential_sentence")
-    inputLIST = ['住了','有人','有錢','有一瓶']
+    inputLIST = ['有錢','有一瓶','住了很多公主','地上躺著一隻狗']
     testLoki(inputLIST, ['existential_sentence'])
+    print("")
+
+    # passive_sentence
+    print("[TEST] passive_sentence")
+    inputLIST = ['被我用光了']
+    testLoki(inputLIST, ['passive_sentence'])
     print("")
 
     # post_verb_PP
@@ -323,16 +347,22 @@ def testIntent():
     testLoki(inputLIST, ['resultative_verb'])
     print("")
 
+    # sense_verb
+    print("[TEST] sense_verb")
+    inputLIST = ['看到','看見','覺得','猜猜看']
+    testLoki(inputLIST, ['sense_verb'])
+    print("")
+
     # sequential_verb
     print("[TEST] sequential_verb")
     inputLIST = ['去鐵路上載客人','你先去外面等一下']
     testLoki(inputLIST, ['sequential_verb'])
     print("")
 
-    # sense_verb
-    print("[TEST] sense_verb")
-    inputLIST = ['我覺得這樣子形狀有點不一樣']
-    testLoki(inputLIST, ['sense_verb'])
+    # X_De_Y
+    print("[TEST] X_De_Y")
+    inputLIST = ['我的東西']
+    testLoki(inputLIST, ['X_De_Y'])
     print("")
 
 
@@ -346,18 +376,24 @@ if __name__ == "__main__":
     # 設定參考資料
     # refDICT = {"key":[]} #refDICT 指定 key 需為字串 str，其值為一空列表 list
     refDICT = {
-        "量-個":[],
-        "量-特":[],
-        "方位" :[],
-        "體貌" :[],
-        "結果補語":[],
-        "趨向補語":[],
-        "動後PP":[],
-        "把字句":[],
-        "存現句":[],
-        "連謂/兼語":[],
-        "感知/心理狀態": []
+        'X的': [],
+        'X的Y': [],
+        '動後PP': [],
+        '存現句': [],
+        '帶連詞': [],
+        '感知/心理狀態': [],
+        '把字句': [],
+        '方位': [],
+        '結果補語': [],
+        '緊縮複句': [],
+        '被字句': [],
+        '趨向補語': [],
+        '連謂/兼語': [],
+        '量-個': [],
+        '量-特': [],
+        '體貌': []
     }
+
 
     inputSTR = "有一個小朋友，早上起床，覺得肚子很餓，他下床，走到房間外面，他打開冰箱，拿出一瓶牛奶，把牛奶倒進杯子，拿起來喝，喝完了。講完了"
     #inputSTR = open("./inputSTR.txt", "r", encoding="utf-8").read()
