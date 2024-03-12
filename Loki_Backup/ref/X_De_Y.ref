@@ -1,0 +1,27 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "version": {
+        "atk": "v269",
+        "intent": "1.0"
+    },
+    "user_defined": {
+        "_asNoun": [
+            "杯子"
+        ],
+        "_asVerb": [
+            "下床"
+        ]
+    },
+    "utterance": {
+        "我的東西": {
+            "id": "8082291e-9ab7-4ade-8d3c-c2b1a02d8ae7",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><ENTITY_noun>東西</ENTITY_noun>",
+            "lexy": [],
+            "pattern": "(.+)?<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)>(?!<ASPECT>了</ASPECT>|<CLAUSE_particle>[^<]+</CLAUSE_particle>|<CLAUSE_YesNoQ>[^<]+</CLAUSE_YesNoQ>)(.+)"
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}

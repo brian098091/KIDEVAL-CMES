@@ -1,0 +1,61 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "version": {
+        "atk": "v269",
+        "intent": "1.0"
+    },
+    "user_defined": {
+        "_asNoun": [
+            "杯子"
+        ],
+        "_asVerb": [
+            "下床"
+        ]
+    },
+    "utterance": {
+        "一瓶": {
+            "id": "41dc1b3e-fde3-41f7-8be1-9fb9441ddc89",
+            "pos": "<ENTITY_classifier>一瓶</ENTITY_classifier>",
+            "lexy": [],
+            "pattern": "<ENTITY_classifier>[^<]*[^個]</ENTITY_classifier>"
+        },
+        "多瓶": {
+            "id": "3a7fc169-1bdb-420b-b4eb-3129fe916580",
+            "pos": "<ACTION_verb>多</ACTION_verb><ENTITY_classifier>瓶</ENTITY_classifier>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(多|到多|更多|獲多|作多|分多|較多|受多|供多|處多|赴多)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>多</(ACTION_verb|VerbP)><ENTITY_classifier>[^<個]</ENTITY_classifier>"
+        },
+        "那瓶": {
+            "id": "3159a8e0-8103-4840-939b-d19efbb9ecc9",
+            "pos": "<ENTITY_DetPhrase>那瓶</ENTITY_DetPhrase>",
+            "lexy": [],
+            "pattern": "<ENTITY_DetPhrase>[這那某整][^<]*[^個]</ENTITY_DetPhrase>"
+        },
+        "很大台": {
+            "id": "2e651be0-9f3c-440f-bb65-1b5667bc199e",
+            "pos": "<DegreeP>很大台</DegreeP>",
+            "lexy": [],
+            "pattern": "<DegreeP>([^<]+)</DegreeP>"
+        },
+        "很少瓶": {
+            "id": "caf308c1-73d6-437c-9cb6-13c67ef3acad",
+            "pos": "<DegreeP>很少</DegreeP><ENTITY_nounHead>瓶</ENTITY_nounHead>",
+            "lexy": [],
+            "pattern": "<DegreeP>很少</DegreeP><(UserDefined|ENTITY_(nounHead))>[^個]+</(UserDefined|ENTITY_(nounHead))>"
+        },
+        "第二關": {
+            "id": "50e27112-1045-4f0f-b4a7-110b4cef8abe",
+            "pos": "<MODIFIER>第二</MODIFIER><ACTION_verb>關</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(關|有關|關上|關心|關注|關涉|關緊|關門|關閉|倒閉|封閉)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>關</(ACTION_verb|VerbP)>"
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}
