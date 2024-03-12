@@ -51,40 +51,10 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
-    if utterance == "把他":
+    if utterance == "把":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["把字句"].append(1)
-
-    if utterance == "把昨天":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["把字句"].append(1)
-
-    if utterance == "把牛奶":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["把字句"].append(1)
-
-    if utterance == "把紅色的":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["把字句"].append(1)
-
-    if utterance == "把買的":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["把字句"].append(1)
-
-    if utterance == "把輕鬆":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["把字句"].append(1)
+            resultDICT["把字句"].append(1)        
 
     return resultDICT
