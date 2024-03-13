@@ -22,7 +22,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(回到|倒退|退讓|離開|重返|來到|搬回|返回了|留在|重回|來到了)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+到</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(飛|去|退|回|進|開|跳)到</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
         "擺在一起": {
             "id": "4fdc1a12-7e02-472e-929a-75a5c043a9cd",
@@ -46,7 +46,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(跳到|爬到|鑽入|爬出|掉到|跳下|掉下|跳進|走到|衝到|鑽進)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+到</(ACTION_verb|VerbP)><LOCATION>[^<]+</LOCATION>"
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(飛|去|退|回|進|開|跳)到</(ACTION_verb|VerbP)><LOCATION>[^<]+</LOCATION>"
         },
         "飛到上面": {
             "id": "a49d812c-e2a1-4fef-82d1-5935a56c2d7e",
@@ -54,7 +54,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(飛到|飛回|飛抵|飛離|飛到了|趕回|跑到|來到了|飛過|飛赴|直奔)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+到</(ACTION_verb|VerbP)><RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>"
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(飛|去|退|回|進|開|跳)到</(ACTION_verb|VerbP)><RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>"
         },
         "放在桌子上": {
             "id": "d86dbece-18f0-43b5-b10a-1d7bc1734ca4",
