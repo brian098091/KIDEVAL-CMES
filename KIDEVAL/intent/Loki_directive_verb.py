@@ -57,10 +57,28 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             resultDICT["趨向補語"].append(1)
 
-    if utterance == "漂下去":
+    if utterance == "拿出來":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["趨向補語"].append(1)
-
+            
+    if utterance == "走進去":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["趨向補語"].append(1)
+            
+    if utterance == "拿一本書出來":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["趨向補語"].append(1)
+    
+    if utterance == "拿出一本書來":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["趨向補語"].append(1)        
+    
     return resultDICT
