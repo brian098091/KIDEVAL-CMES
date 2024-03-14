@@ -7,7 +7,9 @@
     },
     "user_defined": {
         "_asNoun": [
-            "杯子"
+            "客人",
+            "杯子",
+            "菜市場"
         ],
         "_asVerb": [
             "下床"
@@ -22,14 +24,39 @@
             ],
             "pattern": "<(ACTION_verb|VerbP)>[^<]+[進出來去上下遠近走]</(ACTION_verb|VerbP)>"
         },
-        "漂下去": {
-            "id": "662160a3-ecb2-4ba8-a8aa-0c65cad304f8",
-            "pos": "<ACTION_verb>漂</ACTION_verb><ACTION_verb>下去</ACTION_verb>",
+        "拿出來": {
+            "id": "91bdd52e-31b5-4edb-9c1e-6a98c9641197",
+            "pos": "<ACTION_verb>拿出來</ACTION_verb>",
             "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(漂|漂到|通掃|漂來)</(ACTION_verb|VerbP)>",
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(下去|因循|因襲|堅持|沿用|留下來|回來|下來了|過來了|回去|出去)</(ACTION_verb|VerbP)>"
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(拿出來|拿去|拿來|藏起來|放進去|收起來|拿起來|送出去|講出來|拿回來|翻出來)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<讀看聽]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>下去</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+[起出進上下]來</(ACTION_verb|VerbP)>"
+        },
+        "走進去": {
+            "id": "e06b48d7-e0a0-4403-90c3-496984632124",
+            "pos": "<ACTION_verb>走進去</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(走進去|坐到|坐下|躺下|走近|走進來|閉嘴|睡覺了|坐上去|抽了|睡覺)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+[出進上下]去</(ACTION_verb|VerbP)>"
+        },
+        "拿一本書出來": {
+            "id": "cc7ef313-0963-4942-a233-7c03f6802c3e",
+            "pos": "<ACTION_verb>拿</ACTION_verb><ENTITY_classifier>一本</ENTITY_classifier><ENTITY_noun>書</ENTITY_noun><ACTION_verb>出來</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(拿|捉拿|捕拿|懂得|抓包|抓姦|捉住|捉姦|捕捉|捕撈|捕獲)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(出來|出來了|出去|進去|拿出來|出|過來|下來|出了|進來|上來)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<ENTITY_classifier>[^<]+</ENTITY_classifier>)?((<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?|<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>[起出進上下]來</(ACTION_verb|VerbP)>"
+        },
+        "拿出一本書來": {
+            "id": "b14c78f3-bb27-4d38-8878-42e6ed3e7d46",
+            "pos": "<ACTION_verb>拿出</ACTION_verb><ENTITY_classifier>一本</ENTITY_classifier><ENTITY_noun>書</ENTITY_noun><ACTION_verb>來</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(拿出|掏出|拿起|拿出了|拿著|拿走|交出|搶過|拿了|拿走了|遞給)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(來|上來|下來|來到|前來|回來|進來|值來|性來|出來|去)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+出</(ACTION_verb|VerbP)>(<ENTITY_classifier>[^<]+</ENTITY_classifier>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>來</(ACTION_verb|VerbP)>"
         }
     },
     "alias": {},
