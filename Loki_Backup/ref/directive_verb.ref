@@ -40,6 +40,24 @@
             ],
             "pattern": "<(ACTION_verb|VerbP)>[^<]+[出進上下]去</(ACTION_verb|VerbP)>"
         },
+        "走後門進去": {
+            "id": "84b984b1-f09d-4b5e-80cc-4898990af403",
+            "pos": "<ACTION_verb>走</ACTION_verb><RANGE_period>後</RANGE_period><ENTITY_oov>門</ENTITY_oov><ACTION_verb>進去</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(走|出走|溜走|行走|走入|走出|走動|走去|走掉|走步|走秀)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(進去|進來|進入|拿起來|出去|出來|回來|進去了|回去|跑出來|拿出來)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)+<(ACTION_verb|VerbP)>(進|出)去</(ACTION_verb|VerbP)>"
+        },
+        "走進山洞去": {
+            "id": "04d0efb7-6d72-49b0-9fae-0cc97d8f6072",
+            "pos": "<ACTION_verb>走進</ACTION_verb><ENTITY_nouny>山洞</ENTITY_nouny><ACTION_verb>去</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(走進|踏進|走進了|進到|走入|走出|走到|躲進|跑進|來到了|衝進)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(去|要去|回去|想去|去了|跑去|回來|跑來|趕去|出去|來)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+(進|出|上|下)</(ACTION_verb|VerbP)>(<ENTITY_classifier>[^<]+</ENTITY_classifier>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>去</(ACTION_verb|VerbP)>"
+        },
         "拿一本書出來": {
             "id": "cc7ef313-0963-4942-a233-7c03f6802c3e",
             "pos": "<ACTION_verb>拿</ACTION_verb><ENTITY_classifier>一本</ENTITY_classifier><ENTITY_noun>書</ENTITY_noun><ACTION_verb>出來</ACTION_verb>",
