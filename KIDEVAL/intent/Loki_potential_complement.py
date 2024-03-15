@@ -105,5 +105,103 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             resultDICT["可能補語"].append(1)
             pass
+        
+    if utterance == "我說不完整":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["可能補語"].append(1)
+            pass
+        
+    if utterance == "我說得完整":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["可能補語"].append(1)
+            pass
+        
+    if utterance == "我說得不明不白":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["可能補語"].append(1)
+            pass
+        
+    if utterance == "我下得去":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["可能補語"].append(1)
+            pass
+        
+    if utterance == "我下不去":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["可能補語"].append(1)
+            pass
+        
+    if utterance == "我來得及":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["可能補語"].append(1)
+            pass
+        
+    if utterance == "我來不及":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["可能補語"].append(1)
+            pass
+        
+    if utterance == "他們合得來":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["可能補語"].append(1)
+            pass
+        
+    if utterance == "書看不完":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["可能補語"].append(1)
+            pass
+        
+    if utterance == "我說不過他":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["可能補語"].append(1)
+            pass
+        
+    if utterance == "我說得過他":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["可能補語"].append(1)
+            pass
+        
+    if utterance == "這有理說不清":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["可能補語"].append(1)
+            pass
+        
+    if utterance == "這也怨不得他":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["可能補語"].append(1)
+            pass
+        
+    if utterance == "我配不上他":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["可能補語"].append(1)
+            pass        
 
     return resultDICT
