@@ -7,28 +7,68 @@
     },
     "user_defined": {
         "_asNoun": [
-            "杯子"
+            "客人",
+            "杯子",
+            "菜市場"
         ],
         "_asVerb": [
             "下床"
         ]
     },
     "utterance": {
-        "睡在床上": {
-            "id": "61bf2f33-df7f-40e2-989c-141a27c6bebf",
-            "pos": "<ACTION_verb>睡</ACTION_verb><FUNC_inner>在</FUNC_inner><ENTITY_nouny>床</ENTITY_nouny><RANGE_locality>上</RANGE_locality>",
+        "回到家": {
+            "id": "8231e6f4-d14d-45c6-a19f-109ca5ca7741",
+            "pos": "<ACTION_verb>回到</ACTION_verb><ENTITY_noun>家</ENTITY_noun>",
             "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(睡|沉睡|仰躺|坐落|埋伏|平伏|平躺|橫躺|沉潛|趴伏|躺倒)</(ACTION_verb|VerbP)>"
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(回到|倒退|退讓|離開|重返|來到|搬回|返回了|留在|重回|來到了)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><RANGE_locality>[^<]+</RANGE_locality>"
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(飛|去|退|回|進|開|跳)到</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
-        "到房間外面": {
-            "id": "52735d3d-c9df-4474-8176-668d530fb630",
-            "pos": "<ACTION_verb>到</ACTION_verb><ENTITY_nouny>房間</ENTITY_nouny><RANGE_locality>外面</RANGE_locality>",
+        "擺在一起": {
+            "id": "4fdc1a12-7e02-472e-929a-75a5c043a9cd",
+            "pos": "<ACTION_verb>擺</ACTION_verb><FUNC_inner>在</FUNC_inner><MODIFIER>一起</MODIFIER>",
             "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(到|到了|到約|到受|到離|到包|到經過|到回|到隨|到死|到愛)</(ACTION_verb|VerbP)>"
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(擺|擺布|擺放|擺盤|擺設|安排|待遇|搬鋪|搭配|操辦|擘劃)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><RANGE_locality>[^<]+</RANGE_locality>"
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_inner>[^<]+</FUNC_inner><(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>"
+        },
+        "放在這裡": {
+            "id": "f961c170-3898-4747-9208-3b9911360096",
+            "pos": "<ACTION_verb>放</ACTION_verb><FUNC_inner>在</FUNC_inner><LOCATION>這裡</LOCATION>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(放|放下|放任|放入|放出|放告|放寬|放手|放水|放置|放羊)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_inner>[^<]+</FUNC_inner><LOCATION>[^<]+</LOCATION>"
+        },
+        "跳到這裡": {
+            "id": "bf848a08-6d6b-4575-8e92-0f8555d35493",
+            "pos": "<ACTION_verb>跳到</ACTION_verb><LOCATION>這裡</LOCATION>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(跳到|爬到|鑽入|爬出|掉到|跳下|掉下|跳進|走到|衝到|鑽進)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(飛|去|退|回|進|開|跳)到</(ACTION_verb|VerbP)><LOCATION>[^<]+</LOCATION>"
+        },
+        "飛到上面": {
+            "id": "a49d812c-e2a1-4fef-82d1-5935a56c2d7e",
+            "pos": "<ACTION_verb>飛到</ACTION_verb><RANGE_locality>上面</RANGE_locality>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(飛到|飛回|飛抵|飛離|飛到了|趕回|跑到|來到了|飛過|飛赴|直奔)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(飛|去|退|回|進|開|跳)到</(ACTION_verb|VerbP)><RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>"
+        },
+        "放在桌子上": {
+            "id": "d86dbece-18f0-43b5-b10a-1d7bc1734ca4",
+            "pos": "<ACTION_verb>放</ACTION_verb><FUNC_inner>在</FUNC_inner><ENTITY_noun>桌子</ENTITY_noun><RANGE_locality>上</RANGE_locality>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(放|放下|放任|放入|放出|放告|放寬|放手|放水|放置|放羊)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_inner>[^<]+</FUNC_inner>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>"
+        },
+        "長在泥土裡 ": {
+            "id": "5527112c-27b3-4d0f-b941-175296109782",
+            "pos": "<MODIFIER>長</MODIFIER><FUNC_inner>在</FUNC_inner><ENTITY_nouny>泥土</ENTITY_nouny><RANGE_locality>裡</RANGE_locality>",
+            "lexy": [],
+            "pattern": "<(MODIFIER|ModifierP)>長</(MODIFIER|ModifierP)><FUNC_inner>[^<]+</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>"
         }
     },
     "alias": {},
