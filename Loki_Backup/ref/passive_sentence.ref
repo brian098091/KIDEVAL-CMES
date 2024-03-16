@@ -1,0 +1,29 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "version": {
+        "atk": "v269",
+        "intent": "1.0"
+    },
+    "user_defined": {
+        "_asNoun": [
+            "杯子"
+        ],
+        "_asVerb": [
+            "下床"
+        ]
+    },
+    "utterance": {
+        "被我用光了": {
+            "id": "fdb2ee81-0eb6-45c1-86ad-02452504eba3",
+            "pos": "<ACTION_lightVerb>被</ACTION_lightVerb><ENTITY_pronoun>我</ENTITY_pronoun><VerbP>用光了</VerbP>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(用光了|暴走|花光了|吃完了|嚇死了|丟掉|用盡了|燒掉|拿走了|用完了|耗盡了)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_lightVerb>被</ACTION_lightVerb>(.+)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}

@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 
 """
-    Loki module for modal_complement
+    Loki module for post_verb_PP
 
     Input:
         inputSTR      str,
@@ -32,14 +32,14 @@ except Exception as e:
 responseDICT = {}
 if CHATBOT_MODE:
     try:
-        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/reply_modal_complement.json"), encoding="utf-8"))
+        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/reply_post_verb_PP.json"), encoding="utf-8"))
     except Exception as e:
         print("[ERROR] responseDICT => {}".format(str(e)))
 
 # 將符合句型的參數列表印出。這是 debug 或是開發用的。
 def debugInfo(inputSTR, utterance):
     if DEBUG:
-        print("[modal_complement] {} ===> {}".format(inputSTR, utterance))
+        print("[post_verb_PP] {} ===> {}".format(inputSTR, utterance))
 
 def getResponse(utterance, args):
     resultSTR = ""
@@ -51,22 +51,16 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
-    if utterance == "跳得不夠高":
+    if utterance == "到房間外面":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["情態補語"].append(1)
+            resultDICT["動後PP"].append(1)
 
-    if utterance == "跳得很高":
+    if utterance == "睡在床上":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["情態補語"].append(1)
-
-    if utterance == "蹦蹦跳得很厲害":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["情態補語"].append(1)
+            resultDICT["動後PP"].append(1)
 
     return resultDICT

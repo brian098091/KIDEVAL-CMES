@@ -1,0 +1,53 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "version": {
+        "atk": "v269",
+        "intent": "1.0"
+    },
+    "user_defined": {
+        "_asNoun": [
+            "杯子",
+            "菜市場",
+            "客人"
+        ],
+        "_asVerb": [
+            "下床"
+        ]
+    },
+    "utterance": {
+        "看到": {
+            "id": "4ba64392-3325-4473-835e-b3e65934c323",
+            "pos": "<ACTION_verb>看到</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(看到|看見|見到|睇見|瞅見|瞧見|看過|看到了|聽到|聽見|看著)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(看|聽|聞|摸|嚐|感覺|感|意識|感知|感受|料|見|夢|想)到</(ACTION_verb|VerbP)>"
+        },
+        "看見": {
+            "id": "703216d3-eb12-41f2-9b87-a62b7dcf6ac6",
+            "pos": "<ACTION_verb>看見</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(看見|看到|睇見|瞅見|瞧見|細看|見到|凝視|懂得|抓包|抓姦)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(看|瞧|瞥|瞅|窺|聽|聞)見</(ACTION_verb|VerbP)>"
+        },
+        "覺得": {
+            "id": "559cf100-62c0-460c-b3a1-076e6243b861",
+            "pos": "<ACTION_verb>覺得</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(覺得|察覺|感覺|感覺到|懂得|覺察|企盼|估摸|假想|假設|冥想)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(知道|以為|認為|想|想要|覺得|記得|希望|發現|發覺)</(ACTION_verb|VerbP)>"
+        },
+        "猜猜看": {
+            "id": "3a4591e5-26dc-4fd4-83d5-f597bb3c9bfe",
+            "pos": "<ACTION_quantifiedVerb>猜猜看</ACTION_quantifiedVerb>",
+            "lexy": [],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_quantifiedVerb>[^<]{2,2}看</ACTION_quantifiedVerb>"
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}
