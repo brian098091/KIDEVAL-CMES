@@ -10,20 +10,31 @@
             "客人",
             "杯子",
             "菜市場",
-            "巧虎"
+            "巧虎",
+            "東西",
+            "屋頂",
+            "炸彈"
         ],
         "_asVerb": [
             "下床"
         ]
     },
     "utterance": {
-        "因為下雨": {
-            "id": "ce82dc9b-9f45-442b-89b7-add17ac51d52",
-            "pos": "<FUNC_inter>因為</FUNC_inter><ACTION_verb>下雨</ACTION_verb>",
+        "如果下雨": {
+            "id": "75d33e84-a4eb-47f8-a12d-8dd939127ba7",
+            "pos": "<FUNC_inter>如果</FUNC_inter><ACTION_verb>下雨</ACTION_verb>",
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(下雨|降雨|降水|放晴|結霜|降雪|起霧|結冰|漲潮|開燈|下雪)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<FUNC_inter>(因為|所以|如果|除非|但是|否則|不過|可是)</FUNC_inter>"
+            "pattern": "<FUNC_inter>(如果|除非|但是|否則|不過|可是|而且|然後)</FUNC_inter>"
+        },
+        "因為下雨所以": {
+            "id": "dc13d87d-783d-4c8b-8d85-4c5c920af76b",
+            "pos": "<FUNC_inter>因為</FUNC_inter><ACTION_verb>下雨</ACTION_verb><FUNC_inter>所以</FUNC_inter>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(下雨|降雨|降水|漲潮|結霜|降雪|放晴|打雷|起霧|結冰|下雪)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<FUNC_in(ner|ter)>因為</FUNC_in(ner|ter)>(.+)?<FUNC_in(ner|ter)>所以</FUNC_in(ner|ter)>"
         },
         "只要下雨我就出門": {
             "id": "94a092f8-f55b-4aee-906b-57f70d60bbed",

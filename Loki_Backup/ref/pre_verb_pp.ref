@@ -10,7 +10,10 @@
             "客人",
             "杯子",
             "菜市場",
-            "巧虎"
+            "巧虎",
+            "東西",
+            "屋頂",
+            "炸彈"
         ],
         "_asVerb": [
             "下床"
@@ -74,7 +77,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(寫字|認字|握筆|畫畫|沾水|打字|寫|用筆|刷牙|書寫|寫板)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(FUNC_inner>[^<還]+</FUNC_inner)>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?(<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+            "pattern": "<(FUNC_inner>[^<還的]+</FUNC_inner)>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?(<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "用這個跟你打": {
             "id": "79f67990-e582-4b73-bf36-91a91a275255",

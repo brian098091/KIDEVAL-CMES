@@ -7,7 +7,13 @@
     },
     "user_defined": {
         "_asNoun": [
-            "杯子"
+            "客人",
+            "杯子",
+            "菜市場",
+            "巧虎",
+            "東西",
+            "屋頂",
+            "炸彈"
         ],
         "_asVerb": [
             "下床"
@@ -49,6 +55,15 @@
             ],
             "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><CLAUSE_WhatQ>[^<]+</CLAUSE_WhatQ>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<CLAUSE_WhatQ>[^<]+</CLAUSE_WhatQ>)?"
         },
+        "我馬上弄好我就幫你弄": {
+            "id": "2d8bb1bb-fcd3-4513-ab0d-d8d35f9c711f",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><TIME_justtime>馬上</TIME_justtime><ACTION_verb>弄</ACTION_verb><FUNC_degreeHead>好</FUNC_degreeHead><ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>就</FUNC_inner><ACTION_verb>幫</ACTION_verb><ENTITY_pronoun>你</ENTITY_pronoun><ACTION_verb>弄</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(弄|呼弄|唬弄|弄亂|弄糟|愚弄|瞎弄|亂來|亂搞|搞亂|搞砸)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(幫|幫助|協助|扶助|援助|輔助|幫著|常幫|替|想請|想幫)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_degreeHead>[^<]+</FUNC_degreeHead>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
         " 你有煮什麼我就吃什麼": {
             "id": "0591c5c7-a8df-4bda-8990-107e5810c346",
             "pos": "<ENTITY_pronoun>你</ENTITY_pronoun><ACTION_verb>有煮</ACTION_verb><CLAUSE_WhatQ>什麼</CLAUSE_WhatQ><ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>就</FUNC_inner><ACTION_verb>吃</ACTION_verb><CLAUSE_WhatQ>什麼</CLAUSE_WhatQ>",
@@ -57,6 +72,14 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃|吃掉|吸收|攝入|耗損|花掉|吃著|煮|啃|喝|吃了)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<CLAUSE_WhatQ>[^<]+</CLAUSE_WhatQ>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<CLAUSE_WhatQ>[^<]+</CLAUSE_WhatQ>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)"
+        },
+        "你這樣子裝你就這樣子裝": {
+            "id": "8210a09b-8bd3-4f89-9d89-5bf2b3d86db1",
+            "pos": "<ENTITY_pronoun>你</ENTITY_pronoun><FUNC_determiner>這</FUNC_determiner><ENTITY_noun>樣子</ENTITY_noun><ACTION_verb>裝</ACTION_verb><ENTITY_pronoun>你</ENTITY_pronoun><FUNC_inner>就</FUNC_inner><FUNC_determiner>這</FUNC_determiner><ENTITY_noun>樣子</ENTITY_noun><ACTION_verb>裝</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(裝|包裝|填裝|封裝|裝入|裝卸|裝彈|裝載|配裝|包住|包紮)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>(.+)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "小狗看到爸爸小狗才離開": {
             "id": "0c7c5591-b545-4808-b08c-2c86d4c996ad",
