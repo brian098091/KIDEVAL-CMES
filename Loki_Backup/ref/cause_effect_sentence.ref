@@ -7,28 +7,33 @@
     },
     "user_defined": {
         "_asNoun": [
-            "杯子"
+            "客人",
+            "杯子",
+            "菜市場",
+            "巧虎"
         ],
         "_asVerb": [
             "下床"
         ]
     },
     "utterance": {
-        "只要": {
-            "id": "263c32f8-2fde-4e69-9af1-b34c3ee1e2d4",
-            "pos": "<MODIFIER>只</MODIFIER><ACTION_verb>要</ACTION_verb>",
-            "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(要|想要|需要|想拿|想買|渴望|渴求|真要|得照|更要|要去)</(ACTION_verb|VerbP)>"
-            ],
-            "pattern": "<(MODIFIER|ModifierP)>只</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>要</(ACTION_verb|VerbP)>"
-        },
         "因為下雨": {
             "id": "ce82dc9b-9f45-442b-89b7-add17ac51d52",
             "pos": "<FUNC_inter>因為</FUNC_inter><ACTION_verb>下雨</ACTION_verb>",
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(下雨|降雨|降水|放晴|結霜|降雪|起霧|結冰|漲潮|開燈|下雪)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<FUNC_inter>(因為|所以|如果|除非|但是|否則|不過)</FUNC_inter>"
+            "pattern": "<FUNC_inter>(因為|所以|如果|除非|但是|否則|不過|可是)</FUNC_inter>"
+        },
+        "只要下雨我就出門": {
+            "id": "94a092f8-f55b-4aee-906b-57f70d60bbed",
+            "pos": "<MODIFIER>只</MODIFIER><ACTION_verb>要</ACTION_verb><ACTION_verb>下雨</ACTION_verb><ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>就</FUNC_inner><ACTION_verb>出門</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(要|想要|需要|想拿|想買|渴望|渴求|真要|得照|更要|要去)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(下雨|降雨|降水|放晴|結霜|降雪|起霧|結冰|漲潮|開燈|下雪)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(出門|出走|分離|撤出|早退|溜走|漏掉|甩開|走出|走掉|走開)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(MODIFIER|ModifierP)>只</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>要</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         }
     },
     "alias": {},
