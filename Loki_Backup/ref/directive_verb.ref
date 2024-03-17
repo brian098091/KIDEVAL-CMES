@@ -22,7 +22,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(拿出來|拿去|拿來|藏起來|放進去|收起來|拿起來|送出去|講出來|拿回來|翻出來)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+[上下進出回過起]?來</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<過不]+[上下進出回過起]?來</(ACTION_verb|VerbP)>"
         },
         "走進去": {
             "id": "e06b48d7-e0a0-4403-90c3-496984632124",
@@ -30,7 +30,15 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(走進去|坐到|坐下|躺下|走近|走進來|閉嘴|睡覺了|坐上去|抽了|睡覺)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+[上下進出回過]?去</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<不]+[上下進出回過]?去</(ACTION_verb|VerbP)>"
+        },
+        "走進門": {
+            "id": "eda9db10-0e98-4017-9418-a805ee4eb120",
+            "pos": "<ACTION_verb>走進</ACTION_verb><ENTITY_nouny>門</ENTITY_nouny>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(走進|踏進|走進了|進到|走入|走出|走到|躲進|跑進|來到了|衝進)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+(進|出)</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
         "走後門進去": {
             "id": "84b984b1-f09d-4b5e-80cc-4898990af403",
