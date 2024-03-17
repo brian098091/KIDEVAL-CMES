@@ -69,6 +69,12 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             resultDICT["量-個"].append(1)
 
+    if utterance == "三兩個":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-個"].append(1)
+
     if utterance == "那個":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
