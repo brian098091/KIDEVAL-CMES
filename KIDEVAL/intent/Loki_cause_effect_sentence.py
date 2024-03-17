@@ -51,7 +51,8 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
-    if utterance == "只要":
+    
+    if utterance == "只要下雨我就出門":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

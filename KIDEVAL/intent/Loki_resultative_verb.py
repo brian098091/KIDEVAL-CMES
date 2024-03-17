@@ -64,6 +64,13 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["結果補語"].append(1)
             pass
         
+    if utterance == "收好了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["結果補語"].append(1)
+            pass
+
     if utterance == "收起來":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
