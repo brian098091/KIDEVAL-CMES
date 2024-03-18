@@ -114,6 +114,20 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["動後介詞"].append(1)
             pass
 
+    if utterance == "但都不知道在那":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["動後介詞"].append(1)
+            pass
+
+    if utterance == "這裡是到警察局的辦公室":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["動後介詞"].append(1)
+            pass
+
     if utterance == "飛到上面":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)

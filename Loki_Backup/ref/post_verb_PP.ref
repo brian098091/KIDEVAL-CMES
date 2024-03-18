@@ -13,7 +13,11 @@
             "巧虎",
             "東西",
             "屋頂",
-            "炸彈"
+            "炸彈",
+            "螺絲",
+            "車車",
+            "藥",
+            "風"
         ],
         "_asVerb": [
             "下床"
@@ -26,7 +30,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(回到|倒退|退讓|離開|重返|來到|搬回|返回了|留在|重回|來到了)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>(飛|去|退|回|進|開|跳)到</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+            "pattern": "<(ACTION_verb|VerbP)>(飛|去|退|回|進|開|跳|剪|夾|坐|爬)到</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
         "扣在這個": {
             "id": "091ced5e-1c6a-4f14-acaf-0007461d651a",
@@ -42,7 +46,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(擺|擺布|擺放|擺盤|擺設|安排|待遇|搬鋪|搭配|操辦|擘劃)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_inner>[^<得]+</FUNC_inner><(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_inner>[^<得]+</FUNC_inner>(<FUNC_degreeHead>[^<]+</FUNC_degreeHead>)?<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>"
         },
         "放在這裡": {
             "id": "f961c170-3898-4747-9208-3b9911360096",
@@ -58,7 +62,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(跳到|爬到|鑽入|爬出|掉到|跳下|掉下|跳進|走到|衝到|鑽進)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>(飛|去|退|回|進|開|跳)到</(ACTION_verb|VerbP)><LOCATION>[^<]+</LOCATION>"
+            "pattern": "<(ACTION_verb|VerbP)>(飛|去|退|回|進|開|跳|剪|坐|爬)到</(ACTION_verb|VerbP)><LOCATION>[^<]+</LOCATION>"
         },
         "飛到上面": {
             "id": "a49d812c-e2a1-4fef-82d1-5935a56c2d7e",
@@ -66,7 +70,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(飛到|飛回|飛抵|飛離|飛到了|趕回|跑到|來到了|飛過|飛赴|直奔)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(飛|去|退|回|進|開|跳)到</(ACTION_verb|VerbP)><RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>"
+            "pattern": "<(ACTION_verb|VerbP)>(飛|去|退|回|進|開|跳|剪|坐|爬)到</(ACTION_verb|VerbP)>(<FUNC_degreeHead>[^<]+</FUNC_degreeHead>)?<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>"
         },
         "放在桌子上": {
             "id": "d86dbece-18f0-43b5-b10a-1d7bc1734ca4",
@@ -74,19 +78,19 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(放|放下|放任|放入|放出|放告|放寬|放手|放水|放置|放羊)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_inner>[^<]+</FUNC_inner>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_inner>[^<]+</FUNC_inner>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?(<FUNC_degreeHead>[^<]+</FUNC_degreeHead>)?<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>"
         },
         "長在泥土裡 ": {
             "id": "5527112c-27b3-4d0f-b941-175296109782",
             "pos": "<MODIFIER>長</MODIFIER><FUNC_inner>在</FUNC_inner><ENTITY_nouny>泥土</ENTITY_nouny><RANGE_locality>裡</RANGE_locality>",
             "lexy": [],
-            "pattern": "<(MODIFIER|ModifierP)>長</(MODIFIER|ModifierP)><FUNC_inner>[^<]+</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>"
+            "pattern": "<(MODIFIER|ModifierP)>長</(MODIFIER|ModifierP)><FUNC_inner>在</FUNC_inner>"
         },
         "他是在這裡嗎": {
             "id": "60250baa-560d-4d86-a489-331e06931750",
             "pos": "<ENTITY_pronoun>他</ENTITY_pronoun><AUX>是</AUX><FUNC_inner>在</FUNC_inner><LOCATION>這裡</LOCATION><CLAUSE_YesNoQ>嗎</CLAUSE_YesNoQ>",
             "lexy": [],
-            "pattern": "<AUX>[^<]+</AUX><FUNC_inner>[^<]+</FUNC_inner><LOCATION>[^<]+</LOCATION>"
+            "pattern": "<AUX>[^<]+</AUX><FUNC_inner>[^<]+</FUNC_inner>(<LOCATION>[^<]+</LOCATION>|<FUNC_determiner>[^<]+</FUNC_determiner>)"
         },
         "打電話給阿公": {
             "id": "2688c450-111d-4773-973d-757d795a4a2c",
@@ -95,7 +99,23 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(打電話|寫信|致電|寄信|打給|匯錢|打去|傳話|送錢|撥了|去電)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(給|供給|帶給|提供|發放|資助|給老|交給|留給|給聖|分給)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>給</(ACTION_verb|VerbP)>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<ACTION_eventQuantifier>[^<]+</ACTION_eventQuantifier>)?(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?<(ACTION_verb|VerbP)>給</(ACTION_verb|VerbP)>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)"
+        },
+        "但都不知道在那": {
+            "id": "693ddb89-ce4f-453d-b12c-00323436e8c3",
+            "pos": "<FUNC_inter>但</FUNC_inter><QUANTIFIER>都</QUANTIFIER><FUNC_negation>不</FUNC_negation><ACTION_verb>知道</ACTION_verb><FUNC_inner>在</FUNC_inner><FUNC_determiner>那</FUNC_determiner>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(知道|得知|明知|深知|獲知|知悉|知情|知曉|知足|確知|了解)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_in(ner|ter)>在</FUNC_in(ner|ter)>(<FUNC_determiner>[^<]+</FUNC_determiner>|(<CLAUSE_WhereQ>[^<]+</CLAUSE_WhereQ>)?)"
+        },
+        "這裡是到警察局的辦公室": {
+            "id": "6788a713-5d15-4378-9df1-ded06f3f41de",
+            "pos": "<LOCATION>這裡</LOCATION><AUX>是</AUX><ACTION_verb>到</ACTION_verb><ENTITY_noun>警察局</ENTITY_noun><FUNC_inner>的</FUNC_inner><ENTITY_noun>辦公室</ENTITY_noun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(到|到了|到約|到受|到離|到包|到經過|到回|到隨|到死|到愛)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<AUX>是</AUX><(ACTION_verb|VerbP)>到</(ACTION_verb|VerbP)>"
         }
     },
     "alias": {},
