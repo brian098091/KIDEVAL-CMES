@@ -1,0 +1,211 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "version": {
+        "atk": "v269",
+        "intent": "1.0"
+    },
+    "user_defined": {
+        "_asNoun": [
+            "客人",
+            "杯子",
+            "菜市場"
+        ],
+        "_asVerb": [
+            "下床"
+        ]
+    },
+    "utterance": {
+        "我下不去": {
+            "id": "924e92a6-25d1-4505-8443-fe5fc4ed883e",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><RANGE_locality>下</RANGE_locality><FUNC_negation>不</FUNC_negation><ACTION_verb>去</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(去|要去|回去|想去|去了|跑去|回來|跑來|趕去|出去|來)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<RANGE_locality>(上|下)</RANGE_locality><FUNC_negation>不</FUNC_negation><(ACTION_verb|VerbP)>(來|去)</(ACTION_verb|VerbP)>"
+        },
+        "我下得去": {
+            "id": "197bb6e1-1968-4c28-9f46-6aaebaee844d",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><RANGE_locality>下</RANGE_locality><ACTION_verb>得去</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(得去|得做|跑去|要去|得洗|想來|得用|飽了|得看|做慣|得找)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<RANGE_locality>(上|下)</RANGE_locality><(ACTION_verb|VerbP)>得(來|去)</(ACTION_verb|VerbP)>"
+        },
+        "我來不及": {
+            "id": "86a8e389-d222-4c77-9d7f-0f9a4236e142",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><MODIFIER>來不及</MODIFIER>",
+            "lexy": [],
+            "pattern": "<(MODIFIER|ModifierP)>[^<]不[^<]</(MODIFIER|ModifierP)>"
+        },
+        "我來得及": {
+            "id": "d364dcd2-9f81-408b-ad06-bee115a075e2",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><MODIFIER>來得及</MODIFIER>",
+            "lexy": [],
+            "pattern": "<(MODIFIER|ModifierP)>[^<]得[^<]</(MODIFIER|ModifierP)>"
+        },
+        "我受不了": {
+            "id": "abcb80c9-8913-4223-a586-b2942803149c",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>受</ACTION_verb><FUNC_negation>不</FUNC_negation><ACTION_verb>了</ACTION_verb>",
+            "lexy": [],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_negation>不</FUNC_negation><ACTION_verb>了</ACTION_verb>"
+        },
+        "我看不懂": {
+            "id": "be97543f-e860-419e-86aa-c21d0770081b",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>看不懂</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(看不懂|聽不懂|看得懂|記不住|懂|聽得懂|想不出|想寫|忘記了|有看過|忘記)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+不[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "我看得懂": {
+            "id": "8089218b-542a-4bd2-a83d-471157c5c6ba",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>看得懂</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(看得懂|看不懂|聽得懂|找得到|看得到|讀懂|有看過|聽得到|得聽|看懂|辦得到)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+得[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "書看不完": {
+            "id": "46c29681-eab8-41c8-92d3-13b1ea369f43",
+            "pos": "<ENTITY_noun>書</ENTITY_noun><ACTION_verb>看</ACTION_verb><FUNC_negation>不</FUNC_negation><ASPECT>完</ASPECT>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(看|探看|收看|看守|看戲|看望|看護|看顧|觀看|光顧|探望)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<FUNC_inner>得</FUNC_inner>|<FUNC_negation>不</FUNC_negation>)(<ASPECT>完</ASPECT>|<VerbP>完了</VerbP>)"
+        },
+        "他們合得來": {
+            "id": "80902b0f-5ca1-4de8-9bd4-feab6e4b630c",
+            "pos": "<ENTITY_pronoun>他們</ENTITY_pronoun><ACTION_verb>合</ACTION_verb><ACTION_verb>得來</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(合|合併|合圍|合攏|接合|聯合|併吞|侵吞|倒閉|兼併|加入)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(得來|閉緊|得|致富|懂得|得到|相配|拿到|答安|獲取|過擬)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>合</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>得來</(ACTION_verb|VerbP)>"
+        },
+        "我拼不出來": {
+            "id": "831ba47a-d259-4209-a60f-c0b530ba668e",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>拼</ACTION_verb><FUNC_negation>不</FUNC_negation><ACTION_verb>出來</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(拼|拚|拼等|拼成|想拚|分扳|分追|佔空|大玩|搶攻)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(出來|出來了|出去|進去|拿出來|出|過來|下來|出了|進來|上來)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_negation>[^<]+</FUNC_negation><(ACTION_verb|VerbP)>[上下進出回過起]來</(ACTION_verb|VerbP)>"
+        },
+        "我拼得出來": {
+            "id": "02fe8c59-f905-4f91-9f46-270a44bab9f8",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>拼</ACTION_verb><FUNC_inner>得</FUNC_inner><ACTION_verb>出來</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(拼|拚|拼等|拼成|想拚|分扳|分追|佔空|大玩|搶攻)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(出來|出來了|出去|進去|拿出來|出|過來|下來|出了|進來|上來)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_inner>得</FUNC_inner><(ACTION_verb|VerbP)>[上下進出回過起]來</(ACTION_verb|VerbP)>"
+        },
+        "我消化不掉": {
+            "id": "dcaa592e-7b8c-454e-ae3c-a7e7ee60e421",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>消化</ACTION_verb><FUNC_negation>不</FUNC_negation><ACTION_verb>掉</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(消化|吸收|代謝|分泌|咀嚼|排尿|攝食|溶解|發育|降解|蠕動)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(掉|壓擠|挨擠|擠壓|丟|吐出來|爛掉|扔掉|掉了|撿起|丟掉)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>|<ACTION_lightVerb>[^<]+</ACTION_lightVerb>)<FUNC_negation>不</FUNC_negation><(ACTION_verb|VerbP)>(掉|明白|開|來|住|懂|起|怕|定)</(ACTION_verb|VerbP)>"
+        },
+        "我消化得掉": {
+            "id": "1587614e-f363-4b16-8ee8-21f15826bc71",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>消化</ACTION_verb><FUNC_inner>得</FUNC_inner><ACTION_verb>掉</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(消化|吸收|代謝|分泌|咀嚼|排尿|攝食|溶解|發育|降解|蠕動)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(掉|壓擠|挨擠|擠壓|丟|吐出來|爛掉|扔掉|掉了|撿起|丟掉)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>|<ACTION_lightVerb>[^<]+</ACTION_lightVerb>)<FUNC_inner>得</FUNC_inner><(ACTION_verb|VerbP)>(掉|明白|開|來|住|懂|起|怕|定)</(ACTION_verb|VerbP)>"
+        },
+        "我看不下去": {
+            "id": "0be403f6-39c9-46e2-85e8-edde6044135a",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>看</ACTION_verb><FUNC_negation>不</FUNC_negation><ACTION_verb>下去</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(看|探看|收看|看守|看戲|看望|看護|看顧|觀看|光顧|探望)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(下去|因循|因襲|堅持|沿用|留下來|回來|下來了|過來了|回去|出去)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_negation>不</FUNC_negation><(ACTION_verb|VerbP)>[上下進出回過]去</(ACTION_verb|VerbP)>"
+        },
+        "我看得下去": {
+            "id": "472605aa-2989-476c-b48e-10f014ab576c",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>看</ACTION_verb><FUNC_inner>得</FUNC_inner><ACTION_verb>下去</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(看|探看|收看|看守|看戲|看望|看護|看顧|觀看|光顧|探望)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(下去|因循|因襲|堅持|沿用|走下去|出去|下來|下去了|留下來|傳下去)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_inner>得</FUNC_inner><(ACTION_verb|VerbP)>[上下進出回過]去</(ACTION_verb|VerbP)>"
+        },
+        "我說不完整": {
+            "id": "e5f66843-826a-44e2-9410-7affe2f1ff6d",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>說</ACTION_verb><FUNC_negation>不</FUNC_negation><MODIFIER>完整</MODIFIER>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(說|演說|說話|宣判|拼讀|談到|辯護|說真|有說|講出|說過)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_negation>不</FUNC_negation><(MODIFIER|ModifierP)>[^<]{1,2}</(MODIFIER|ModifierP)>"
+        },
+        "我說不過他": {
+            "id": "f28ee2c7-02f4-45b5-9548-f7f052bc69c2",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>說</ACTION_verb><FUNC_inner>不過</FUNC_inner><ENTITY_pronoun>他</ENTITY_pronoun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(說|演說|說話|宣判|拼讀|談到|辯護|說過|說到|講出|說著)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_inner>不過</FUNC_inner>"
+        },
+        "我說得完整": {
+            "id": "220501f1-3b37-45a6-957a-ec885e5b6ea7",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>說</ACTION_verb><FUNC_inner>得</FUNC_inner><MODIFIER>完整</MODIFIER>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(說|演說|說話|宣判|拼讀|談到|辯護|說過|說到|講出|說著)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_inner>得</FUNC_inner><(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>"
+        },
+        "我說得過他": {
+            "id": "72eb28a6-6fcf-4bec-aa45-508be037759e",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>說</ACTION_verb><VerbP>得過</VerbP><ENTITY_pronoun>他</ENTITY_pronoun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(說|演說|說話|宣判|拼讀|談到|辯護|說真|有說|講出|說過)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(得過|拿過|獲得過|贏得過|得到過|得了|奪得過|贏過|抱回|勇奪|獲過)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>得過</(ACTION_verb|VerbP)>"
+        },
+        "我配不上他": {
+            "id": "e20c1293-a3df-4266-9dac-eb9c452651e1",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>配</ACTION_verb><FUNC_negation>不</FUNC_negation><RANGE_locality>上</RANGE_locality><ENTITY_pronoun>他</ENTITY_pronoun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(配|匹配|搭配|相配|配偶|配合|配製|交結|交融|加入|加進)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_negation>不</FUNC_negation><RANGE_locality>(上|下)</RANGE_locality>"
+        },
+        "這也怨不得他": {
+            "id": "ead5f9ff-9327-45aa-9cdd-d69d8ac32305",
+            "pos": "<FUNC_determiner>這</FUNC_determiner><MODIFIER>也</MODIFIER><ACTION_verb>怨</ACTION_verb><FUNC_negation>不</FUNC_negation><MODAL>得</MODAL><ENTITY_pronoun>他</ENTITY_pronoun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(怨|埋怨|怨艾|哀嘆|哀痛|喝斥|嗔斥|嚴斥|心疼|悲嘆|斥罵)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_negation>不</FUNC_negation><MODAL>得</MODAL>"
+        },
+        "這有理說不清": {
+            "id": "ad81b06e-e8f6-4584-b8b9-1584ae8af3cf",
+            "pos": "<FUNC_determiner>這</FUNC_determiner><ACTION_verb>有</ACTION_verb><ENTITY_nouny>理</ENTITY_nouny><ACTION_verb>說</ACTION_verb><MODIFIER>不清</MODIFIER>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(說|演說|說話|宣判|拼讀|談到|辯護|說過|說到|講出|說著)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(MODIFIER|ModifierP)>不[^<]+</(MODIFIER|ModifierP)>"
+        },
+        "我說得不明不白": {
+            "id": "85883000-2ff6-43cb-8bf1-7b4fe103b53d",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>說</ACTION_verb><ACTION_verb>得</ACTION_verb><IDIOM>不明不白</IDIOM>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(說|演說|說話|宣判|拼讀|談到|辯護|說真|有說|講出|說過)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(得|懂得|聽得懂|抓包|抓姦|捉住|捉姦|捉拿|捕拿|捕捉|捕撈)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>得</(ACTION_verb|VerbP)><IDIOM>[^<]+</IDIOM>"
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}
