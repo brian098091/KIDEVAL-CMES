@@ -9,10 +9,15 @@
         "_asNoun": [
             "客人",
             "杯子",
-            "菜市場"
+            "菜市場",
+            "佩佩豬",
+            "盤子",
+            "飛船"
         ],
         "_asVerb": [
-            "下床"
+            "下床",
+            "尿尿",
+            "便便"
         ]
     },
     "utterance": {
@@ -31,6 +36,14 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃|吃掉|吸收|攝入|耗損|花掉|吃著|煮|啃|喝|吃了)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(.+)?<ENTITY_classifier>[^<]+[口]</ENTITY_classifier>"
+        },
+        "吃一點": {
+            "id": "0240ac64-20c9-44e8-ad7c-a6c442024566",
+            "pos": "<ACTION_verb>吃</ACTION_verb><TIME_justtime>一點</TIME_justtime>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃|吃掉|吸收|攝入|耗損|花掉|煮|啃|吃著|喝|常吃)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><TIME_(holiday|justtime|day|week|month|season|year|decade)>一點</TIME_(holiday|justtime|day|week|month|season|year|decade)>"
         },
         "玩一次": {
             "id": "91384ea2-e5d5-4034-b3fe-5be1c2f5997d",
