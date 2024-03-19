@@ -7,9 +7,10 @@
     },
     "user_defined": {
         "_asNoun": [
+            "客人",
             "杯子",
             "菜市場",
-            "客人"
+            "叮咚"
         ],
         "_asVerb": [
             "下床"
@@ -23,7 +24,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(去|要去|回去|想去|去了|跑去|回來|跑來|趕去|出去|來)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(載|裝載|負載|載人|載入|載攜|載荷|載貨|運載|佩帶|填入)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>|<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>)*?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<想要用]+</(ACTION_verb|VerbP)>(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>|<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>)+?<(ACTION_verb|VerbP)>[^<給]+</(ACTION_verb|VerbP)>(?!<FUNC_inner>的</FUNC_inner>)"
         },
         "你先去外面等一下": {
             "id": "073ce37d-1955-4c8b-95d4-3ea34c61386e",

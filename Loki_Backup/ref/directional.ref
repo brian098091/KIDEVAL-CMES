@@ -21,6 +21,12 @@
             "pos": "<RANGE_locality>外面</RANGE_locality>",
             "lexy": [],
             "pattern": "<RANGE_locality>[^<]+</RANGE_locality>"
+        },
+        "這裡": {
+            "id": "a0623b0f-9624-4c49-9a2b-3d862ff4288c",
+            "pos": "<LOCATION>這裡</LOCATION>",
+            "lexy": [],
+            "pattern": "<LOCATION>(這|那)(裡|裏|邊)</LOCATION>"
         }
     },
     "alias": {},

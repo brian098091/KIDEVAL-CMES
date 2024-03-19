@@ -7,15 +7,23 @@
     },
     "user_defined": {
         "_asNoun": [
+            "客人",
             "杯子",
-            "菜市場",
-            "客人"
+            "菜市場"
         ],
         "_asVerb": [
             "下床"
         ]
     },
     "utterance": {
+        "想換": {
+            "id": "6a0b898f-0e05-43a5-ba22-4281b5b9c57d",
+            "pos": "<ACTION_verb>想換</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(想換|想找|得找|辭掉了|做完了|換了|想睡|嫁了|失業了|丟了|常換)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>想[^<]+</(ACTION_verb|VerbP)>"
+        },
         "看到": {
             "id": "4ba64392-3325-4473-835e-b3e65934c323",
             "pos": "<ACTION_verb>看到</ACTION_verb>",
@@ -44,7 +52,7 @@
             "id": "3a4591e5-26dc-4fd4-83d5-f597bb3c9bfe",
             "pos": "<ACTION_quantifiedVerb>猜猜看</ACTION_quantifiedVerb>",
             "lexy": [],
-            "pattern": "(?<!</FUNC_negation>)<ACTION_quantifiedVerb>[^<]{2,2}看</ACTION_quantifiedVerb>"
+            "pattern": "<ACTION_quantifiedVerb>[^<拚拼用]{2,2}看</ACTION_quantifiedVerb>"
         }
     },
     "alias": {},

@@ -108,7 +108,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(消化|吸收|代謝|分泌|咀嚼|排尿|攝食|溶解|發育|降解|蠕動)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(掉|壓擠|挨擠|擠壓|丟|吐出來|爛掉|扔掉|掉了|撿起|丟掉)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_negation>不</FUNC_negation><(ACTION_verb|VerbP)>(掉|明白|開|來|住|懂|起|怕|定)</(ACTION_verb|VerbP)>"
+            "pattern": "(<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>|<ACTION_lightVerb>[^<]+</ACTION_lightVerb>)<FUNC_negation>不</FUNC_negation><(ACTION_verb|VerbP)>(掉|明白|開|來|住|懂|起|怕|定)</(ACTION_verb|VerbP)>"
         },
         "我消化得掉": {
             "id": "1587614e-f363-4b16-8ee8-21f15826bc71",
@@ -117,7 +117,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(消化|吸收|代謝|分泌|咀嚼|排尿|攝食|溶解|發育|降解|蠕動)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(掉|壓擠|挨擠|擠壓|丟|吐出來|爛掉|扔掉|掉了|撿起|丟掉)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_inner>得</FUNC_inner><(ACTION_verb|VerbP)>(掉|明白|開|來|住|懂|起|怕|定)</(ACTION_verb|VerbP)>"
+            "pattern": "(<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>|<ACTION_lightVerb>[^<]+</ACTION_lightVerb>)<FUNC_inner>得</FUNC_inner><(ACTION_verb|VerbP)>(掉|明白|開|來|住|懂|起|怕|定)</(ACTION_verb|VerbP)>"
         },
         "我看不下去": {
             "id": "0be403f6-39c9-46e2-85e8-edde6044135a",
