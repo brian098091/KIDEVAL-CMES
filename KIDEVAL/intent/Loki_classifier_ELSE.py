@@ -121,8 +121,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            pass
+            resultDICT["量-特"].append(1)
 
     if utterance == "那瓶":
         if CHATBOT_MODE:
