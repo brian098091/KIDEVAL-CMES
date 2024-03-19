@@ -7,15 +7,29 @@
     },
     "user_defined": {
         "_asNoun": [
+            "佩佩豬",
             "客人",
             "杯子",
-            "菜市場"
+            "盤子",
+            "菜市場",
+            "飛船",
+            "遊樂設施"
         ],
         "_asVerb": [
-            "下床"
+            "下床",
+            "便便",
+            "尿尿"
         ]
     },
     "utterance": {
+        "記得住": {
+            "id": "235b4aad-ebf9-49e1-abb9-5175c232d69b",
+            "pos": "<ACTION_verb>記得住</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(記得住|拿得到|辦得到|吃飽了|談得上|用得著|敢接|出院了|受得了|聽懂了|用得)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>記得住</(ACTION_verb|VerbP)>"
+        },
         "跳得很高": {
             "id": "ec756c31-8bf4-44d5-b449-68768db3d252",
             "pos": "<ACTION_verb>跳</ACTION_verb><FUNC_inner>得</FUNC_inner><DegreeP>很高</DegreeP>",
@@ -30,7 +44,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(跳得|難討|佳製|馴良|佳攔|佳摔|冰床|想罵|吻功|騷包|後買)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+得</(ACTION_verb|VerbP)>(.+)?<(MODIFIER|ModifierP|DegreeP|AUX)>[^<]+</(MODIFIER|ModifierP|DegreeP|AUX)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<覺記]+得</(ACTION_verb|VerbP)>(.+)?<(MODIFIER|ModifierP|DegreeP|AUX)>[^<]+</(MODIFIER|ModifierP|DegreeP|AUX)>"
         },
         "蹦蹦跳得很厲害": {
             "id": "ac74d189-f7c8-4ce5-94a8-7370a9d83276",

@@ -7,10 +7,18 @@
     },
     "user_defined": {
         "_asNoun": [
-            "杯子"
+            "佩佩豬",
+            "客人",
+            "杯子",
+            "盤子",
+            "菜市場",
+            "飛船",
+            "遊樂設施"
         ],
         "_asVerb": [
-            "下床"
+            "下床",
+            "便便",
+            "尿尿"
         ]
     },
     "utterance": {
@@ -18,7 +26,13 @@
             "id": "5d7c61cf-c5e5-4326-970d-75454154bb5b",
             "pos": "<ENTITY_classifier>一個</ENTITY_classifier>",
             "lexy": [],
-            "pattern": "<ENTITY_classifier>[^<]*個</ENTITY_classifier>"
+            "pattern": "<ENTITY_(classifier|DetPhrase)>[^<]*個</ENTITY_(classifier|DetPhrase)>"
+        },
+        "哪個": {
+            "id": "314b5970-93b7-47b1-bb42-598d1d30d328",
+            "pos": "<CLAUSE_WhatQ>哪個</CLAUSE_WhatQ>",
+            "lexy": [],
+            "pattern": "<CLAUSE_WhatQ>[^<]*個</CLAUSE_WhatQ>"
         },
         "多個": {
             "id": "4a221251-a0bc-47e5-bd28-b3a5f278d388",
@@ -32,7 +46,13 @@
             "id": "b30ee6e1-012a-4f61-84e3-c9b4843ef702",
             "pos": "<ENTITY_DetPhrase>那個</ENTITY_DetPhrase>",
             "lexy": [],
-            "pattern": "<ENTITY_DetPhrase>[那這某整][^<]*個</ENTITY_DetPhrase>"
+            "pattern": "<ENTITY_DetPhrase>[哪那這某整][^<]*個</ENTITY_DetPhrase>"
+        },
+        "三兩個": {
+            "id": "f39561c2-bdb7-4a4a-ab81-da5717921aa8",
+            "pos": "<ENTITY_measurement>三兩</ENTITY_measurement><ENTITY_nouny>個</ENTITY_nouny>",
+            "lexy": [],
+            "pattern": "<ENTITY_measurement>[^<]+</ENTITY_measurement><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>個</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
         "很少個": {
             "id": "bf25dfd9-ff44-4b04-950f-9609661219bf",

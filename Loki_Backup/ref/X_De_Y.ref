@@ -7,10 +7,18 @@
     },
     "user_defined": {
         "_asNoun": [
-            "杯子"
+            "佩佩豬",
+            "客人",
+            "杯子",
+            "盤子",
+            "菜市場",
+            "飛船",
+            "遊樂設施"
         ],
         "_asVerb": [
-            "下床"
+            "下床",
+            "便便",
+            "尿尿"
         ]
     },
     "utterance": {
@@ -18,7 +26,7 @@
             "id": "8082291e-9ab7-4ade-8d3c-c2b1a02d8ae7",
             "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><ENTITY_noun>東西</ENTITY_noun>",
             "lexy": [],
-            "pattern": "(.+)?<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)>(?!<ASPECT>了</ASPECT>|<CLAUSE_particle>[^<]+</CLAUSE_particle>|<CLAUSE_YesNoQ>[^<]+</CLAUSE_YesNoQ>)(.+)"
+            "pattern": "(?<!</MODIFIER>)(?<!</Verb_P>)(?<!</ModifierP>)(?<!</ACTION_verb>)<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun|DetPhrase|num)|RANGE_(locality|period)|MODIFIER|ModifierP|LOCATION)>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun|DetPhrase|num)|RANGE_(locality|period)|MODIFIER|ModifierP|LOCATION)>"
         }
     },
     "alias": {},

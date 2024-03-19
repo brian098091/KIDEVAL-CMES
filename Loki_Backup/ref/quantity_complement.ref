@@ -7,15 +7,27 @@
     },
     "user_defined": {
         "_asNoun": [
+            "佩佩豬",
             "客人",
             "杯子",
-            "菜市場"
+            "盤子",
+            "菜市場",
+            "飛船",
+            "遊樂設施"
         ],
         "_asVerb": [
-            "下床"
+            "下床",
+            "便便",
+            "尿尿"
         ]
     },
     "utterance": {
+        "再一點": {
+            "id": "df20cd50-f2f4-4bf1-8dc1-61ef7ee9feb7",
+            "pos": "<MODIFIER>再</MODIFIER><QUANTIFIER>一點</QUANTIFIER>",
+            "lexy": [],
+            "pattern": "<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)><QUANTIFIER>[^<]+</QUANTIFIER>"
+        },
         "切兩半": {
             "id": "2c231513-e312-4135-ad49-f9df4ea17b63",
             "pos": "<ACTION_verb>切</ACTION_verb><MODIFIER>兩半</MODIFIER>",
@@ -32,13 +44,21 @@
             ],
             "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(.+)?<ENTITY_classifier>[^<]+[口]</ENTITY_classifier>"
         },
+        "吃一點": {
+            "id": "0240ac64-20c9-44e8-ad7c-a6c442024566",
+            "pos": "<ACTION_verb>吃</ACTION_verb><TIME_justtime>一點</TIME_justtime>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃|吃掉|吸收|攝入|耗損|花掉|煮|啃|吃著|喝|常吃)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><TIME_(holiday|justtime|day|week|month|season|year|decade)>一點</TIME_(holiday|justtime|day|week|month|season|year|decade)>"
+        },
         "玩一次": {
             "id": "91384ea2-e5d5-4034-b3fe-5be1c2f5997d",
             "pos": "<ACTION_verb>玩</ACTION_verb><ACTION_eventQuantifier>一次</ACTION_eventQuantifier>",
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(玩|玩忽|玩狎|玩著|玩樂|買東西|散步|遊玩|打電動|玩了|玩耍)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(.+)?<ACTION_eventQuantifier>[^<個]+</ACTION_eventQuantifier>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><ACTION_eventQuantifier>[^<個]+</ACTION_eventQuantifier>"
         },
         "量一下": {
             "id": "6771f4fb-21a8-4b4d-a281-f44b5f32e35f",
@@ -46,7 +66,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(量|估量|度量|測量|量度|量測|量身|估測|合算|掐算|推估)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(.+)?<ENTITY_num>[^<]+</ENTITY_num><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<等]+</(ACTION_verb|VerbP)>(.+)?<ENTITY_num>[^<]+</ENTITY_num><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>下</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
         "打了兩通電話": {
             "id": "9773357f-a700-4b8d-bb90-7fd2474520a0",

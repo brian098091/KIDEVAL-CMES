@@ -7,10 +7,18 @@
     },
     "user_defined": {
         "_asNoun": [
-            "杯子"
+            "佩佩豬",
+            "客人",
+            "杯子",
+            "盤子",
+            "菜市場",
+            "飛船",
+            "遊樂設施"
         ],
         "_asVerb": [
-            "下床"
+            "下床",
+            "便便",
+            "尿尿"
         ]
     },
     "utterance": {
@@ -18,25 +26,33 @@
             "id": "1ab93754-c011-4e94-b0de-7db94236e745",
             "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>的</FUNC_inner>",
             "lexy": [],
-            "pattern": "(.+)?<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)>$"
+            "pattern": "<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)>(?!<(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun|DetPhrase|num)|RANGE_(locality|period)|MODIFIER|ModifierP|LOCATION)>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun|DetPhrase|num)|RANGE_(locality|period)|MODIFIER|ModifierP|LOCATION)>)"
         },
         "我的了": {
             "id": "0e92f042-eabf-49f4-b11d-bcc7c50d69c5",
             "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><ASPECT>了</ASPECT>",
             "lexy": [],
-            "pattern": "(.+)?<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><ASPECT>了</ASPECT>"
+            "pattern": "<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><ASPECT>了</ASPECT>"
         },
         "我的喔": {
             "id": "b2e9ed05-08d6-42a8-8f50-c11e079435ce",
             "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><CLAUSE_particle>喔</CLAUSE_particle>",
             "lexy": [],
-            "pattern": "(.+)?<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><CLAUSE_particle>[^<]+</CLAUSE_particle>"
+            "pattern": "<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><CLAUSE_particle>[^<]+</CLAUSE_particle>"
         },
         "我的嗎": {
             "id": "0c31cc6b-3156-4532-bba9-829ace2946c4",
             "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><CLAUSE_YesNoQ>嗎</CLAUSE_YesNoQ>",
             "lexy": [],
-            "pattern": "(.+)?<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><CLAUSE_YesNoQ>[^<]+</CLAUSE_YesNoQ>"
+            "pattern": "<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><CLAUSE_YesNoQ>[^<]+</CLAUSE_YesNoQ>"
+        },
+        "用的是": {
+            "id": "5852fc8e-acc0-4841-b9e8-e9c1fedd2599",
+            "pos": "<ACTION_verb>用</ACTION_verb><FUNC_inner>的</FUNC_inner><AUX>是</AUX>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(用|使用|利用|採用|施用|活用|運用|假借|憑靠|中用|常用)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><AUX>是</AUX>"
         }
     },
     "alias": {},
