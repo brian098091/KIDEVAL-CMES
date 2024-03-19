@@ -7,28 +7,64 @@
     },
     "user_defined": {
         "_asNoun": [
-            "杯子"
+            "客人",
+            "杯子",
+            "菜市場",
+            "巧虎",
+            "東西",
+            "屋頂",
+            "炸彈",
+            "螺絲",
+            "車車",
+            "藥",
+            "風"
         ],
         "_asVerb": [
             "下床"
         ]
     },
     "utterance": {
-        "只要": {
-            "id": "263c32f8-2fde-4e69-9af1-b34c3ee1e2d4",
-            "pos": "<MODIFIER>只</MODIFIER><ACTION_verb>要</ACTION_verb>",
-            "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(要|想要|需要|想拿|想買|渴望|渴求|真要|得照|更要|要去)</(ACTION_verb|VerbP)>"
-            ],
-            "pattern": "<(MODIFIER|ModifierP)>只</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>要</(ACTION_verb|VerbP)>"
-        },
-        "因為下雨": {
-            "id": "ce82dc9b-9f45-442b-89b7-add17ac51d52",
-            "pos": "<FUNC_inter>因為</FUNC_inter><ACTION_verb>下雨</ACTION_verb>",
+        "如果下雨": {
+            "id": "75d33e84-a4eb-47f8-a12d-8dd939127ba7",
+            "pos": "<FUNC_inter>如果</FUNC_inter><ACTION_verb>下雨</ACTION_verb>",
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(下雨|降雨|降水|放晴|結霜|降雪|起霧|結冰|漲潮|開燈|下雪)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<FUNC_inter>(因為|所以|如果|除非|但是|否則|不過)</FUNC_inter>"
+            "pattern": "<FUNC_in(ner|ter)>(如果|除非|但是|否則|不過|可是|而且|然後|但)</FUNC_in(ner|ter)>"
+        },
+        "可以幫他聽聽": {
+            "id": "6c421f0a-b8d9-413f-8ade-f687760703d9",
+            "pos": "<MODAL>可以</MODAL><ACTION_verb>幫</ACTION_verb><ENTITY_pronoun>他</ENTITY_pronoun><ACTION_quantifiedVerb>聽聽</ACTION_quantifiedVerb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(幫|幫助|協助|扶助|援助|輔助|想幫|陪著|替|幫著|幫了)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<MODAL>可以</MODAL><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "因為下雨所以": {
+            "id": "dc13d87d-783d-4c8b-8d85-4c5c920af76b",
+            "pos": "<FUNC_inter>因為</FUNC_inter><ACTION_verb>下雨</ACTION_verb><FUNC_inter>所以</FUNC_inter>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(下雨|降雨|降水|漲潮|結霜|降雪|放晴|打雷|起霧|結冰|下雪)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<FUNC_inter>因為</FUNC_inter>(.+)?<FUNC_inter>所以</FUNC_inter>"
+        },
+        "只要下雨我就出門": {
+            "id": "94a092f8-f55b-4aee-906b-57f70d60bbed",
+            "pos": "<MODIFIER>只</MODIFIER><ACTION_verb>要</ACTION_verb><ACTION_verb>下雨</ACTION_verb><ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>就</FUNC_inner><ACTION_verb>出門</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(要|想要|需要|想拿|想買|渴望|渴求|真要|得照|更要|要去)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(下雨|降雨|降水|放晴|結霜|降雪|起霧|結冰|漲潮|開燈|下雪)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(出門|出走|分離|撤出|早退|溜走|漏掉|甩開|走出|走掉|走開)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(MODIFIER|ModifierP)>只</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>要</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "對可是你剛才沒有打到": {
+            "id": "4f0460c5-2f2e-40a4-b4a3-c77435bde6d2",
+            "pos": "<FUNC_inner>對</FUNC_inner><ENTITY_nouny>可</ENTITY_nouny><AUX>是</AUX><ENTITY_pronoun>你</ENTITY_pronoun><MODIFIER>剛才</MODIFIER><FUNC_negation>沒有</FUNC_negation><ACTION_lightVerb>打</ACTION_lightVerb><ACTION_verb>到</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(到|到了|到約|到受|到離|到包|到經過|到回|到隨|到死|到愛)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>可</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><AUX>是</AUX>"
         }
     },
     "alias": {},

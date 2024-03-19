@@ -64,6 +64,55 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["結果補語"].append(1)
             pass
         
+    if utterance == "收好了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["結果補語"].append(1)
+            pass
+
+    if utterance == "你閉上眼睛我要藏東西":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["結果補語"].append(1)
+            pass
+
+    if utterance == "我要這拆掉":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["結果補語"].append(1)
+            pass
+
+    if utterance == "我馬上做好":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["結果補語"].append(1)
+            pass
+
+    if utterance == "打到":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["結果補語"].append(1)
+            pass
+
+    if utterance == "用成這樣":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["結果補語"].append(1)
+            pass
+
+    if utterance == "那你就把這個打開":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["結果補語"].append(1)
+            pass
+
     if utterance == "收起來":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)

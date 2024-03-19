@@ -9,7 +9,15 @@
         "_asNoun": [
             "客人",
             "杯子",
-            "菜市場"
+            "菜市場",
+            "巧虎",
+            "東西",
+            "屋頂",
+            "炸彈",
+            "螺絲",
+            "車車",
+            "藥",
+            "風"
         ],
         "_asVerb": [
             "下床"
@@ -23,7 +31,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(用|使用|利用|採用|施用|活用|運用|假借|憑靠|中用|常用)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(踢|玩踢|經抽|踢進|踢了|傳接|打球|有棒|練完|投接|愛踢)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(用|給)</(ACTION_verb|VerbP)>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>|<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>(用|給|讓)</(ACTION_verb|VerbP)>(<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>)?(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>|<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "跟你講": {
             "id": "cfac5298-ff30-4e92-9d70-e84c97dbba19",
@@ -31,7 +39,16 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(講|主講|演講|講學|講授|講習|講話|講課|講述|交涉|公演)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<FUNC_conjunction>[^<]+</FUNC_conjunction>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+            "pattern": "<FUNC_conjunction>[^<]+</FUNC_conjunction>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<(ACTION_verb|VerbP)>[^<痛癢]+</(ACTION_verb|VerbP)>"
+        },
+        "往前面蓋": {
+            "id": "41e3ade0-fae1-44a9-a07e-e849d320e03a",
+            "pos": "<ACTION_verb>往</ACTION_verb><RANGE_locality>前面</RANGE_locality><ACTION_verb>蓋</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(往|行往|前往|沿著|通往|沿|直達|面向|駛進|駛入|轉到)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(蓋|罩住|蓋建|蓋了|拱頂|加蓋|鋪上|蓋起|蓋滿|拆下來|沾)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>往</(ACTION_verb|VerbP)>(<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "用這個看": {
             "id": "acd872f2-9a0b-4789-b58b-cca141a45cfc",
@@ -39,7 +56,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(用|使用|利用|採用|施用|活用|運用|假借|憑靠|中用|常用)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>用</(ACTION_verb|VerbP)><ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>看</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+            "pattern": "<(ACTION_verb|VerbP)>用</(ACTION_verb|VerbP)><ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>看</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
         "在睡前刷牙": {
             "id": "49b648e5-2477-40b8-b2dd-de12b1955e0a",
@@ -56,7 +73,24 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(休息|休憩|休整|安息|歇息|安眠|沉睡|睡覺|躺倒|酣眠|酣睡)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<FUNC_inner>[^<]+</FUNC_inner><LOCATION>[^<]+</LOCATION><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+            "pattern": "(?<!</(ACTION_verb)>)<FUNC_in(ner|ter)>(在|從)</FUNC_in(ner|ter)><LOCATION>[^<]+</LOCATION>(<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>|<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)><(ACTION_verb|VerbP)>去</(ACTION_verb|VerbP)>)"
+        },
+        "從綠色開始": {
+            "id": "171ca785-de10-432d-a535-57e6d7d9c7b7",
+            "pos": "<FUNC_inner>從</FUNC_inner><MODIFIER_color>綠色</MODIFIER_color><ACTION_verb>開始</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(開始|啟用|開創|停止了|停止|結束|展開|開始了)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<FUNC_in(ner|ter)>(在|從)</FUNC_in(ner|ter)><MODIFIER_color>[^<]+</MODIFIER_color><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "用來量體溫": {
+            "id": "43e4235f-7cd6-4b5a-992e-57b87102dbd6",
+            "pos": "<ACTION_verb>用來</ACTION_verb><ACTION_verb>量</ACTION_verb><ENTITY_nouny>體溫</ENTITY_nouny>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(用來|用|拿來|利用|為了|指用|使用|藉由|藉此|有用|當作)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(量|估量|度量|測量|量度|量測|量身|估測|合算|掐算|推估)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>用來</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "用這邊當桌": {
             "id": "f8824d6b-6dd9-407b-82b4-f6d15051bf67",
@@ -65,15 +99,29 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(用|使用|利用|採用|施用|活用|運用|假借|憑靠|有用|指用)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(當桌|)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>用</(ACTION_verb|VerbP)><LOCATION>[^<]+</LOCATION><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>用</(ACTION_verb|VerbP)><LOCATION>[^<]+</LOCATION><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "跟媽媽一樣": {
+            "id": "272a6422-1ad5-40f1-89c4-bc7665e0d793",
+            "pos": "<FUNC_conjunction>跟</FUNC_conjunction><ENTITY_pronoun>媽媽</ENTITY_pronoun><MODIFIER>一樣</MODIFIER>",
+            "lexy": [],
+            "pattern": "<FUNC_conjunction>跟</FUNC_conjunction>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>|<ENTITY_classifier>一樣</ENTITY_classifier>)"
+        },
+        "再重新蓋一個": {
+            "id": "48572c51-2c35-4415-8647-1ec1e655052c",
+            "pos": "<MODIFIER>再</MODIFIER><MODIFIER>重新</MODIFIER><ACTION_verb>蓋</ACTION_verb><ENTITY_classifier>一個</ENTITY_classifier>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(蓋|罩住|蓋建|蓋了|拱頂|加蓋|鋪上|蓋起|蓋滿|拆下來|沾)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(MODIFIER|ModifierP)>再</(MODIFIER|ModifierP)>(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "在桌子上寫字": {
-            "id": "acc352a5-d64b-43b2-82e6-f0c5d7bccfcc",
+            "id": "5ede63c7-8884-4717-bd61-3f579f429ad0",
             "pos": "<FUNC_inner>在</FUNC_inner><ENTITY_noun>桌子</ENTITY_noun><RANGE_locality>上</RANGE_locality><ACTION_verb>寫字</ACTION_verb>",
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(寫字|認字|握筆|畫畫|沾水|打字|寫|用筆|刷牙|書寫|寫板)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(FUNC_inner>[^<]+</FUNC_inner)>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?(<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+            "pattern": "(?<!</(ACTION_verb)>)<FUNC_in(ner|ter)>(在|從)</FUNC_in(ner|ter)>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?(<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "用這個跟你打": {
             "id": "79f67990-e582-4b73-bf36-91a91a275255",
@@ -81,7 +129,17 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(用|使用|利用|採用|施用|活用|運用|假借|憑靠|中用|常用)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>用</(ACTION_verb|VerbP)><ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>(<FUNC_conjunction>[^<]+</FUNC_conjunction>)?(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<ACTION_(lightVerb|verb|VerbP)>[^<]+</ACTION_(lightVerb|verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>用</(ACTION_verb|VerbP)><ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>(<FUNC_conjunction>[^<]+</FUNC_conjunction>)?(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<ACTION_(lightVerb|verb|VerbP)>[^<]+</ACTION_(lightVerb|verb|VerbP)>"
+        },
+        "用圓柱體這樣蓋上去": {
+            "id": "78e42904-4d00-42e3-bc5a-53cbe2d856f1",
+            "pos": "<ACTION_verb>用</ACTION_verb><MODIFIER>圓</MODIFIER><ENTITY_nounHead>柱體</ENTITY_nounHead><ENTITY_DetPhrase>這樣</ENTITY_DetPhrase><ACTION_verb>蓋</ACTION_verb><RANGE_locality>上</RANGE_locality><ACTION_verb>去</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(用|使用|利用|採用|施用|活用|運用|假借|憑靠|中用|常用)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(蓋|罩住|裹|拆下來|蓋了|鋪上|蓋滿|拱頂|沾|蓋起|加蓋)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(去|要去|回去|想去|去了|跑去|回來|跑來|趕去|出去|來)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>用</(ACTION_verb|VerbP)>(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         }
     },
     "alias": {},
