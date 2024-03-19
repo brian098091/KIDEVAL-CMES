@@ -7,17 +7,10 @@
     },
     "user_defined": {
         "_asNoun": [
-            "客人",
-            "杯子",
-            "菜市場",
-            "佩佩豬",
-            "盤子",
-            "飛船"
+            "杯子"
         ],
         "_asVerb": [
-            "下床",
-            "尿尿",
-            "便便"
+            "下床"
         ]
     },
     "utterance": {
@@ -25,7 +18,7 @@
             "id": "41dc1b3e-fde3-41f7-8be1-9fb9441ddc89",
             "pos": "<ENTITY_classifier>一瓶</ENTITY_classifier>",
             "lexy": [],
-            "pattern": "<ENTITY_classifier>[^<]*[^個樣]</ENTITY_classifier>"
+            "pattern": "<ENTITY_classifier>[^<]*[^個]</ENTITY_classifier>"
         },
         "多瓶": {
             "id": "3a7fc169-1bdb-420b-b4eb-3129fe916580",
@@ -33,19 +26,13 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(多|到多|更多|獲多|作多|分多|較多|受多|供多|處多|赴多)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>多</(ACTION_verb|VerbP)><ENTITY_classifier>[^<個樣]</ENTITY_classifier>"
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>多</(ACTION_verb|VerbP)><ENTITY_classifier>[^<個]</ENTITY_classifier>"
         },
         "那瓶": {
             "id": "3159a8e0-8103-4840-939b-d19efbb9ecc9",
             "pos": "<ENTITY_DetPhrase>那瓶</ENTITY_DetPhrase>",
             "lexy": [],
-            "pattern": "<ENTITY_DetPhrase>[這那某整][^<]*[^個樣]</ENTITY_DetPhrase>"
-        },
-        "幾塊錢": {
-            "id": "1d3fabc4-4a46-4d9c-ad20-007f6435b836",
-            "pos": "<CLAUSE_HowQ>幾</CLAUSE_HowQ><ENTITY_noun>塊錢</ENTITY_noun>",
-            "lexy": [],
-            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>塊錢</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+            "pattern": "<ENTITY_DetPhrase>[這那某整][^<]*[^個]</ENTITY_DetPhrase>"
         },
         "很大台": {
             "id": "2e651be0-9f3c-440f-bb65-1b5667bc199e",
@@ -57,7 +44,7 @@
             "id": "caf308c1-73d6-437c-9cb6-13c67ef3acad",
             "pos": "<DegreeP>很少</DegreeP><ENTITY_nounHead>瓶</ENTITY_nounHead>",
             "lexy": [],
-            "pattern": "<DegreeP>很少</DegreeP><(UserDefined|ENTITY_(nounHead))>[^個樣]+</(UserDefined|ENTITY_(nounHead))>"
+            "pattern": "<DegreeP>很少</DegreeP><(UserDefined|ENTITY_(nounHead))>[^個]+</(UserDefined|ENTITY_(nounHead))>"
         },
         "第二關": {
             "id": "50e27112-1045-4f0f-b4a7-110b4cef8abe",
@@ -66,12 +53,6 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(關|有關|關上|關心|關注|關涉|關緊|關門|關閉|倒閉|封閉)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>關</(ACTION_verb|VerbP)>"
-        },
-        "一樣東西": {
-            "id": "bc867c33-2633-4df2-bb6c-bcdaaeaf0b04",
-            "pos": "<ENTITY_classifier>一樣</ENTITY_classifier><ENTITY_noun>東西</ENTITY_noun>",
-            "lexy": [],
-            "pattern": "<ENTITY_classifier>([^<]+)?樣</ENTITY_classifier><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         }
     },
     "alias": {},
