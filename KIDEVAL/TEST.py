@@ -1,7 +1,7 @@
 import pandas as pd
 
 def convert_csv_to_dict(csv_file_path):
-    df = pd.read_csv(csv_file_path) 
+    df = pd.read_csv(csv_file_path)  # 直接跳过前两行
 
     structure_to_column = {
         '量-個': '名詞短語',
@@ -74,7 +74,7 @@ if __name__ == "__main__":
     diff_dict_c = {}
     diff_dict_w = {}
     with open('wrong.txt', 'w',encoding='utf-8') as f:
-        for i in range(500):
+        for i in range(1000):
             inputSTR =sentence_keys[i]
 
             from KIDEVAL import execLoki
@@ -90,8 +90,9 @@ if __name__ == "__main__":
                 if key in itemScoreDICT:
                     if value != itemScoreDICT[key]:
                         false_list.append(key)
-                        diff_dict_c[key] = value
+                        diff_dict_c[key] = sentence_dict[inputSTR][key]
                         diff_dict_w[key] = itemScoreDICT[key]
+                        
             if(len(false_list) > 0):
                 print(inputSTR,false_list,file=f)
                 print("Correct",diff_dict_c,file=f)
