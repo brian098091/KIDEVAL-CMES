@@ -53,6 +53,7 @@ import json
 import math
 import os
 import re
+import pandas as pd
 
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 
@@ -364,9 +365,18 @@ def testIntent():
     inputLIST = ['我的東西']
     testLoki(inputLIST, ['X_De_Y'])
     print("")
+    
+def clean_text_from_file(file_obj):
+
+    text = file_obj.read()
+    
+    cleaned_text = re.sub(r'[^\u4e00-\u9fa5\n]', '', text)
+    
+    return cleaned_text
 
 
 if __name__ == "__main__":
+    
     # 測試所有意圖
     #testIntent()
 
@@ -376,39 +386,54 @@ if __name__ == "__main__":
     # 設定參考資料
     # refDICT = {"key":[]} #refDICT 指定 key 需為字串 str，其值為一空列表 list
     refDICT = {
-        'X的': [],
-        'X的Y': [],
-        '動後介詞': [],
-        '存現句': [],
-        '帶連詞': [],
-        '感知/心理狀態': [],
-        '把字句': [],
-        '方位': [],
-        '結果補語': [],
-        '緊縮複句': [],
-        '被字句': [],
-        '趨向補語': [],
-        '連謂/兼語': [],
         '量-個': [],
         '量-特': [],
-        '體貌': []
-    }
+        'X的': [],
+        'X的Y': [],
+        '方位': [],
+        '體貌': [],
+        '結果補語': [],
+        '趨向補語': [],
+        '情態補語':[],
+        '可能補語':[],
+        '數量補語':[],
+        '動前介詞':[],
+        '動後介詞': [],
+        '把字句': [],
+        '被字句': [],
+        '存現句': [],
+        '連謂/兼語': [],
+        '帶連詞複句': [],
+        '緊縮複句': [],
+        '感知/心理狀態': []
+    }    
 
 
-    inputSTR = "有一個小朋友，早上起床，覺得肚子很餓，他下床，走到房間外面，他打開冰箱，拿出一瓶牛奶，把牛奶倒進杯子，拿起來喝，喝完了。講完了"
-    #inputSTR = open("./inputSTR.txt", "r", encoding="utf-8").read()
-    resultDICT = execLoki(content=inputSTR, splitLIST=splitLIST, refDICT=refDICT)
-    #pprint(resultDICT)
+    # inputSTR = "有一個小朋友，早上起床，覺得肚子很餓，他下床，走到房間外面，他打開冰箱，拿出一瓶牛奶，把牛奶倒進杯子，拿起來喝，喝完了。講完了"
+    # 使用示例
+    with open('./inputSTR.txt', 'r', encoding='utf-8') as f:
+        inputSTR = clean_text_from_file(f)
+    resultDICT = execLoki(content=inputSTR, splitLIST=splitLIST, refDICT=refDICT,filterLIST=filterLIST)
+
+
     itemScoreDICT = {k:sum(resultDICT[k]) for k in resultDICT}
     print("項目總分：")
     pprint(itemScoreDICT)
-
+    itemScoreSum = 0
+    categoryScoreSum = 0
+    for key,value in itemScoreDICT.items():
+        itemScoreSum = itemScoreSum + value
     print("=====")
     print("類型總分")
     categoryScoreDICT = deepcopy(itemScoreDICT)
-    for k, v in categoryScoreDICT.items():
-        if categoryScoreDICT[k]-2 >= 0:
-            categoryScoreDICT[k] = 2
+    for key,value in categoryScoreDICT.items():
+        if categoryScoreDICT[key]-2 >= 0:
+            categoryScoreDICT[key] = 2
         else:
             pass
+        categoryScoreSum = categoryScoreSum + categoryScoreDICT[key]
     pprint(categoryScoreDICT)
+    
+    print("項目總分：",itemScoreSum)
+    print("類型總分：",categoryScoreSum)
+   

@@ -7,26 +7,28 @@
     },
     "user_defined": {
         "_asNoun": [
-            "杯子"
+            "佩佩豬",
+            "客人",
+            "杯子",
+            "盤子",
+            "菜市場",
+            "飛船",
+            "遊樂設施"
         ],
         "_asVerb": [
-            "下床"
+            "下床",
+            "便便",
+            "尿尿"
         ]
     },
     "utterance": {
-        "在看": {
-            "id": "898ea019-d2b5-455b-aac7-9d3ae75e1a4e",
-            "pos": "<ASPECT>在</ASPECT><ACTION_verb>看</ACTION_verb>",
+        "在玩": {
+            "id": "1311d0b3-8322-4af2-8497-44e6aa3ba46e",
+            "pos": "<ASPECT>在</ASPECT><ACTION_verb>玩</ACTION_verb>",
             "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(看|探看|收看|看守|看戲|看望|看護|看顧|觀看|光顧|探望)</(ACTION_verb|VerbP)>"
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(玩|玩忽|玩狎|玩著|玩樂|買東西|散步|遊玩|打電動|玩了|玩耍)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<ASPECT>在</ASPECT><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
-        },
-        "好了": {
-            "id": "e65a0807-63e6-4d62-b4f5-9b986f95234c",
-            "pos": "<FUNC_degreeHead>好</FUNC_degreeHead><ASPECT>了</ASPECT>",
-            "lexy": [],
-            "pattern": "<FUNC_degreeHead>好</FUNC_degreeHead><ASPECT>了</ASPECT>"
+            "pattern": "<ASPECT>在</ASPECT>(.*?)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "有吃": {
             "id": "5fd34a11-a931-4bcd-9b08-abe344999048",
@@ -35,6 +37,12 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有吃|常吃|愛吃|想吃|吃了|吃|吃著|有喝|禁吃|改吃|有烤)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>有[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "可以了": {
+            "id": "0a8066e1-a5fb-448c-9085-fd2208576360",
+            "pos": "<MODAL>可以</MODAL><ASPECT>了</ASPECT>",
+            "lexy": [],
+            "pattern": "<MODAL>[^<]+</MODAL><ASPECT>了</ASPECT>$"
         },
         "喝完了": {
             "id": "00d7609b-c702-423f-8de0-a7527d90f2db",
@@ -46,15 +54,40 @@
         },
         "在尿尿": {
             "id": "19dcd977-c8c6-4161-be30-f41d874279a0",
-            "pos": "<FUNC_inner>在</FUNC_inner><ENTITY_nouny>尿尿</ENTITY_nouny>",
+            "pos": "<FUNC_inner>在</FUNC_inner><UserDefined>尿尿</UserDefined>",
             "lexy": [],
-            "pattern": "<FUNC_in(ner|ter)>在</FUNC_in(ner|ter)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov)|LOCATION|CLAUSE_WhyQ)>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov)|LOCATION|CLAUSE_WhyQ)>"
+            "pattern": "<FUNC_in(ner|ter)>在</FUNC_in(ner|ter)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>尿尿|便便</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
         "看一看": {
             "id": "7de2c383-cbcd-489a-847a-fceead6a8125",
             "pos": "<ACTION_quantifiedVerb>看一看</ACTION_quantifiedVerb>",
             "lexy": [],
-            "pattern": "<ACTION_quantifiedVerb>[^<]+</ACTION_quantifiedVerb>"
+            "pattern": "<ACTION_quantifiedVerb>([^<]+看|[^<]+一[^<]+)</ACTION_quantifiedVerb>"
+        },
+        "在跟我玩": {
+            "id": "47a9728b-e2fc-471e-9a23-e1df9317016c",
+            "pos": "<FUNC_inner>在</FUNC_inner><FUNC_conjunction>跟</FUNC_conjunction><ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>玩</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(玩|玩忽|玩狎|玩著|玩樂|買東西|散步|遊玩|打電動|玩了|玩耍)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<FUNC_in(ner|ter)>在</FUNC_in(ner|ter)>(<FUNC_conjunction>[^<]+</FUNC_conjunction>)?(.*?)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "黏起來了": {
+            "id": "7cab724f-6c63-45b4-95cd-cdef0d659e25",
+            "pos": "<ACTION_verb>黏起來</ACTION_verb><ASPECT>了</ASPECT>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(黏起來|覺起來|長排|解老|捏緊|舉站|念間|肩挑起|覺到|按同|端嵌)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(.*?)<ASPECT>了</ASPECT>$"
+        },
+        "我要切一切": {
+            "id": "0084f101-a68f-46f0-9c77-c542f241bf71",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>要</ACTION_verb><ACTION_verb>切</ACTION_verb><QUANTIFIER>一切</QUANTIFIER>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(要|想要|需要|想拿|想買|渴望|渴求|真要|得照|更要|要去)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(切|扎|更紮|有切|紮|有紮|闊勒|佩|更扎|方切|切著)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>切</(ACTION_verb|VerbP)><QUANTIFIER>一切</QUANTIFIER>"
         }
     },
     "alias": {},
