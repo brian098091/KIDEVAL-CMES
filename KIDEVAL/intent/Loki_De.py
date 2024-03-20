@@ -80,5 +80,11 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["X的"].append(1)
+            
+    if utterance == "長長的收進去":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["X的"].append(1)
 
     return resultDICT
