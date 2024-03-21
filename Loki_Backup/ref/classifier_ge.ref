@@ -8,12 +8,23 @@
     "user_defined": {
         "_asNoun": [
             "佩佩豬",
+            "叮咚",
             "客人",
+            "屋頂",
+            "巧虎",
             "杯子",
+            "東西",
+            "炸彈",
             "盤子",
             "菜市場",
+            "藥",
+            "螺絲",
+            "車車",
+            "遊樂設施",
+            "風",
             "飛船",
-            "遊樂設施"
+            "紅蘿蔔",
+            "桌子"
         ],
         "_asVerb": [
             "下床",
@@ -59,6 +70,14 @@
             "pos": "<DegreeP>很少</DegreeP><ENTITY_nounHead>個</ENTITY_nounHead>",
             "lexy": [],
             "pattern": "<DegreeP>[^<]+</DegreeP><(UserDefined|ENTITY_(nounHead))>個</(UserDefined|ENTITY_(nounHead))>"
+        },
+        "我們弄個胡蘿蔔 ": {
+            "id": "10c44092-ff13-4fc5-ac62-3f8f840a64d2",
+            "pos": "<ENTITY_pronoun>我們</ENTITY_pronoun><ACTION_verb>弄</ACTION_verb><ACTION_eventQuantifier>個</ACTION_eventQuantifier><ENTITY_noun>胡蘿蔔</ENTITY_noun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(弄|呼弄|唬弄|弄亂|弄糟|愚弄|瞎弄|亂來|亂搞|搞亂|搞砸)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><ACTION_eventQuantifier>個</ACTION_eventQuantifier>"
         }
     },
     "alias": {},

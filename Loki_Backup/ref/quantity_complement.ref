@@ -8,12 +8,23 @@
     "user_defined": {
         "_asNoun": [
             "佩佩豬",
+            "叮咚",
             "客人",
+            "屋頂",
+            "巧虎",
             "杯子",
+            "東西",
+            "炸彈",
             "盤子",
             "菜市場",
+            "藥",
+            "螺絲",
+            "車車",
+            "遊樂設施",
+            "風",
             "飛船",
-            "遊樂設施"
+            "紅蘿蔔",
+            "桌子"
         ],
         "_asVerb": [
             "下床",
@@ -22,6 +33,12 @@
         ]
     },
     "utterance": {
+        "再一次": {
+            "id": "0406e586-01c6-4c30-872d-e51688ef9b25",
+            "pos": "<MODIFIER>再</MODIFIER><ACTION_eventQuantifier>一次</ACTION_eventQuantifier>",
+            "lexy": [],
+            "pattern": "<(MODIFIER|ModifierP)>再</(MODIFIER|ModifierP)>(.*?)<ACTION_eventQuantifier>[^<]+</ACTION_eventQuantifier>"
+        },
         "再一點": {
             "id": "df20cd50-f2f4-4bf1-8dc1-61ef7ee9feb7",
             "pos": "<MODIFIER>再</MODIFIER><QUANTIFIER>一點</QUANTIFIER>",
@@ -58,7 +75,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(玩|玩忽|玩狎|玩著|玩樂|買東西|散步|遊玩|打電動|玩了|玩耍)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><ACTION_eventQuantifier>[^<個]+</ACTION_eventQuantifier>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(.*?)<ACTION_eventQuantifier>[^<個]+</ACTION_eventQuantifier>"
         },
         "量一下": {
             "id": "6771f4fb-21a8-4b4d-a281-f44b5f32e35f",
@@ -67,6 +84,22 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(量|估量|度量|測量|量度|量測|量身|估測|合算|掐算|推估)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "<(ACTION_verb|VerbP)>[^<等]+</(ACTION_verb|VerbP)>(.+)?<ENTITY_num>[^<]+</ENTITY_num><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>下</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "等一下啦": {
+            "id": "0a463359-2b86-4be1-bc79-868d3d49bf60",
+            "pos": "<ACTION_verb>等</ACTION_verb><ENTITY_num>一</ENTITY_num><ENTITY_oov>下</ENTITY_oov><CLAUSE_particle>啦</CLAUSE_particle>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(等|久等|稍等|等候|等到|等待|等第|等級|候補|安排|待遇)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>等</(ACTION_verb|VerbP)>(.+)?<ENTITY_num>一</ENTITY_num><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>下</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>)?(<FUNC_degreeHead>好</FUNC_degreeHead><ASPECT>了</ASPECT>)?(<CLAUSE_particle>[^<]+</CLAUSE_particle>)?$"
+        },
+        "等我一下啦": {
+            "id": "ac66042d-8e98-4b4f-8254-347692e970aa",
+            "pos": "<ACTION_verb>等</ACTION_verb><ENTITY_pronoun>我</ENTITY_pronoun><ACTION_eventQuantifier>一下</ACTION_eventQuantifier><CLAUSE_particle>啦</CLAUSE_particle>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(等|久等|稍等|等候|等到|等待|等第|等級|候補|安排|待遇)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>等</(ACTION_verb|VerbP)>(.*?)<ACTION_eventQuantifier>[^<]+</ACTION_eventQuantifier>(<CLAUSE_particle>[^<]+</CLAUSE_particle>)?$"
         },
         "打了兩通電話": {
             "id": "9773357f-a700-4b8d-bb90-7fd2474520a0",

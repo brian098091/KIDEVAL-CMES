@@ -8,12 +8,23 @@
     "user_defined": {
         "_asNoun": [
             "佩佩豬",
+            "叮咚",
             "客人",
+            "屋頂",
+            "巧虎",
             "杯子",
+            "東西",
+            "炸彈",
             "盤子",
             "菜市場",
+            "藥",
+            "螺絲",
+            "車車",
+            "遊樂設施",
+            "風",
             "飛船",
-            "遊樂設施"
+            "紅蘿蔔",
+            "桌子"
         ],
         "_asVerb": [
             "下床",
@@ -26,7 +37,7 @@
             "id": "41dc1b3e-fde3-41f7-8be1-9fb9441ddc89",
             "pos": "<ENTITY_classifier>一瓶</ENTITY_classifier>",
             "lexy": [],
-            "pattern": "<ENTITY_classifier>[^<]*[^個樣]</ENTITY_classifier>"
+            "pattern": "<ENTITY_classifier>[^<]*[^個樣門]</ENTITY_classifier>"
         },
         "多瓶": {
             "id": "3a7fc169-1bdb-420b-b4eb-3129fe916580",
