@@ -7,12 +7,27 @@
     },
     "user_defined": {
         "_asNoun": [
+            "佩佩豬",
+            "叮咚",
             "客人",
+            "屋頂",
+            "巧虎",
             "杯子",
-            "菜市場"
+            "東西",
+            "炸彈",
+            "盤子",
+            "菜市場",
+            "藥",
+            "螺絲",
+            "車車",
+            "遊樂設施",
+            "風",
+            "飛船"
         ],
         "_asVerb": [
-            "下床"
+            "下床",
+            "便便",
+            "尿尿"
         ]
     },
     "utterance": {
@@ -22,7 +37,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(拿出來|拿去|拿來|藏起來|放進去|收起來|拿起來|送出去|講出來|拿回來|翻出來)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<過不]+[上下進出回過起]?來</(ACTION_verb|VerbP)>"
+            "pattern": "(?<!<ACTION_verb>固定</ACTION_verb>)<(ACTION_verb|VerbP)>[^<過不拼收放做合黏綁關蓋包]+[上下進出回過起]?來</(ACTION_verb|VerbP)>"
         },
         "走進去": {
             "id": "e06b48d7-e0a0-4403-90c3-496984632124",
@@ -30,7 +45,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(走進去|坐到|坐下|躺下|走近|走進來|閉嘴|睡覺了|坐上去|抽了|睡覺)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<不]+[上下進出回過]?去</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<不要進出]+[上下進出回過]?去</(ACTION_verb|VerbP)>"
         },
         "走進門": {
             "id": "eda9db10-0e98-4017-9418-a805ee4eb120",
@@ -39,6 +54,14 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(走進|踏進|走進了|進到|走入|走出|走到|躲進|跑進|來到了|衝進)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "<(ACTION_verb|VerbP)>[^<]+(進|出)</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "飛不起來": {
+            "id": "aea3dad4-dc3a-4cc9-9e8e-f995a052e60e",
+            "pos": "<ACTION_verb>飛不起來</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(飛不起來|扭屁股|照做了|貪嘴|做窩|中暑了|想跳過|復合了|惹哭|釀醋|照做)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<過不拼收放做合黏綁關蓋包]+不[上下進出回過起](來|去)</(ACTION_verb|VerbP)>"
         },
         "走後門進去": {
             "id": "84b984b1-f09d-4b5e-80cc-4898990af403",

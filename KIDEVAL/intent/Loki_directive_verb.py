@@ -91,6 +91,12 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
+            resultDICT["趨向補語"].append(1)
+            
+    if utterance == "飛不起來":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
             resultDICT["趨向補語"].append(1)        
         
     return resultDICT
