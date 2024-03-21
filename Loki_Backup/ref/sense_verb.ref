@@ -7,23 +7,30 @@
     },
     "user_defined": {
         "_asNoun": [
+            "佩佩豬",
+            "叮咚",
             "客人",
+            "屋頂",
+            "巧虎",
             "杯子",
-            "菜市場"
+            "東西",
+            "炸彈",
+            "盤子",
+            "菜市場",
+            "藥",
+            "螺絲",
+            "車車",
+            "遊樂設施",
+            "風",
+            "飛船"
         ],
         "_asVerb": [
-            "下床"
+            "下床",
+            "便便",
+            "尿尿"
         ]
     },
     "utterance": {
-        "想換": {
-            "id": "6a0b898f-0e05-43a5-ba22-4281b5b9c57d",
-            "pos": "<ACTION_verb>想換</ACTION_verb>",
-            "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(想換|想找|得找|辭掉了|做完了|換了|想睡|嫁了|失業了|丟了|常換)</(ACTION_verb|VerbP)>"
-            ],
-            "pattern": "<(ACTION_verb|VerbP)>想[^<]+</(ACTION_verb|VerbP)>"
-        },
         "看到": {
             "id": "4ba64392-3325-4473-835e-b3e65934c323",
             "pos": "<ACTION_verb>看到</ACTION_verb>",
@@ -46,7 +53,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(覺得|察覺|感覺|感覺到|懂得|覺察|企盼|估摸|假想|假設|冥想)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(知道|以為|認為|想|想要|覺得|記得|希望|發現|發覺)</(ACTION_verb|VerbP)>"
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(知道|以為|認為|想|覺得|記得|希望|發現|發覺)</(ACTION_verb|VerbP)>"
         },
         "猜猜看": {
             "id": "3a4591e5-26dc-4fd4-83d5-f597bb3c9bfe",
