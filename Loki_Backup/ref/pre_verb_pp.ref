@@ -7,20 +7,27 @@
     },
     "user_defined": {
         "_asNoun": [
+            "佩佩豬",
+            "叮咚",
             "客人",
-            "杯子",
-            "菜市場",
-            "巧虎",
-            "東西",
             "屋頂",
+            "巧虎",
+            "杯子",
+            "東西",
             "炸彈",
+            "盤子",
+            "菜市場",
+            "藥",
             "螺絲",
             "車車",
-            "藥",
-            "風"
+            "遊樂設施",
+            "風",
+            "飛船"
         ],
         "_asVerb": [
-            "下床"
+            "下床",
+            "便便",
+            "尿尿"
         ]
     },
     "utterance": {
@@ -31,7 +38,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(用|使用|利用|採用|施用|活用|運用|假借|憑靠|中用|常用)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(踢|玩踢|經抽|踢進|踢了|傳接|打球|有棒|練完|投接|愛踢)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>(用|給|讓)</(ACTION_verb|VerbP)>(<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>)?(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>|<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>(用|給|讓)</(ACTION_verb|VerbP)>(<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>)?(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>|<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "跟你講": {
             "id": "cfac5298-ff30-4e92-9d70-e84c97dbba19",
@@ -39,7 +46,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(講|主講|演講|講學|講授|講習|講話|講課|講述|交涉|公演)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<FUNC_conjunction>[^<]+</FUNC_conjunction>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<(ACTION_verb|VerbP)>[^<痛癢]+</(ACTION_verb|VerbP)>"
+            "pattern": "(?<!</ENTITY_pronoun>)(?<!</(ACTION_verb)>)<FUNC_conjunction>[^<]+</FUNC_conjunction>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<(ACTION_verb|VerbP)>[^<痛癢]+</(ACTION_verb|VerbP)>"
         },
         "往前面蓋": {
             "id": "41e3ade0-fae1-44a9-a07e-e849d320e03a",
@@ -81,7 +88,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(開始|啟用|開創|停止了|停止|結束|展開|開始了)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<FUNC_in(ner|ter)>(在|從)</FUNC_in(ner|ter)><MODIFIER_color>[^<]+</MODIFIER_color><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+            "pattern": "(?<!</(ACTION_verb)>)<FUNC_in(ner|ter)>(在|從)</FUNC_in(ner|ter)>(.+?)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "用來量體溫": {
             "id": "43e4235f-7cd6-4b5a-992e-57b87102dbd6",
@@ -105,7 +112,7 @@
             "id": "272a6422-1ad5-40f1-89c4-bc7665e0d793",
             "pos": "<FUNC_conjunction>跟</FUNC_conjunction><ENTITY_pronoun>媽媽</ENTITY_pronoun><MODIFIER>一樣</MODIFIER>",
             "lexy": [],
-            "pattern": "<FUNC_conjunction>跟</FUNC_conjunction>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>|<ENTITY_classifier>一樣</ENTITY_classifier>)"
+            "pattern": "<FUNC_conjunction>跟</FUNC_conjunction>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?<(MODIFIER|ModifierP)>一樣</(MODIFIER|ModifierP)>"
         },
         "再重新蓋一個": {
             "id": "48572c51-2c35-4415-8647-1ec1e655052c",
@@ -113,7 +120,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(蓋|罩住|蓋建|蓋了|拱頂|加蓋|鋪上|蓋起|蓋滿|拆下來|沾)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(MODIFIER|ModifierP)>再</(MODIFIER|ModifierP)>(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+            "pattern": "(?<!<ENTITY_oov>下</ENTITY_oov>)(?<!</ACTION_verb>)<(MODIFIER|ModifierP)>再</(MODIFIER|ModifierP)>(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(?!<FUNC_determiner>)"
         },
         "在桌子上寫字": {
             "id": "5ede63c7-8884-4717-bd61-3f579f429ad0",
