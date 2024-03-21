@@ -1,3 +1,4 @@
 account.info
 inputSTR.txt
 .DS_*
+__pycache__
