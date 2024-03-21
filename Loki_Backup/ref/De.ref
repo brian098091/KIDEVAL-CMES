@@ -8,12 +8,23 @@
     "user_defined": {
         "_asNoun": [
             "佩佩豬",
+            "叮咚",
             "客人",
+            "屋頂",
+            "巧虎",
             "杯子",
+            "東西",
+            "炸彈",
             "盤子",
             "菜市場",
+            "藥",
+            "螺絲",
+            "車車",
+            "遊樂設施",
+            "風",
             "飛船",
-            "遊樂設施"
+            "紅蘿蔔",
+            "桌子"
         ],
         "_asVerb": [
             "下床",
@@ -53,6 +64,12 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(用|使用|利用|採用|施用|活用|運用|假借|憑靠|中用|常用)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><AUX>是</AUX>"
+        },
+        "長長的收進去": {
+            "id": "544751e4-fe20-49da-8498-76062b5b0bd0",
+            "pos": "<MODIFIER>長長</MODIFIER><FUNC_inner>的</FUNC_inner><ENTITY_nouny>收進去</ENTITY_nouny>",
+            "lexy": [],
+            "pattern": "<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+進去</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         }
     },
     "alias": {},

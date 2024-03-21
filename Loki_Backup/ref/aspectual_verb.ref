@@ -8,12 +8,23 @@
     "user_defined": {
         "_asNoun": [
             "佩佩豬",
+            "叮咚",
             "客人",
+            "屋頂",
+            "巧虎",
             "杯子",
+            "東西",
+            "炸彈",
             "盤子",
             "菜市場",
+            "藥",
+            "螺絲",
+            "車車",
+            "遊樂設施",
+            "風",
             "飛船",
-            "遊樂設施"
+            "紅蘿蔔",
+            "桌子"
         ],
         "_asVerb": [
             "下床",
@@ -30,19 +41,11 @@
             ],
             "pattern": "<ASPECT>在</ASPECT>(.*?)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
-        "有吃": {
-            "id": "5fd34a11-a931-4bcd-9b08-abe344999048",
-            "pos": "<ACTION_verb>有吃</ACTION_verb>",
-            "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有吃|常吃|愛吃|想吃|吃了|吃|吃著|有喝|禁吃|改吃|有烤)</(ACTION_verb|VerbP)>"
-            ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>有[^<]+</(ACTION_verb|VerbP)>"
-        },
         "可以了": {
             "id": "0a8066e1-a5fb-448c-9085-fd2208576360",
             "pos": "<MODAL>可以</MODAL><ASPECT>了</ASPECT>",
             "lexy": [],
-            "pattern": "<MODAL>[^<]+</MODAL><ASPECT>了</ASPECT>$"
+            "pattern": "<MODAL>[^<]+</MODAL><ASPECT>了</ASPECT>"
         },
         "喝完了": {
             "id": "00d7609b-c702-423f-8de0-a7527d90f2db",
@@ -72,13 +75,19 @@
             ],
             "pattern": "<FUNC_in(ner|ter)>在</FUNC_in(ner|ter)>(<FUNC_conjunction>[^<]+</FUNC_conjunction>)?(.*?)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
+        "沒警衛了": {
+            "id": "82ac173c-75ee-443b-8675-5c9a6f6a50c3",
+            "pos": "<FUNC_negation>沒</FUNC_negation><ENTITY_nouny>警衛</ENTITY_nouny><ASPECT>了</ASPECT>",
+            "lexy": [],
+            "pattern": "<FUNC_negation>沒*[^<]+</FUNC_negation><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><ASPECT>了+</ASPECT>"
+        },
         "黏起來了": {
             "id": "7cab724f-6c63-45b4-95cd-cdef0d659e25",
             "pos": "<ACTION_verb>黏起來</ACTION_verb><ASPECT>了</ASPECT>",
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(黏起來|覺起來|長排|解老|捏緊|舉站|念間|肩挑起|覺到|按同|端嵌)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(.*?)<ASPECT>了</ASPECT>$"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(.*?)<ASPECT>了</ASPECT>"
         },
         "我要切一切": {
             "id": "0084f101-a68f-46f0-9c77-c542f241bf71",

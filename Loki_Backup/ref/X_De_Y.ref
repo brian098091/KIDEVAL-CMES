@@ -8,12 +8,23 @@
     "user_defined": {
         "_asNoun": [
             "佩佩豬",
+            "叮咚",
             "客人",
+            "屋頂",
+            "巧虎",
             "杯子",
+            "東西",
+            "炸彈",
             "盤子",
             "菜市場",
+            "藥",
+            "螺絲",
+            "車車",
+            "遊樂設施",
+            "風",
             "飛船",
-            "遊樂設施"
+            "紅蘿蔔",
+            "桌子"
         ],
         "_asVerb": [
             "下床",
@@ -26,7 +37,23 @@
             "id": "8082291e-9ab7-4ade-8d3c-c2b1a02d8ae7",
             "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><ENTITY_noun>東西</ENTITY_noun>",
             "lexy": [],
-            "pattern": "(?<!</MODIFIER>)(?<!</Verb_P>)(?<!</ModifierP>)(?<!</ACTION_verb>)<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun|DetPhrase|num)|RANGE_(locality|period)|MODIFIER|ModifierP|LOCATION)>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun|DetPhrase|num)|RANGE_(locality|period)|MODIFIER|ModifierP|LOCATION)>"
+            "pattern": "(?<!</Verb_P>)(?<!</ACTION_verb>)<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun|DetPhrase|num)|RANGE_(locality|period)|MODIFIER|ModifierP|LOCATION)>[^<有進去也]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun|DetPhrase|num)|RANGE_(locality|period)|MODIFIER|ModifierP|LOCATION)>"
+        },
+        "開心的跑著": {
+            "id": "960bbdf3-1c69-4682-9c4b-e6d9f59e3b86",
+            "pos": "<MODIFIER>開心</MODIFIER><FUNC_inner>的</FUNC_inner><VerbP>跑著</VerbP>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(跑著|走著|發愣|踩著|跑起來|繞了|滾到|跳來|呆坐|走去|望著)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "放出來的玩具": {
+            "id": "84ebbe6e-e754-427e-9255-1b7027c61657",
+            "pos": "<ACTION_verb>放出來</ACTION_verb><FUNC_inner>的</FUNC_inner><ENTITY_noun>玩具</ENTITY_noun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(放出來|救出來|關起來|抓起來|推下去|拉出來|抓回|送出去|吃掉了|打昏|丟到)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         }
     },
     "alias": {},
