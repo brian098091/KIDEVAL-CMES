@@ -7,12 +7,27 @@
     },
     "user_defined": {
         "_asNoun": [
+            "佩佩豬",
+            "叮咚",
+            "客人",
+            "屋頂",
+            "巧虎",
             "杯子",
+            "東西",
+            "炸彈",
+            "盤子",
             "菜市場",
-            "客人"
+            "藥",
+            "螺絲",
+            "車車",
+            "遊樂設施",
+            "風",
+            "飛船"
         ],
         "_asVerb": [
-            "下床"
+            "下床",
+            "便便",
+            "尿尿"
         ]
     },
     "utterance": {
@@ -28,7 +43,19 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>有</(ACTION_verb|VerbP)>(<ENTITY_classifier>[^<]+</ENTITY_classifier>|<DegreeP>很多</DegreeP>)"
+            "pattern": "(?<!</ACTION_verb>)(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>有</(ACTION_verb|VerbP)>(<ENTITY_classifier>[^<]+</ENTITY_classifier>|<DegreeP>很多</DegreeP>)"
+        },
+        "還有車": {
+            "id": "d045be5d-eee9-467d-b21c-3aae65d3cfd2",
+            "pos": "<FUNC_conjunction>還有</FUNC_conjunction><ENTITY_noun>車</ENTITY_noun>",
+            "lexy": [],
+            "pattern": "<FUNC_conjunction>還有</FUNC_conjunction><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "還有一個": {
+            "id": "b59b862f-7419-46c8-be1b-fb315a12db8f",
+            "pos": "<FUNC_conjunction>還有</FUNC_conjunction><ENTITY_classifier>一個</ENTITY_classifier>",
+            "lexy": [],
+            "pattern": "<FUNC_conjunction>還有</FUNC_conjunction>(<ENTITY_classifier>[^<]+</ENTITY_classifier>|<DegreeP>很多</DegreeP>)"
         },
         "住了很多公主": {
             "id": "d04c6c17-7da4-4514-998e-774ef4abff35",
@@ -37,6 +64,16 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(住了|待了|居住了|坐了|等待了|躺了|度過了|住|逗留了|停留了|休息了)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+了</(ACTION_verb|VerbP)>(<ENTITY_classifier>[^<]+</ENTITY_classifier>|<DegreeP>很多</DegreeP>)"
+        },
+        "有車要進來了": {
+            "id": "77a865ad-4afe-4f05-a1c5-cd2b20a746d7",
+            "pos": "<ACTION_verb>有</ACTION_verb><ENTITY_noun>車</ENTITY_noun><ACTION_verb>要</ACTION_verb><VerbP>進來了</VerbP>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(要|想要|需要|想拿|想買|渴望|渴求|餓了|得照|需|更要)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(進來了|進入|進去|上來|下來|來到|供認|前來|回來|承認|招認)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>有</(ACTION_verb|VerbP)>(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>|<FUNC_inner>的</FUNC_inner>)*?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
         "地上躺著一隻狗": {
             "id": "5df2f194-31d2-4740-a0e5-653b3b376c3d",

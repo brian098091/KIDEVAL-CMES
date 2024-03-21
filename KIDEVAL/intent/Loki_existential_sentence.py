@@ -73,6 +73,24 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
+            resultDICT["存現句"].append(1)
+            
+    if utterance == "還有車":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["存現句"].append(1)
+            
+    if utterance == "還有一個":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["存現句"].append(1)
+            
+    if utterance == "有車要進來了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
             resultDICT["存現句"].append(1)        
 
     return resultDICT
