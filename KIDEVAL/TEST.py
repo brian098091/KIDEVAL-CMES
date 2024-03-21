@@ -1,7 +1,7 @@
 import pandas as pd
 
 def convert_csv_to_dict(csv_file_path):
-    df = pd.read_csv(csv_file_path) 
+    df = pd.read_csv(csv_file_path)  # 直接跳过前两行
 
     structure_to_column = {
         '量-個': '名詞短語',
@@ -92,6 +92,7 @@ if __name__ == "__main__":
                         false_list.append(key)
                         diff_dict_c[key] = value
                         diff_dict_w[key] = itemScoreDICT[key]
+                        
             if(len(false_list) > 0):
                 print(inputSTR,false_list,file=f)
                 print("Correct",diff_dict_c,file=f)

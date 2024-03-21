@@ -87,6 +87,20 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["帶連詞複句"].append(1)
             pass
 
+    if utterance == "下雨然後":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+            pass
+
+    if utterance == "但都不知道在那":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+            pass
+
     if utterance == "因為下雨":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
