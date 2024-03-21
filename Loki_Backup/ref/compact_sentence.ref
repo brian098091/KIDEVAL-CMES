@@ -98,7 +98,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(跳|彈跳|跳出|跳動|跳級|跳躍|跳進|跳閘|跳電|蹦跳|暴漲)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(過來|過來了|回來|出去|出來|回去|進來|出來了|跑出來|下來|上來)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<要]+</(ACTION_verb|VerbP)>(.*?)<(MODIFIER|ModifierP)>[再又]</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<要]+</(ACTION_verb|VerbP)>(?!<(ACTION_verb|VerbP)>等</(ACTION_verb|VerbP)><ENTITY_num>一</ENTITY_num><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>下</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)(.*?)<(MODIFIER|ModifierP)>[再又]</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "這我的這也是你的": {
             "id": "f921f678-0177-4db8-a627-81ac1f07e68b",
