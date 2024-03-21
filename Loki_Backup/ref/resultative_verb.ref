@@ -37,7 +37,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(剪掉|修剪|刪剪|剪成|剪接|剪斷|剪裁|裁剪|中斷|分割|切割)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>剪掉</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>剪掉(了)?</(ACTION_verb|VerbP)>"
         },
         "打到": {
             "id": "30d61676-60b1-471a-ac5c-752ed8fb7aa0",
@@ -86,7 +86,15 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(固定|綁定|訂定|設定|主持|依附|創記錄|創造|安排|安放|安設)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(起來|起來了|下來|開來|出來|拉出來|弄得|拿出來|變成|出去|動到)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<靠站飛來用去玩退回進開跳剪到要掉進出病講痛傷看聽聞吃喝摸等坐知行斷睡想]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>(起來|倒|回去)</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<靠站飛來去玩退回進開跳剪到要掉進出病講痛傷看聽聞吃喝摸等坐知行斷睡想]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>(起來|倒|回去)</(ACTION_verb|VerbP)>"
+        },
+        "換下一個": {
+            "id": "85a55ee1-238c-4b64-8dcf-56aabcf0538d",
+            "pos": "<ACTION_verb>換下</ACTION_verb><ENTITY_classifier>一個</ENTITY_classifier>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(換下|換出|罰下|炒魷魚|打爆|抬出|擋出|踢出|打飛|打暈|刷掉)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>換(下|上)</(ACTION_verb|VerbP)><ENTITY_classifier>[^<]+</ENTITY_classifier>"
         },
         "用成這樣": {
             "id": "10051ed8-f85f-497c-9d50-529a2696a82c",
