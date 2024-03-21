@@ -55,11 +55,23 @@
             ],
             "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(知道|以為|認為|想|覺得|記得|希望|發現|發覺)</(ACTION_verb|VerbP)>"
         },
+        "猜一猜": {
+            "id": "4fbf4faa-cc8b-4b45-9ca0-051dc6cdd557",
+            "pos": "<ACTION_quantifiedVerb>猜一猜</ACTION_quantifiedVerb>",
+            "lexy": [],
+            "pattern": "<ACTION_quantifiedVerb>[猜想]一[猜想]</ACTION_quantifiedVerb>"
+        },
         "猜猜看": {
             "id": "3a4591e5-26dc-4fd4-83d5-f597bb3c9bfe",
             "pos": "<ACTION_quantifiedVerb>猜猜看</ACTION_quantifiedVerb>",
             "lexy": [],
-            "pattern": "<ACTION_quantifiedVerb>[^<拚拼用]{2,2}看</ACTION_quantifiedVerb>"
+            "pattern": "<ACTION_quantifiedVerb>[猜想]{2,2}看</ACTION_quantifiedVerb>"
+        },
+        "猜看看": {
+            "id": "486d8783-7084-4623-a796-5eebfddf4fef",
+            "pos": "<ACTION_quantifiedVerb>猜看看</ACTION_quantifiedVerb>",
+            "lexy": [],
+            "pattern": "<ACTION_quantifiedVerb>[猜想]看看</ACTION_quantifiedVerb>"
         }
     },
     "alias": {},
