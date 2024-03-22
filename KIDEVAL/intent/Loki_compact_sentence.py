@@ -184,6 +184,69 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["緊縮複句"].append(1)
             pass
 
+    if utterance == "這個不是真的這樣子就不可以進來":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["緊縮複句"].append(1)
+            pass
+
+    if utterance == "一個再給我拜託一個再給我":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["緊縮複句"].append(1)
+            pass
+
+    if utterance == "倒掉就重新做啊":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["緊縮複句"].append(1)
+            pass
+
+    if utterance == "再一個直列的就可以":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["緊縮複句"].append(1)
+            pass
+
+    if utterance == "叠一個就夠":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["緊縮複句"].append(1)
+            pass
+
+    if utterance == "就把它固定起來就不是了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["緊縮複句"].append(1)
+            pass
+
+    if utterance == "沒關係吃一口就好":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["緊縮複句"].append(1)
+            pass
+
+    if utterance == "用好之後就高空作業":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["緊縮複句"].append(1)
+            pass
+
+    if utterance == "那放假以後再過來":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["緊縮複句"].append(1)
+            pass
+
     if utterance == "越挖越大":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
