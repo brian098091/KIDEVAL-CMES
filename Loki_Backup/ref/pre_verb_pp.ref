@@ -22,12 +22,32 @@
             "車車",
             "遊樂設施",
             "風",
-            "飛船"
+            "飛船",
+            "摩天輪",
+            "旋轉木馬",
+            "長方形",
+            "圓筒形",
+            "三角形",
+            "彎彎形",
+            "圓柱體",
+            "屋頂",
+            "漢堡排",
+            "人行道",
+            "縫縫",
+            "眼鏡",
+            "柱子",
+            "圈圈",
+            "發高燒",
+            "喝開水",
+            "小熊維尼",
+            "橋"
         ],
         "_asVerb": [
             "下床",
             "便便",
-            "尿尿"
+            "尿尿",
+            "流血",
+            "闖關"
         ]
     },
     "utterance": {
@@ -46,7 +66,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(講|主講|演講|講學|講授|講習|講話|講課|講述|交涉|公演)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</ENTITY_pronoun>)(?<!</(ACTION_verb)>)<FUNC_conjunction>[^<]+</FUNC_conjunction>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<(ACTION_verb|VerbP)>[^<痛癢]+</(ACTION_verb|VerbP)>"
+            "pattern": "(?<!</ENTITY_pronoun>)(?<!</(ACTION_verb)>)<FUNC_conjunction>跟</FUNC_conjunction>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<(ACTION_verb|VerbP)>[^<痛癢]+</(ACTION_verb|VerbP)>"
         },
         "往前面蓋": {
             "id": "41e3ade0-fae1-44a9-a07e-e849d320e03a",
@@ -88,7 +108,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(開始|啟用|開創|停止了|停止|結束|展開|開始了)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</(ACTION_verb)>)<FUNC_in(ner|ter)>(在|從)</FUNC_in(ner|ter)>(.+?)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+            "pattern": "(?<!</(ACTION_verb)>)(<(ACTION_verb|VerbP)>要</(ACTION_verb|VerbP)>)?<FUNC_inner>[在從]</FUNC_inner>(.+?)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "用來量體溫": {
             "id": "43e4235f-7cd6-4b5a-992e-57b87102dbd6",
@@ -108,19 +128,14 @@
             ],
             "pattern": "<(ACTION_verb|VerbP)>用</(ACTION_verb|VerbP)><LOCATION>[^<]+</LOCATION><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
-        "跟媽媽一樣": {
-            "id": "272a6422-1ad5-40f1-89c4-bc7665e0d793",
-            "pos": "<FUNC_conjunction>跟</FUNC_conjunction><ENTITY_pronoun>媽媽</ENTITY_pronoun><MODIFIER>一樣</MODIFIER>",
-            "lexy": [],
-            "pattern": "<FUNC_conjunction>跟</FUNC_conjunction>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?<(MODIFIER|ModifierP)>一樣</(MODIFIER|ModifierP)>"
-        },
-        "再重新蓋一個": {
-            "id": "48572c51-2c35-4415-8647-1ec1e655052c",
-            "pos": "<MODIFIER>再</MODIFIER><MODIFIER>重新</MODIFIER><ACTION_verb>蓋</ACTION_verb><ENTITY_classifier>一個</ENTITY_classifier>",
+        "他要跟他結婚": {
+            "id": "53ed0955-eaef-4a8f-b866-7811ca476b51",
+            "pos": "<ENTITY_pronoun>他</ENTITY_pronoun><ACTION_verb>要</ACTION_verb><FUNC_conjunction>跟</FUNC_conjunction><ENTITY_pronoun>他</ENTITY_pronoun><ACTION_verb>結婚</ACTION_verb>",
             "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(蓋|罩住|蓋建|蓋了|拱頂|加蓋|鋪上|蓋起|蓋滿|拆下來|沾)</(ACTION_verb|VerbP)>"
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(要|想要|需要|想拿|想買|渴望|渴求|餓了|得照|需|更要)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(結婚|結縭|結褵|結親|下嫁|迎娶|結婚了|復合|同居|離婚|交往)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!<ENTITY_oov>下</ENTITY_oov>)(?<!</ACTION_verb>)<(MODIFIER|ModifierP)>再</(MODIFIER|ModifierP)>(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(?!<FUNC_determiner>)"
+            "pattern": "<(ACTION_verb|VerbP)>要</(ACTION_verb|VerbP)><FUNC_conjunction>[^<]+</FUNC_conjunction>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "在桌子上寫字": {
             "id": "5ede63c7-8884-4717-bd61-3f579f429ad0",
@@ -138,6 +153,14 @@
             ],
             "pattern": "<(ACTION_verb|VerbP)>用</(ACTION_verb|VerbP)><ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>(<FUNC_conjunction>[^<]+</FUNC_conjunction>)?(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<ACTION_(lightVerb|verb|VerbP)>[^<]+</ACTION_(lightVerb|verb|VerbP)>"
         },
+        "然後在河的另一端": {
+            "id": "905b84cc-66f8-4ae6-abda-aa7d89bbe32d",
+            "pos": "<FUNC_inter>然後</FUNC_inter><FUNC_inner>在</FUNC_inner><ENTITY_nouny>河</ENTITY_nouny><FUNC_inner>的</FUNC_inner><MODIFIER>另</MODIFIER><ENTITY_num>一</ENTITY_num><ACTION_verb>端</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(端|佩帶|夾帶|帶病|帶走|承接|挾帶|攜帶|肩扛|背負|負載)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>河</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<ENTITY_num>一</ENTITY_num><(ACTION_verb|VerbP)>端</(ACTION_verb|VerbP)>"
+        },
         "用圓柱體這樣蓋上去": {
             "id": "78e42904-4d00-42e3-bc5a-53cbe2d856f1",
             "pos": "<ACTION_verb>用</ACTION_verb><MODIFIER>圓</MODIFIER><ENTITY_nounHead>柱體</ENTITY_nounHead><ENTITY_DetPhrase>這樣</ENTITY_DetPhrase><ACTION_verb>蓋</ACTION_verb><RANGE_locality>上</RANGE_locality><ACTION_verb>去</ACTION_verb>",
@@ -147,6 +170,17 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(去|要去|回去|想去|去了|跑去|回來|跑來|趕去|出去|來)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "<(ACTION_verb|VerbP)>用</(ACTION_verb|VerbP)>(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "然後你從前面做過來的時候要往上蓋": {
+            "id": "86110196-264d-4448-a9b5-594107a689c2",
+            "pos": "<FUNC_inter>然後</FUNC_inter><ENTITY_pronoun>你</ENTITY_pronoun><TIME_justtime>從前</TIME_justtime><ENTITY_oov>面</ENTITY_oov><VerbP>做過</VerbP><ACTION_verb>來</ACTION_verb><FUNC_inner>的</FUNC_inner><TIME_justtime>時候</TIME_justtime><ACTION_verb>要</ACTION_verb><FUNC_inner>往</FUNC_inner><RANGE_locality>上</RANGE_locality><ACTION_verb>蓋</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(做過|作過|幹過|當過|做了|從事過|遇過|進行過|嘗試過|參與過|找過)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(來|上來|下來|來到|前來|回來|進來|來語|端來|出來|值來)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(要|想要|需要|想拿|想買|渴望|渴求|真要|得照|更要|要去)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(蓋|罩住|蓋建|蓋了|拱頂|加蓋|鋪上|蓋起|蓋滿|拆下來|沾)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(<TIME_(holiday|justtime|day|week|month|season|year|decade)>從前</TIME_(holiday|justtime|day|week|month|season|year|decade)>){1,10}<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>面</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         }
     },
     "alias": {},
