@@ -37,33 +37,40 @@
             "眼鏡",
             "柱子",
             "圈圈",
-            "發高燒",
-            "喝開水",
             "小熊維尼",
-            "橋"
+            "橋",
+            "溜滑梯",
+            "爸比",
+            "憤怒鳥",
+            "眼鏡"
         ],
         "_asVerb": [
             "下床",
             "便便",
             "尿尿",
             "流血",
-            "闖關"
+            "闖關",
+            "發高燒",
+            "喝開水"
         ]
     },
     "utterance": {
-        "然後": {
-            "id": "6063e6a1-671f-4aea-a48f-bac55aa438fd",
-            "pos": "<FUNC_inter>然後</FUNC_inter>",
-            "lexy": [],
-            "pattern": "(?<!.)<FUNC_in(ner|ter)>然後</FUNC_in(ner|ter)>"
-        },
         "如果下雨": {
             "id": "598300e1-c797-45f3-b3c6-fb7136390fea",
             "pos": "<FUNC_inter>如果</FUNC_inter><ACTION_verb>下雨</ACTION_verb>",
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(下雨|降雨|降水|放晴|結霜|降雪|起霧|結冰|漲潮|開燈|下雪)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<FUNC_in(ner|ter)>(如果|除非|但是|否則|不過|可是|而且|但|因為|所以)</FUNC_in(ner|ter)>"
+            "pattern": "<FUNC_in(ner|ter)>(如果|除非|但是|否則|不過|而且|但|因為|所以|可是)</FUNC_in(ner|ter)>(.*?)(<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>|<FUNC_negation>[^<]+有</FUNC_negation>)"
+        },
+        "下雨然後放晴": {
+            "id": "798d004c-ad72-43fa-ae9f-351947931ea6",
+            "pos": "<ACTION_verb>下雨</ACTION_verb><FUNC_inter>然後</FUNC_inter><ACTION_verb>放晴</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(下雨|降雨|降水|放晴|結霜|降雪|起霧|結冰|漲潮|開燈|下雪)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(放晴|轉晴|轉涼|變涼|變冷|變冷了|冷了|下雪|下雨|退去|轉壞)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<=.)<FUNC_in(ner|ter)>然後</FUNC_in(ner|ter)>(.*?)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "因為下雨所以": {
             "id": "dc13d87d-783d-4c8b-8d85-4c5c920af76b",
@@ -91,13 +98,27 @@
             ],
             "pattern": "<(MODIFIER|ModifierP)>只</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>要</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
+        "可是你的只有一個": {
+            "id": "22f98c00-1a6d-4665-8de4-5738985587a4",
+            "pos": "<FUNC_inter>可是</FUNC_inter><ENTITY_pronoun>你</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><MODIFIER>只有</MODIFIER><ENTITY_classifier>一個</ENTITY_classifier>",
+            "lexy": [],
+            "pattern": "<FUNC_in(ner|ter)>可是</FUNC_in(ner|ter)>(.+?)<(MODIFIER|ModifierP)>只有</(MODIFIER|ModifierP)><ENTITY_classifier>[^<]+</ENTITY_classifier>"
+        },
         "對可是你剛才沒有打到": {
             "id": "4f0460c5-2f2e-40a4-b4a3-c77435bde6d2",
             "pos": "<FUNC_inner>對</FUNC_inner><ENTITY_nouny>可</ENTITY_nouny><AUX>是</AUX><ENTITY_pronoun>你</ENTITY_pronoun><MODIFIER>剛才</MODIFIER><FUNC_negation>沒有</FUNC_negation><ACTION_lightVerb>打</ACTION_lightVerb><ACTION_verb>到</ACTION_verb>",
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(到|到了|到約|到受|到離|到包|到經過|到回|到隨|到死|到愛)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>可</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><AUX>是</AUX>"
+            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>可</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><AUX>是</AUX>(.*?)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "是有這個螺絲可是不見了": {
+            "id": "2d48175f-0166-47d4-9dba-a0ded3a0a4b2",
+            "pos": "<AUX>是</AUX><ACTION_verb>有</ACTION_verb><ENTITY_DetPhrase>這個</ENTITY_DetPhrase><UserDefined>螺絲</UserDefined><ENTITY_oov>可</ENTITY_oov><AUX>是</AUX><MODIFIER>不見</MODIFIER><ASPECT>了</ASPECT>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(.+?)<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>可</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><AUX>是</AUX>(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?(<ASPECT>[^<]+</ASPECT>)?"
         }
     },
     "alias": {},
