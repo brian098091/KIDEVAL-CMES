@@ -14,8 +14,10 @@
             "巧虎",
             "杯子",
             "東西",
+            "桌子",
             "炸彈",
             "盤子",
+            "紅蘿蔔",
             "菜市場",
             "藥",
             "螺絲",
@@ -23,13 +25,31 @@
             "遊樂設施",
             "風",
             "飛船",
-            "紅蘿蔔",
-            "桌子"
+            "縫縫",
+            "眼鏡",
+            "柱子",
+            "圈圈",
+            "摩天輪",
+            "旋轉木馬",
+            "長方形",
+            "圓筒形",
+            "三角形",
+            "彎彎形",
+            "圓柱體",
+            "屋頂",
+            "溜滑梯",
+            "漢堡排",
+            "人行道",
+            "爸比",
+            "哈啾"
         ],
         "_asVerb": [
             "下床",
             "便便",
-            "尿尿"
+            "尿尿",
+            "發高燒",
+            "喝開水",
+            "泡一泡"
         ]
     },
     "utterance": {
@@ -37,7 +57,7 @@
             "id": "1ab93754-c011-4e94-b0de-7db94236e745",
             "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>的</FUNC_inner>",
             "lexy": [],
-            "pattern": "<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)>(?!<(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun|DetPhrase|num)|RANGE_(locality|period)|MODIFIER|ModifierP|LOCATION)>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun|DetPhrase|num)|RANGE_(locality|period)|MODIFIER|ModifierP|LOCATION)>)"
+            "pattern": "(?<!</CLAUSE_particle>)(?<!</FUNC_in(ner|ter)>)<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)>(?!(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun|DetPhrase|num)|RANGE_(locality|period)|MODIFIER|ModifierP|LOCATION|MODIFIER_color)>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun|DetPhrase|num)|RANGE_(locality|period)|MODIFIER|ModifierP|LOCATION|MODIFIER_color)>)|(<(ACTION_verb|VerbP)>工作</(ACTION_verb|VerbP)>|<TIME_(holiday|justtime|day|week|month|season|year|decade)>時候</TIME_(holiday|justtime|day|week|month|season|year|decade)>{1,10}))"
         },
         "我的了": {
             "id": "0e92f042-eabf-49f4-b11d-bcc7c50d69c5",
@@ -57,6 +77,12 @@
             "lexy": [],
             "pattern": "<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><CLAUSE_YesNoQ>[^<]+</CLAUSE_YesNoQ>"
         },
+        "我的有": {
+            "id": "03f06e72-9ab8-413e-974f-955c00a8a399",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><ENTITY_nouny>有</ENTITY_nouny>",
+            "lexy": [],
+            "pattern": "<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[有|進去|也|對|擺|扁|剪|舉]</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
         "用的是": {
             "id": "5852fc8e-acc0-4841-b9e8-e9c1fedd2599",
             "pos": "<ACTION_verb>用</ACTION_verb><FUNC_inner>的</FUNC_inner><AUX>是</AUX>",
@@ -65,11 +91,32 @@
             ],
             "pattern": "<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><AUX>是</AUX>"
         },
+        "我的只有": {
+            "id": "06a0d648-b24a-4afd-930a-e33101698e43",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><MODIFIER>只有</MODIFIER>",
+            "lexy": [],
+            "pattern": "<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)>(<(MODIFIER|ModifierP)>[對]</(MODIFIER|ModifierP)>)?<(MODIFIER|ModifierP)>(只有|不對)</(MODIFIER|ModifierP)>"
+        },
+        "我的這樣": {
+            "id": "9d3a88a5-70be-4d70-95c9-d54a4c8f8246",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><ENTITY_DetPhrase>這樣</ENTITY_DetPhrase>",
+            "lexy": [],
+            "pattern": "<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><ENTITY_DetPhrase>[^<]+樣</ENTITY_DetPhrase>"
+        },
         "長長的收進去": {
             "id": "544751e4-fe20-49da-8498-76062b5b0bd0",
             "pos": "<MODIFIER>長長</MODIFIER><FUNC_inner>的</FUNC_inner><ENTITY_nouny>收進去</ENTITY_nouny>",
             "lexy": [],
             "pattern": "<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+進去</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "用掉的你知道嗎": {
+            "id": "951840ae-61ad-4226-8433-cc4c15cb51b9",
+            "pos": "<ACTION_verb>用掉</ACTION_verb><FUNC_inner>的</FUNC_inner><ENTITY_pronoun>你</ENTITY_pronoun><ACTION_verb>知道</ACTION_verb><CLAUSE_YesNoQ>嗎</CLAUSE_YesNoQ>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(用掉|花掉|存了|用完|籌到|賣了|用完了|用罄|募到|賺進|丟掉)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(知道|得知|明知|深知|獲知|知悉|知情|知曉|知足|確知|了解)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><ENTITY_pronoun>[^<]+</ENTITY_pronoun><(ACTION_verb|VerbP)>知道</(ACTION_verb|VerbP)><CLAUSE_YesNoQ>嗎</CLAUSE_YesNoQ>"
         }
     },
     "alias": {},

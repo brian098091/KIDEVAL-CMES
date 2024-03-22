@@ -69,15 +69,14 @@ if __name__ == "__main__":
         '緊縮複句': [],
         '感知/心理狀態': []
     }    
+    from KIDEVAL import execLoki
     sentence_keys = list(sentence_dict.keys())
     false_list = []
     diff_dict_c = {}
     diff_dict_w = {}
     with open('wrong.txt', 'w',encoding='utf-8') as f:
-        for i in range(500):
-            inputSTR =sentence_keys[i]
+        for inputSTR in sentence_keys:
 
-            from KIDEVAL import execLoki
             resultDICT = execLoki(content=inputSTR, splitLIST=splitLIST, refDICT=refDICT)
 
             itemScoreDICT = {}
@@ -95,8 +94,8 @@ if __name__ == "__main__":
                         
             if(len(false_list) > 0):
                 print(inputSTR,false_list,file=f)
-                print("Correct",diff_dict_c,file=f)
-                print("Wrong",diff_dict_w,file=f,end='\n\n')    
+                print("GoldStandard",diff_dict_c,file=f)
+                print("ModelPredict",diff_dict_w,file=f,end='\n\n')    
                 false_list.clear() 
                 diff_dict_c.clear()
                 diff_dict_w.clear()  

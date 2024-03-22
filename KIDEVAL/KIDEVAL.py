@@ -365,14 +365,6 @@ def testIntent():
     inputLIST = ['我的東西']
     testLoki(inputLIST, ['X_De_Y'])
     print("")
-    
-def clean_text_from_file(file_obj):
-
-    text = file_obj.read()
-    
-    cleaned_text = re.sub(r'[^\u4e00-\u9fa5\n]', '', text)
-    
-    return cleaned_text
 
 
 if __name__ == "__main__":
@@ -408,23 +400,40 @@ if __name__ == "__main__":
         '感知/心理狀態': []
     }    
 
+    outputData = {
+        "Scores":[],
+        "Sentences":[]
+    }
 
     # inputSTR = "有一個小朋友，早上起床，覺得肚子很餓，他下床，走到房間外面，他打開冰箱，拿出一瓶牛奶，把牛奶倒進杯子，拿起來喝，喝完了。講完了"
     # 使用示例
+    count = 1
+    sentencesLIST = []
+    itemScoreDICT ={}
     with open('./inputSTR.txt', 'r', encoding='utf-8') as f:
-        inputSTR = clean_text_from_file(f)
-    resultDICT = execLoki(content=inputSTR, splitLIST=splitLIST, refDICT=refDICT,filterLIST=filterLIST)
+        for line in f:
+            inputSTR = re.sub(r'[^\u4e00-\u9fa5]', '', line)
+            resultDICT = execLoki(content=inputSTR, splitLIST=splitLIST, refDICT=refDICT,filterLIST=filterLIST)
+            
+            sentencesLIST =[str(count),inputSTR]
 
+            for key,value in resultDICT.items():
+                if key not in itemScoreDICT:
+                    itemScoreDICT[key] = 0
+                if isinstance(value, list) and value:
+                    sentencesLIST.append(str(value[0]))
+                    itemScoreDICT[key] += value[0]
+                elif isinstance(value, list) and not value:
+                    sentencesLIST.append("")
+            outputData["Sentences"].append(sentencesLIST)
+            count = count+1
 
-    itemScoreDICT = {k:sum(resultDICT[k]) for k in resultDICT}
-    print("項目總分：")
-    pprint(itemScoreDICT)
     itemScoreSum = 0
     categoryScoreSum = 0
+    
     for key,value in itemScoreDICT.items():
         itemScoreSum = itemScoreSum + value
-    print("=====")
-    print("類型總分")
+    
     categoryScoreDICT = deepcopy(itemScoreDICT)
     for key,value in categoryScoreDICT.items():
         if categoryScoreDICT[key]-2 >= 0:
@@ -432,8 +441,46 @@ if __name__ == "__main__":
         else:
             pass
         categoryScoreSum = categoryScoreSum + categoryScoreDICT[key]
-    pprint(categoryScoreDICT)
     
-    print("項目總分：",itemScoreSum)
-    print("類型總分：",categoryScoreSum)
+    scoreLIST = []
+    npLIST =[0,0]
+    vpLIST =[0,0]
+    ppLIST =[0,0]
+    sLIST =[0,0]
+    sumLIST = [itemScoreSum,categoryScoreSum]
+    for key,value in itemScoreDICT.items():
+        if key in ['量-個','量-特','X的','X的Y','方位']:
+            npLIST[0]+= value
+            npLIST[1]+= categoryScoreDICT[key]
+        if key in ['體貌','結果補語','趨向補語','情態補語','可能補語','數量補語']:
+            vpLIST[0]+= value
+            vpLIST[1]+= categoryScoreDICT[key]
+        if key in ['動前介詞','動後介詞']:
+            ppLIST[0]+= value
+            ppLIST[1]+= categoryScoreDICT[key]
+        if key in ['把字句','被字句','存現句','連謂/兼語','帶連詞複句','緊縮複句','感知/心理狀態']:
+            sLIST[0]+= value
+            sLIST[1]+= categoryScoreDICT[key]
+        scoreLIST = [value,categoryScoreDICT[key]]
+        outputData["Scores"].append(scoreLIST)
+    calLIST = [npLIST,vpLIST,ppLIST,sLIST,sumLIST]
+    for list in calLIST:
+        outputData["Scores"].append(list)
+    
+    outputJson = json.dumps(outputData,ensure_ascii=False) 
+    pprint(outputJson)    
+
+    
+    
+    
+    
+    # print("項目總分：")
+    # pprint(itemScoreDICT)
+    # print("=====")
+    # print("類型總分")
+    # pprint(categoryScoreDICT)
+    # print("項目總分：",itemScoreSum)
+    # print("類型總分：",categoryScoreSum)
    
+# json_object = json.dumps(outputData,ensure_ascii=False) 
+# print(json_object)

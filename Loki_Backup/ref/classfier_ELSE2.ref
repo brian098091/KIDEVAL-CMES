@@ -53,19 +53,17 @@
         ]
     },
     "utterance": {
-        "把": {
-            "id": "d6c96d8b-d47b-4701-b678-6b9a4138e9bb",
-            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb>",
+        "哪杯": {
+            "id": "3d1a416f-e195-407e-9450-c7f700b8864b",
+            "pos": "<CLAUSE_WhatQ>哪杯</CLAUSE_WhatQ>",
             "lexy": [],
-            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>"
+            "pattern": "<CLAUSE_WhatQ>([^<]+)</CLAUSE_WhatQ>"
         },
-        "是把夾子丟": {
-            "id": "fa4bed05-725e-43a5-8e24-10795848faa5",
-            "pos": "<AUX>是</AUX><ENTITY_classifier>把</ENTITY_classifier><ENTITY_noun>夾子</ENTITY_noun><ACTION_verb>丟</ACTION_verb>",
-            "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(丟|丟掉|扔出|扔掉|扔棄|投入|投出|投射|投擲|投放|投注)</(ACTION_verb|VerbP)>"
-            ],
-            "pattern": "<ENTITY_classifier>把</ENTITY_classifier><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        "很大台": {
+            "id": "e445f7c5-a888-498e-a9f5-61d1d9a2bd2c",
+            "pos": "<DegreeP>很大台</DegreeP>",
+            "lexy": [],
+            "pattern": "<DegreeP>([^<]+)</DegreeP>"
         }
     },
     "alias": {},

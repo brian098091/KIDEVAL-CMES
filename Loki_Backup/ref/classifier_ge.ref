@@ -14,8 +14,10 @@
             "巧虎",
             "杯子",
             "東西",
+            "桌子",
             "炸彈",
             "盤子",
+            "紅蘿蔔",
             "菜市場",
             "藥",
             "螺絲",
@@ -23,13 +25,31 @@
             "遊樂設施",
             "風",
             "飛船",
-            "紅蘿蔔",
-            "桌子"
+            "縫縫",
+            "眼鏡",
+            "柱子",
+            "圈圈",
+            "摩天輪",
+            "旋轉木馬",
+            "長方形",
+            "圓筒形",
+            "三角形",
+            "彎彎形",
+            "圓柱體",
+            "屋頂",
+            "溜滑梯",
+            "漢堡排",
+            "人行道",
+            "爸比",
+            "哈啾"
         ],
         "_asVerb": [
             "下床",
             "便便",
-            "尿尿"
+            "尿尿",
+            "發高燒",
+            "喝開水",
+            "泡一泡"
         ]
     },
     "utterance": {
@@ -65,11 +85,31 @@
             "lexy": [],
             "pattern": "<ENTITY_measurement>[^<]+</ENTITY_measurement><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>個</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
+        "下個月": {
+            "id": "f44a1854-b0e3-4c96-8864-94d40c2eb444",
+            "pos": "<TIME_month>下個月</TIME_month>",
+            "lexy": [],
+            "pattern": "(<TIME_(holiday|justtime|day|week|month|season|year|decade)>[^<]+個[^<]+</TIME_(holiday|justtime|day|week|month|season|year|decade)>){1,10}"
+        },
         "很少個": {
             "id": "bf25dfd9-ff44-4b04-950f-9609661219bf",
             "pos": "<DegreeP>很少</DegreeP><ENTITY_nounHead>個</ENTITY_nounHead>",
             "lexy": [],
             "pattern": "<DegreeP>[^<]+</DegreeP><(UserDefined|ENTITY_(nounHead))>個</(UserDefined|ENTITY_(nounHead))>"
+        },
+        "兩個別的": {
+            "id": "8cbbc1ad-8925-4ece-ae40-99a01d6bbb82",
+            "pos": "<ENTITY_num>兩</ENTITY_num><MODIFIER>個別</MODIFIER><FUNC_inner>的</FUNC_inner>",
+            "lexy": [],
+            "pattern": "<ENTITY_num>[^<]+</ENTITY_num><(MODIFIER|ModifierP)>個別</(MODIFIER|ModifierP)>"
+        },
+        "下個禮拜二來": {
+            "id": "ff9b37ab-e3c6-41a7-a11c-a7a3f9435547",
+            "pos": "<MODIFIER>下個</MODIFIER><TIME_week>禮拜二</TIME_week><ACTION_verb>來</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(來|上來|下來|來到|前來|回來|進來|來語|端來|出來|值來)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(MODIFIER|ModifierP)>[^<]個+</(MODIFIER|ModifierP)>(<TIME_(holiday|justtime|day|week|month|season|year|decade)>[^<]+</TIME_(holiday|justtime|day|week|month|season|year|decade)>){1,10}"
         },
         "我們弄個胡蘿蔔 ": {
             "id": "10c44092-ff13-4fc5-ac62-3f8f840a64d2",
