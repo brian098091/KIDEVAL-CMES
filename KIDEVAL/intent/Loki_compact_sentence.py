@@ -177,6 +177,13 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["緊縮複句"].append(1)
             pass
 
+    if utterance == "嗯這也是你的這給你":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["緊縮複句"].append(1)
+            pass
+
     if utterance == "越挖越大":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
