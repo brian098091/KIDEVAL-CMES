@@ -22,22 +22,40 @@
             "車車",
             "遊樂設施",
             "風",
-            "飛船"
+            "飛船",
+            "摩天輪",
+            "旋轉木馬",
+            "長方形",
+            "圓筒形",
+            "三角形",
+            "彎彎形",
+            "圓柱體",
+            "屋頂",
+            "漢堡排",
+            "人行道",
+            "縫縫",
+            "眼鏡",
+            "柱子",
+            "圈圈",
+            "發高燒",
+            "喝開水",
+            "小熊維尼",
+            "橋"
         ],
         "_asVerb": [
             "下床",
             "便便",
-            "尿尿"
+            "尿尿",
+            "流血",
+            "闖關"
         ]
     },
     "utterance": {
-        "下雨然後": {
-            "id": "686e44fa-ac26-41ad-b15f-70952233f5c9",
-            "pos": "<ACTION_verb>下雨</ACTION_verb><FUNC_inter>然後</FUNC_inter>",
-            "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(下雨|降雨|降水|放晴|結霜|降雪|起霧|結冰|漲潮|開燈|下雪)</(ACTION_verb|VerbP)>"
-            ],
-            "pattern": "(.+?)<FUNC_in(ner|ter)>然後</FUNC_in(ner|ter)>"
+        "然後": {
+            "id": "6063e6a1-671f-4aea-a48f-bac55aa438fd",
+            "pos": "<FUNC_inter>然後</FUNC_inter>",
+            "lexy": [],
+            "pattern": "(?<!.)<FUNC_in(ner|ter)>然後</FUNC_in(ner|ter)>"
         },
         "如果下雨": {
             "id": "598300e1-c797-45f3-b3c6-fb7136390fea",
@@ -45,7 +63,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(下雨|降雨|降水|放晴|結霜|降雪|起霧|結冰|漲潮|開燈|下雪)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<FUNC_in(ner|ter)>(如果|除非|但是|否則|不過|可是|而且|但|因為)</FUNC_in(ner|ter)>"
+            "pattern": "<FUNC_in(ner|ter)>(如果|除非|但是|否則|不過|可是|而且|但|因為|所以)</FUNC_in(ner|ter)>"
         },
         "因為下雨所以": {
             "id": "dc13d87d-783d-4c8b-8d85-4c5c920af76b",
