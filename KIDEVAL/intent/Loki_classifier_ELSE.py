@@ -107,12 +107,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         elif len(resultDICT["量-特"])  == 0:
             resultDICT["量-特"].append(1)
 
-    if utterance == "你要吃一口很苦藥":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        elif len(resultDICT["量-特"])  == 0:
-            resultDICT["量-特"].append(1)
-
     if utterance == "大一點":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)

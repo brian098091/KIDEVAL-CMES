@@ -81,23 +81,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             except:
                 pass
 
-    if utterance == "大隻":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pat = re.compile(pattern)  
-            try:
-                posSTR = articut.parse(inputSTR)["result_pos"][0]
-                termSTR = list(pat.finditer(posSTR))[0].group(1)  
-                termSTR = f"一{termSTR[-1]}"
-                posSTR = articut.parse(termSTR)["result_pos"][0] 
-                if (posSTR.startswith("<ENTITY_classifier>") or termSTR in ["一樓"]) and termSTR != "一個"and len(resultDICT["量-特"]) == 0:
-                    resultDICT["量-特"].append(1)
-                else:
-                    pass
-            except:
-                pass
-
     if utterance == "很大台":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
