@@ -104,7 +104,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(倒出|倒入|倒進|倒掉|烤出|裝入|洗淨|煮沸|磨成|洗乾淨|撈出)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(來|上來|下來|來到|前來|回來|進來|值來|性來|出來|去)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<凸蹦]+出</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>來</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+出</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>來</(ACTION_verb|VerbP)>"
         },
         "壞掉了": {
             "id": "02b0bf46-b64d-4f89-9a4f-8509b9dee9af",
@@ -185,7 +185,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(換下|換出|罰下|炒魷魚|打爆|抬出|擋出|踢出|打飛|打暈|刷掉)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>換(下|上)</(ACTION_verb|VerbP)><ENTITY_classifier>[^<]+</ENTITY_classifier>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+(下|上)</(ACTION_verb|VerbP)><ENTITY_classifier>[^<]+</ENTITY_classifier>"
         },
         "用成這樣": {
             "id": "10051ed8-f85f-497c-9d50-529a2696a82c",
