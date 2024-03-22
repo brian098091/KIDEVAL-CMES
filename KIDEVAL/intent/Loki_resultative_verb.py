@@ -123,6 +123,66 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             resultDICT["結果補語"].append(1)
             
+    if utterance == "倒出來":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
+    if utterance == "戴得了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
+    if utterance == "曡完":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["動前介詞"].append(1)
+            pass
+
+    if utterance == "聽不到":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
+    if utterance == "聽到":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["動前介詞"].append(1)
+            pass
+
+    if utterance == "聽到了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["動前介詞"].append(1)
+            pass
+
+    if utterance == "連起來":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["動前介詞"].append(1)
+            pass
+
+    if utterance == "閉上":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["動前介詞"].append(1)
+            pass
+
+    if utterance == "開過了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["動前介詞"].append(1)
+            pass
+
     if utterance == "換下一個":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
