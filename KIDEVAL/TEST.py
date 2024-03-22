@@ -94,8 +94,8 @@ if __name__ == "__main__":
                         
             if(len(false_list) > 0):
                 print(inputSTR,false_list,file=f)
-                print("Correct",diff_dict_c,file=f)
-                print("Wrong",diff_dict_w,file=f,end='\n\n')    
+                print("GoldStandard",diff_dict_c,file=f)
+                print("ModelPredict",diff_dict_w,file=f,end='\n\n')    
                 false_list.clear() 
                 diff_dict_c.clear()
                 diff_dict_w.clear()  
