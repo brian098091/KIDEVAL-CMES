@@ -37,17 +37,21 @@
             "眼鏡",
             "柱子",
             "圈圈",
-            "發高燒",
-            "喝開水",
             "小熊維尼",
-            "橋"
+            "橋",
+            "溜滑梯",
+            "爸比",
+            "憤怒鳥",
+            "眼鏡"
         ],
         "_asVerb": [
             "下床",
             "便便",
             "尿尿",
             "流血",
-            "闖關"
+            "闖關",
+            "發高燒",
+            "喝開水"
         ]
     },
     "utterance": {
@@ -58,15 +62,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(用|使用|利用|採用|施用|活用|運用|假借|憑靠|中用|常用)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(踢|玩踢|經抽|踢進|踢了|傳接|打球|有棒|練完|投接|愛踢)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>(用|給|讓)</(ACTION_verb|VerbP)>(<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>)?(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>|<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
-        },
-        "跟你講": {
-            "id": "cfac5298-ff30-4e92-9d70-e84c97dbba19",
-            "pos": "<FUNC_conjunction>跟</FUNC_conjunction><ENTITY_pronoun>你</ENTITY_pronoun><ACTION_verb>講</ACTION_verb>",
-            "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(講|主講|演講|講學|講授|講習|講話|講課|講述|交涉|公演)</(ACTION_verb|VerbP)>"
-            ],
-            "pattern": "(?<!</ENTITY_pronoun>)(?<!</(ACTION_verb)>)<FUNC_conjunction>跟</FUNC_conjunction>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<(ACTION_verb|VerbP)>[^<痛癢]+</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[用讓]</(ACTION_verb|VerbP)>(<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>)?(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>|<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "往前面蓋": {
             "id": "41e3ade0-fae1-44a9-a07e-e849d320e03a",
@@ -106,9 +102,9 @@
             "id": "171ca785-de10-432d-a535-57e6d7d9c7b7",
             "pos": "<FUNC_inner>從</FUNC_inner><MODIFIER_color>綠色</MODIFIER_color><ACTION_verb>開始</ACTION_verb>",
             "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(開始|啟用|開創|停止了|停止|結束|展開|開始了)</(ACTION_verb|VerbP)>"
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(開始|啟用|開創|結束|展開|停止|停止了|開始了)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</(ACTION_verb)>)(<(ACTION_verb|VerbP)>要</(ACTION_verb|VerbP)>)?<FUNC_inner>[在從]</FUNC_inner>(.+?)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+            "pattern": "<FUNC_inner>從</FUNC_inner><MODIFIER_color>[^<]+</MODIFIER_color><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "用來量體溫": {
             "id": "43e4235f-7cd6-4b5a-992e-57b87102dbd6",
@@ -153,14 +149,6 @@
             ],
             "pattern": "<(ACTION_verb|VerbP)>用</(ACTION_verb|VerbP)><ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>(<FUNC_conjunction>[^<]+</FUNC_conjunction>)?(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<ACTION_(lightVerb|verb|VerbP)>[^<]+</ACTION_(lightVerb|verb|VerbP)>"
         },
-        "然後在河的另一端": {
-            "id": "905b84cc-66f8-4ae6-abda-aa7d89bbe32d",
-            "pos": "<FUNC_inter>然後</FUNC_inter><FUNC_inner>在</FUNC_inner><ENTITY_nouny>河</ENTITY_nouny><FUNC_inner>的</FUNC_inner><MODIFIER>另</MODIFIER><ENTITY_num>一</ENTITY_num><ACTION_verb>端</ACTION_verb>",
-            "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(端|佩帶|夾帶|帶病|帶走|承接|挾帶|攜帶|肩扛|背負|負載)</(ACTION_verb|VerbP)>"
-            ],
-            "pattern": "(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>河</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<ENTITY_num>一</ENTITY_num><(ACTION_verb|VerbP)>端</(ACTION_verb|VerbP)>"
-        },
         "用圓柱體這樣蓋上去": {
             "id": "78e42904-4d00-42e3-bc5a-53cbe2d856f1",
             "pos": "<ACTION_verb>用</ACTION_verb><MODIFIER>圓</MODIFIER><ENTITY_nounHead>柱體</ENTITY_nounHead><ENTITY_DetPhrase>這樣</ENTITY_DetPhrase><ACTION_verb>蓋</ACTION_verb><RANGE_locality>上</RANGE_locality><ACTION_verb>去</ACTION_verb>",
@@ -181,6 +169,16 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(蓋|罩住|蓋建|蓋了|拱頂|加蓋|鋪上|蓋起|蓋滿|拆下來|沾)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "(<TIME_(holiday|justtime|day|week|month|season|year|decade)>從前</TIME_(holiday|justtime|day|week|month|season|year|decade)>){1,10}<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>面</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "那那你叫媽媽來然後你叫媽媽陪在醫院陪你": {
+            "id": "6e685d5c-50f8-4f81-851c-ee5a60cb6403",
+            "pos": "<FUNC_determiner>那</FUNC_determiner><FUNC_determiner>那</FUNC_determiner><ENTITY_pronoun>你</ENTITY_pronoun><ACTION_verb>叫</ACTION_verb><ENTITY_pronoun>媽媽</ENTITY_pronoun><ACTION_verb>來</ACTION_verb><FUNC_inter>然後</FUNC_inter><ENTITY_pronoun>你</ENTITY_pronoun><ACTION_verb>叫</ACTION_verb><ENTITY_pronoun>媽媽</ENTITY_pronoun><ACTION_verb>陪</ACTION_verb><FUNC_inner>在</FUNC_inner><ENTITY_noun>醫院</ENTITY_noun><ACTION_verb>陪</ACTION_verb><ENTITY_pronoun>你</ENTITY_pronoun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(叫|叫作|叫喊|呼叫|傳呼|傳見|召開|吆喝|呼召|嗔喝|宣告)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(來|上來|下來|來到|前來|回來|進來|來語|端來|出來|值來)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(陪|陪著|陪伴|陪伴著|想帶|陪同|探望|看望|想帶著|看望了|瞞著)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<FUNC_inner>在</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><ENTITY_pronoun>[^<]+</ENTITY_pronoun>"
         }
     },
     "alias": {},
