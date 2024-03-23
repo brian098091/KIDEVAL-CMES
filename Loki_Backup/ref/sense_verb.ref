@@ -22,7 +22,10 @@
             "車車",
             "遊樂設施",
             "風",
-            "飛船"
+            "飛船",
+            "兵兵病",
+            "三角站",
+            "肚子痛"
         ],
         "_asVerb": [
             "下床",
@@ -53,7 +56,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(覺得|察覺|感覺|感覺到|懂得|覺察|企盼|估摸|假想|假設|冥想)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(知道|以為|認為|想|覺得|記得|希望|發現|發覺)</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>(知道|以為|認為|想|覺得|記得|希望|發現|發覺|知道)</(ACTION_verb|VerbP)>"
         },
         "猜一猜": {
             "id": "4fbf4faa-cc8b-4b45-9ca0-051dc6cdd557",
@@ -72,6 +75,14 @@
             "pos": "<ACTION_quantifiedVerb>猜看看</ACTION_quantifiedVerb>",
             "lexy": [],
             "pattern": "<ACTION_quantifiedVerb>[猜想]看看</ACTION_quantifiedVerb>"
+        },
+        "我想玩這個玩具": {
+            "id": "1f9c9444-a68f-4d57-a50e-aa7593f217b8",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>想玩</ACTION_verb><ENTITY_DetPhrase>這個</ENTITY_DetPhrase><ENTITY_noun>玩具</ENTITY_noun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(想玩|獲酷|愛玩|重製了|玩了|玩完|常玩|玩過|有玩過|想聽|愛死了)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>想[^<]+</(ACTION_verb|VerbP)>"
         }
     },
     "alias": {},
