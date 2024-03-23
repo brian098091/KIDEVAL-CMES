@@ -61,7 +61,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(剪掉|修剪|刪剪|剪成|剪接|剪斷|剪裁|裁剪|中斷|分割|切割)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+[掉開斷碎壞光近反死](了)?</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+[掉開斷碎壞光近反飽死](了)?</(ACTION_verb|VerbP)>"
         },
         "夾住": {
             "id": "867aa912-a9dc-48fc-a148-2dd0b187152f",
@@ -85,7 +85,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(打開|張開|開啟|關上|彈出|推開|緊閉|敲開|撬開|打開了|鎖住)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<丟放剪用看聽有站回過要掉進出病痛傷來去看聞摸等飛去退跳坐到起開知行斷睡想忘謝少多澡講拾到得錯備贏燒血夾加爬][上下直歪亂正斷濕乾淨髒空滿鬆緊遠大小穩善淨楚齊黑白開完好壞掉住成過準倒回平出成]</(ACTION_verb|VerbP)>(<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>)?"
+            "pattern": "<(ACTION_verb|VerbP)>[^<丟放剪用看聽有站回過要掉進出病痛傷來去看聞摸等飛去退跳坐到起開知行斷睡想忘謝少多澡講拾到得錯備贏燒血夾加爬][上下直歪亂正斷濕飽乾淨髒空滿鬆緊遠大小穩善淨楚齊黑白開完好壞掉住成過準倒回平出成]</(ACTION_verb|VerbP)>(<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>)?"
         },
         "曡完": {
             "id": "28176228-456c-48c3-806e-f2990fd4bddf",
