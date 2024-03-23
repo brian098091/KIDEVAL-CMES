@@ -22,7 +22,10 @@
             "車車",
             "遊樂設施",
             "風",
-            "飛船"
+            "飛船",
+            "兵兵病",
+            "三角站",
+            "肚子痛"
         ],
         "_asVerb": [
             "下床",
@@ -38,7 +41,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(去|要去|回去|想去|去了|跑去|回來|跑來|趕去|出去|來)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(載|裝載|負載|載人|載入|載攜|載荷|載貨|運載|佩帶|填入)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<想要用做有]+</(ACTION_verb|VerbP)>(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>|<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>|<ENTITY_classifier>[^<]+</ENTITY_classifier>)*?(?<!再</MODIFIER>)(?<!</ENTITY_pronoun>)(<(ACTION_verb|VerbP)>[^<去給要有]+</(ACTION_verb|VerbP)>|<ACTION_lightVerb>打</ACTION_lightVerb>)(?!<FUNC_inner>的</FUNC_inner>)"
+            "pattern": "(?<!</FUNC_negation>)(?<!來</ACTION_verb>)(?<!去</ACTION_verb>)<(ACTION_verb|VerbP)>[^<快想要用做有喜歡]+</(ACTION_verb|VerbP)>(?!<ACTION_verb>起來</ACTION_verb>)(?!<ACTION_verb>下來</ACTION_verb>)(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>|<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>|<ENTITY_classifier>[^<]+</ENTITY_classifier>)*?(?!<ACTION_verb>過來</ACTION_verb>)(?<!再</MODIFIER>)(?<!來</ACTION_verb>)(?<!去</ACTION_verb>)(<(ACTION_verb|VerbP)>([^<快來去給有]+|[^<]+進去)</(ACTION_verb|VerbP)>|<ACTION_lightVerb>打</ACTION_lightVerb>)(?!<FUNC_inner>的</FUNC_inner>)"
         },
         "你先去外面等一下": {
             "id": "073ce37d-1955-4c8b-95d4-3ea34c61386e",
@@ -47,6 +50,14 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(去|要去|回去|想去|去了|跑去|回來|跑來|趕去|出去|來)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "<(ACTION_verb|VerbP)>去</(ACTION_verb|VerbP)>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>|<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>)*?<FUNC_inner>等</FUNC_inner>"
+        },
+        "我等一下可以玩第三籃嗎": {
+            "id": "89f2bf1b-283e-411f-a1e7-63be6b68cf97",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>等</FUNC_inner><ENTITY_num>一</ENTITY_num><ENTITY_oov>下</ENTITY_oov><MODAL>可以</MODAL><ACTION_verb>玩</ACTION_verb><ENTITY_DetPhrase>第三籃</ENTITY_DetPhrase><CLAUSE_YesNoQ>嗎</CLAUSE_YesNoQ>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(玩|玩忽|玩狎|玩著|玩樂|買東西|散步|遊玩|打電動|玩了|玩耍)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<FUNC_inner>等</FUNC_inner><ENTITY_num>一</ENTITY_num><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>下</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<MODAL>[^<]+</MODAL>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         }
     },
     "alias": {},
