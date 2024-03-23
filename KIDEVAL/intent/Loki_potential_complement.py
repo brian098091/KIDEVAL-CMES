@@ -209,6 +209,13 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["可能補語"].append(1)
+            pass
+        
+    if utterance == "可是這樣火車過不過去":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["可能補語"].append(1)
             pass        
 
     return resultDICT
