@@ -69,7 +69,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(回到|倒退|退讓|離開|重返|來到|搬回|返回了|留在|重回|來到了)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>(飛|去|退|回|進|開|跳|剪|夾|坐|爬)到</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>(飛|去|退|回|進|開|跳|剪|夾|坐|爬|掉|丟)到</(ACTION_verb|VerbP)>"
         },
         "打給你": {
             "id": "57762a48-7e61-486f-b8ad-bc3005b4f236",
@@ -77,7 +77,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(打給|問過|打來|回說|傳訊給|反問|詢問過|找上|轉告|問了|想請)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<借]+給</(ACTION_verb|VerbP)><ENTITY_pronoun>[^<]+</ENTITY_pronoun>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<借半]+給</(ACTION_verb|VerbP)><ENTITY_pronoun>[^<]+</ENTITY_pronoun>"
         },
         "剪到這邊": {
             "id": "64a6ad7c-2175-4312-8db8-8a3cdea5a590",
@@ -144,7 +144,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(打電話|寫信|致電|寄信|打給|匯錢|打去|傳話|送錢|撥了|去電)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(給|供給|帶給|提供|發放|資助|給老|交給|留給|給聖|分給)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<請要有來去]+</(ACTION_verb|VerbP)>(<ACTION_eventQuantifier>[^<]+</ACTION_eventQuantifier>)?(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?<(ACTION_verb|VerbP)>給</(ACTION_verb|VerbP)>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)"
+            "pattern": "<(ACTION_verb|VerbP)>[^<請要有來去這]+</(ACTION_verb|VerbP)>(<ACTION_eventQuantifier>[^<]+</ACTION_eventQuantifier>)?(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?<(ACTION_verb|VerbP)>給</(ACTION_verb|VerbP)>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)"
         },
         "都不知道在那": {
             "id": "7883d467-b519-4a83-a81e-30bb8d955cf0",
@@ -153,6 +153,16 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(知道|得知|明知|深知|獲知|知悉|知情|知曉|知足|確知|了解)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_in(ner|ter)>在</FUNC_in(ner|ter)>(<FUNC_determiner>[^<]+</FUNC_determiner>)"
+        },
+        "你要照著我的方法出來用": {
+            "id": "553658ef-428e-4d0d-b277-985967b29adf",
+            "pos": "<ENTITY_pronoun>你</ENTITY_pronoun><VerbP>要照著</VerbP><ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><ENTITY_noun>方法</ENTITY_noun><ACTION_verb>出來</ACTION_verb><ACTION_verb>用</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(要照著|要活著|得改|想比|要拿著|要看過|要有了|剩內|要吃完|要讀完|要聽過)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(出來|出來了|出去|進去|拿出來|出|過來|下來|出了|進來|上來)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(用|使用|利用|採用|施用|活用|運用|假借|憑靠|中用|常用)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>出來</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>用</(ACTION_verb|VerbP)>"
         },
         "這裡是到警察局的辦公室": {
             "id": "6788a713-5d15-4378-9df1-ded06f3f41de",
