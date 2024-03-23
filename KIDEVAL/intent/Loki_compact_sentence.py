@@ -195,7 +195,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["緊縮複句"].append(1)
             pass
 
     if utterance == "倒掉就重新做啊":
