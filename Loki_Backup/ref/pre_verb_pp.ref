@@ -81,6 +81,15 @@
             ],
             "pattern": "<(ACTION_verb|VerbP)>用</(ACTION_verb|VerbP)><ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>看</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
+        "給你吃藥": {
+            "id": "6a78ef0d-4100-496c-9df8-bdba26162fab",
+            "pos": "<ACTION_verb>給</ACTION_verb><ENTITY_pronoun>你</ENTITY_pronoun><ACTION_verb>吃</ACTION_verb><UserDefined>藥</UserDefined>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(給|供給|帶給|提供|發放|資助|給老|交給|留給|給聖|分給)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃|吃掉|吸收|攝入|耗損|花掉|煮|啃|吃著|喝|常吃)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>給</(ACTION_verb|VerbP)>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
         "在睡前刷牙": {
             "id": "49b648e5-2477-40b8-b2dd-de12b1955e0a",
             "pos": "<ASPECT>在</ASPECT><ACTION_verb>睡</ACTION_verb><RANGE_period>前</RANGE_period><ACTION_verb>刷牙</ACTION_verb>",
@@ -105,6 +114,14 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(開始|啟用|開創|結束|展開|停止|停止了|開始了)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "<FUNC_inner>從</FUNC_inner><MODIFIER_color>[^<]+</MODIFIER_color><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "從這裡排隊": {
+            "id": "e449dd04-189f-483c-868b-a05f1730c5de",
+            "pos": "<FUNC_inner>從</FUNC_inner><LOCATION>這裡</LOCATION><ACTION_verb>排隊</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(排隊|排滿|排舞|開搶|排起|用餐|圍觀|結帳|搶購|排了|等候)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<FUNC_in(ner|ter)>從</FUNC_in(ner|ter)>(<LOCATION>[^<]+</LOCATION>|<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>)(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "用來量體溫": {
             "id": "43e4235f-7cd6-4b5a-992e-57b87102dbd6",
