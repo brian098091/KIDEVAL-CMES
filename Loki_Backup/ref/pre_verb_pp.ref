@@ -7,51 +7,58 @@
     },
     "user_defined": {
         "_asNoun": [
+            "三角形",
+            "三角站",
+            "人行道",
             "佩佩豬",
+            "兵兵病",
             "叮咚",
+            "哈啾",
+            "圈圈",
+            "圓柱體",
+            "圓筒形",
             "客人",
+            "小熊維尼",
             "屋頂",
             "巧虎",
+            "彎彎形",
+            "憤怒鳥",
+            "摩天輪",
+            "旋轉木馬",
             "杯子",
             "東西",
+            "柱子",
+            "桌子",
+            "橋",
+            "溜滑梯",
+            "漢堡排",
             "炸彈",
+            "爸比",
             "盤子",
+            "眼鏡",
+            "紅蘿蔔",
+            "縫縫",
+            "肚子痛",
             "菜市場",
             "藥",
             "螺絲",
             "車車",
             "遊樂設施",
-            "風",
-            "飛船",
-            "摩天輪",
-            "旋轉木馬",
             "長方形",
-            "圓筒形",
-            "三角形",
-            "彎彎形",
-            "圓柱體",
-            "屋頂",
-            "漢堡排",
-            "人行道",
-            "縫縫",
-            "眼鏡",
-            "柱子",
-            "圈圈",
-            "小熊維尼",
-            "橋",
-            "溜滑梯",
-            "爸比",
-            "憤怒鳥",
-            "眼鏡"
+            "風",
+            "飛船"
         ],
         "_asVerb": [
             "下床",
             "便便",
+            "喝開水",
             "尿尿",
+            "泡一泡",
             "流血",
-            "闖關",
             "發高燒",
-            "喝開水"
+            "闖關",
+            "看看",
+            "抹抹"
         ]
     },
     "utterance": {
@@ -62,7 +69,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(用|使用|利用|採用|施用|活用|運用|假借|憑靠|中用|常用)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(踢|玩踢|經抽|踢進|踢了|傳接|打球|有棒|練完|投接|愛踢)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[用讓]</(ACTION_verb|VerbP)>(<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>)?(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>|<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>用</(ACTION_verb|VerbP)>(<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>)?(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "往前面蓋": {
             "id": "41e3ade0-fae1-44a9-a07e-e849d320e03a",
@@ -141,6 +148,14 @@
             ],
             "pattern": "<(ACTION_verb|VerbP)>用</(ACTION_verb|VerbP)><LOCATION>[^<]+</LOCATION><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
+        "跟姐姐吃飯": {
+            "id": "4e9d2dc3-2991-461b-9c35-35248dda1956",
+            "pos": "<FUNC_conjunction>跟</FUNC_conjunction><ENTITY_pronoun>姐姐</ENTITY_pronoun><ACTION_verb>吃飯</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃飯|喝茶|喝酒|洗澡|逛街|煮飯|吃東西|睡覺|用膳|用餐|進餐)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<FUNC_conjunction>[^<]</FUNC_conjunction>((<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)(<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>|<ENTITY_classifier>一樣</ENTITY_classifier>|<MODIFIER>一樣</MODIFIER>)"
+        },
         "他要跟他結婚": {
             "id": "53ed0955-eaef-4a8f-b866-7811ca476b51",
             "pos": "<ENTITY_pronoun>他</ENTITY_pronoun><ACTION_verb>要</ACTION_verb><FUNC_conjunction>跟</FUNC_conjunction><ENTITY_pronoun>他</ENTITY_pronoun><ACTION_verb>結婚</ACTION_verb>",
@@ -165,6 +180,14 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(用|使用|利用|採用|施用|活用|運用|假借|憑靠|中用|常用)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "<(ACTION_verb|VerbP)>用</(ACTION_verb|VerbP)><ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>(<FUNC_conjunction>[^<]+</FUNC_conjunction>)?(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<ACTION_(lightVerb|verb|VerbP)>[^<]+</ACTION_(lightVerb|verb|VerbP)>"
+        },
+        "從臭臭的地方跑出來": {
+            "id": "32e4f0a8-b2f3-40e5-ac0a-6c88b2b530a0",
+            "pos": "<FUNC_inner>從</FUNC_inner><MODIFIER>臭臭</MODIFIER><FUNC_inner>的</FUNC_inner><ENTITY_noun>地方</ENTITY_noun><ACTION_verb>跑出來</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(跑出來|衝出來|冒出來|走出來|爬出來|飛出來|流出來|掉下來|跑掉|躲起來|掉下去)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(<FUNC_inner>從</FUNC_inner>)?(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>地方</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "用圓柱體這樣蓋上去": {
             "id": "78e42904-4d00-42e3-bc5a-53cbe2d856f1",
