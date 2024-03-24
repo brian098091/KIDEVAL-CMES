@@ -37,17 +37,21 @@
             "眼鏡",
             "柱子",
             "圈圈",
-            "發高燒",
-            "喝開水",
             "小熊維尼",
-            "橋"
+            "橋",
+            "溜滑梯",
+            "爸比",
+            "憤怒鳥",
+            "眼鏡"
         ],
         "_asVerb": [
             "下床",
             "便便",
             "尿尿",
             "流血",
-            "闖關"
+            "闖關",
+            "發高燒",
+            "喝開水"
         ]
     },
     "utterance": {
@@ -58,6 +62,12 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(越挖|越拉|越開|越陷|越養|越積|越賭|越滾|越變|越走|越打)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "<(ACTION_verb|VerbP)>(越|愈)+[^<]+</(ACTION_verb|VerbP)><(MODIFIER|ModifierP)>(越|愈)+[^<]+</(MODIFIER|ModifierP)>"
+        },
+        "叠一個就夠": {
+            "id": "fd6c9fc8-9144-47b1-967d-01c475643780",
+            "pos": "<ENTITY_oov>叠</ENTITY_oov><ENTITY_classifier>一個</ENTITY_classifier><FUNC_inner>就</FUNC_inner><MODIFIER>夠</MODIFIER>",
+            "lexy": [],
+            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>叠</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><ENTITY_classifier>[^<]+</ENTITY_classifier>(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?"
         },
         "好了再取消": {
             "id": "6344b0b1-4434-4791-bb44-a6676da07eff",
@@ -76,6 +86,15 @@
             ],
             "pattern": "<(ACTION_verb|VerbP)>[^<等]+</(ACTION_verb|VerbP)><ENTITY_num>一</ENTITY_num><ENTITY_oov>下</ENTITY_oov>(<MODAL>[^<]+</MODAL>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
+        "倒掉就重新做啊": {
+            "id": "1bec34dd-30df-4671-913c-5893d17494ae",
+            "pos": "<ACTION_verb>倒掉</ACTION_verb><FUNC_inner>就</FUNC_inner><MODIFIER>重新</MODIFIER><ACTION_verb>做</ACTION_verb><CLAUSE_particle>啊</CLAUSE_particle>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(倒掉|倒進|倒入|丟進|丟入|燒開|洗乾淨|喝掉|煮沸|倒出|灌滿)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(做|作用|假作|假裝|冒充|創作|創造|喬裝|孕育|攝製|生出)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_in(ner|ter)>就</FUNC_in(ner|ter)><(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
         "固定起來就是門了": {
             "id": "87402c09-a74a-4001-a97d-2f396be376a0",
             "pos": "<ACTION_verb>固定</ACTION_verb><ACTION_verb>起來</ACTION_verb><AUX>就是</AUX><ENTITY_classifier>門</ENTITY_classifier><ASPECT>了</ASPECT>",
@@ -83,7 +102,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(固定|綁定|訂定|設定|主持|依附|創記錄|創造|安排|安放|安設)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(起來|起來了|下來|開來|出來|拉出來|弄得|拿出來|變成|出去|動到)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><AUX>就是</AUX>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>起來</(ACTION_verb|VerbP)><AUX>就是</AUX>"
         },
         "想吃什麼都可以吃": {
             "id": "d7d18f52-2eee-418b-8114-536aa756968d",
@@ -100,7 +119,15 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(放|放下|放任|放入|放出|放告|放寬|放手|放水|放置|放羊)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!<RANGE_locality>後</RANGE_locality>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(.+)?<FUNC_in(ner|ter)>就</FUNC_in(ner|ter)>(<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>|<FUNC_degreeHead>好</FUNC_degreeHead><ASPECT>了</ASPECT>|<MODAL>[^<]+</MODAL><ASPECT>[^<]+</ASPECT>)"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<ENTITY_classifier>[^<]+</ENTITY_classifier>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><FUNC_inner>就</FUNC_inner>(<FUNC_degreeHead>好</FUNC_degreeHead>|(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>))(<ASPECT>[^<]+</ASPECT>)?"
+        },
+        "沒關係吃一口就好": {
+            "id": "bc9e528e-55b0-425b-ac9e-06fe8d2cee00",
+            "pos": "<FUNC_negation>沒</FUNC_negation><ENTITY_noun>關係</ENTITY_noun><ACTION_verb>吃</ACTION_verb><ENTITY_classifier>一口</ENTITY_classifier><FUNC_inner>就</FUNC_inner><MODIFIER>好</MODIFIER>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃|吃掉|吸收|攝入|耗損|花掉|吃著|煮|啃|喝|吃了)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<ENTITY_classifier>[^<]+</ENTITY_classifier>)?<FUNC_in(ner|ter)>就</FUNC_in(ner|ter)><(MODIFIER|ModifierP)>好</(MODIFIER|ModifierP)>"
         },
         "跳到這裡再跳過來": {
             "id": "67e97f09-5ac8-4bd0-b824-b9fac94029e7",
@@ -110,13 +137,27 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(跳|彈跳|跳出|跳動|跳級|跳躍|跳進|跳閘|跳電|蹦跳|暴漲)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(過來|過來了|回來|出去|出來|回去|進來|出來了|跑出來|下來|上來)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<(要|等下)]+</(ACTION_verb|VerbP)>(?!<ENTITY_num>一</ENTITY_num><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>下</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)(.*?)<(MODIFIER|ModifierP)>[再又]</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<(要|等下|拜託|等)]+</(ACTION_verb|VerbP)>(.+?)(?<!</ENTITY_pronoun>)<(MODIFIER|ModifierP)>(再|又)</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "這我的這也是你的": {
             "id": "f921f678-0177-4db8-a627-81ac1f07e68b",
             "pos": "<FUNC_determiner>這</FUNC_determiner><ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><FUNC_determiner>這</FUNC_determiner><MODIFIER>也</MODIFIER><AUX>是</AUX><ENTITY_pronoun>你</ENTITY_pronoun><FUNC_inner>的</FUNC_inner>",
             "lexy": [],
             "pattern": "<ENTITY_pronoun>[^<]+</ENTITY_pronoun><FUNC_in(ner|ter)>的</FUNC_in(ner|ter)>(<FUNC_determiner>[^<]+</FUNC_determiner>)?(<(MODIFIER|ModifierP)>也</(MODIFIER|ModifierP)>)<AUX>是</AUX>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)>"
+        },
+        "那放假以後再過來": {
+            "id": "eb0435da-432d-4f0e-a13d-177a3e01cf74",
+            "pos": "<FUNC_determiner>那</FUNC_determiner><ENTITY_nouny>放假</ENTITY_nouny><TIME_justtime>以後</TIME_justtime><MODIFIER>再</MODIFIER><ACTION_verb>過來</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(過來|過來了|回來|出去|出來|回去|進來|出來了|跑出來|下來|上來)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>放假</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<TIME_(holiday|justtime|day|week|month|season|year|decade)>[^<]+</TIME_(holiday|justtime|day|week|month|season|year|decade)>){1,10}<(MODIFIER|ModifierP)>再</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "再一個直列的就可以": {
+            "id": "d325da60-527a-41db-9088-b3c20d9459d8",
+            "pos": "<MODIFIER>再</MODIFIER><ENTITY_classifier>一個</ENTITY_classifier><ENTITY_nouny>直列</ENTITY_nouny><FUNC_inner>的</FUNC_inner><FUNC_inner>就</FUNC_inner><MODAL>可以</MODAL>",
+            "lexy": [],
+            "pattern": "<(MODIFIER|ModifierP)>再</(MODIFIER|ModifierP)><ENTITY_classifier>[^<]+</ENTITY_classifier>(.+?)<FUNC_in(ner|ter)>就</FUNC_in(ner|ter)><MODAL>可以</MODAL>"
         },
         "嗯這也是你的這給你": {
             "id": "9d631ab1-ea89-41e2-affa-ec9b46b08725",
@@ -133,6 +174,14 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(過去|逝去)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "(?<=</ENTITY_noun>)<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase><FUNC_in(ner|ter)>就</FUNC_in(ner|ter)>(<FUNC_negation>[^<]+</FUNC_negation>)?(<MODAL>[^<]+</MODAL>)?(<(ACTION_verb|VerbP)>[^<請]+</(ACTION_verb|VerbP)>|<MODAL>[^<]+</MODAL><ASPECT>[^<]+</ASPECT>)"
+        },
+        "用好之後就高空作業": {
+            "id": "dcb4bb9d-113f-4e3a-b716-1a921c963021",
+            "pos": "<ACTION_verb>用</ACTION_verb><FUNC_degreeHead>好</FUNC_degreeHead><RANGE_period>之後</RANGE_period><FUNC_inner>就</FUNC_inner><MODIFIER>高空</MODIFIER><ENTITY_noun>作業</ENTITY_noun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(用|使用|利用|採用|施用|活用|運用|假借|憑靠|中用|常用)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>用</(ACTION_verb|VerbP)><FUNC_degreeHead>[^<]+</FUNC_degreeHead><RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>作業</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
         "你閉上眼睛我要藏東西": {
             "id": "d05667fb-e786-489e-95b8-90ed9228c502",
@@ -161,7 +210,16 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(看到|看見|見到|睇見|瞅見|瞧見|看到了|看見了|感覺到|看過|看著)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(離開|分離|離任|離休|離去|離港|離職|駛離|出走|撤出|放棄)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(.*?)<MODAL>才</MODAL>(.*?)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<等]+</(ACTION_verb|VerbP)>(?!<ENTITY_num>一</ENTITY_num><ENTITY_oov>下</ENTITY_oov>)(.*?)<MODAL>才</MODAL>(.*?)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "就把它固定起來就不是了": {
+            "id": "75b1db8c-c4ea-44e8-8393-56dccab7d5ed",
+            "pos": "<FUNC_inner>就</FUNC_inner><ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_pronoun>它</ENTITY_pronoun><ACTION_verb>固定</ACTION_verb><ACTION_verb>起來</ACTION_verb><FUNC_inner>就</FUNC_inner><FUNC_negation>不</FUNC_negation><AUX>是</AUX><ASPECT>了</ASPECT>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(固定|綁定|訂定|設定|主持|依附|創記錄|創造|安排|安放|安設)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(起來|起來了|下來|開來|出來|拉出來|弄得|拿出來|變成|出去|動到)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<FUNC_in(ner|ter)>就</FUNC_in(ner|ter)>(.*?)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(.*?)<FUNC_in(ner|ter)>就</FUNC_in(ner|ter)>(<FUNC_negation>[^<]+</FUNC_negation>)?<AUX>是</AUX>(<ASPECT>[^<]+</ASPECT>)?"
         },
         "要剪剪這樣子寶寶才能吃": {
             "id": "97a8ed21-0381-470c-a171-b40aa65b0b42",
@@ -172,6 +230,15 @@
             ],
             "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(.*?)(<MODAL>才能</MODAL>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>才能</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
+        "一個再給我拜託一個再給我": {
+            "id": "df9698ae-a886-4760-ad09-d518c6b5be37",
+            "pos": "<ENTITY_classifier>一個</ENTITY_classifier><MODIFIER>再</MODIFIER><ACTION_verb>給</ACTION_verb><ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>拜託</ACTION_verb><ENTITY_classifier>一個</ENTITY_classifier><MODIFIER>再</MODIFIER><ACTION_verb>給</ACTION_verb><ENTITY_pronoun>我</ENTITY_pronoun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(給|供給|帶給|提供|發放|資助|給老|交給|留給|給聖|分給)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(拜託|乞求|乞討|哀求|央求|徵求|懇求|懇請|敬請|求助|求告)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ENTITY_classifier>[^<]+</ENTITY_classifier><(MODIFIER|ModifierP)>再</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>給</(ACTION_verb|VerbP)>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<(ACTION_verb|VerbP)>拜託</(ACTION_verb|VerbP)><ENTITY_classifier>[^<]+</ENTITY_classifier><(MODIFIER|ModifierP)>再</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>給</(ACTION_verb|VerbP)>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?"
+        },
         "我做一個花園跟你合在一起": {
             "id": "9286acae-847e-47e0-9621-57f3f0aa8af9",
             "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>做</ACTION_verb><ENTITY_classifier>一個</ENTITY_classifier><ENTITY_noun>花園</ENTITY_noun><FUNC_conjunction>跟</FUNC_conjunction><ENTITY_pronoun>你</ENTITY_pronoun><ACTION_verb>合</ACTION_verb><FUNC_inner>在</FUNC_inner><MODIFIER>一起</MODIFIER>",
@@ -180,6 +247,14 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(合|合併|合圍|合攏|接合|聯合|併吞|侵吞|倒閉|兼併|加入)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(.+?)(?<!</FUNC_inner>)<FUNC_conjunction>跟</FUNC_conjunction>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "這個不是真的這樣子就不可以進來": {
+            "id": "1cdfde60-f674-41e9-aad1-59590d655bfb",
+            "pos": "<ENTITY_DetPhrase>這個</ENTITY_DetPhrase><FUNC_negation>不</FUNC_negation><AUX>是</AUX><MODIFIER>真</MODIFIER><FUNC_inner>的</FUNC_inner><FUNC_determiner>這</FUNC_determiner><ENTITY_noun>樣子</ENTITY_noun><FUNC_inner>就</FUNC_inner><FUNC_negation>不</FUNC_negation><MODAL>可以</MODAL><ACTION_verb>進來</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(進來|進入|進去|上來|下來|來到|供認|前來|回來|承認|招認)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<AUX>是</AUX>(.+?)<FUNC_in(ner|ter)>就</FUNC_in(ner|ter)>(<FUNC_negation>[^<]+</FUNC_negation>)?(<MODAL>[^<]+</MODAL>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         }
     },
     "alias": {},

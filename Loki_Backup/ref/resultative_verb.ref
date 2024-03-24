@@ -37,17 +37,21 @@
             "眼鏡",
             "柱子",
             "圈圈",
-            "發高燒",
-            "喝開水",
             "小熊維尼",
-            "橋"
+            "橋",
+            "溜滑梯",
+            "爸比",
+            "憤怒鳥",
+            "眼鏡"
         ],
         "_asVerb": [
             "下床",
             "便便",
             "尿尿",
             "流血",
-            "闖關"
+            "闖關",
+            "發高燒",
+            "喝開水"
         ]
     },
     "utterance": {
@@ -57,7 +61,15 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(剪掉|修剪|刪剪|剪成|剪接|剪斷|剪裁|裁剪|中斷|分割|切割)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>剪[掉開]+(了)?</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+[掉開斷碎壞光近反飽死](了)?</(ACTION_verb|VerbP)>"
+        },
+        "夾住": {
+            "id": "867aa912-a9dc-48fc-a148-2dd0b187152f",
+            "pos": "<ACTION_verb>夾住</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(夾住|壓住|劃傷|勾住|刺穿|弄斷|割開|刺破|砍斷|扯斷|割傷)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]住</(ACTION_verb|VerbP)>"
         },
         "打到": {
             "id": "30d61676-60b1-471a-ac5c-752ed8fb7aa0",
@@ -73,13 +85,13 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(打開|張開|開啟|關上|彈出|推開|緊閉|敲開|撬開|打開了|鎖住)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<放發剪看聽有靠玩站回要掉進出病痛傷來去看聞摸等飛去退跳坐到起開知行斷睡想忘謝少多澡講拾得對錯備贏燒血夾加爬]+[上下直歪亂正斷濕乾淨髒空滿鬆緊遠近大小穩善淨楚齊黑白開完好壞掉住成過到準倒回平碎出光成完動來]</(ACTION_verb|VerbP)>(<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>)?"
+            "pattern": "<(ACTION_verb|VerbP)>[^<丟放剪用看聽有站回過要掉進出病痛傷來去看聞摸等飛去退跳坐到起開知行斷睡想忘謝少多澡講拾到得錯備贏燒血夾加爬][上下直歪亂正斷濕飽乾淨髒空滿鬆緊遠大小穩善淨楚齊黑白開完好壞掉住成過準倒回平出成]</(ACTION_verb|VerbP)>(<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>)?"
         },
         "曡完": {
             "id": "28176228-456c-48c3-806e-f2990fd4bddf",
             "pos": "<ENTITY_oov>曡</ENTITY_oov><ASPECT>完</ASPECT>",
             "lexy": [],
-            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>曡</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><ASPECT>[^<]+</ASPECT>"
+            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(曡|拆掉)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<ASPECT>[^<]+</ASPECT>)?"
         },
         "聽到": {
             "id": "9817e8a7-9dae-4dbc-bc30-b72bd3201c2f",
@@ -87,7 +99,15 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(聽到|傾聽|聆聽|聽來|聽取|聽聞|聽見|聽說|得知|獲知|聞悉)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[聽看想]+[到懂完]+(了)?</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[聽看想噎](不)?[到懂完](了)?</(ACTION_verb|VerbP)>"
+        },
+        "醒來": {
+            "id": "62e72f68-891a-408d-b73d-dd15d58f21e1",
+            "pos": "<ACTION_verb>醒來</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(醒來|叫醒|喚醒|甦醒|覺醒|醒悟|意識到|昏倒|驚醒|喝醉|死掉)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>醒來</(ACTION_verb|VerbP)>"
         },
         "閉上": {
             "id": "1cb6447b-8cdb-475d-908b-7857cbde6788",
@@ -96,6 +116,15 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(閉|有閉|閉合|緊閉|關上|開|緊集|重開|封閉|關掉|罩等)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "<(ACTION_verb|VerbP)>[^<有加]+</(ACTION_verb|VerbP)><RANGE_(locality|period)>上</RANGE_(locality|period)>(?!<ACTION_verb>去</ACTION_verb>)"
+        },
+        "倒下來": {
+            "id": "1758be4b-1b57-4cf8-b7e8-5369e21cafe5",
+            "pos": "<ACTION_verb>倒下</ACTION_verb><ACTION_verb>來</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(倒下|倒坍|倒塌|崩倒|傾翻|傾陷|坍塌|垮塌|崩坍|崩塌|崩毀)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(來|上來|下來|來到|前來|回來|進來|值來|性來|出來|去)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>倒下</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>來</(ACTION_verb|VerbP)>"
         },
         "倒出來": {
             "id": "abe38312-1e55-43a3-b7f2-872f93fab6c3",
@@ -106,13 +135,30 @@
             ],
             "pattern": "<(ACTION_verb|VerbP)>[^<]+出</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>來</(ACTION_verb|VerbP)>"
         },
+        "做過來": {
+            "id": "269a95e0-99a2-4350-9f27-79e040616a8e",
+            "pos": "<VerbP>做過</VerbP><ACTION_verb>來</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(做過|作過|幹過|當過|做了|從事過|遇過|進行過|嘗試過|參與過|找過)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(來|上來|下來|來到|前來|回來|進來|來語|端來|出來|值來)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+過</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>來</(ACTION_verb|VerbP)>"
+        },
         "壞掉了": {
             "id": "02b0bf46-b64d-4f89-9a4f-8509b9dee9af",
             "pos": "<VerbP>壞掉了</VerbP>",
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(壞掉了|壞掉|壞了|裝了|搬不動|腫了|爆炸了|折斷了|腫起來|撞到了|濕了)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>(壞掉|打開|亂掉|吃飽)了</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[壞亂拿]掉(了)?</(ACTION_verb|VerbP)>"
+        },
+        "弄完了": {
+            "id": "86333427-bd6f-4f58-b755-0f7173ed3281",
+            "pos": "<VerbP>弄完了</VerbP>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(弄完了|)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(<(ACTION_verb|VerbP)>[^<]完(了)?</(ACTION_verb|VerbP)>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>錄影</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>完了</(ACTION_verb|VerbP)>)"
         },
         "戴得了": {
             "id": "bccb4925-fba1-47b1-acd6-30ab6a479f07",
@@ -128,7 +174,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(收|收取|繳|交納|繳了|收了|加收|酌收|還本|預繳|繳交)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(<(ACTION_verb|VerbP)>[^<靠有站飛來去退回進開跳到要掉進出病痛傷看聽聞講到吃喝摸等坐起知行斷睡想忘針]</(ACTION_verb|VerbP)>|<ACTION_quantifiedVerb>[^<]+</ACTION_quantifiedVerb>)<FUNC_degreeHead>好</FUNC_degreeHead>(?!<CLAUSE_YesNoQ>[^<]+</CLAUSE_YesNoQ>)(<ASPECT>了</ASPECT>)?"
+            "pattern": "(<(ACTION_verb|VerbP)>[^<靠有站飛來去退回進開跳到要掉進出病痛傷看聽聞講到吃喝摸等坐起知行斷睡想忘針擦]</(ACTION_verb|VerbP)>|<ACTION_quantifiedVerb>[^<]+</ACTION_quantifiedVerb>)<FUNC_degreeHead>好</FUNC_degreeHead>(?!<CLAUSE_YesNoQ>[^<]+</CLAUSE_YesNoQ>)(<ASPECT>了</ASPECT>)?"
         },
         "收起來": {
             "id": "09031f84-c641-4145-a416-3e7a2815ede7",
@@ -136,23 +182,39 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(收起來|拿下來|藏起來|送出去|送回去|拉起來|扔掉|放回去|抱起來|關起來|放進去)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<拔夾站飛來去玩退扶回進開跳剪到要掉進出病痛傷講看聽聞吃喝摸等坐知行斷睡想拿蓋]+起來</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<拔夾站飛來舉去玩退扶回進開跳剪到要掉進出病痛傷講看聽聞吃喝摸等坐知行斷睡想拿]+起來</(ACTION_verb|VerbP)>"
         },
-        "聽不到": {
-            "id": "3477bbbf-f622-42e0-bf68-508d1caf2e7b",
-            "pos": "<ACTION_verb>聽不到</ACTION_verb>",
+        "暈倒了": {
+            "id": "0b4af6dc-8c7b-4358-886d-718a3208cd12",
+            "pos": "<VerbP>暈倒了</VerbP>",
             "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(聽不到|聽不見|聽見了|聽得到|聽到了|看不到|看不見|見不到|聽見|聽不懂|聽到)</(ACTION_verb|VerbP)>"
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(暈倒了|昏倒|暈厥|創玩)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[聽看想]不+[到懂完]</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]倒(了)?</(ACTION_verb|VerbP)>"
         },
-        "聽到了": {
-            "id": "d967a2bc-5f28-4336-bba9-b13487f06bf8",
-            "pos": "<VerbP>聽到了</VerbP>",
+        "發動了": {
+            "id": "74c815c8-9d71-47c5-840d-25e2235b190b",
+            "pos": "<VerbP>發動了</VerbP>",
             "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(聽到了|傾聽|聆聽|聽來|聽取|聽聞|聽見|聽說|得知|獲知|聞悉)</(ACTION_verb|VerbP)>"
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(發動了|動員|勸動|啟動|帶動|挑動|撩動|擾動|煽動|觸動|調動)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<(發燒|感冒|流血|生病|完成|破皮|跌倒|打針)]{2}(了)</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]動(了)?</(ACTION_verb|VerbP)>"
+        },
+        "發燒了": {
+            "id": "cf4578ce-cecd-404e-a1e3-3e39564c2c54",
+            "pos": "<VerbP>發燒了</VerbP>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(發燒了|照做了|醒來了|謝謝了|失戀了|中風了|吵架了|做對了|團聚了|快救|犯錯了)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>(發燒|感冒|流血|生病|破皮|跌倒|打針)+(了)?</(ACTION_verb|VerbP)>"
+        },
+        "說錯了": {
+            "id": "8cac5b92-765e-4713-bde5-911d3ac4a4be",
+            "pos": "<VerbP>說錯了</VerbP>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(說錯了|)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]錯(了)?</(ACTION_verb|VerbP)>"
         },
         "連起來": {
             "id": "5df4a3ee-2c0e-4bfb-8d1f-7e75b1dd62bd",
@@ -177,7 +239,16 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(固定|綁定|訂定|設定|主持|依附|創記錄|創造|安排|安放|安設)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(起來|起來了|下來|開來|出來|拉出來|弄得|拿出來|變成|出去|動到)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(<(ACTION_verb|VerbP)>[^<靠站飛來去玩退回進開跳剪到要掉進出病講痛傷看聽聞吃喝摸等坐知行斷睡想]+</(ACTION_verb|VerbP)>|<MODIFIER_color>[^<]+</MODIFIER_color>)<(ACTION_verb|VerbP)>(起來|倒|回去)+(了)?</(ACTION_verb|VerbP)>"
+            "pattern": "(<(ACTION_verb|VerbP)>[^<靠站飛來去玩退回進開用跳剪到要掉進出病講痛傷看聽聞吃喝摸等坐知行斷睡想]+</(ACTION_verb|VerbP)>|<MODIFIER_color>[^<]+</MODIFIER_color>)<(ACTION_verb|VerbP)>(起來|倒|回去)(了)?</(ACTION_verb|VerbP)>"
+        },
+        "我要放好": {
+            "id": "ae67c64d-5369-4171-b5d4-4947fb03ef66",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>要</ACTION_verb><ACTION_verb>放好</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(要|想要|需要|想拿|想買|渴望|渴求|餓了|得照|需|更要)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(放好|擺好|撥掉|洗勻|煮軟|燒炙|用槳|吐到|捲起來|收好|握好)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[放看]好(了)?</(ACTION_verb|VerbP)>"
         },
         "換下一個": {
             "id": "85a55ee1-238c-4b64-8dcf-56aabcf0538d",
@@ -185,7 +256,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(換下|換出|罰下|炒魷魚|打爆|抬出|擋出|踢出|打飛|打暈|刷掉)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+(下|上)</(ACTION_verb|VerbP)><ENTITY_classifier>[^<]+</ENTITY_classifier>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<剩]+(下|上)</(ACTION_verb|VerbP)><ENTITY_classifier>[^<]+</ENTITY_classifier>"
         },
         "用成這樣": {
             "id": "10051ed8-f85f-497c-9d50-529a2696a82c",
