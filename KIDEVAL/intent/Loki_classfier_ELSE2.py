@@ -74,7 +74,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
                 termSTR = list(pat.finditer(posSTR))[0].group(1)  
                 termSTR = f"一{termSTR[-1]}"
                 posSTR = articut.parse(termSTR)["result_pos"][0]
-                if (posSTR.startswith("<ENTITY_classifier>") or termSTR in ["一樓"]) and termSTR != "一個"and len(resultDICT["量-特"]) == 0:
+                if (posSTR.startswith("<ENTITY_classifier>") or termSTR in ["一樓"]) and termSTR not in  ["一個"]and len(resultDICT["量-特"]) == 0:
                     resultDICT["量-特"].append(1)
                 else:
                     pass
@@ -90,15 +90,18 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             try:
                 posSTR = articut.parse(inputSTR)["result_pos"][0]
                 # termSTR => 很大瓶
-                termSTR = list(pat.finditer(posSTR))[0].group(1)  
-                # termSTR => 一瓶
-                termSTR = f"一{termSTR[-1]}"
-                # posSTR => <ENTITY_classifier>一瓶</ENTITY_classifier>
-                posSTR = articut.parse(termSTR)["result_pos"][0]
-                if (posSTR.startswith("<ENTITY_classifier>") or termSTR in ["一樓"]) and termSTR != "一個" and len(resultDICT["量-特"]) == 0:
-                    resultDICT["量-特"].append(1)
-                else:
+                termSTR = list(pat.finditer(posSTR))[0].group(1)
+                if  termSTR.startswith("比較"):
                     pass
+                else:
+                    # termSTR => 一瓶
+                    termSTR = f"一{termSTR[-1]}"
+                    # posSTR => <ENTITY_classifier>一瓶</ENTITY_classifier>
+                    posSTR = articut.parse(termSTR)["result_pos"][0]
+                    if (posSTR.startswith("<ENTITY_classifier>") or termSTR in ["一樓"]) and termSTR != "一個" and len(resultDICT["量-特"]) == 0:
+                        resultDICT["量-特"].append(1)
+                    else:
+                        pass
             except:
                 pass
 

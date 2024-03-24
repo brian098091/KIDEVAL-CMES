@@ -7,49 +7,60 @@
     },
     "user_defined": {
         "_asNoun": [
+            "三角形",
+            "三角站",
+            "人行道",
             "佩佩豬",
+            "兵兵病",
             "叮咚",
+            "哈啾",
+            "喝開水",
+            "圈圈",
+            "圓柱體",
+            "圓筒形",
             "客人",
+            "小熊維尼",
             "屋頂",
             "巧虎",
+            "彎彎形",
+            "憤怒鳥",
+            "摩天輪",
+            "旋轉木馬",
             "杯子",
             "東西",
+            "柱子",
             "桌子",
+            "橋",
+            "溜滑梯",
+            "漢堡排",
             "炸彈",
+            "爸比",
+            "發高燒",
             "盤子",
+            "眼鏡",
             "紅蘿蔔",
+            "縫縫",
+            "肚子痛",
             "菜市場",
             "藥",
             "螺絲",
             "車車",
             "遊樂設施",
+            "長方形",
             "風",
             "飛船",
-            "縫縫",
-            "眼鏡",
-            "柱子",
-            "圈圈",
-            "摩天輪",
-            "旋轉木馬",
-            "長方形",
-            "圓筒形",
-            "三角形",
-            "彎彎形",
-            "圓柱體",
-            "屋頂",
-            "溜滑梯",
-            "漢堡排",
-            "人行道",
-            "爸比",
-            "哈啾"
+            "嗶嗶",
+            "要地方"
         ],
         "_asVerb": [
             "下床",
             "便便",
-            "尿尿",
-            "發高燒",
             "喝開水",
-            "泡一泡"
+            "尿尿",
+            "泡一泡",
+            "流血",
+            "發高燒",
+            "闖關"
         ]
     },
     "utterance": {
@@ -57,7 +68,7 @@
             "id": "41dc1b3e-fde3-41f7-8be1-9fb9441ddc89",
             "pos": "<ENTITY_classifier>一瓶</ENTITY_classifier>",
             "lexy": [],
-            "pattern": "<ENTITY_classifier>[^<]*[^把個樣門彎]</ENTITY_classifier>"
+            "pattern": "<ENTITY_classifier>[^<]*[^把個樣門彎次頭]</ENTITY_classifier>"
         },
         "多瓶": {
             "id": "3a7fc169-1bdb-420b-b4eb-3129fe916580",
@@ -67,11 +78,23 @@
             ],
             "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>多</(ACTION_verb|VerbP)><ENTITY_classifier>[^<個樣]</ENTITY_classifier>"
         },
+        "這班": {
+            "id": "9f6d0280-85e7-41bb-97ca-9d1ccce73e2c",
+            "pos": "<ENTITY_nouny>這班</ENTITY_nouny>",
+            "lexy": [],
+            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>這班</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
         "那瓶": {
             "id": "3159a8e0-8103-4840-939b-d19efbb9ecc9",
             "pos": "<ENTITY_DetPhrase>那瓶</ENTITY_DetPhrase>",
             "lexy": [],
-            "pattern": "<ENTITY_DetPhrase>[哪這那某整][^<]*[^把個樣門彎次]</ENTITY_DetPhrase>"
+            "pattern": "<ENTITY_DetPhrase>[哪這那某整][^<]*[^把個樣門彎頭]</ENTITY_DetPhrase>"
+        },
+        "一頭牛": {
+            "id": "8bb2623a-4a86-4d73-ad35-2c951bd61e14",
+            "pos": "<ENTITY_classifier>一頭</ENTITY_classifier><ENTITY_noun>牛</ENTITY_noun>",
+            "lexy": [],
+            "pattern": "<ENTITY_classifier>[^<]頭+</ENTITY_classifier>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?"
         },
         "大一點": {
             "id": "e57e4371-66e3-4f83-979e-2c4b1b6645a5",
@@ -115,7 +138,15 @@
             "id": "bac66796-0e89-4755-ba7d-9ccaa3422314",
             "pos": "<ENTITY_classifier>一把</ENTITY_classifier><ENTITY_noun>夾子</ENTITY_noun>",
             "lexy": [],
-            "pattern": "<ENTITY_classifier>[^<]+把</ENTITY_classifier><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(?!<ACTION_verb>[^<]+</ACTION_verb>)"
+            "pattern": "<ENTITY_(classifier|DetPhrase)>[^<]+把</ENTITY_(classifier|DetPhrase)>(.*?)<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(?!<ACTION_verb>[^<]+</ACTION_verb>)"
+        },
+        "下一班車": {
+            "id": "30363bda-a031-4269-a6f6-b0499584d6fc",
+            "pos": "<ACTION_verb>下</ACTION_verb><ENTITY_num>一</ENTITY_num><ENTITY_noun>班車</ENTITY_noun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(下|恐下|下目|讓下|度下|上|到下|有下|給下|彎打)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ENTITY_num>一</ENTITY_num><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>班車</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
         "有點發燒": {
             "id": "e88ee945-9774-42e6-9b1a-68a0a68cb4d0",
@@ -124,7 +155,15 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(發燒|咳嗽|嘔吐|高燒|鼻塞|頭暈|嗜睡|乾咳|發病|感冒|抽搐)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>有</(ACTION_verb|VerbP)><QUANTIFIER>(一點)?點</QUANTIFIER>"
+            "pattern": "(<(ACTION_verb|VerbP)>有</(ACTION_verb|VerbP)>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+有</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)<QUANTIFIER>(一點)?點</QUANTIFIER>"
+        },
+        "下一班火車": {
+            "id": "016f31c9-7926-4fed-a5f9-c3325db41f81",
+            "pos": "<ACTION_verb>下</ACTION_verb><ENTITY_num>一</ENTITY_num><ENTITY_nounHead>班</ENTITY_nounHead><ENTITY_noun>火車</ENTITY_noun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(下|恐下|下目|讓下|度下|上|到下|有下|給下|彎打)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ENTITY_num>一</ENTITY_num><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>班</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+車</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
         "蓋小樓一點": {
             "id": "2742ca73-0501-4e49-895c-65d53e8d199c",
