@@ -7,49 +7,60 @@
     },
     "user_defined": {
         "_asNoun": [
+            "三角形",
+            "三角站",
+            "人行道",
             "佩佩豬",
+            "兵兵病",
             "叮咚",
+            "哈啾",
+            "喝開水",
+            "圈圈",
+            "圓柱體",
+            "圓筒形",
             "客人",
+            "小熊維尼",
             "屋頂",
             "巧虎",
+            "彎彎形",
+            "憤怒鳥",
+            "摩天輪",
+            "旋轉木馬",
             "杯子",
             "東西",
+            "柱子",
             "桌子",
+            "橋",
+            "溜滑梯",
+            "漢堡排",
             "炸彈",
+            "爸比",
+            "發高燒",
             "盤子",
+            "眼鏡",
             "紅蘿蔔",
+            "縫縫",
+            "肚子痛",
             "菜市場",
             "藥",
             "螺絲",
             "車車",
             "遊樂設施",
+            "長方形",
             "風",
             "飛船",
-            "縫縫",
-            "眼鏡",
-            "柱子",
-            "圈圈",
-            "摩天輪",
-            "旋轉木馬",
-            "長方形",
-            "圓筒形",
-            "三角形",
-            "彎彎形",
-            "圓柱體",
-            "屋頂",
-            "溜滑梯",
-            "漢堡排",
-            "人行道",
-            "爸比",
-            "哈啾"
+            "嗶嗶",
+            "要地方"
         ],
         "_asVerb": [
             "下床",
             "便便",
-            "尿尿",
-            "發高燒",
             "喝開水",
-            "泡一泡"
+            "尿尿",
+            "泡一泡",
+            "流血",
+            "發高燒",
+            "闖關"
         ]
     },
     "utterance": {
@@ -73,7 +84,15 @@
             "id": "8082291e-9ab7-4ade-8d3c-c2b1a02d8ae7",
             "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><UserDefined>東西</UserDefined>",
             "lexy": [],
-            "pattern": "(?<!</FUNC_in(ner|ter)>)(?<!</ACTION_verb>)(?<!</Verb_P>)(?<!</ACTION_verb>)<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun|DetPhrase|num)|RANGE_(locality|period)|MODIFIER|ModifierP|LOCATION|MODIFIER_color)>((?!(有|進去|也|對|擺|扁|話|樣)).)+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun|DetPhrase|num)|RANGE_(locality|period)|MODIFIER|ModifierP|LOCATION|MODIFIER_color)>"
+            "pattern": "(.+)(?<!</FUNC_in(ner|ter)>)(?<!</ACTION_verb>)(?<!</Verb_P>)<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun|DetPhrase|num)|RANGE_(locality|period)|MODIFIER|ModifierP|LOCATION|MODIFIER_color)>((?!(有|進去|也|對|擺|扁|話|樣)).)+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun|DetPhrase|num)|RANGE_(locality|period)|MODIFIER|ModifierP|LOCATION|MODIFIER_color)>"
+        },
+        "用掉的你": {
+            "id": "a0f38bbb-7f01-458a-ad0b-e9c90cb8dd5a",
+            "pos": "<ACTION_verb>用掉</ACTION_verb><FUNC_inner>的</FUNC_inner><ENTITY_pronoun>你</ENTITY_pronoun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(用掉|花掉|存了|用完|籌到|賣了|用完了|用罄|募到|賺進|丟掉)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><ENTITY_pronoun>[^<]+</ENTITY_pronoun>(?!<(ACTION_verb|VerbP)>知道</(ACTION_verb|VerbP)><CLAUSE_YesNoQ>[^<]+</CLAUSE_YesNoQ>)"
         },
         "開心的跑著": {
             "id": "960bbdf3-1c69-4682-9c4b-e6d9f59e3b86",
@@ -89,7 +108,15 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(放出來|救出來|關起來|抓起來|推下去|拉出來|抓回|送出去|吃掉了|打昏|丟到)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov|DetPhrase|pronoun))>((?!(知道|有|剪|舉|話|擺|扁)).)+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|DetPhrase|pronoun))>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov|DetPhrase))>((?!(知道|有|剪|舉|話|擺|扁)).)+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|DetPhrase))>"
+        },
+        "這裡是機器人關卡的游戲": {
+            "id": "79096b88-efde-4ef8-9dce-dcfd7bcd5ba2",
+            "pos": "<LOCATION>這裡</LOCATION><AUX>是</AUX><ENTITY_nouny>機器人</ENTITY_nouny><ENTITY_noun>關卡</ENTITY_noun><FUNC_inner>的</FUNC_inner><VerbP>游戲</VerbP>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(游戲|集換|捲軸|跨平)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><(ACTION_verb|VerbP)>游戲</(ACTION_verb|VerbP)>"
         }
     },
     "alias": {},

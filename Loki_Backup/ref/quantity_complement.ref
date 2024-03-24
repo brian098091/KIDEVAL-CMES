@@ -7,49 +7,60 @@
     },
     "user_defined": {
         "_asNoun": [
+            "三角形",
+            "三角站",
+            "人行道",
             "佩佩豬",
+            "兵兵病",
             "叮咚",
+            "哈啾",
+            "喝開水",
+            "圈圈",
+            "圓柱體",
+            "圓筒形",
             "客人",
+            "小熊維尼",
             "屋頂",
             "巧虎",
+            "彎彎形",
+            "憤怒鳥",
+            "摩天輪",
+            "旋轉木馬",
             "杯子",
             "東西",
+            "柱子",
             "桌子",
+            "橋",
+            "溜滑梯",
+            "漢堡排",
             "炸彈",
+            "爸比",
+            "發高燒",
             "盤子",
+            "眼鏡",
             "紅蘿蔔",
+            "縫縫",
+            "肚子痛",
             "菜市場",
             "藥",
             "螺絲",
             "車車",
             "遊樂設施",
+            "長方形",
             "風",
             "飛船",
-            "縫縫",
-            "眼鏡",
-            "柱子",
-            "圈圈",
-            "摩天輪",
-            "旋轉木馬",
-            "長方形",
-            "圓筒形",
-            "三角形",
-            "彎彎形",
-            "圓柱體",
-            "屋頂",
-            "溜滑梯",
-            "漢堡排",
-            "人行道",
-            "爸比",
-            "哈啾"
+            "嗶嗶",
+            "要地方"
         ],
         "_asVerb": [
             "下床",
             "便便",
-            "尿尿",
-            "發高燒",
             "喝開水",
-            "泡一泡"
+            "尿尿",
+            "泡一泡",
+            "流血",
+            "發高燒",
+            "闖關"
         ]
     },
     "utterance": {
@@ -63,7 +74,7 @@
             "id": "df20cd50-f2f4-4bf1-8dc1-61ef7ee9feb7",
             "pos": "<MODIFIER>再</MODIFIER><QUANTIFIER>一點</QUANTIFIER>",
             "lexy": [],
-            "pattern": "<(MODIFIER|ModifierP)>再</(MODIFIER|ModifierP)>(<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>)?<QUANTIFIER>一點</QUANTIFIER>"
+            "pattern": "<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>(<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>)?<QUANTIFIER>一點</QUANTIFIER>"
         },
         "切兩半": {
             "id": "2c231513-e312-4135-ad49-f9df4ea17b63",
@@ -119,7 +130,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(等|久等|稍等|等候|等到|等待|等第|等級|候補|安排|待遇)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>等</(ACTION_verb|VerbP)>(.+)?<ENTITY_num>一</ENTITY_num><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>下</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>)?(<FUNC_degreeHead>好</FUNC_degreeHead><ASPECT>了</ASPECT>)?(<CLAUSE_particle>[^<]+</CLAUSE_particle>)?$"
+            "pattern": "<(ACTION_verb|VerbP)>等</(ACTION_verb|VerbP)>(.+)?<ENTITY_num>一</ENTITY_num><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>下</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>)?(<FUNC_degreeHead>好</FUNC_degreeHead><ASPECT>了</ASPECT>)?(<CLAUSE_particle>[^<]+</CLAUSE_particle>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>)?$"
         },
         "等一下再說": {
             "id": "7b04067f-39a6-4d5a-829e-4a258d84a131",
@@ -128,7 +139,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(等|久等|稍等|等候|等到|等待|等第|等級|候補|安排|待遇)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(說|演說|說話|宣判|拼讀|談到|辯護|說過|說到|講出|說著)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>等</(ACTION_verb|VerbP)><ENTITY_num>一</ENTITY_num><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>下</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(MODIFIER|ModifierP)>再</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>等</(ACTION_verb|VerbP)><ENTITY_num>一</ENTITY_num><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>下</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<(MODIFIER|ModifierP)>再</(MODIFIER|ModifierP)>|<MODAL>才</MODAL>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "等我一下啦": {
             "id": "ac66042d-8e98-4b4f-8254-347692e970aa",

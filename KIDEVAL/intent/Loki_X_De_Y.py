@@ -75,6 +75,18 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             resultDICT["X的Y"].append(1)
 
+    if utterance == "用掉的你":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["X的Y"].append(1)
+
+    if utterance == "這裡是機器人關卡的游戲":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["X的Y"].append(1)
+
     if utterance == "我的東西":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)

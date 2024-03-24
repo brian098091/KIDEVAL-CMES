@@ -125,6 +125,30 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         elif len(resultDICT["量-特"])  == 0:
             resultDICT["量-特"].append(1)
 
+    if utterance == "一頭牛":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "下一班火車":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "下一班車":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "這班":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
     if utterance == "蓋小樓一點":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
