@@ -70,15 +70,21 @@ if __name__ == "__main__":
         '感知/心理狀態': []
     }    
     from KIDEVAL import execLoki
+    AccuracyCount = 0
+    CoveringRateCount = 0
     sentence_keys = list(sentence_dict.keys())
     false_list = []
     diff_dict_c = {}
     diff_dict_w = {}
-    with open('wrong.txt', 'w',encoding='utf-8') as f:
+    with open('predict.txt', 'w',encoding='utf-8') as f:
         for inputSTR in sentence_keys:
-
             resultDICT = execLoki(content=inputSTR, splitLIST=splitLIST, refDICT=refDICT)
-
+            
+            if all(len(x) == 0  for x in resultDICT.values()) and all(len(x) == 0  for x in sentence_dict[inputSTR].values()):
+                CoveringRateCount += 1
+            elif not all(len(x) == 0  for x in resultDICT.values()) and not all(len(x) == 0  for x in sentence_dict[inputSTR].values()):
+                CoveringRateCount += 1
+            
             itemScoreDICT = {}
             for i,k in zip(sentence_dict[inputSTR],refDICT):
                 if sum(resultDICT[k])== 0:
@@ -98,4 +104,14 @@ if __name__ == "__main__":
                 print("ModelPredict",diff_dict_w,file=f,end='\n\n')    
                 false_list.clear() 
                 diff_dict_c.clear()
-                diff_dict_w.clear()  
+                diff_dict_w.clear() 
+            else :
+                AccuracyCount += 1
+        f.close()
+    with open('score.txt', 'w',encoding='utf-8') as f:
+        print("All 4996 sentences:",file=f)
+        print("Covered: ",CoveringRateCount,file=f)
+        print("Covering Rate: ",100*(CoveringRateCount/4996),"%",file=f)
+        print("Match: ",AccuracyCount,file=f)
+        print("Accuracy: ",100*(AccuracyCount/4996),"%",file=f)
+        
