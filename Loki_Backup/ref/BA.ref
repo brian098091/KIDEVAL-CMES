@@ -8,17 +8,48 @@
     "user_defined": {
         "_asNoun": [
             "佩佩豬",
+            "叮咚",
             "客人",
+            "屋頂",
+            "巧虎",
             "杯子",
+            "東西",
+            "桌子",
+            "炸彈",
             "盤子",
+            "紅蘿蔔",
             "菜市場",
+            "藥",
+            "螺絲",
+            "車車",
+            "遊樂設施",
+            "風",
             "飛船",
-            "遊樂設施"
+            "縫縫",
+            "眼鏡",
+            "柱子",
+            "圈圈",
+            "摩天輪",
+            "旋轉木馬",
+            "長方形",
+            "圓筒形",
+            "三角形",
+            "彎彎形",
+            "圓柱體",
+            "屋頂",
+            "溜滑梯",
+            "漢堡排",
+            "人行道",
+            "爸比",
+            "哈啾"
         ],
         "_asVerb": [
             "下床",
             "便便",
-            "尿尿"
+            "尿尿",
+            "發高燒",
+            "喝開水",
+            "泡一泡"
         ]
     },
     "utterance": {
@@ -27,6 +58,14 @@
             "pos": "<ACTION_lightVerb>把</ACTION_lightVerb>",
             "lexy": [],
             "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>"
+        },
+        "是把夾子丟": {
+            "id": "fa4bed05-725e-43a5-8e24-10795848faa5",
+            "pos": "<AUX>是</AUX><ENTITY_classifier>把</ENTITY_classifier><ENTITY_noun>夾子</ENTITY_noun><ACTION_verb>丟</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(丟|丟掉|扔出|扔掉|扔棄|投入|投出|投射|投擲|投放|投注)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ENTITY_classifier>把</ENTITY_classifier><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         }
     },
     "alias": {},

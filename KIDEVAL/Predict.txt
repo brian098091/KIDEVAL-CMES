@@ -1,0 +1,4292 @@
+我要幫你打針 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+換小豬了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+可以打針了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+這個藥豬豬的 ['量-個']
+GoldStandard {'量-個': ''}
+ModelPredict {'量-個': '1'}
+
+放出來的玩具 ['趨向補語']
+GoldStandard {'趨向補語': '1'}
+ModelPredict {'趨向補語': ''}
+
+我想換另外一個 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': '1'}
+ModelPredict {'感知/心理狀態': ''}
+
+我去看一下 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+我想玩這個玩具 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': '1'}
+ModelPredict {'感知/心理狀態': ''}
+
+我想 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': ''}
+ModelPredict {'感知/心理狀態': '1'}
+
+我想玩打針的遊戲 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': '1'}
+ModelPredict {'感知/心理狀態': ''}
+
+量量耳朵 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+給小豬吃 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+我要放好 ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+豬豬生病了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+回家休息 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+換玩具了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+放好 ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+不要了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+不要講了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+收起來了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+不要玩到 ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+過來這裡 ['結果補語']
+GoldStandard {'結果補語': ''}
+ModelPredict {'結果補語': '1'}
+
+對準 ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+這個大的 ['量-個']
+GoldStandard {'量-個': ''}
+ModelPredict {'量-個': '1'}
+
+壓好了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+我可以加在這邊嗎 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+這個打不開 ['量-個']
+GoldStandard {'量-個': ''}
+ModelPredict {'量-個': '1'}
+
+你是誰回來了 ['體貌', '動前介詞']
+GoldStandard {'體貌': '', '動前介詞': ''}
+ModelPredict {'體貌': '1', '動前介詞': '1'}
+
+再一次 ['數量補語']
+GoldStandard {'數量補語': ''}
+ModelPredict {'數量補語': '1'}
+
+媽媽幫我開 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+他有角角嗎 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+他要在旁邊 ['方位', '動後介詞']
+GoldStandard {'方位': '', '動後介詞': ''}
+ModelPredict {'方位': '1', '動後介詞': '1'}
+
+再幫我弄一下 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+幫我黏一下 ['數量補語', '連謂/兼語']
+GoldStandard {'數量補語': '', '連謂/兼語': '1'}
+ModelPredict {'數量補語': '1', '連謂/兼語': ''}
+
+飛機還有一個吸盤 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+前面啊還有一個! ['方位', '存現句']
+GoldStandard {'方位': '', '存現句': ''}
+ModelPredict {'方位': '1', '存現句': '1'}
+
+還有一個 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+他還有一個翅膀 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+這是放哪裡 ['方位']
+GoldStandard {'方位': '1'}
+ModelPredict {'方位': ''}
+
+完成了 ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+這是哪裡 ['方位']
+GoldStandard {'方位': '1'}
+ModelPredict {'方位': ''}
+
+我拼錯了 ['結果補語', '動前介詞']
+GoldStandard {'結果補語': '1', '動前介詞': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1'}
+
+排完了 ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+爸比教我爸比教我一下 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+換我了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+我排完了 ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+然後裝這個 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+我們在玩玩具欸 ['體貌']
+GoldStandard {'體貌': '1'}
+ModelPredict {'體貌': ''}
+
+要放裡面而且用裡面 ['方位', '動後介詞']
+GoldStandard {'方位': '', '動後介詞': ''}
+ModelPredict {'方位': '1', '動後介詞': '1'}
+
+嗯玩積木我在跟爸爸玩積木 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+要收拾了 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+我剛剛弄得 ['X的']
+GoldStandard {'X的': '1'}
+ModelPredict {'X的': ''}
+
+對這樣子裝就這樣子裝 ['緊縮複句']
+GoldStandard {'緊縮複句': '1'}
+ModelPredict {'緊縮複句': ''}
+
+然後就這樣子裝 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+這個叉子吃 ['量-個']
+GoldStandard {'量-個': ''}
+ModelPredict {'量-個': '1'}
+
+打不開被膠帶黏起來了 ['被字句']
+GoldStandard {'被字句': ''}
+ModelPredict {'被字句': '1'}
+
+膠帶黏起來啊 ['體貌']
+GoldStandard {'體貌': '1'}
+ModelPredict {'體貌': ''}
+
+螺絲奶奶家是有這個螺絲可是不見了 ['量-特']
+GoldStandard {'量-特': '1'}
+ModelPredict {'量-特': ''}
+
+三三是兩個跑得快 ['可能補語']
+GoldStandard {'可能補語': ''}
+ModelPredict {'可能補語': '1'}
+
+嗯狗狗最喜歡吃紅蘿蔔 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+喜歡吃 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+嗯貓喜歡吃 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+貓喜歡吃玉米 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+兩個玉米都給巧虎吃 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+給巧虎吃 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+喜歡吃花椰菜 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+老虎喜歡吃蛋糕 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+河馬喜歡吃這個 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+蚊子喜歡吃柳丁 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+喜歡吃柳丁 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+欸有推車 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+看不出來 ['趨向補語']
+GoldStandard {'趨向補語': ''}
+ModelPredict {'趨向補語': '1'}
+
+可是我沒位置欸 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+切這半給我 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+這半給你 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+可是要這些 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+安娜還有雪寶 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+嗯可是我不想要這個加高 ['量-個', '感知/心理狀態']
+GoldStandard {'量-個': '', '感知/心理狀態': '1'}
+ModelPredict {'量-個': '1', '感知/心理狀態': ''}
+
+欸還有一個可以當門 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+不是啦他們回到家了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+邊的是這個 ['量-個']
+GoldStandard {'量-個': ''}
+ModelPredict {'量-個': '1'}
+
+然後湯匙 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+玉米的關起來了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+還有一個花 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+沒有了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+還有放推車裡 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+那個為什麼要弄上去 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+然後 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+我幫你搭那個 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+然後有一個人 ['量-個', '帶連詞複句']
+GoldStandard {'量-個': '', '帶連詞複句': ''}
+ModelPredict {'量-個': '1', '帶連詞複句': '1'}
+
+還有人也站起來了 ['體貌', '存現句']
+GoldStandard {'體貌': '', '存現句': ''}
+ModelPredict {'體貌': '1', '存現句': '1'}
+
+因為我要收了 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+飛到上面 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+發動了 ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+蓋起來了 ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+三隻小豬的 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+他在切 ['體貌']
+GoldStandard {'體貌': '1'}
+ModelPredict {'體貌': ''}
+
+放下來呀 ['趨向補語']
+GoldStandard {'趨向補語': '1'}
+ModelPredict {'趨向補語': ''}
+
+我們一起來做這個 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+你要跟我做警察 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+我說警察救護車你聽到 ['結果補語', '動前介詞', '感知/心理狀態']
+GoldStandard {'結果補語': '1', '動前介詞': '', '感知/心理狀態': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1', '感知/心理狀態': '1'}
+
+用好之後就高空作業 ['緊縮複句']
+GoldStandard {'緊縮複句': '1'}
+ModelPredict {'緊縮複句': ''}
+
+我的拖吊車壞掉了 ['X的Y']
+GoldStandard {'X的Y': ''}
+ModelPredict {'X的Y': '1'}
+
+客人坐走了 ['體貌', '動前介詞']
+GoldStandard {'體貌': '', '動前介詞': ''}
+ModelPredict {'體貌': '1', '動前介詞': '1'}
+
+歡迎光臨 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+那邊還有花花 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+幫我排火車 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+在對面開車 ['方位', '體貌']
+GoldStandard {'方位': '', '體貌': ''}
+ModelPredict {'方位': '1', '體貌': '1'}
+
+我的火車要去載客人了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+去鐵路上載客人 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+在這邊休息 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+捷運可以去載小朋友 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+火車玩好了要蓋捷運 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+捷運站才有捷運 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+外面怎麼了 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+進去 ['趨向補語']
+GoldStandard {'趨向補語': '1'}
+ModelPredict {'趨向補語': ''}
+
+從外面拼 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+還有吐司 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+我已經幫你做好啦 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+等一下好了玉米 ['體貌', '數量補語']
+GoldStandard {'體貌': '', '數量補語': '1'}
+ModelPredict {'體貌': '1', '數量補語': ''}
+
+我來用 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+我等一下會來幫忙 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+嗯現在煮完我再幫你煮 ['連謂/兼語', '緊縮複句']
+GoldStandard {'連謂/兼語': '1', '緊縮複句': ''}
+ModelPredict {'連謂/兼語': '', '緊縮複句': '1'}
+
+對然後還有番茄 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+幫你加在一起 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+可以了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+我馬上弄好我就幫你弄 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+我在排隊 ['體貌']
+GoldStandard {'體貌': '1'}
+ModelPredict {'體貌': ''}
+
+阿姨家有雞蛋 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+需要你幫忙 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+然後它變成這樣 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+嗯這是爬上去 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+嗯有人 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+有人在裡面 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+還有那個噎把這個長長的收進去 ['趨向補語']
+GoldStandard {'趨向補語': '1'}
+ModelPredict {'趨向補語': ''}
+
+還有蘋果 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+嗯因為牠這邊有個耳朵所以像兔子 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+但是牠這邊有耳朵不是 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+嗯裝上去的 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+弄完了 ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+我抱他剪到這邊 ['動後介詞', '連謂/兼語']
+GoldStandard {'動後介詞': '1', '連謂/兼語': '1'}
+ModelPredict {'動後介詞': '', '連謂/兼語': ''}
+
+而且回家喝水 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+收完了 ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+然後這下面勒 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+疑下面這個 ['方位', '動後介詞']
+GoldStandard {'方位': '', '動後介詞': ''}
+ModelPredict {'方位': '1', '動後介詞': '1'}
+
+這好像是邊邊 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+用倒 ['結果補語']
+GoldStandard {'結果補語': ''}
+ModelPredict {'結果補語': '1'}
+
+這是黏在一起的 ['動後介詞']
+GoldStandard {'動後介詞': '1'}
+ModelPredict {'動後介詞': ''}
+
+然後這邊是停車場 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後要出去就要叫我 ['趨向補語', '帶連詞複句']
+GoldStandard {'趨向補語': '1', '帶連詞複句': ''}
+ModelPredict {'趨向補語': '', '帶連詞複句': '1'}
+
+然後要進來我也會把這個門打開 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+我要進去 ['趨向補語']
+GoldStandard {'趨向補語': '1'}
+ModelPredict {'趨向補語': ''}
+
+門可以在上面或者是在下面 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+在裡面 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+又來一台車車要進去了 ['體貌', '趨向補語', '動前介詞', '連謂/兼語']
+GoldStandard {'體貌': '', '趨向補語': '1', '動前介詞': '', '連謂/兼語': '1'}
+ModelPredict {'體貌': '1', '趨向補語': '', '動前介詞': '1', '連謂/兼語': ''}
+
+然後他就自己變回這樣子 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後這樣 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後連在一起 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+有車要進來了 ['體貌', '趨向補語', '動前介詞']
+GoldStandard {'體貌': '', '趨向補語': '1', '動前介詞': ''}
+ModelPredict {'體貌': '1', '趨向補語': '', '動前介詞': '1'}
+
+我有警衛了 ['體貌', '存現句']
+GoldStandard {'體貌': '', '存現句': ''}
+ModelPredict {'體貌': '1', '存現句': '1'}
+
+但是這個不是真的這樣子就不可以進來 ['緊縮複句']
+GoldStandard {'緊縮複句': '1'}
+ModelPredict {'緊縮複句': ''}
+
+沒警衛了不行自己進去 ['趨向補語']
+GoldStandard {'趨向補語': '1'}
+ModelPredict {'趨向補語': ''}
+
+因為他每天都會一直咳嗽 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+他平常呢他看醫生就會哭哭的 ['緊縮複句']
+GoldStandard {'緊縮複句': '1'}
+ModelPredict {'緊縮複句': ''}
+
+ok繃要幫他貼 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+但他剛剛在這裡跌倒了 ['結果補語', '帶連詞複句']
+GoldStandard {'結果補語': '1', '帶連詞複句': ''}
+ModelPredict {'結果補語': '', '帶連詞複句': '1'}
+
+他後來看醫生在吃藥 ['體貌']
+GoldStandard {'體貌': '1'}
+ModelPredict {'體貌': ''}
+
+但只是受傷而已 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+好然後他要幫他剪 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+因為我因為他 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+他洗澡了 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+剪掉好了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+剪掉了 ['結果補語', '動前介詞']
+GoldStandard {'結果補語': '1', '動前介詞': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1'}
+
+那要來找醫生啊! ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+還滿好的欸 ['X的']
+GoldStandard {'X的': ''}
+ModelPredict {'X的': '1'}
+
+因為呢他小小的時候吃不好的東西 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後我要幫他打針 ['連謂/兼語', '帶連詞複句']
+GoldStandard {'連謂/兼語': '1', '帶連詞複句': ''}
+ModelPredict {'連謂/兼語': '', '帶連詞複句': '1'}
+
+他回家了 ['體貌', '動前介詞']
+GoldStandard {'體貌': '', '動前介詞': ''}
+ModelPredict {'體貌': '1', '動前介詞': '1'}
+
+在裡面等一下會跑出來 ['方位', '體貌']
+GoldStandard {'方位': '', '體貌': ''}
+ModelPredict {'方位': '1', '體貌': '1'}
+
+這幾個才有這樣放在上面這裡 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+他固定起來 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+這個是跑煙囪過來 ['結果補語', '連謂/兼語']
+GoldStandard {'結果補語': '', '連謂/兼語': ''}
+ModelPredict {'結果補語': '1', '連謂/兼語': '1'}
+
+就把它固定起來就不是了 ['體貌', '連謂/兼語', '緊縮複句']
+GoldStandard {'體貌': '', '連謂/兼語': '', '緊縮複句': '1'}
+ModelPredict {'體貌': '1', '連謂/兼語': '1', '緊縮複句': ''}
+
+就把它固定起來就是門了 ['體貌', '連謂/兼語']
+GoldStandard {'體貌': '', '連謂/兼語': ''}
+ModelPredict {'體貌': '1', '連謂/兼語': '1'}
+
+固定起來就是門啦 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+等一下再拿喔 ['數量補語']
+GoldStandard {'數量補語': ''}
+ModelPredict {'數量補語': '1'}
+
+然後工廠在這樣 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+我玩完了 ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+然後這是睡覺 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+這個是煮飯的 ['量-個']
+GoldStandard {'量-個': ''}
+ModelPredict {'量-個': '1'}
+
+煮飯旁邊要有一個鍋子 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+然後再把他擺一個這個 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+有兩個椅子 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+有三個人 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+我來看 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+我幫他貼ok繃 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+還有手痛 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+貼起來 ['趨向補語']
+GoldStandard {'趨向補語': ''}
+ModelPredict {'趨向補語': '1'}
+
+那小豬看完是什麼咧 ['結果補語', '動前介詞']
+GoldStandard {'結果補語': '1', '動前介詞': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1'}
+
+為什麼有包子啊 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+因為那是流血用的 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+他還會有東西所以刮 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+還有一個垃圾 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+然後這我的這也是你的 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+因為他 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+開始了 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+因為他很髒 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+再一點 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+要剪剪剪到最裡面 ['動後介詞']
+GoldStandard {'動後介詞': '1'}
+ModelPredict {'動後介詞': ''}
+
+換我當這個 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+我手套不進去 ['趨向補語', '可能補語']
+GoldStandard {'趨向補語': '1', '可能補語': '1'}
+ModelPredict {'趨向補語': '', '可能補語': ''}
+
+我受傷了 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+我幫他打針 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+我幫他聽一下 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+有些給你用 ['動前介詞', '存現句', '連謂/兼語']
+GoldStandard {'動前介詞': '', '存現句': '', '連謂/兼語': '1'}
+ModelPredict {'動前介詞': '1', '存現句': '1', '連謂/兼語': ''}
+
+這些有些給你 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+每個人都需要很多喔 ['量-個']
+GoldStandard {'量-個': ''}
+ModelPredict {'量-個': '1'}
+
+旁邊 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+疊疊很高 ['X的']
+GoldStandard {'X的': '1'}
+ModelPredict {'X的': ''}
+
+很高的一零一 ['量-特']
+GoldStandard {'量-特': '1'}
+ModelPredict {'量-特': ''}
+
+要換這個一零一的啊 ['量-特']
+GoldStandard {'量-特': '1'}
+ModelPredict {'量-特': ''}
+
+對疊一零一 ['量-特']
+GoldStandard {'量-特': '1'}
+ModelPredict {'量-特': ''}
+
+還沒有去過 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+沒有看過 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+直接倒下來 ['結果補語', '趨向補語', '連謂/兼語']
+GoldStandard {'結果補語': '', '趨向補語': '1', '連謂/兼語': ''}
+ModelPredict {'結果補語': '1', '趨向補語': '', '連謂/兼語': '1'}
+
+幫他擦藥藥 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+我幫你擦藥藥 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+我要幫你開刀囉! ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+我先幫你打麻藥 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+他生吃兵兵病 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+他要起來了 ['趨向補語', '動前介詞']
+GoldStandard {'趨向補語': '1', '動前介詞': ''}
+ModelPredict {'趨向補語': '', '動前介詞': '1'}
+
+因為他暈倒了 ['結果補語', '帶連詞複句']
+GoldStandard {'結果補語': '1', '帶連詞複句': ''}
+ModelPredict {'結果補語': '', '帶連詞複句': '1'}
+
+他嘴巴流血了 ['體貌']
+GoldStandard {'體貌': '1'}
+ModelPredict {'體貌': ''}
+
+因為他跑步跌倒了 ['結果補語', '連謂/兼語', '帶連詞複句']
+GoldStandard {'結果補語': '1', '連謂/兼語': '', '帶連詞複句': ''}
+ModelPredict {'結果補語': '', '連謂/兼語': '1', '帶連詞複句': '1'}
+
+嗯可是我沒有這個 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+沒關係再拼起來就一次了 ['量-特', '體貌', '數量補語']
+GoldStandard {'量-特': '1', '體貌': '', '數量補語': ''}
+ModelPredict {'量-特': '', '體貌': '1', '數量補語': '1'}
+
+爸爸去上班了 ['動前介詞', '連謂/兼語']
+GoldStandard {'動前介詞': '', '連謂/兼語': ''}
+ModelPredict {'動前介詞': '1', '連謂/兼語': '1'}
+
+沒關係擦藥就好 ['緊縮複句']
+GoldStandard {'緊縮複句': '1'}
+ModelPredict {'緊縮複句': ''}
+
+擦好了baby不要摸喔 ['結果補語']
+GoldStandard {'結果補語': ''}
+ModelPredict {'結果補語': '1'}
+
+他要住床睡覺了 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+他的被在這裡 ['X的', 'X的Y']
+GoldStandard {'X的': '', 'X的Y': '1'}
+ModelPredict {'X的': '1', 'X的Y': ''}
+
+他是讓這些過的 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+從哪裡打開 ['方位', '動前介詞']
+GoldStandard {'方位': '1', '動前介詞': ''}
+ModelPredict {'方位': '', '動前介詞': '1'}
+
+這個打針打下去 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+這個是你來來野餐 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+這不知道是誰的ok蹦 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': '1'}
+ModelPredict {'感知/心理狀態': ''}
+
+有困難打開這個 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+我要剪剛剛那個憤怒鳥的 ['X的']
+GoldStandard {'X的': ''}
+ModelPredict {'X的': '1'}
+
+我剪不動 ['可能補語']
+GoldStandard {'可能補語': '1'}
+ModelPredict {'可能補語': ''}
+
+這是用來量體溫 ['結果補語', '趨向補語']
+GoldStandard {'結果補語': '', '趨向補語': ''}
+ModelPredict {'結果補語': '1', '趨向補語': '1'}
+
+是他那個需要一個的 ['X的']
+GoldStandard {'X的': ''}
+ModelPredict {'X的': '1'}
+
+這個是洗頭的啦 ['X的']
+GoldStandard {'X的': ''}
+ModelPredict {'X的': '1'}
+
+我等一下可以玩第三籃嗎 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+上次有看過 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+我還會啊的然後跌倒 ['帶連詞複句']
+GoldStandard {'帶連詞複句': '1'}
+ModelPredict {'帶連詞複句': ''}
+
+這個是彎的 ['X的']
+GoldStandard {'X的': ''}
+ModelPredict {'X的': '1'}
+
+這我蓋的 ['X的']
+GoldStandard {'X的': ''}
+ModelPredict {'X的': '1'}
+
+五根 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+我們再重新蓋一個啦! ['動前介詞', '連謂/兼語']
+GoldStandard {'動前介詞': '1', '連謂/兼語': '1'}
+ModelPredict {'動前介詞': '', '連謂/兼語': ''}
+
+有穩的 ['X的']
+GoldStandard {'X的': ''}
+ModelPredict {'X的': '1'}
+
+高一點 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+看我的比較彎的! ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+才不會跌倒啊 ['結果補語']
+GoldStandard {'結果補語': ''}
+ModelPredict {'結果補語': '1'}
+
+有三輛 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+因為他不是球球 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+這是哪裡的 ['方位']
+GoldStandard {'方位': '1'}
+ModelPredict {'方位': ''}
+
+有大象! ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+哪裡 ['方位']
+GoldStandard {'方位': '1'}
+ModelPredict {'方位': ''}
+
+再重來一次 ['結果補語', '趨向補語']
+GoldStandard {'結果補語': '', '趨向補語': ''}
+ModelPredict {'結果補語': '1', '趨向補語': '1'}
+
+因為他肚子堅固 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+耶我把他吹倒了! ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+我弄好就可以蓋起來了! ['體貌', '緊縮複句']
+GoldStandard {'體貌': '', '緊縮複句': '1'}
+ModelPredict {'體貌': '1', '緊縮複句': ''}
+
+要蓋起來了! ['體貌', '結果補語']
+GoldStandard {'體貌': '', '結果補語': '1'}
+ModelPredict {'體貌': '1', '結果補語': ''}
+
+我幫他夾這個 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+幫他弄這個 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+我幫你剪頭髮 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+我幫他看醫生 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+幫他打針啦 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+我幫你打屁股 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+我幫你打這個! ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+不要玩了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+是這裡的嗎 ['方位']
+GoldStandard {'方位': '1'}
+ModelPredict {'方位': ''}
+
+有小熊維尼 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+吸蒸氣的人 ['X的Y']
+GoldStandard {'X的Y': ''}
+ModelPredict {'X的Y': '1'}
+
+是我在幫他洗耳朵 ['體貌', '連謂/兼語']
+GoldStandard {'體貌': '1', '連謂/兼語': '1'}
+ModelPredict {'體貌': '', '連謂/兼語': ''}
+
+把那個袋袋子把他剪開 ['量-個']
+GoldStandard {'量-個': ''}
+ModelPredict {'量-個': '1'}
+
+我想幫他切東西啊 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+他有水果 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+我有幫他準備了水果 ['動前介詞', '連謂/兼語']
+GoldStandard {'動前介詞': '', '連謂/兼語': '1'}
+ModelPredict {'動前介詞': '1', '連謂/兼語': ''}
+
+然後弄開來 ['連謂/兼語', '帶連詞複句']
+GoldStandard {'連謂/兼語': '', '帶連詞複句': ''}
+ModelPredict {'連謂/兼語': '1', '帶連詞複句': '1'}
+
+然後我再把把他那個皮切用剪的 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+把那個皮剪掉 ['量-個']
+GoldStandard {'量-個': ''}
+ModelPredict {'量-個': '1'}
+
+還有火龍果 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+有聲音 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+有聲音欸 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+咦我有把他有倒出來 ['趨向補語', '連謂/兼語']
+GoldStandard {'趨向補語': '1', '連謂/兼語': ''}
+ModelPredict {'趨向補語': '', '連謂/兼語': '1'}
+
+吃飯了 ['體貌', '動前介詞']
+GoldStandard {'體貌': '', '動前介詞': ''}
+ModelPredict {'體貌': '1', '動前介詞': '1'}
+
+我覺得他衣服變長 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+把這個收起來 ['結果補語', '趨向補語']
+GoldStandard {'結果補語': '', '趨向補語': '1'}
+ModelPredict {'結果補語': '1', '趨向補語': ''}
+
+先幫我打開 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+高一點的橋 ['量-特', '數量補語']
+GoldStandard {'量-特': '', '數量補語': '1'}
+ModelPredict {'量-特': '1', '數量補語': ''}
+
+所以火車這樣就可以過去 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後接上 ['方位', '結果補語', '動前介詞', '動後介詞', '帶連詞複句']
+GoldStandard {'方位': '', '結果補語': '1', '動前介詞': '', '動後介詞': '', '帶連詞複句': ''}
+ModelPredict {'方位': '1', '結果補語': '', '動前介詞': '1', '動後介詞': '1', '帶連詞複句': '1'}
+
+所以這班是軌道 ['量-特', '帶連詞複句']
+GoldStandard {'量-特': '1', '帶連詞複句': ''}
+ModelPredict {'量-特': '', '帶連詞複句': '1'}
+
+然後需要一個隧道 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+把那個水吸進去軌道裡面 ['量-個', '動後介詞']
+GoldStandard {'量-個': '', '動後介詞': ''}
+ModelPredict {'量-個': '1', '動後介詞': '1'}
+
+而且過三角站 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+三角站先做這個 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+可是這樣火車過不過去 ['趨向補語', '可能補語']
+GoldStandard {'趨向補語': '', '可能補語': '1'}
+ModelPredict {'趨向補語': '1', '可能補語': ''}
+
+蓋上去 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+我在拼這個 ['體貌']
+GoldStandard {'體貌': '1'}
+ModelPredict {'體貌': ''}
+
+放上來 ['趨向補語']
+GoldStandard {'趨向補語': '1'}
+ModelPredict {'趨向補語': ''}
+
+然後再放一個這大子 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+這裡開到基隆 ['動後介詞']
+GoldStandard {'動後介詞': '1'}
+ModelPredict {'動後介詞': ''}
+
+在從這裡開到瑞芳 ['體貌', '動前介詞', '動後介詞']
+GoldStandard {'體貌': '', '動前介詞': '', '動後介詞': '1'}
+ModelPredict {'體貌': '1', '動前介詞': '1', '動後介詞': ''}
+
+呃輕軌道到基隆就可以 ['緊縮複句']
+GoldStandard {'緊縮複句': '1'}
+ModelPredict {'緊縮複句': ''}
+
+我知道了 ['體貌', '動前介詞']
+GoldStandard {'體貌': '', '動前介詞': ''}
+ModelPredict {'體貌': '1', '動前介詞': '1'}
+
+我來變成一個溜滑梯 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+溜滑梯覺得很簡單 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': ''}
+ModelPredict {'感知/心理狀態': '1'}
+
+我有看到了! ['體貌', '結果補語', '動前介詞']
+GoldStandard {'體貌': '1', '結果補語': '1', '動前介詞': ''}
+ModelPredict {'體貌': '', '結果補語': '', '動前介詞': '1'}
+
+我自己玩我自己會自己蓋自己的 ['緊縮複句']
+GoldStandard {'緊縮複句': '1'}
+ModelPredict {'緊縮複句': ''}
+
+對那就是有人需要看醫生就看醫生 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+你發燒了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+肚子在咕咕叫 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+丟進去 ['趨向補語']
+GoldStandard {'趨向補語': '1'}
+ModelPredict {'趨向補語': ''}
+
+就不會怕肚子痛了 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+嗯只是有細菌在裡面 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+把大家都肚子切掉 ['把字句']
+GoldStandard {'把字句': ''}
+ModelPredict {'把字句': '1'}
+
+那這要裝在裡面幹什麼 ['方位', '體貌', '連謂/兼語']
+GoldStandard {'方位': '', '體貌': '', '連謂/兼語': '1'}
+ModelPredict {'方位': '1', '體貌': '1', '連謂/兼語': ''}
+
+我知道你們休息你們就會好了! ['緊縮複句', '感知/心理狀態']
+GoldStandard {'緊縮複句': '1', '感知/心理狀態': ''}
+ModelPredict {'緊縮複句': '', '感知/心理狀態': '1'}
+
+我打針了! ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+換他了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+好多了! ['體貌']
+GoldStandard {'體貌': '1'}
+ModelPredict {'體貌': ''}
+
+這後面的 ['X的']
+GoldStandard {'X的': ''}
+ModelPredict {'X的': '1'}
+
+大一點的 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+不準陪我玩 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+快要三層樓了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+又要換下一個了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+等一下我又要闖關了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+又要闖關了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+我看喔 ['體貌']
+GoldStandard {'體貌': '1'}
+ModelPredict {'體貌': ''}
+
+因為醫生有眼鏡啊 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+因為老師說的 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+我有上一點英文課 ['量-特', '方位', '動後介詞']
+GoldStandard {'量-特': '', '方位': '', '動後介詞': ''}
+ModelPredict {'量-特': '1', '方位': '1', '動後介詞': '1'}
+
+幫你剪 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+那我要打他哪裡 ['方位']
+GoldStandard {'方位': '1'}
+ModelPredict {'方位': ''}
+
+用不到 ['結果補語']
+GoldStandard {'結果補語': ''}
+ModelPredict {'結果補語': '1'}
+
+那兩個不要了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+啊我知道了我們做個橋 ['體貌', '動前介詞']
+GoldStandard {'體貌': '', '動前介詞': ''}
+ModelPredict {'體貌': '1', '動前介詞': '1'}
+
+等一下才知道 ['數量補語', '緊縮複句', '感知/心理狀態']
+GoldStandard {'數量補語': '1', '緊縮複句': '', '感知/心理狀態': ''}
+ModelPredict {'數量補語': '', '緊縮複句': '1', '感知/心理狀態': '1'}
+
+夾起來的 ['結果補語', '趨向補語']
+GoldStandard {'結果補語': '1', '趨向補語': ''}
+ModelPredict {'結果補語': '', '趨向補語': '1'}
+
+你幫他拿著好了! ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+裡面會有東西! ['方位', '存現句']
+GoldStandard {'方位': '', '存現句': ''}
+ModelPredict {'方位': '1', '存現句': '1'}
+
+我想要你幫他量 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+我幫你我幫你按一下 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+然後跟我想到去拼在這裡不是 ['結果補語', '動前介詞', '帶連詞複句']
+GoldStandard {'結果補語': '1', '動前介詞': '', '帶連詞複句': ''}
+ModelPredict {'結果補語': '', '動前介詞': '2', '帶連詞複句': '1'}
+
+我不知道這放哪裡 ['方位']
+GoldStandard {'方位': '1'}
+ModelPredict {'方位': ''}
+
+啊我想到了我們拼在這上面就好了! ['體貌', '結果補語', '動前介詞', '感知/心理狀態']
+GoldStandard {'體貌': '', '結果補語': '1', '動前介詞': '', '感知/心理狀態': '1'}
+ModelPredict {'體貌': '1', '結果補語': '', '動前介詞': '1', '感知/心理狀態': ''}
+
+還有眼睛勒 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+可是這是獅子啊! ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+幫我打開 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+這裡面沒有ad的擦藥欸 ['X的', '存現句']
+GoldStandard {'X的': '', '存現句': '1'}
+ModelPredict {'X的': '1', '存現句': ''}
+
+抹在手上 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+我今天頭痛了 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+媽媽先幫我把這個轉轉轉 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+啊換我當福醫師 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+你說誰要回家了 ['體貌', '動前介詞', '連謂/兼語']
+GoldStandard {'體貌': '', '動前介詞': '', '連謂/兼語': '1'}
+ModelPredict {'體貌': '1', '動前介詞': '1', '連謂/兼語': ''}
+
+不想玩了 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+跟我一起做一個 ['動前介詞', '連謂/兼語']
+GoldStandard {'動前介詞': '', '連謂/兼語': '1'}
+ModelPredict {'動前介詞': '1', '連謂/兼語': ''}
+
+他就不小心撞到他就這樣了啊 ['體貌', '緊縮複句']
+GoldStandard {'體貌': '', '緊縮複句': '1'}
+ModelPredict {'體貌': '1', '緊縮複句': ''}
+
+然後他這要慢慢 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+你用這個就好了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+我先把這拿下來 ['趨向補語']
+GoldStandard {'趨向補語': '1'}
+ModelPredict {'趨向補語': ''}
+
+我是不小心用掉的你知道嗎 ['X的Y', '感知/心理狀態']
+GoldStandard {'X的Y': '', '感知/心理狀態': ''}
+ModelPredict {'X的Y': '1', '感知/心理狀態': '1'}
+
+一個再給我拜託一個再給我 ['動前介詞', '緊縮複句']
+GoldStandard {'動前介詞': '', '緊縮複句': ''}
+ModelPredict {'動前介詞': '1', '緊縮複句': '1'}
+
+快點我快贏了 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+有一隻小小人 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+我們先把車車放旁邊 ['方位', '動後介詞']
+GoldStandard {'方位': '', '動後介詞': ''}
+ModelPredict {'方位': '1', '動後介詞': '1'}
+
+嗯啊上面 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+開過了 ['結果補語', '動前介詞']
+GoldStandard {'結果補語': '1', '動前介詞': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1'}
+
+開過城堡了 ['結果補語', '動前介詞']
+GoldStandard {'結果補語': '1', '動前介詞': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1'}
+
+這都全部排了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+這樣放好了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+剪裡面的東西 ['方位', '動後介詞']
+GoldStandard {'方位': '', '動後介詞': ''}
+ModelPredict {'方位': '1', '動後介詞': '1'}
+
+夾出來了 ['趨向補語', '動前介詞', '連謂/兼語']
+GoldStandard {'趨向補語': '1', '動前介詞': '', '連謂/兼語': ''}
+ModelPredict {'趨向補語': '', '動前介詞': '1', '連謂/兼語': '1'}
+
+蓋出來 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+然後我要打針 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+再幫他取這個 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+你幫我打一次 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+我聽到聲音了 ['結果補語', '動前介詞', '感知/心理狀態']
+GoldStandard {'結果補語': '1', '動前介詞': '', '感知/心理狀態': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1', '感知/心理狀態': '1'}
+
+聽到你肚子叫了 ['結果補語', '動前介詞', '連謂/兼語']
+GoldStandard {'結果補語': '1', '動前介詞': '', '連謂/兼語': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1', '連謂/兼語': '1'}
+
+然後我等一下要再擦藥 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+擦擦擦擦藥 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+給你喝給你喝 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+然後打打好痛嗎 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+來打針啊 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+然後剪頭髮 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+我要幫你剪斷 ['結果補語', '連謂/兼語']
+GoldStandard {'結果補語': '1', '連謂/兼語': '1'}
+ModelPredict {'結果補語': '', '連謂/兼語': ''}
+
+打針打針打針 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+開刀開刀開刀 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+這個就幫你縫起來 ['趨向補語', '連謂/兼語']
+GoldStandard {'趨向補語': '', '連謂/兼語': '1'}
+ModelPredict {'趨向補語': '1', '連謂/兼語': ''}
+
+把這個 ['把字句']
+GoldStandard {'把字句': ''}
+ModelPredict {'把字句': '1'}
+
+好把你縫起來 ['趨向補語']
+GoldStandard {'趨向補語': ''}
+ModelPredict {'趨向補語': '1'}
+
+我說錯了 ['結果補語', '動前介詞']
+GoldStandard {'結果補語': '1', '動前介詞': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1'}
+
+我在幫他 ['體貌']
+GoldStandard {'體貌': '1'}
+ModelPredict {'體貌': ''}
+
+然後要吃藥 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後全部東西都要 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+擦藥擦藥 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+然後擦 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後喝一喝 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後打針了! ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後在這邊很久 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+聽到零食的聲音 ['結果補語', '動前介詞', '感知/心理狀態']
+GoldStandard {'結果補語': '1', '動前介詞': '', '感知/心理狀態': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1', '感知/心理狀態': '1'}
+
+要開刀了 ['體貌', '動前介詞']
+GoldStandard {'體貌': '', '動前介詞': ''}
+ModelPredict {'體貌': '1', '動前介詞': '1'}
+
+我幫你夾耳朵 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+打針打針! ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+然後剪耳朵 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+他沒有手了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+我拿得超多的 ['可能補語']
+GoldStandard {'可能補語': ''}
+ModelPredict {'可能補語': '1'}
+
+我拿得超多了 ['體貌', '可能補語']
+GoldStandard {'體貌': '1', '可能補語': ''}
+ModelPredict {'體貌': '', '可能補語': '1'}
+
+還有熊熊還有熊熊 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+做家裡 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+然後我要做城堡 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後再這樣子 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+有蟲蟲嗎 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+有藥 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+然後我會把他拉 ['把字句', '帶連詞複句']
+GoldStandard {'把字句': '', '帶連詞複句': ''}
+ModelPredict {'把字句': '1', '帶連詞複句': '1'}
+
+拿掉了 ['結果補語', '動前介詞']
+GoldStandard {'結果補語': '1', '動前介詞': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1'}
+
+那我幫你弄這個 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+幫你量可以嗎 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+換一個人了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+我幫你塗這個 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+躺下來 ['結果補語']
+GoldStandard {'結果補語': ''}
+ModelPredict {'結果補語': '1'}
+
+真的有啦 ['X的']
+GoldStandard {'X的': ''}
+ModelPredict {'X的': '1'}
+
+我幫你量 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+要剪碎那個藥 ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+這樣才不會苦 ['緊縮複句']
+GoldStandard {'緊縮複句': '1'}
+ModelPredict {'緊縮複句': ''}
+
+我幫你夾蟲蟲好嗎 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+大隻! ['量-特']
+GoldStandard {'量-特': '1'}
+ModelPredict {'量-特': ''}
+
+你要住在醫院嗎 ['動後介詞']
+GoldStandard {'動後介詞': '1'}
+ModelPredict {'動後介詞': ''}
+
+我讓你回去拿啊 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+要風來的啊 ['趨向補語']
+GoldStandard {'趨向補語': ''}
+ModelPredict {'趨向補語': '1'}
+
+要讓風來的啊 ['趨向補語']
+GoldStandard {'趨向補語': ''}
+ModelPredict {'趨向補語': '1'}
+
+要讓風吹得很好的 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+阿姨可以幫我拿車嗎 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+這有這有聽診器 ['存現句']
+GoldStandard {'存現句': '1'}
+ModelPredict {'存現句': ''}
+
+可以幫他聽聽 ['帶連詞複句']
+GoldStandard {'帶連詞複句': '1'}
+ModelPredict {'帶連詞複句': ''}
+
+好聽好了 ['體貌', '結果補語']
+GoldStandard {'體貌': '1', '結果補語': '1'}
+ModelPredict {'體貌': '', '結果補語': ''}
+
+這兩把剪刀要哪一把剪刀 ['量-特']
+GoldStandard {'量-特': '1'}
+ModelPredict {'量-特': ''}
+
+對兩把都是剪刀 ['量-特']
+GoldStandard {'量-特': '1'}
+ModelPredict {'量-特': ''}
+
+嗶嗶的 ['X的']
+GoldStandard {'X的': '1'}
+ModelPredict {'X的': ''}
+
+他流血了 ['體貌']
+GoldStandard {'體貌': '1'}
+ModelPredict {'體貌': ''}
+
+為什麼要刮到他的眼睛 ['X的Y']
+GoldStandard {'X的Y': ''}
+ModelPredict {'X的Y': '1'}
+
+蓋子蓋起來 ['趨向補語']
+GoldStandard {'趨向補語': '1'}
+ModelPredict {'趨向補語': ''}
+
+這有用過了 ['結果補語']
+GoldStandard {'結果補語': ''}
+ModelPredict {'結果補語': '1'}
+
+這嗶嗶的 ['X的']
+GoldStandard {'X的': '1'}
+ModelPredict {'X的': ''}
+
+通通看好了耶 ['結果補語', '動前介詞']
+GoldStandard {'結果補語': '1', '動前介詞': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1'}
+
+四個了 ['體貌']
+GoldStandard {'體貌': '1'}
+ModelPredict {'體貌': ''}
+
+這樣才有五個而已 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+我要整個放在這邊好不好 ['量-個']
+GoldStandard {'量-個': ''}
+ModelPredict {'量-個': '1'}
+
+我不想越來越高耶 ['結果補語', '趨向補語']
+GoldStandard {'結果補語': '', '趨向補語': ''}
+ModelPredict {'結果補語': '1', '趨向補語': '1'}
+
+這個好了 ['體貌']
+GoldStandard {'體貌': '1'}
+ModelPredict {'體貌': ''}
+
+上面我不想擺了欸 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+欸他好像是他好像對積木對不對算對不對 ['可能補語']
+GoldStandard {'可能補語': ''}
+ModelPredict {'可能補語': '1'}
+
+那我們就先把這個先蓋起來 ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+然後他是二號 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+欸夾住欸我知道了 ['結果補語', '動前介詞']
+GoldStandard {'結果補語': '1', '動前介詞': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1'}
+
+沒關係吃一口就好 ['量-特', '緊縮複句']
+GoldStandard {'量-特': '', '緊縮複句': '1'}
+ModelPredict {'量-特': '1', '緊縮複句': ''}
+
+擦藥就好 ['緊縮複句']
+GoldStandard {'緊縮複句': '1'}
+ModelPredict {'緊縮複句': ''}
+
+我想可以再玩一次 ['緊縮複句']
+GoldStandard {'緊縮複句': ''}
+ModelPredict {'緊縮複句': '1'}
+
+那你就先帶著 ['緊縮複句']
+GoldStandard {'緊縮複句': '1'}
+ModelPredict {'緊縮複句': ''}
+
+然後後來就要換他 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+你吃壞了 ['結果補語', '動前介詞']
+GoldStandard {'結果補語': '1', '動前介詞': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1'}
+
+嗯我知道的! ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': ''}
+ModelPredict {'感知/心理狀態': '1'}
+
+有真的有 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+來裝點水 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+欸有ok繃欸! ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+過來啊! ['結果補語', '趨向補語']
+GoldStandard {'結果補語': '', '趨向補語': '1'}
+ModelPredict {'結果補語': '1', '趨向補語': ''}
+
+欸他哪裡要啊 ['方位']
+GoldStandard {'方位': '1'}
+ModelPredict {'方位': ''}
+
+你哪裡痛 ['方位']
+GoldStandard {'方位': '1'}
+ModelPredict {'方位': ''}
+
+那我幫你多吃一點藥 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+有人說跟我說你感冒了啊! ['存現句', '緊縮複句']
+GoldStandard {'存現句': '', '緊縮複句': ''}
+ModelPredict {'存現句': '1', '緊縮複句': '1'}
+
+快點吃啊! ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+那你還要再吃一點藥嗎 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+那你就吃一口就好 ['量-特', '緊縮複句']
+GoldStandard {'量-特': '', '緊縮複句': '1'}
+ModelPredict {'量-特': '1', '緊縮複句': ''}
+
+有點苦喔! ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+有點苦 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+不是啦擦一點藥 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+欸你幫他扶一下啦! ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+幫你看一下 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+媽咪那你幫他扶起來 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+把這聽診器先放下面 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+找先找邊邊的 ['方位', '動後介詞', '連謂/兼語']
+GoldStandard {'方位': '', '動後介詞': '', '連謂/兼語': ''}
+ModelPredict {'方位': '1', '動後介詞': '1', '連謂/兼語': '1'}
+
+生病了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+因為你生病了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+吃完再吃 ['緊縮複句']
+GoldStandard {'緊縮複句': ''}
+ModelPredict {'緊縮複句': '1'}
+
+他翻過來還有一面 ['量-特', '方位', '結果補語', '存現句']
+GoldStandard {'量-特': '', '方位': '1', '結果補語': '', '存現句': ''}
+ModelPredict {'量-特': '1', '方位': '', '結果補語': '1', '存現句': '1'}
+
+這我發現不是那個木頭的 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': ''}
+ModelPredict {'感知/心理狀態': '1'}
+
+幫我的連起來 ['結果補語', '趨向補語', '動前介詞', '連謂/兼語']
+GoldStandard {'結果補語': '1', '趨向補語': '', '動前介詞': '', '連謂/兼語': '1'}
+ModelPredict {'結果補語': '', '趨向補語': '1', '動前介詞': '1', '連謂/兼語': ''}
+
+可是這個是我的城堡 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+別的都是你的城堡 ['X的']
+GoldStandard {'X的': ''}
+ModelPredict {'X的': '1'}
+
+然後這個這這樣 ['量-個', 'X的', '帶連詞複句']
+GoldStandard {'量-個': '', 'X的': '1', '帶連詞複句': ''}
+ModelPredict {'量-個': '1', 'X的': '', '帶連詞複句': '1'}
+
+那我再幫你蓋高一點 ['量-特', '連謂/兼語']
+GoldStandard {'量-特': '', '連謂/兼語': '1'}
+ModelPredict {'量-特': '1', '連謂/兼語': ''}
+
+嗯但是三角形這邊啊 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+都說猜才知道 ['連謂/兼語', '感知/心理狀態']
+GoldStandard {'連謂/兼語': '', '感知/心理狀態': ''}
+ModelPredict {'連謂/兼語': '1', '感知/心理狀態': '1'}
+
+繼續蓋高樓 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+我的蓋完了 ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+外面是一艘船 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+裡面他是城堡可以給公主住 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+你蓋得不夠平啦 ['X的', '可能補語']
+GoldStandard {'X的': '1', '可能補語': ''}
+ModelPredict {'X的': '', '可能補語': '1'}
+
+這樣子進來一點 ['量-特', '數量補語']
+GoldStandard {'量-特': '', '數量補語': ''}
+ModelPredict {'量-特': '1', '數量補語': '1'}
+
+公主就可以在裡面跳舞 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+那你再加工努力一下 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+然後我也幫你加工 ['連謂/兼語', '帶連詞複句']
+GoldStandard {'連謂/兼語': '1', '帶連詞複句': ''}
+ModelPredict {'連謂/兼語': '', '帶連詞複句': '1'}
+
+但是要兩邊都是圓的 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+還有一個剪刀 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+還有ok繃 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+欸還有藥 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+這個剪刀是用來剪肉肉的 ['結果補語', '趨向補語']
+GoldStandard {'結果補語': '', '趨向補語': ''}
+ModelPredict {'結果補語': '1', '趨向補語': '1'}
+
+刀子是用來切肉肉的 ['結果補語', '趨向補語']
+GoldStandard {'結果補語': '', '趨向補語': ''}
+ModelPredict {'結果補語': '1', '趨向補語': '1'}
+
+然後這個是切人類的肉 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+欸我幫你打針我是醫生! ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+如果有生病的 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+我想要換了 ['體貌', '動前介詞', '感知/心理狀態']
+GoldStandard {'體貌': '', '動前介詞': '', '感知/心理狀態': ''}
+ModelPredict {'體貌': '1', '動前介詞': '1', '感知/心理狀態': '1'}
+
+家子木在天上 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+然後月亮的家 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+你可以找你喜歡的 ['X的', 'X的Y']
+GoldStandard {'X的': '', 'X的Y': '1'}
+ModelPredict {'X的': '1', 'X的Y': ''}
+
+我要蓋集中 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+然後在放一個圓形就好了 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+還有一個平板屋 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+的平板 ['X的Y']
+GoldStandard {'X的Y': ''}
+ModelPredict {'X的Y': '1'}
+
+有兩個吧 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+我在教你做超級難的喔 ['體貌', '連謂/兼語']
+GoldStandard {'體貌': '1', '連謂/兼語': '1'}
+ModelPredict {'體貌': '', '連謂/兼語': ''}
+
+然後再把他這樣 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+他放在下面 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+幫我量 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+幫我開 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+牠肚子痛要來牠看醫生 ['緊縮複句']
+GoldStandard {'緊縮複句': '1'}
+ModelPredict {'緊縮複句': ''}
+
+嗯牠們去賽跑 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+假裝小豬偷偷睡覺 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+過來一起吧 ['結果補語', '趨向補語']
+GoldStandard {'結果補語': '', '趨向補語': '1'}
+ModelPredict {'結果補語': '1', '趨向補語': ''}
+
+下來 ['結果補語']
+GoldStandard {'結果補語': ''}
+ModelPredict {'結果補語': '1'}
+
+摔倒了! ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+牠摔倒了! ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+嘿嘿病人來拿 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+還有藥膏 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+病人來看 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+請醫生來看 ['趨向補語', '連謂/兼語']
+GoldStandard {'趨向補語': '', '連謂/兼語': ''}
+ModelPredict {'趨向補語': '1', '連謂/兼語': '1'}
+
+先把東西放下來 ['趨向補語']
+GoldStandard {'趨向補語': '1'}
+ModelPredict {'趨向補語': ''}
+
+幫牠看肚子 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+要用剪刀幫牠剪 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+然後接下來你要戴好 ['趨向補語', '帶連詞複句']
+GoldStandard {'趨向補語': '', '帶連詞複句': ''}
+ModelPredict {'趨向補語': '1', '帶連詞複句': '1'}
+
+先幫我打開我的肚子 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+把坏蟲蟲抓起來 ['趨向補語']
+GoldStandard {'趨向補語': ''}
+ModelPredict {'趨向補語': '1'}
+
+丟到垃圾桶裡 ['結果補語']
+GoldStandard {'結果補語': ''}
+ModelPredict {'結果補語': '1'}
+
+拿這支幫牠打針 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+來打針吧! ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+幫我們塗藥膏 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+幫我塗 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+這個先放下來 ['趨向補語']
+GoldStandard {'趨向補語': '1'}
+ModelPredict {'趨向補語': ''}
+
+還有頭 ['量-特', '存現句']
+GoldStandard {'量-特': '', '存現句': ''}
+ModelPredict {'量-特': '1', '存現句': '1'}
+
+然後再把皮弄進 ['趨向補語', '帶連詞複句']
+GoldStandard {'趨向補語': '1', '帶連詞複句': ''}
+ModelPredict {'趨向補語': '', '帶連詞複句': '1'}
+
+然後再量體溫 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+來量體溫 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+就是我先把球球放進肚子裡 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+先拿一顆球放進去 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+裡面再放兩顆球球 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+塞不進去了 ['趨向補語', '可能補語', '動前介詞']
+GoldStandard {'趨向補語': '1', '可能補語': '1', '動前介詞': ''}
+ModelPredict {'趨向補語': '', '可能補語': '', '動前介詞': '1'}
+
+咕咕咕@o起床了! ['體貌', '動前介詞']
+GoldStandard {'體貌': '', '動前介詞': ''}
+ModelPredict {'體貌': '1', '動前介詞': '1'}
+
+快點起床 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+我想要當生病的人 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': '1'}
+ModelPredict {'感知/心理狀態': ''}
+
+我打開了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+擺在上面 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+我想要擦牠的眼睛 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': '1'}
+ModelPredict {'感知/心理狀態': ''}
+
+因為牠眼睛也要開刀 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+但是我戴不下 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+然後你要剪 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+我想要和你一起做 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': '1'}
+ModelPredict {'感知/心理狀態': ''}
+
+我要跟媽媽一樣 ['動前介詞']
+GoldStandard {'動前介詞': '1'}
+ModelPredict {'動前介詞': ''}
+
+我要跟你一樣做一樣的 ['動前介詞']
+GoldStandard {'動前介詞': '1'}
+ModelPredict {'動前介詞': ''}
+
+我想要拿這邊一個長形 ['量-個', '感知/心理狀態']
+GoldStandard {'量-個': '', '感知/心理狀態': '1'}
+ModelPredict {'量-個': '1', '感知/心理狀態': ''}
+
+你來修回去 ['趨向補語', '連謂/兼語']
+GoldStandard {'趨向補語': '', '連謂/兼語': ''}
+ModelPredict {'趨向補語': '1', '連謂/兼語': '1'}
+
+我們來做別的 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+然後這個也需要 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+對不起 ['可能補語']
+GoldStandard {'可能補語': ''}
+ModelPredict {'可能補語': '1'}
+
+這邊也要很高 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+想打開 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': ''}
+ModelPredict {'感知/心理狀態': '1'}
+
+用好了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+上去 ['趨向補語']
+GoldStandard {'趨向補語': '1'}
+ModelPredict {'趨向補語': ''}
+
+我在蓋這一個 ['體貌']
+GoldStandard {'體貌': '1'}
+ModelPredict {'體貌': ''}
+
+我從這邊上去到這邊到這邊 ['趨向補語', '連謂/兼語']
+GoldStandard {'趨向補語': '1', '連謂/兼語': ''}
+ModelPredict {'趨向補語': '', '連謂/兼語': '1'}
+
+然後就可以了 ['體貌', '帶連詞複句']
+GoldStandard {'體貌': '', '帶連詞複句': ''}
+ModelPredict {'體貌': '1', '帶連詞複句': '1'}
+
+司機在裡面開車 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+因為他就是開那麼長 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後就由他開車 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+因為就是要講啊 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+對我知道啊 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': ''}
+ModelPredict {'感知/心理狀態': '1'}
+
+這翹翹板 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+翹翹板啊 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+我來用這個 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+我要幫你看醫生 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+你可以幫我蓋嗎 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+我要幫他打針 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+有藥吃 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+哪邊 ['方位']
+GoldStandard {'方位': '1'}
+ModelPredict {'方位': ''}
+
+放在哪邊 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+來看看 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+然後這個是藥藥 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+帶他們來 ['趨向補語']
+GoldStandard {'趨向補語': '1'}
+ModelPredict {'趨向補語': ''}
+
+很快的 ['X的']
+GoldStandard {'X的': ''}
+ModelPredict {'X的': '1'}
+
+看好了 ['結果補語', '動前介詞']
+GoldStandard {'結果補語': '1', '動前介詞': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1'}
+
+好那我來看看 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+因為我把這個換一下 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+可以幫我倒嗎 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+跌倒在哪裡 ['方位', '體貌', '結果補語', '動後介詞']
+GoldStandard {'方位': '1', '體貌': '1', '結果補語': '', '動後介詞': ''}
+ModelPredict {'方位': '', '體貌': '', '結果補語': '1', '動後介詞': '1'}
+
+把耳屎拔掉就好了 ['體貌', '緊縮複句']
+GoldStandard {'體貌': '', '緊縮複句': ''}
+ModelPredict {'體貌': '1', '緊縮複句': '1'}
+
+那我也來看看好了 ['動前介詞', '連謂/兼語']
+GoldStandard {'動前介詞': '', '連謂/兼語': ''}
+ModelPredict {'動前介詞': '1', '連謂/兼語': '1'}
+
+我幫你塗藥 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+還有這個貼上去 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+然後這個要把他放 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+有長方形還有圓筒形還有正方形 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+還有三角形 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+還有彎彎形 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+然後這個要把他變成這樣 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+這邊有味道 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+有藥的味道 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+嗯看完了 ['結果補語', '動前介詞']
+GoldStandard {'結果補語': '1', '動前介詞': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1'}
+
+他說他想去兒童樂園 ['趨向補語', '感知/心理狀態']
+GoldStandard {'趨向補語': '', '感知/心理狀態': '1'}
+ModelPredict {'趨向補語': '1', '感知/心理狀態': ''}
+
+然後摩天輪可以一起坐 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+你幫我曡高高 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+疊不同的顔色 ['可能補語']
+GoldStandard {'可能補語': ''}
+ModelPredict {'可能補語': '1'}
+
+這拿給我 ['動後介詞']
+GoldStandard {'動後介詞': '1'}
+ModelPredict {'動後介詞': ''}
+
+疊一個就夠 ['緊縮複句']
+GoldStandard {'緊縮複句': '1'}
+ModelPredict {'緊縮複句': ''}
+
+我要兩種疊 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+這種形狀一個就好這種 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+是這種形狀 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+應該要全部曡完 ['結果補語', '動前介詞']
+GoldStandard {'結果補語': '1', '動前介詞': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1'}
+
+把它疊太高整個撒出去 ['趨向補語', '緊縮複句']
+GoldStandard {'趨向補語': '1', '緊縮複句': '1'}
+ModelPredict {'趨向補語': '', '緊縮複句': ''}
+
+來等下第三就是拼圖 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+我在移這個 ['體貌']
+GoldStandard {'體貌': '1'}
+ModelPredict {'體貌': ''}
+
+還有圓形嗎 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+這個假裝當門 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+你可以幫我做城堡嗎 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+下面要一個 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+嗯這下頭 ['方位']
+GoldStandard {'方位': '1'}
+ModelPredict {'方位': ''}
+
+要用下面的 ['方位', '動後介詞']
+GoldStandard {'方位': '', '動後介詞': ''}
+ModelPredict {'方位': '1', '動後介詞': '1'}
+
+要用在下面 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+那你可以幫我找這個嗎 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+下面 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+你可以幫我用下面嗎 ['方位', '動後介詞', '連謂/兼語']
+GoldStandard {'方位': '', '動後介詞': '', '連謂/兼語': '1'}
+ModelPredict {'方位': '1', '動後介詞': '1', '連謂/兼語': ''}
+
+就是把這個舉起來 ['結果補語']
+GoldStandard {'結果補語': ''}
+ModelPredict {'結果補語': '1'}
+
+用你勾的舉 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+倒掉就重新做啊 ['緊縮複句']
+GoldStandard {'緊縮複句': '1'}
+ModelPredict {'緊縮複句': ''}
+
+嗯那你可以幫我做嗎 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+我幫忙看好不好 ['可能補語']
+GoldStandard {'可能補語': ''}
+ModelPredict {'可能補語': '1'}
+
+下面要一個紅色的板子 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+然後呢有一個紅色用在這兩個下面 ['存現句', '帶連詞複句']
+GoldStandard {'存現句': '', '帶連詞複句': ''}
+ModelPredict {'存現句': '1', '帶連詞複句': '1'}
+
+再來把這個重新補上去 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+還有一個藍色的橋 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+然後再一個這個 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+下一個這裡要一個正方形 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+我有點忘記 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+有點不正常 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+你要乖乖躺在床上 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+有點甜 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+有城堡 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+我蓋的城堡也不小心就用倒 ['緊縮複句']
+GoldStandard {'緊縮複句': ''}
+ModelPredict {'緊縮複句': '1'}
+
+我只要跟你說個規矩 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+就跟你玩個遊戲 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+然後還可以這樣一起蓋上去 ['動後介詞', '帶連詞複句']
+GoldStandard {'動後介詞': '', '帶連詞複句': ''}
+ModelPredict {'動後介詞': '1', '帶連詞複句': '1'}
+
+蓋在城堡的上面 ['方位', '動後介詞']
+GoldStandard {'方位': '', '動後介詞': '1'}
+ModelPredict {'方位': '1', '動後介詞': ''}
+
+然後還可以這樣 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+越疊越高 ['緊縮複句']
+GoldStandard {'緊縮複句': ''}
+ModelPredict {'緊縮複句': '1'}
+
+長的在上 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+都很下面 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+就可以蓋上去 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+我要把他一起蓋上去 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+我只是以為蓋好了但還沒好 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+你要照著我的方法出來用 ['體貌', '趨向補語', '動後介詞']
+GoldStandard {'體貌': '', '趨向補語': '', '動後介詞': '1'}
+ModelPredict {'體貌': '1', '趨向補語': '1', '動後介詞': ''}
+
+可以蓋剩的屋子了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+這也是一個裡面的東西 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+我來蓋就好了 ['體貌', '連謂/兼語', '緊縮複句']
+GoldStandard {'體貌': '', '連謂/兼語': '', '緊縮複句': ''}
+ModelPredict {'體貌': '1', '連謂/兼語': '1', '緊縮複句': '1'}
+
+這兩個都可以爬上去走一走 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+有一樓一直走 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+有一樓二樓三樓四樓五樓六樓七樓 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+還有一個屋頂 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+我可以保證他不會倒 ['連謂/兼語', '感知/心理狀態']
+GoldStandard {'連謂/兼語': '1', '感知/心理狀態': '1'}
+ModelPredict {'連謂/兼語': '', '感知/心理狀態': ''}
+
+放的下 ['方位', '可能補語']
+GoldStandard {'方位': '', '可能補語': '1'}
+ModelPredict {'方位': '1', '可能補語': ''}
+
+下面有玩具 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+上面也有你的衣服 ['方位', '存現句']
+GoldStandard {'方位': '', '存現句': '1'}
+ModelPredict {'方位': '1', '存現句': ''}
+
+打球來了 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+手牽手一起去醫院 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+我可以把你帶去醫院的 ['X的', 'X的Y', '趨向補語']
+GoldStandard {'X的': '', 'X的Y': '1', '趨向補語': ''}
+ModelPredict {'X的': '1', 'X的Y': '', '趨向補語': '1'}
+
+我要帶你去別的地方 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+你有流血嗎 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+我幫你打針 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+嗯看你想要拼什麽 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+我做一個花園跟你合在一起 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+你做一個房子跟我合在一起啊 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+那我就放大呀 ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+這就花園的凸出來的那個 ['X的', '趨向補語']
+GoldStandard {'X的': '', '趨向補語': '1'}
+ModelPredict {'X的': '1', '趨向補語': ''}
+
+剛開始要用這一個來組吧 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+剛開始要用這一個啊 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+那就請你做一個房子吧 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+往旁嗯往前面蓋 ['方位', '動後介詞', '連謂/兼語']
+GoldStandard {'方位': '', '動後介詞': '', '連謂/兼語': ''}
+ModelPredict {'方位': '1', '動後介詞': '1', '連謂/兼語': '1'}
+
+你只要這裡放正方形就好 ['緊縮複句']
+GoldStandard {'緊縮複句': '1'}
+ModelPredict {'緊縮複句': ''}
+
+然後你就再做過來啊 ['結果補語', '趨向補語', '帶連詞複句']
+GoldStandard {'結果補語': '', '趨向補語': '1', '帶連詞複句': ''}
+ModelPredict {'結果補語': '1', '趨向補語': '', '帶連詞複句': '1'}
+
+然後你從前面做過來的時候要往上蓋 ['方位', '結果補語', '趨向補語', '帶連詞複句']
+GoldStandard {'方位': '', '結果補語': '', '趨向補語': '1', '帶連詞複句': ''}
+ModelPredict {'方位': '1', '結果補語': '1', '趨向補語': '', '帶連詞複句': '1'}
+
+這樣會碰到花園了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+你應該要那個過來 ['趨向補語']
+GoldStandard {'趨向補語': '1'}
+ModelPredict {'趨向補語': ''}
+
+你才能用那個圓柱體蓋上面啦 ['方位', '動前介詞', '動後介詞']
+GoldStandard {'方位': '', '動前介詞': '', '動後介詞': ''}
+ModelPredict {'方位': '1', '動前介詞': '1', '動後介詞': '1'}
+
+你應該這裡大一點然後你要用圓柱體這樣蓋上去啊 ['量-特', '動後介詞']
+GoldStandard {'量-特': '', '動後介詞': ''}
+ModelPredict {'量-特': '1', '動後介詞': '1'}
+
+然後你這裡要關一點點而已關一點點啊 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+我覺得這樣子放應該 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': ''}
+ModelPredict {'感知/心理狀態': '1'}
+
+你的手機把你的弄壞了 ['體貌', '結果補語', '動前介詞']
+GoldStandard {'體貌': '', '結果補語': '1', '動前介詞': ''}
+ModelPredict {'體貌': '1', '結果補語': '', '動前介詞': '1'}
+
+積木結晶這些放在外面啦 ['量-特', '方位']
+GoldStandard {'量-特': '', '方位': ''}
+ModelPredict {'量-特': '1', '方位': '1'}
+
+穿過來 ['結果補語', '趨向補語', '連謂/兼語']
+GoldStandard {'結果補語': '', '趨向補語': '1', '連謂/兼語': ''}
+ModelPredict {'結果補語': '1', '趨向補語': '', '連謂/兼語': '1'}
+
+上面要有一個黃色的圓形 ['方位', '存現句']
+GoldStandard {'方位': '', '存現句': '1'}
+ModelPredict {'方位': '1', '存現句': ''}
+
+看看你要怎麼用 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+可是我想要有兩個藍色 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+我就在蓋東西啊 ['體貌']
+GoldStandard {'體貌': '1'}
+ModelPredict {'體貌': ''}
+
+等下你這個家借給我 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+你也要做有屋頂的喔 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+按了你就可以進門就會打開 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+你進去就能坐到這裡 ['趨向補語', '動後介詞']
+GoldStandard {'趨向補語': '1', '動後介詞': '1'}
+ModelPredict {'趨向補語': '', '動後介詞': ''}
+
+然後這裡從這裡爬到最上面 ['動前介詞', '動後介詞', '帶連詞複句']
+GoldStandard {'動前介詞': '', '動後介詞': '1', '帶連詞複句': ''}
+ModelPredict {'動前介詞': '1', '動後介詞': '', '帶連詞複句': '1'}
+
+你沒看到這裡有個洞 ['結果補語', '動前介詞', '存現句']
+GoldStandard {'結果補語': '1', '動前介詞': '', '存現句': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1', '存現句': '1'}
+
+可是你現在沒有按這個 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+可是我還有再加上東西喔 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+如果超多人這裡也可以排 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+就是上樓看看外面 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+我要把這個拆掉 ['結果補語']
+GoldStandard {'結果補語': ''}
+ModelPredict {'結果補語': '1'}
+
+換成你這種的 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+可是沒有正方形了 ['體貌', '帶連詞複句']
+GoldStandard {'體貌': '', '帶連詞複句': ''}
+ModelPredict {'體貌': '1', '帶連詞複句': '1'}
+
+一個就好的 ['X的']
+GoldStandard {'X的': ''}
+ModelPredict {'X的': '1'}
+
+你這樣只剩一個了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+我知道啊 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': ''}
+ModelPredict {'感知/心理狀態': '1'}
+
+我知道 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': ''}
+ModelPredict {'感知/心理狀態': '1'}
+
+然後按了這個按鈕 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+你還可以在這兩個電梯裡面玩喔 ['體貌', '動前介詞']
+GoldStandard {'體貌': '', '動前介詞': ''}
+ModelPredict {'體貌': '1', '動前介詞': '1'}
+
+可是你沒有屋頂不算 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+你好像還有一個紅色的 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+再找找看有沒有紅色的 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+所以沒有紅色的了 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+很多樓 ['量-特']
+GoldStandard {'量-特': '1'}
+ModelPredict {'量-特': ''}
+
+小小豬 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': '1'}
+ModelPredict {'感知/心理狀態': ''}
+
+然後你的手手要伸進去 ['趨向補語', '帶連詞複句']
+GoldStandard {'趨向補語': '1', '帶連詞複句': ''}
+ModelPredict {'趨向補語': '', '帶連詞複句': '1'}
+
+假裝他們兩個生病了 ['體貌', '連謂/兼語', '感知/心理狀態']
+GoldStandard {'體貌': '', '連謂/兼語': '', '感知/心理狀態': '1'}
+ModelPredict {'體貌': '1', '連謂/兼語': '1', '感知/心理狀態': ''}
+
+然後你要帶他們兩個來看醫生 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+轉過來屁屁 ['結果補語', '趨向補語', '連謂/兼語']
+GoldStandard {'結果補語': '', '趨向補語': '1', '連謂/兼語': ''}
+ModelPredict {'結果補語': '1', '趨向補語': '', '連謂/兼語': '1'}
+
+這個是要擦在耳朵的 ['動後介詞']
+GoldStandard {'動後介詞': '1'}
+ModelPredict {'動後介詞': ''}
+
+等一下再看啊 ['數量補語']
+GoldStandard {'數量補語': ''}
+ModelPredict {'數量補語': '1'}
+
+我們要點一點的啊 ['X的']
+GoldStandard {'X的': ''}
+ModelPredict {'X的': '1'}
+
+中間塞一個這個 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+都故意的 ['X的']
+GoldStandard {'X的': ''}
+ModelPredict {'X的': '1'}
+
+就是你要跳到這個 ['動後介詞']
+GoldStandard {'動後介詞': '1'}
+ModelPredict {'動後介詞': ''}
+
+然後這樣子跳到這樣子 ['動後介詞', '帶連詞複句']
+GoldStandard {'動後介詞': '1', '帶連詞複句': ''}
+ModelPredict {'動後介詞': '', '帶連詞複句': '1'}
+
+然後他就跳到這裡 ['動後介詞', '帶連詞複句']
+GoldStandard {'動後介詞': '1', '帶連詞複句': ''}
+ModelPredict {'動後介詞': '', '帶連詞複句': '1'}
+
+然後這樣子 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+第一名到第三名都有獎 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+可以有一個獎盃 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+但是這個 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後呢第二名是銀色 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後第一名是金色 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後從這裡再跳到這裡再跳過來 ['結果補語', '趨向補語', '動後介詞', '連謂/兼語', '帶連詞複句']
+GoldStandard {'結果補語': '', '趨向補語': '1', '動後介詞': '1', '連謂/兼語': '', '帶連詞複句': ''}
+ModelPredict {'結果補語': '1', '趨向補語': '', '動後介詞': '', '連謂/兼語': '1', '帶連詞複句': '1'}
+
+就下來再跳到這裡 ['趨向補語', '動後介詞']
+GoldStandard {'趨向補語': '', '動後介詞': '1'}
+ModelPredict {'趨向補語': '1', '動後介詞': ''}
+
+好的 ['X的']
+GoldStandard {'X的': ''}
+ModelPredict {'X的': '1'}
+
+擺好就好了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+你哪裡有玩 ['方位']
+GoldStandard {'方位': '1'}
+ModelPredict {'方位': ''}
+
+對啊這有一點點太酷了啊 ['量-特']
+GoldStandard {'量-特': '1'}
+ModelPredict {'量-特': ''}
+
+請進 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+來看耳朵 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+是不是感冒了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+你有一些問題 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+我想要用小一點 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+這邊有一個 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+這裡也有一個啊 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+有講台 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+為什麼要快一點 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+我看過一個節目 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+我覺得這樣子形狀有點不一樣 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+裡面有藏東西 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+是藏寶盒裡面有藏寶盒 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+你閉上眼睛我要藏東西 ['方位', '結果補語', '動前介詞', '動後介詞']
+GoldStandard {'方位': '', '結果補語': '1', '動前介詞': '', '動後介詞': ''}
+ModelPredict {'方位': '1', '結果補語': '', '動前介詞': '1', '動後介詞': '1'}
+
+我說張開了再張開 ['結果補語', '動前介詞', '連謂/兼語', '緊縮複句']
+GoldStandard {'結果補語': '1', '動前介詞': '', '連謂/兼語': '', '緊縮複句': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1', '連謂/兼語': '1', '緊縮複句': '1'}
+
+我知道桌子了 ['體貌', '感知/心理狀態']
+GoldStandard {'體貌': '', '感知/心理狀態': ''}
+ModelPredict {'體貌': '1', '感知/心理狀態': '1'}
+
+幫我看病 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+一到了中午他就會吐 ['緊縮複句']
+GoldStandard {'緊縮複句': '1'}
+ModelPredict {'緊縮複句': ''}
+
+我會乖乖吃藥的 ['X的']
+GoldStandard {'X的': ''}
+ModelPredict {'X的': '1'}
+
+然後換你戴著他 ['連謂/兼語', '帶連詞複句']
+GoldStandard {'連謂/兼語': '1', '帶連詞複句': ''}
+ModelPredict {'連謂/兼語': '', '帶連詞複句': '1'}
+
+他在這裡先給他吃一個 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+他害怕打針嗎 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+我來用我來打開yihsiu ['動前介詞', '連謂/兼語']
+GoldStandard {'動前介詞': '', '連謂/兼語': ''}
+ModelPredict {'動前介詞': '1', '連謂/兼語': '1'}
+
+來我來檢查牙齒 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+他有沒有蛀牙來 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+我幫他擦乾淨 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+因為他趁你睡著的時候偷偷吃糖果 ['體貌', '連謂/兼語']
+GoldStandard {'體貌': '1', '連謂/兼語': '1'}
+ModelPredict {'體貌': '', '連謂/兼語': ''}
+
+如果又來又可以再預約 ['緊縮複句']
+GoldStandard {'緊縮複句': ''}
+ModelPredict {'緊縮複句': '1'}
+
+換他當病人我是他的媽媽 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+他要拿什麼你就幫他拿 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+謝謝了醫生 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+那等一下換你當那個他的媽媽好不好 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+好了換你當他的媽媽 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+他有發高燒嗎 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+他需要打針 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+跟媽咪一起疊很漂亮的東西 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+你要再高高一點 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+欸媽咪你也要蓋你都沒有幫我蓋喔 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+不可以我不喜歡用綠色的 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': '1'}
+ModelPredict {'感知/心理狀態': ''}
+
+過得去 ['可能補語']
+GoldStandard {'可能補語': '1'}
+ModelPredict {'可能補語': ''}
+
+再來一次 ['量-特']
+GoldStandard {'量-特': '1'}
+ModelPredict {'量-特': ''}
+
+媽咪你幫我蓋 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+不行你沒有幫我蓋啊 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+嗯拿掉我們蓋警察局吧! ['量-個']
+GoldStandard {'量-個': '1'}
+ModelPredict {'量-個': ''}
+
+好媽咪幫我蓋警察局 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+警察局需要有槍 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+不要做大一點 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+現在可以坐進去了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+不需要有屋頂 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+這裡我們可以進去 ['趨向補語']
+GoldStandard {'趨向補語': '1'}
+ModelPredict {'趨向補語': ''}
+
+嗯媽咪你聽我說這裡我們可以進去 ['趨向補語', '連謂/兼語']
+GoldStandard {'趨向補語': '1', '連謂/兼語': '1'}
+ModelPredict {'趨向補語': '', '連謂/兼語': ''}
+
+然後的話要這個 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+就是因為如果有警報器響起來 ['趨向補語']
+GoldStandard {'趨向補語': ''}
+ModelPredict {'趨向補語': '1'}
+
+我們把它東西倒出來這樣子才比較方便拿東西 ['趨向補語', '連謂/兼語']
+GoldStandard {'趨向補語': '1', '連謂/兼語': ''}
+ModelPredict {'趨向補語': '', '連謂/兼語': '1'}
+
+好了媽咪換你了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+睡我記得我們先幫他蓋一個睡覺前的要地方 ['X的', 'X的Y', '方位', '動後介詞']
+GoldStandard {'X的': '', 'X的Y': '1', '方位': '', '動後介詞': ''}
+ModelPredict {'X的': '1', 'X的Y': '', '方位': '1', '動後介詞': '1'}
+
+還有警察小姐 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+我這裡有三塊 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+然後另外一個是大槍 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+好我要來打針囉 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+好了看完了 ['結果補語', '動前介詞']
+GoldStandard {'結果補語': '1', '動前介詞': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1'}
+
+那我們來量體溫 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+我也可以幫你貼ok繃 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+我沒有看到藥啊 ['結果補語', '動前介詞']
+GoldStandard {'結果補語': '1', '動前介詞': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1'}
+
+然後我來幫他拔牙齒 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後再幫他擦藥藥 ['連謂/兼語', '帶連詞複句']
+GoldStandard {'連謂/兼語': '1', '帶連詞複句': ''}
+ModelPredict {'連謂/兼語': '', '帶連詞複句': '1'}
+
+幫他打針啊! ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+因為他受傷了! ['體貌', '動前介詞', '帶連詞複句']
+GoldStandard {'體貌': '', '動前介詞': '', '帶連詞複句': ''}
+ModelPredict {'體貌': '1', '動前介詞': '1', '帶連詞複句': '1'}
+
+抹抹藥! ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+因為他肚子裡面有的東西所以我把他夾出來 ['存現句', '連謂/兼語']
+GoldStandard {'存現句': '', '連謂/兼語': ''}
+ModelPredict {'存現句': '1', '連謂/兼語': '1'}
+
+然後再把他縫起來! ['趨向補語', '帶連詞複句']
+GoldStandard {'趨向補語': '', '帶連詞複句': ''}
+ModelPredict {'趨向補語': '1', '帶連詞複句': '1'}
+
+然後再 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+來住院 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+醫生說你可以回去了! ['趨向補語', '動前介詞']
+GoldStandard {'趨向補語': '1', '動前介詞': ''}
+ModelPredict {'趨向補語': '', '動前介詞': '1'}
+
+出來了! ['趨向補語', '動前介詞']
+GoldStandard {'趨向補語': '1', '動前介詞': ''}
+ModelPredict {'趨向補語': '', '動前介詞': '1'}
+
+我發出的! ['趨向補語']
+GoldStandard {'趨向補語': '1'}
+ModelPredict {'趨向補語': ''}
+
+啊拔不起來 ['趨向補語']
+GoldStandard {'趨向補語': ''}
+ModelPredict {'趨向補語': '1'}
+
+趕快出去玩 ['趨向補語']
+GoldStandard {'趨向補語': '1'}
+ModelPredict {'趨向補語': ''}
+
+我早就吃完飯然後去玩回來了! ['體貌', '結果補語', '趨向補語', '動前介詞', '連謂/兼語', '帶連詞複句']
+GoldStandard {'體貌': '', '結果補語': '1', '趨向補語': '1', '動前介詞': '', '連謂/兼語': '', '帶連詞複句': '1'}
+ModelPredict {'體貌': '1', '結果補語': '', '趨向補語': '', '動前介詞': '1', '連謂/兼語': '1', '帶連詞複句': ''}
+
+我早就已經醒來出去玩了! ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+握住了然後轉轉轉 ['帶連詞複句']
+GoldStandard {'帶連詞複句': '1'}
+ModelPredict {'帶連詞複句': ''}
+
+就是我教你怎麼蓋 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+然後你再把這放在這裡好嗎 ['動後介詞', '帶連詞複句']
+GoldStandard {'動後介詞': '1', '帶連詞複句': ''}
+ModelPredict {'動後介詞': '', '帶連詞複句': '1'}
+
+然後呢再找一個這一個 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後這個也是放在旁邊這邊 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+換我放了 ['體貌', '連謂/兼語']
+GoldStandard {'體貌': '', '連謂/兼語': '1'}
+ModelPredict {'體貌': '1', '連謂/兼語': ''}
+
+然後這個是放在 ['動後介詞', '帶連詞複句']
+GoldStandard {'動後介詞': '1', '帶連詞複句': ''}
+ModelPredict {'動後介詞': '', '帶連詞複句': '1'}
+
+等一下這出來一點 ['量-特', '趨向補語']
+GoldStandard {'量-特': '', '趨向補語': '1'}
+ModelPredict {'量-特': '1', '趨向補語': ''}
+
+出來一點 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+然後這個再也拿一個這個 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後這邊疊然後換你疊 ['連謂/兼語', '帶連詞複句']
+GoldStandard {'連謂/兼語': '1', '帶連詞複句': ''}
+ModelPredict {'連謂/兼語': '', '帶連詞複句': '1'}
+
+然後這邊是樓梯 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+還有王子 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+然後他是公主 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+公主在最上層樓 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+我弄出來 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+這裡還是有一個大長長的 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+疊上去 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+然後再一個 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後還有一個 ['存現句', '帶連詞複句']
+GoldStandard {'存現句': '', '帶連詞複句': ''}
+ModelPredict {'存現句': '1', '帶連詞複句': '1'}
+
+然後這個是樓梯 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+這邊爬上去啊 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+跳跳跳就可以跳到這裡 ['動後介詞', '緊縮複句']
+GoldStandard {'動後介詞': '1', '緊縮複句': '1'}
+ModelPredict {'動後介詞': '', '緊縮複句': ''}
+
+全部都疊起來 ['趨向補語']
+GoldStandard {'趨向補語': ''}
+ModelPredict {'趨向補語': '1'}
+
+媽媽住在裡面 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+爸爸住上面 ['方位', '動後介詞']
+GoldStandard {'方位': '', '動後介詞': ''}
+ModelPredict {'方位': '1', '動後介詞': '1'}
+
+所以 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+所以我要進去叫 ['趨向補語']
+GoldStandard {'趨向補語': '1'}
+ModelPredict {'趨向補語': ''}
+
+然後這誰住這 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後二樓住媽媽 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後三樓住阿姨 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後這裡住哥哥 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後這裡住爸爸 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後我還需要電梯 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+電梯我要先把這些拿下來 ['量-特', '結果補語']
+GoldStandard {'量-特': '', '結果補語': ''}
+ModelPredict {'量-特': '1', '結果補語': '1'}
+
+有一些些 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+然後電梯蓋在這邊吧 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+還有一層高高的! ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+疊完了! ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+我想要選小熊 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': '1'}
+ModelPredict {'感知/心理狀態': ''}
+
+可是他戴得了嗎 ['動前介詞']
+GoldStandard {'動前介詞': ''}
+ModelPredict {'動前介詞': '1'}
+
+蓋房子好了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+這樣不就做這一個這個形狀了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+這個有十個 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+這個有十個耶 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+少了兩個 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+這個已經有兩個了 ['體貌', '存現句']
+GoldStandard {'體貌': '', '存現句': ''}
+ModelPredict {'體貌': '1', '存現句': '1'}
+
+還有一個這個積木嗎 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+然後這一個得放上去 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+這個得放到後面去 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+這是前面 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+這要蓋上面 ['方位', '動後介詞']
+GoldStandard {'方位': '', '動後介詞': ''}
+ModelPredict {'方位': '1', '動後介詞': '1'}
+
+圓圓的有八個 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+有十六個 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+還有因為都被我用光了 ['結果補語', '動前介詞']
+GoldStandard {'結果補語': '1', '動前介詞': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1'}
+
+不知道要做什麼 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': '1'}
+ModelPredict {'感知/心理狀態': ''}
+
+放在這裡好了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+耶呼我有兩三個了 ['體貌', '存現句']
+GoldStandard {'體貌': '', '存現句': ''}
+ModelPredict {'體貌': '1', '存現句': '1'}
+
+然後這是進去的地方 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+這裡也可以進去 ['趨向補語']
+GoldStandard {'趨向補語': '1'}
+ModelPredict {'趨向補語': ''}
+
+紅色有十六個 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+藍色有三個 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+全部倒出來 ['趨向補語', '連謂/兼語']
+GoldStandard {'趨向補語': '1', '連謂/兼語': ''}
+ModelPredict {'趨向補語': '', '連謂/兼語': '1'}
+
+你的跌倒了 ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+嗯我也想再一個屋頂 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': ''}
+ModelPredict {'感知/心理狀態': '1'}
+
+鋪鋪鋪鋪 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+這怎麽那麽靠近 ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+其實也不用太靠近 ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+你會有一個長的 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+這個想要中間再放一個 ['方位', '動後介詞']
+GoldStandard {'方位': '', '動後介詞': ''}
+ModelPredict {'方位': '1', '動後介詞': '1'}
+
+然後這個再蓋一個 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+說不定還會有這個的這樣子 ['可能補語']
+GoldStandard {'可能補語': ''}
+ModelPredict {'可能補語': '1'}
+
+然後這邊再蓋一個 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後這裡再一個直列的就可以 ['帶連詞複句', '緊縮複句']
+GoldStandard {'帶連詞複句': '', '緊縮複句': '1'}
+ModelPredict {'帶連詞複句': '1', '緊縮複句': ''}
+
+然後再放一個三角形 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+本來這裡還想一個 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': ''}
+ModelPredict {'感知/心理狀態': '1'}
+
+然後剛剛看到就拿了 ['結果補語', '動前介詞', '帶連詞複句', '感知/心理狀態']
+GoldStandard {'結果補語': '1', '動前介詞': '', '帶連詞複句': '', '感知/心理狀態': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1', '帶連詞複句': '1', '感知/心理狀態': '1'}
+
+這兩個都要有三角形 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+然後這個是在這的 ['動後介詞', '帶連詞複句']
+GoldStandard {'動後介詞': '', '帶連詞複句': ''}
+ModelPredict {'動後介詞': '1', '帶連詞複句': '1'}
+
+不是車子是從後面 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+一台車停外面 ['方位', '動後介詞']
+GoldStandard {'方位': '', '動後介詞': ''}
+ModelPredict {'方位': '1', '動後介詞': '1'}
+
+如果超過這裡的話這個就會跌倒 ['方位']
+GoldStandard {'方位': '1'}
+ModelPredict {'方位': ''}
+
+然後這一台不用動 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+因為這一台本來就是停那裡的 ['方位']
+GoldStandard {'方位': '1'}
+ModelPredict {'方位': ''}
+
+這一台需要移動 ['結果補語']
+GoldStandard {'結果補語': ''}
+ModelPredict {'結果補語': '1'}
+
+這台也可以移動 ['結果補語']
+GoldStandard {'結果補語': ''}
+ModelPredict {'結果補語': '1'}
+
+這個是直的這個是夾的 ['X的Y']
+GoldStandard {'X的Y': ''}
+ModelPredict {'X的Y': '1'}
+
+我要幫他看醫生 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+這個放旁邊 ['方位', '動後介詞']
+GoldStandard {'方位': '', '動後介詞': ''}
+ModelPredict {'方位': '1', '動後介詞': '1'}
+
+兩次 ['量-特']
+GoldStandard {'量-特': '1'}
+ModelPredict {'量-特': ''}
+
+那換你當醫生了 ['體貌', '連謂/兼語']
+GoldStandard {'體貌': '', '連謂/兼語': '1'}
+ModelPredict {'體貌': '1', '連謂/兼語': ''}
+
+把他的那個魚刺夾出來 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+哪裡不舒服 ['方位']
+GoldStandard {'方位': '1'}
+ModelPredict {'方位': ''}
+
+咳嗽咳嗽你要吃這個藥嘴巴張開 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+然後你要把然後你要先打開嘴巴 ['把字句', '帶連詞複句']
+GoldStandard {'把字句': '', '帶連詞複句': ''}
+ModelPredict {'把字句': '1', '帶連詞複句': '1'}
+
+然後再張開嘴巴一下 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+啊夾出來夾好了 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+然後我要幫他耳朵過來 ['結果補語', '連謂/兼語', '帶連詞複句']
+GoldStandard {'結果補語': '', '連謂/兼語': '', '帶連詞複句': ''}
+ModelPredict {'結果補語': '1', '連謂/兼語': '1', '帶連詞複句': '1'}
+
+然後你要打針 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+有小熊維尼你好勇敢 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+幫你貼ok繃 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+肚子肚子有病菌 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+我不會幫你打針 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+那那你叫媽媽來然後你叫媽媽陪在醫院陪你 ['體貌', '動前介詞', '連謂/兼語', '帶連詞複句']
+GoldStandard {'體貌': '', '動前介詞': '1', '連謂/兼語': '1', '帶連詞複句': '1'}
+ModelPredict {'體貌': '1', '動前介詞': '', '連謂/兼語': '', '帶連詞複句': ''}
+
+那放假以後再過來 ['結果補語', '趨向補語', '緊縮複句']
+GoldStandard {'結果補語': '', '趨向補語': '1', '緊縮複句': '1'}
+ModelPredict {'結果補語': '1', '趨向補語': '', '緊縮複句': ''}
+
+現在感覺不痛了嗎 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+抹抹好了 ['結果補語']
+GoldStandard {'結果補語': ''}
+ModelPredict {'結果補語': '1'}
+
+醫院的藥已經沒了明天醫生再去買 ['體貌', '連謂/兼語', '緊縮複句']
+GoldStandard {'體貌': '1', '連謂/兼語': '', '緊縮複句': ''}
+ModelPredict {'體貌': '', '連謂/兼語': '1', '緊縮複句': '1'}
+
+這次不是打針這次這次是我要幫你聽聽看而已 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+可是那你就要把肚子的病菌夾出來 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+嗯小豬好了你幫我戴一下 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+那你要坐在這邊陪我一號 ['體貌', '連謂/兼語']
+GoldStandard {'體貌': '', '連謂/兼語': '1'}
+ModelPredict {'體貌': '1', '連謂/兼語': ''}
+
+我是喝開水噎到了 ['體貌', '結果補語', '動前介詞', '連謂/兼語']
+GoldStandard {'體貌': '1', '結果補語': '1', '動前介詞': '', '連謂/兼語': '1'}
+ModelPredict {'體貌': '', '結果補語': '', '動前介詞': '1', '連謂/兼語': ''}
+
+我們來疊城堡 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+三角形還有三角形 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+然後這是守衛他們在看守城堡 ['體貌', '帶連詞複句']
+GoldStandard {'體貌': '1', '帶連詞複句': ''}
+ModelPredict {'體貌': '', '帶連詞複句': '1'}
+
+守衛不是守衛是這一個他們在看守城堡 ['體貌']
+GoldStandard {'體貌': '1'}
+ModelPredict {'體貌': ''}
+
+我想要先把它拿出來 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': '1'}
+ModelPredict {'感知/心理狀態': ''}
+
+等一下我想要蓋城堡 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': '1'}
+ModelPredict {'感知/心理狀態': ''}
+
+然後這是城堡的門 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+我們來分形狀 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+嗯黃色在下面 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+然後再蓋一個柱子 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+這個再蓋上去 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+媽媽我想要把他蓋比較寬這樣 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': '1'}
+ModelPredict {'感知/心理狀態': ''}
+
+我想蓋一個藍色的這個 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': '1'}
+ModelPredict {'感知/心理狀態': ''}
+
+所以變綠的 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後如果打開就是這樣 ['緊縮複句']
+GoldStandard {'緊縮複句': ''}
+ModelPredict {'緊縮複句': '1'}
+
+我先把這個拿下來好了 ['結果補語']
+GoldStandard {'結果補語': ''}
+ModelPredict {'結果補語': '1'}
+
+還有一個躲在這裡 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+嗯歪掉了 ['結果補語', '動前介詞']
+GoldStandard {'結果補語': '1', '動前介詞': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1'}
+
+先把這個拿下來 ['結果補語']
+GoldStandard {'結果補語': ''}
+ModelPredict {'結果補語': '1'}
+
+把這個蓋起來 ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+然後蓋哪個 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+這個綠色蓋上去 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+這是要爬上去 ['動後介詞']
+GoldStandard {'動後介詞': ''}
+ModelPredict {'動後介詞': '1'}
+
+然後這有紅色溜滑梯 ['存現句', '帶連詞複句']
+GoldStandard {'存現句': '1', '帶連詞複句': ''}
+ModelPredict {'存現句': '', '帶連詞複句': '1'}
+
+然後可以再做啊 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+可以把他疊高一點 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+但小朋友覺得很好玩 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': ''}
+ModelPredict {'感知/心理狀態': '1'}
+
+我蓋囉可是不夠欸 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後這邊也有一個 ['存現句', '帶連詞複句']
+GoldStandard {'存現句': '', '帶連詞複句': ''}
+ModelPredict {'存現句': '1', '帶連詞複句': '1'}
+
+要當最上面的寶石 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+翹翹板 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+啊我有一個好主意 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+然後上面有一個這個 ['方位', '存現句', '帶連詞複句']
+GoldStandard {'方位': '', '存現句': '', '帶連詞複句': ''}
+ModelPredict {'方位': '1', '存現句': '1', '帶連詞複句': '1'}
+
+你看舞台做好了 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+然後舞台旁邊有這兩個 ['存現句', '帶連詞複句']
+GoldStandard {'存現句': '1', '帶連詞複句': ''}
+ModelPredict {'存現句': '', '帶連詞複句': '1'}
+
+然後這邊有一個這個 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後這邊是可以給人家坐著看表演 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+把打針上面抓藥藥 ['方位', '動後介詞', '把字句', '連謂/兼語']
+GoldStandard {'方位': '', '動後介詞': '', '把字句': '', '連謂/兼語': ''}
+ModelPredict {'方位': '1', '動後介詞': '1', '把字句': '1', '連謂/兼語': '1'}
+
+幫他開刀 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+準備要剪掉他的手了 ['體貌', '連謂/兼語']
+GoldStandard {'體貌': '', '連謂/兼語': '1'}
+ModelPredict {'體貌': '1', '連謂/兼語': ''}
+
+還要再吃藥整罐 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+然後呢再水水泡一泡 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後呢在這裡切一半 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+墊後面啦 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+哎只有一點點 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+我想先看看他的溫度 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': ''}
+ModelPredict {'感知/心理狀態': '1'}
+
+這個有鼻子都好好了 ['體貌', '存現句']
+GoldStandard {'體貌': '1', '存現句': ''}
+ModelPredict {'體貌': '', '存現句': '1'}
+
+然後這個是天橋 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+馬路在下面 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+弄在下面 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+另外一邊是河流 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+然後呢這裡蓋一座 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後在河的另一端 ['體貌', '動前介詞', '帶連詞複句']
+GoldStandard {'體貌': '', '動前介詞': '', '帶連詞複句': ''}
+ModelPredict {'體貌': '1', '動前介詞': '1', '帶連詞複句': '1'}
+
+人行道在中間 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+然後河蓋住 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+三角形是在上面 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+有些壞人會從河裡面跑出來到 ['存現句', '連謂/兼語']
+GoldStandard {'存現句': '', '連謂/兼語': ''}
+ModelPredict {'存現句': '1', '連謂/兼語': '1'}
+
+這裡是機器人關卡的游戲 ['X的', 'X的Y']
+GoldStandard {'X的': '', 'X的Y': '1'}
+ModelPredict {'X的': '1', 'X的Y': ''}
+
+有些壞人會從河裡面蹦出來 ['趨向補語', '存現句', '連謂/兼語']
+GoldStandard {'趨向補語': '1', '存現句': '', '連謂/兼語': ''}
+ModelPredict {'趨向補語': '', '存現句': '1', '連謂/兼語': '1'}
+
+看誰疊的最高 ['情態補語']
+GoldStandard {'情態補語': '1'}
+ModelPredict {'情態補語': ''}
+
+看只要疊最高就好了 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+因為有喜歡全全部 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+那你會換你講了 ['體貌', '連謂/兼語']
+GoldStandard {'體貌': '', '連謂/兼語': '1'}
+ModelPredict {'體貌': '1', '連謂/兼語': ''}
+
+換你講你有什麼顏色 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+那錄影完了沒 ['結果補語']
+GoldStandard {'結果補語': '1'}
+ModelPredict {'結果補語': ''}
+
+還有還有還有很多公主 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+我不要你幫忙謝謝 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+那我來幫你 ['連謂/兼語']
+GoldStandard {'連謂/兼語': ''}
+ModelPredict {'連謂/兼語': '1'}
+
+我聽到你的肚子咕嚕咕嚕 ['結果補語', '動前介詞']
+GoldStandard {'結果補語': '1', '動前介詞': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1'}
+
+這個藥藥會抹你的肚子然後呢就會好了 ['體貌', '帶連詞複句']
+GoldStandard {'體貌': '', '帶連詞複句': '1'}
+ModelPredict {'體貌': '1', '帶連詞複句': ''}
+
+代表你的這邊發燒了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+然後他就他要打針 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後一次也是好的 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+就是我先幫你裝一個藥藥吧 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+然後裡面這邊會變成一個這邊會變成一個你說貼紙的時候就會變貼紙 ['帶連詞複句', '緊縮複句']
+GoldStandard {'帶連詞複句': '', '緊縮複句': '1'}
+ModelPredict {'帶連詞複句': '1', '緊縮複句': ''}
+
+好了我不看了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+不要看了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+放反了 ['結果補語', '動前介詞']
+GoldStandard {'結果補語': '1', '動前介詞': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1'}
+
+嚇死了 ['結果補語', '動前介詞']
+GoldStandard {'結果補語': '1', '動前介詞': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1'}
+
+我看看這個放哪裡 ['方位']
+GoldStandard {'方位': '1'}
+ModelPredict {'方位': ''}
+
+這樣子就可以了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+因為呢這個沒有顏色 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+然後獅子的家 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+這個是裡面空空的是有一些藥 ['方位', '存現句']
+GoldStandard {'方位': '', '存現句': ''}
+ModelPredict {'方位': '1', '存現句': '1'}
+
+我有來台北 ['趨向補語']
+GoldStandard {'趨向補語': ''}
+ModelPredict {'趨向補語': '1'}
+
+我們哪裡要檢查 ['方位']
+GoldStandard {'方位': '1'}
+ModelPredict {'方位': ''}
+
+幫我戴 ['連謂/兼語']
+GoldStandard {'連謂/兼語': '1'}
+ModelPredict {'連謂/兼語': ''}
+
+後面 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+娃娃有聲音嗎 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+蓋錯了 ['結果補語', '動前介詞']
+GoldStandard {'結果補語': '1', '動前介詞': ''}
+ModelPredict {'結果補語': '', '動前介詞': '1'}
+
+就可以了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+再一個兩個蓋上來 ['結果補語', '趨向補語']
+GoldStandard {'結果補語': '', '趨向補語': '1'}
+ModelPredict {'結果補語': '1', '趨向補語': ''}
+
+然後再加一點綠色 ['量-特', '數量補語', '帶連詞複句']
+GoldStandard {'量-特': '', '數量補語': '', '帶連詞複句': ''}
+ModelPredict {'量-特': '1', '數量補語': '1', '帶連詞複句': '1'}
+
+有一個細細長長的街 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+就可以接到這個高度了 ['體貌']
+GoldStandard {'體貌': ''}
+ModelPredict {'體貌': '1'}
+
+還是蓋高一點 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+因為這樣走過去有一個人會摔倒 ['量-個', '存現句']
+GoldStandard {'量-個': '', '存現句': '1'}
+ModelPredict {'量-個': '1', '存現句': ''}
+
+蓋高一點 ['量-特']
+GoldStandard {'量-特': ''}
+ModelPredict {'量-特': '1'}
+
+希望不要太搖 ['感知/心理狀態']
+GoldStandard {'感知/心理狀態': ''}
+ModelPredict {'感知/心理狀態': '1'}
+
+這個過來 ['趨向補語']
+GoldStandard {'趨向補語': '1'}
+ModelPredict {'趨向補語': ''}
+
+一定要從下面按這個 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+然後他就會從下面走上來 ['方位', '結果補語', '帶連詞複句']
+GoldStandard {'方位': '', '結果補語': '', '帶連詞複句': ''}
+ModelPredict {'方位': '1', '結果補語': '1', '帶連詞複句': '1'}
+
+他會從這下面 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+停車場的外面有一個火車的賣麵 ['方位']
+GoldStandard {'方位': ''}
+ModelPredict {'方位': '1'}
+
+有可樂啦 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+
+你只要按下去 ['帶連詞複句']
+GoldStandard {'帶連詞複句': ''}
+ModelPredict {'帶連詞複句': '1'}
+
+他就會從下面滾下來 ['方位', '結果補語', '連謂/兼語']
+GoldStandard {'方位': '', '結果補語': '', '連謂/兼語': ''}
+ModelPredict {'方位': '1', '結果補語': '1', '連謂/兼語': '1'}
+
+還剩下兩個飲料沒有喝 ['結果補語', '存現句']
+GoldStandard {'結果補語': '1', '存現句': '1'}
+ModelPredict {'結果補語': '', '存現句': ''}
+
+也比較不好喝 ['可能補語']
+GoldStandard {'可能補語': ''}
+ModelPredict {'可能補語': '1'}
+
+有漱口水耶 ['存現句']
+GoldStandard {'存現句': ''}
+ModelPredict {'存現句': '1'}
+

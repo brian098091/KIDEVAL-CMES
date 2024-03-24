@@ -97,6 +97,55 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
+            resultDICT["趨向補語"].append(1)
+            
+    if utterance == "進來了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["趨向補語"].append(1)
+            
+    if utterance == "直接倒下來":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["趨向補語"].append(1)
+            
+    if utterance == "塞不進去了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["趨向補語"].append(1)
+            
+    if utterance == "回去":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["趨向補語"].append(1)
+            
+    if utterance == "上去":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["趨向補語"].append(1)
+            
+    if utterance == "跳過來":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["趨向補語"].append(1)
+            
+    if utterance == "我先把這拿下來":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["趨向補語"].append(1) 
+
+    if utterance == "等一下這出來一點":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
             resultDICT["趨向補語"].append(1)        
+    
         
     return resultDICT
