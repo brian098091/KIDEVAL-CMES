@@ -73,8 +73,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
                     resultDICT["方位"].append(1)
                 else:
                     pass
-    except:
-        pass
+            except:
+                pass
             
     if utterance == "這裡":
         if CHATBOT_MODE:

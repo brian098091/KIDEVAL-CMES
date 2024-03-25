@@ -75,6 +75,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
                     pass
                 else:
                     resultDICT["連謂/兼語"].append(1)
+            except:
+                pass
             
     if utterance == "你先去外面等一下":
         if CHATBOT_MODE:
