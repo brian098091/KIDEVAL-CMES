@@ -25,7 +25,8 @@
             "飛船",
             "兵兵病",
             "三角站",
-            "肚子痛"
+            "肚子痛",
+            "塗塗"
         ],
         "_asVerb": [
             "下床",
@@ -52,6 +53,14 @@
             ],
             "pattern": "<(ACTION_verb|VerbP)>(幫|給)</(ACTION_verb|VerbP)><ENTITY_pronoun>[^<]+</ENTITY_pronoun><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
+        "你幫我曡高高": {
+            "id": "93e3593e-df42-48c0-8946-fe22aec01374",
+            "pos": "<ENTITY_pronoun>你</ENTITY_pronoun><ACTION_verb>幫</ACTION_verb><ENTITY_pronoun>我</ENTITY_pronoun><ENTITY_nouny>曡</ENTITY_nouny><MODIFIER>高高</MODIFIER>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(幫|幫助|協助|扶助|援助|輔助|想幫|陪著|替|幫著|幫了)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>幫</(ACTION_verb|VerbP)><ENTITY_pronoun>[^<]+</ENTITY_pronoun><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>曡</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>"
+        },
         "去鐵路上載客人": {
             "id": "bd17df7f-4243-480a-ac82-9c2d03d7ff28",
             "pos": "<ACTION_verb>去</ACTION_verb><ENTITY_noun>鐵路</ENTITY_noun><RANGE_locality>上</RANGE_locality><ACTION_verb>載</ACTION_verb><UserDefined>客人</UserDefined>",
@@ -59,7 +68,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(去|要去|回去|想去|去了|跑去|回來|跑來|趕去|出去|來)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(載|裝載|負載|載人|載入|載攜|載荷|載貨|運載|佩帶|填入)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!請</ACTION_verb>)(?<!來</ACTION_verb>)(?<!去</ACTION_verb>)(?<!得</ACTION_verb>)<(ACTION_(verb|quantifiedVerb)|VerbP)>[^<敢快想要用做有喜歡謝]+</(ACTION_(verb|quantifiedVerb)|VerbP)>(?!<ACTION_verb>起來</ACTION_verb>)(?!<ACTION_verb>下來</ACTION_verb>)(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>|<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>|<ENTITY_classifier>[^<]+</ENTITY_classifier>|<FUNC_negation>[^<]+</FUNC_negation>|<MODAL>[^<]+</MODAL>|(<TIME_(holiday|justtime|day|week|month|season|year|decade)>[^<]+</TIME_(holiday|justtime|day|week|month|season|year|decade)>){1,10}|<FUNC_(inner|inter|determiner)>[^<]+</FUNC_(inner|inter|determiner)>|<DegreeP>[^<]+</DegreeP>|<CLAUSE_(HowQ|AnotAQ|YesNoQ|WhoQ|WhatQ|WhereQ|WhenQ|WhyQ)>[^<]+</CLAUSE_(HowQ|AnotAQ|YesNoQ|WhoQ|WhatQ|WhereQ|WhenQ|WhyQ)>|<LOCATION>[^<]+</LOCATION>)*?(?!<ACTION_verb>過來</ACTION_verb>)(?<!再</MODIFIER>)(?<!請</ACTION_verb>)(?<!來</ACTION_verb>)(?<!去</ACTION_verb>)(?<!得</ACTION_verb>)(<(ACTION_(verb|quantifiedVerb)|VerbP)>([^<敢快來給有謝]+|[^<]+進去)</(ACTION_(verb|quantifiedVerb)|VerbP)>|<ACTION_lightVerb>打</ACTION_lightVerb>)(?!<FUNC_inner>的</FUNC_inner>)"
+            "pattern": "(?<!請</ACTION_verb>)(?<!來</ACTION_verb>)(?<!去</ACTION_verb>)(?<!得</ACTION_verb>)<(ACTION_(verb|quantifiedVerb)|VerbP)>([^<敢快想要用做有喜歡謝]+|(想|有)[^<]+)</(ACTION_(verb|quantifiedVerb)|VerbP)>(?!<ACTION_verb>起來</ACTION_verb>)(?!<ACTION_verb>下來</ACTION_verb>)(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>|<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>|<ENTITY_classifier>[^<]+</ENTITY_classifier>|<FUNC_negation>[^<]+</FUNC_negation>|<MODAL>[^<]+</MODAL>|(<TIME_(holiday|justtime|day|week|month|season|year|decade)>[^<]+</TIME_(holiday|justtime|day|week|month|season|year|decade)>){1,10}|<FUNC_(inner|inter|determiner)>[^<]+</FUNC_(inner|inter|determiner)>|<DegreeP>[^<]+</DegreeP>|<CLAUSE_(HowQ|AnotAQ|YesNoQ|WhoQ|WhatQ|WhereQ|WhenQ|WhyQ)>[^<]+</CLAUSE_(HowQ|AnotAQ|YesNoQ|WhoQ|WhatQ|WhereQ|WhenQ|WhyQ)>|<LOCATION>[^<]+</LOCATION>|<ASPECT>[^<]+</ASPECT>)*?(?!<ACTION_verb>過來</ACTION_verb>)(?<!再</MODIFIER>)(?<!請</ACTION_verb>)(?<!來</ACTION_verb>)(?<!去</ACTION_verb>)(?<!得</ACTION_verb>)(<(ACTION_(verb|quantifiedVerb)|VerbP)>([^<敢快來給有謝動了]+|[^<]+進去)</(ACTION_(verb|quantifiedVerb)|VerbP)>|<ACTION_lightVerb>打</ACTION_lightVerb>)(?!<FUNC_inner>的</FUNC_inner>)"
         },
         "你先去外面等一下": {
             "id": "073ce37d-1955-4c8b-95d4-3ea34c61386e",

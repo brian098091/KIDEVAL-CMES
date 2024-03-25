@@ -25,7 +25,8 @@
             "飛船",
             "兵兵病",
             "三角站",
-            "肚子痛"
+            "肚子痛",
+            "塗塗"
         ],
         "_asVerb": [
             "下床",
@@ -41,13 +42,13 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(剪|修剪|刪剪|剪成|剪掉|剪接|剪斷|剪裁|裁剪|中斷|分割)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(動|動性|新動|溜放|動等|動亦|去產|大動|作動|驅動|費功)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>剪</(ACTION_verb|VerbP)><FUNC_negation>[^<]+</FUNC_negation><(ACTION_verb|VerbP)>動(了)?</(ACTION_verb|VerbP)>"
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>剪</(ACTION_verb|VerbP)><FUNC_negation>[^<]+</FUNC_negation><(ACTION_verb|VerbP)>動了?</(ACTION_verb|VerbP)>"
         },
         "過得去": {
             "id": "263c086b-0d53-4b4d-8f43-e70bb1b8d92e",
             "pos": "<ACTION_verb>過得</ACTION_verb><ACTION_verb>去</ACTION_verb>",
             "lexy": [],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]得</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>(來|去)</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]得</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>[來去]</(ACTION_verb|VerbP)>"
         },
         "我下不去": {
             "id": "924e92a6-25d1-4505-8443-fe5fc4ed883e",
@@ -55,7 +56,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(去|要去|回去|想去|去了|跑去|回來|跑來|趕去|出去|來)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<RANGE_locality>(上|下)</RANGE_locality><FUNC_negation>不</FUNC_negation><(ACTION_verb|VerbP)>(來|去)</(ACTION_verb|VerbP)>"
+            "pattern": "<RANGE_locality>[上下]</RANGE_locality><FUNC_negation>不</FUNC_negation><(ACTION_verb|VerbP)>[來去]</(ACTION_verb|VerbP)>"
         },
         "我下得去": {
             "id": "197bb6e1-1968-4c28-9f46-6aaebaee844d",
@@ -63,7 +64,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(得去|得做|跑去|要去|得洗|想來|得用|飽了|得看|做慣|得找)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<RANGE_locality>(上|下)</RANGE_locality><(ACTION_verb|VerbP)>得(來|去)</(ACTION_verb|VerbP)>"
+            "pattern": "<RANGE_locality>[上下]</RANGE_locality><(ACTION_verb|VerbP)>得[來去]</(ACTION_verb|VerbP)>"
         },
         "我來不及": {
             "id": "86a8e389-d222-4c77-9d7f-0f9a4236e142",
@@ -159,7 +160,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(看|探看|收看|看守|看戲|看望|看護|看顧|觀看|光顧|探望)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(下去|因循|因襲|堅持|沿用|留下來|回來|下來了|過來了|回去|出去)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_negation>不</FUNC_negation><(ACTION_verb|VerbP)>[上下進出回過]去(了)?</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_negation>不</FUNC_negation><(ACTION_verb|VerbP)>[上下進出回過]去了?</(ACTION_verb|VerbP)>"
         },
         "我看得下去": {
             "id": "472605aa-2989-476c-b48e-10f014ab576c",
@@ -241,7 +242,7 @@
             "id": "6aa877bd-03cf-403f-b451-e1be2b5aff30",
             "pos": "<FUNC_inter>可是</FUNC_inter><ENTITY_DetPhrase>這樣</ENTITY_DetPhrase><ENTITY_noun>火車</ENTITY_noun><ACTION_verb>過</ACTION_verb><ENTITY_oov>不</ENTITY_oov><ACTION_verb>過去</ACTION_verb>",
             "lexy": [],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><ENTITY_oov>不</ENTITY_oov><(ACTION_verb|VerbP)>過去(了)?</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><ENTITY_oov>不</ENTITY_oov><(ACTION_verb|VerbP)>過去了?</(ACTION_verb|VerbP)>"
         }
     },
     "alias": {},

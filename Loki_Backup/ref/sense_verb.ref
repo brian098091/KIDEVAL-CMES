@@ -25,7 +25,8 @@
             "飛船",
             "兵兵病",
             "三角站",
-            "肚子痛"
+            "肚子痛",
+            "塗塗"
         ],
         "_asVerb": [
             "下床",
@@ -48,7 +49,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(看見|看到|睇見|瞅見|瞧見|細看|見到|凝視|懂得|抓包|抓姦)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(看|瞧|瞥|瞅|窺|聽|聞)見</(ACTION_verb|VerbP)>"
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[看瞧瞥瞅窺聽聞]見</(ACTION_verb|VerbP)>"
         },
         "覺得": {
             "id": "559cf100-62c0-460c-b3a1-076e6243b861",

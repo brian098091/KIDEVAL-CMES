@@ -25,7 +25,8 @@
             "飛船",
             "兵兵病",
             "三角站",
-            "肚子痛"
+            "肚子痛",
+            "塗塗"
         ],
         "_asVerb": [
             "下床",
@@ -66,7 +67,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(住了|待了|居住了|坐了|等待了|躺了|度過了|住|逗留了|停留了|休息了)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<多少]+了</(ACTION_verb|VerbP)>(<ENTITY_classifier>[^<]+</ENTITY_classifier>|<DegreeP>很多</DegreeP>|<QUANTIFIER>許多</QUANTIFIER>|<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>)"
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<做多少]+了</(ACTION_verb|VerbP)>(<ENTITY_classifier>[^<]+</ENTITY_classifier>|<DegreeP>很多</DegreeP>|<QUANTIFIER>許多</QUANTIFIER>|<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>)"
         },
         "有車要進來了": {
             "id": "77a865ad-4afe-4f05-a1c5-cd2b20a746d7",

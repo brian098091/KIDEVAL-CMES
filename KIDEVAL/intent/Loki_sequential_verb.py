@@ -19,6 +19,19 @@
 from random import sample
 import json
 import os
+import re
+from ArticutAPI import Articut
+BASE_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+try:
+    accountInfo = json.load(open(os.path.join(BASE_PATH, "account.info"), encoding="utf-8"))
+    USERNAME = accountInfo["username"]
+    API_KEY = accountInfo["api_key"]
+except Exception as e:
+    print("[ERROR] AccountInfo => {}".format(str(e)))
+    USERNAME = ""
+    API_KEY = ""
+
+articut = Articut(USERNAME, API_KEY)
 
 DEBUG = True
 CHATBOT_MODE = False
@@ -55,7 +68,13 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["連謂/兼語"].append(1)
+            pat = re.compile("<ACTION_quantifiedVerb>([^<])\\1</ACTION_quantifiedVerb><ACTION_verb>\\1</ACTION_verb>")
+            try:
+                resultPOS = articut.parse(inputSTR)["result_pos"][0]
+                if pat.match(resultPOS):
+                    pass
+                else:
+                    resultDICT["連謂/兼語"].append(1)
             
     if utterance == "你先去外面等一下":
         if CHATBOT_MODE:
