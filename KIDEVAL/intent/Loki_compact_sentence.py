@@ -230,9 +230,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            resultDICT["緊縮複句"].append(1)
-
+            pass
+        
     if utterance == "你就先帶著":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
