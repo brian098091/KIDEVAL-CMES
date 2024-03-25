@@ -73,6 +73,7 @@ if __name__ == "__main__":
     AccuracyCount = 0
     CoveringRateCount = 0
     sentence_keys = list(sentence_dict.keys())
+    
     false_list = []
     diff_dict_c = {}
     diff_dict_w = {}
@@ -80,9 +81,10 @@ if __name__ == "__main__":
         for inputSTR in sentence_keys:
             resultDICT = execLoki(content=inputSTR, splitLIST=splitLIST, refDICT=refDICT)
             
+            
             if all(len(x) == 0  for x in resultDICT.values()) and all(len(x) == 0  for x in sentence_dict[inputSTR].values()):
                 CoveringRateCount += 1
-            elif not all(len(x) == 0  for x in resultDICT.values()) and not all(len(x) == 0  for x in sentence_dict[inputSTR].values()):
+            elif not all(len(x) == 0  for x in resultDICT.values()) :
                 CoveringRateCount += 1
             
             itemScoreDICT = {}
@@ -109,9 +111,9 @@ if __name__ == "__main__":
                 AccuracyCount += 1
         f.close()
     with open('score.txt', 'w',encoding='utf-8') as f:
-        print("All 4996 sentences:",file=f)
+        print("All",len(sentence_keys),"sentences:",file=f)
         print("Covered: ",CoveringRateCount,file=f)
-        print("Covering Rate: ",100*(CoveringRateCount/4996),"%",file=f)
+        print("Covering Rate: ",100*(CoveringRateCount/len(sentence_keys)),"%",file=f)
         print("Match: ",AccuracyCount,file=f)
-        print("Accuracy: ",100*(AccuracyCount/4996),"%",file=f)
+        print("Accuracy: ",100*(AccuracyCount/CoveringRateCount),"%",file=f)
         
