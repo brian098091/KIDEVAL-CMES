@@ -14,6 +14,8 @@
             "兵兵病",
             "叮咚",
             "哈啾",
+            "喝開水",
+            "嗶嗶",
             "圈圈",
             "圓柱體",
             "圓筒形",
@@ -34,6 +36,8 @@
             "漢堡排",
             "炸彈",
             "爸比",
+            "病人",
+            "發高燒",
             "盤子",
             "眼鏡",
             "紅蘿蔔",
@@ -42,6 +46,7 @@
             "菜市場",
             "藥",
             "螺絲",
+            "要地方",
             "車車",
             "遊樂設施",
             "長方形",
@@ -53,15 +58,23 @@
             "便便",
             "喝開水",
             "尿尿",
+            "抹抹",
             "泡一泡",
             "流血",
             "發高燒",
-            "闖關",
             "看看",
-            "抹抹"
+            "闖關"
         ]
     },
     "utterance": {
+        "倒了": {
+            "id": "7a55aa55-79b6-4ac4-ad4e-f25d01145d53",
+            "pos": "<VerbP>倒了</VerbP>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(倒了|散了|退了|垮了|垮|搥|滾了|壓著|爛了|捶|死了)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]了</(ACTION_verb|VerbP)>"
+        },
         "剪掉": {
             "id": "e71a1575-5e97-4885-a6b9-0aa8c7c4362e",
             "pos": "<ACTION_verb>剪掉</ACTION_verb>",
@@ -92,7 +105,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(打開|張開|開啟|關上|彈出|推開|緊閉|敲開|撬開|打開了|鎖住)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<斷起出丟行燒多回想傷血講剪錯謝坐退贏用夾有得加進看拾過要聞澡病放爬去掉備痛站飛忘跳到少等來知睡聽開摸][近斷住善乾鬆了完遠歪下齊準壞上大穩濕著平過直白髒黑掉空正好到緊滿開楚小亂成]</(ACTION_verb|VerbP)>(<(ACTION_verb|VerbP)>[^<來去]+</(ACTION_verb|VerbP)>)?"
+            "pattern": "<(ACTION_verb|VerbP)>[^<斷起出丟行燒多回想傷血講剪錯謝坐退贏用夾有得加進看拾過要聞澡病放爬去掉備痛站飛忘跳到少等來知睡聽開摸][近斷住善乾鬆了完遠歪下齊準壞上大穩濕平過直白髒黑掉空正好到緊滿開楚小亂成]</(ACTION_verb|VerbP)>(<(ACTION_verb|VerbP)>[^<來去]+</(ACTION_verb|VerbP)>)?"
         },
         "放大": {
             "id": "3205380a-8725-4062-91b3-ba84b81c86cd",
@@ -115,7 +128,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(用|使用|利用|採用|施用|活用|運用|假借|憑靠|中用|常用)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(倒|倒反|丟掉|扔出|扔掉|扔棄|投入|投出|投射|投擲|投放)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>倒</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<要]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>倒</(ACTION_verb|VerbP)>"
         },
         "聽到": {
             "id": "9817e8a7-9dae-4dbc-bc30-b72bd3201c2f",
@@ -182,7 +195,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(夾起來|扶起來|捆起來|壓扁了|縫起來|放回去|給殺了|握好|轟走|剝掉|壓扁)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>夾起來</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[夾拼合黏綁包貼關縫蓋扶抓蓋關響合疊](不)?起來</(ACTION_verb|VerbP)>"
         },
         "完成了": {
             "id": "ff849c8e-b8cd-42ef-ba15-87c74ee4366f",
@@ -246,7 +259,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(發燒了|照做了|醒來了|謝謝了|失戀了|中風了|吵架了|做對了|團聚了|快救|犯錯了)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>(發燒|感冒|流血|生病|破皮|跌倒|打針)+(了)?</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>(發燒|感冒|流血|生病|破皮|打針)+(了)?</(ACTION_verb|VerbP)>"
         },
         "說錯了": {
             "id": "8cac5b92-765e-4713-bde5-911d3ac4a4be",
@@ -328,7 +341,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(做|作用|假作|假裝|冒充|創作|創造|喬裝|孕育|攝製|生出)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<斷出行回想傷講剪坐退玩有進看要聞病去掉靠痛站飛跳到喝等來知睡聽吃開摸]+</(ACTION_verb|VerbP)><(MODIFIER|ModifierP)>([近斷住善乾鬆了完遠歪下齊準壞上大穩濕著平過直白髒黑掉空正好到緊滿開楚小亂成]|乾淨)</(MODIFIER|ModifierP)>(?!(<FUNC_inner>的</FUNC_inner>|<QUANTIFIER>一點</QUANTIFIER>))"
+            "pattern": "<(ACTION_verb|VerbP)>[^<斷出行回想傷講剪坐退玩有進看要聞病去掉靠痛站飛跳到喝等來知睡聽吃開摸]+</(ACTION_verb|VerbP)><(MODIFIER|ModifierP)>([近斷住善乾鬆了著完遠歪下齊準壞上大穩濕平過直白髒黑掉空正好到緊滿開楚小亂成]|乾淨)</(MODIFIER|ModifierP)>(?!(<FUNC_inner>的</FUNC_inner>|<QUANTIFIER>一點</QUANTIFIER>))"
         },
         "那你就把這個打開": {
             "id": "82a7e1e6-e312-49d0-8ebf-63fd2e9399e2",
