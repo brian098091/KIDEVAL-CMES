@@ -48,7 +48,15 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(回去|回來|回報|回擊|回敬|回老家|回返|回饋|返回|退回|報答)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</ACTION_verb>)<(ACTION_verb|VerbP)>(回|過|進|出)(來|去)</(ACTION_verb|VerbP)>"
+            "pattern": "(?<!</ACTION_verb>)(<ACTION_verb>要</ACTION_verb>)?<(ACTION_verb|VerbP)>(回|過|進|出)(來|去)(了)?</(ACTION_verb|VerbP)>"
+        },
+        "叉起來": {
+            "id": "419923e4-24ec-44f9-b088-243fb4ba87c6",
+            "pos": "<ENTITY_oov>叉</ENTITY_oov><ACTION_verb>起來</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(起來|起來了|下來|開來|出來|拉出來|弄得|拿出來|變成|出去|動到)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ENTITY_oov>叉</ENTITY_oov><(ACTION_verb|VerbP)>起來</(ACTION_verb|VerbP)>"
         },
         "拿出來": {
             "id": "91bdd52e-31b5-4edb-9c1e-6a98c9641197",
@@ -56,7 +64,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(拿出來|拿去|拿來|藏起來|放進去|收起來|拿起來|送出去|講出來|拿回來|翻出來)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!<ACTION_verb>固定</ACTION_verb>)<(ACTION_verb|VerbP)>[^<有響帶想回修接起連越讓要縫重用貼過看不拼收做合黏綁關包]+[上下進出回過起]?來</(ACTION_verb|VerbP)>"
+            "pattern": "(?<!<ACTION_verb>固定</ACTION_verb>)<(ACTION_verb|VerbP)>[^<夾有響帶想回修接起連越讓要縫重用貼過看不拼收做合黏綁關包]+[上下進出回過起]?來(了)?</(ACTION_verb|VerbP)>"
         },
         "走進去": {
             "id": "e06b48d7-e0a0-4403-90c3-496984632124",
@@ -64,7 +72,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(走進去|坐到|坐下|躺下|走近|走進來|閉嘴|睡覺了|坐上去|抽了|睡覺)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<有響帶想回修接起連越讓要貼聽看不要出]+[上下進出回過]?去</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<有響帶想回修接起連越讓要貼聽看不要出得]+[上下進出回過]?去</(ACTION_verb|VerbP)>"
         },
         "走進門": {
             "id": "eda9db10-0e98-4017-9418-a805ee4eb120",
@@ -89,7 +97,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(進來了|進入|進去|上來|下來|來到|供認|前來|回來|承認|招認)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)(?<!</ACTION_verb>)<(ACTION_verb|VerbP)>[^<](來|去)了</(ACTION_verb|VerbP)>"
+            "pattern": "(?<!</MODIFIER_color>)(?<!</FUNC_negation>)(?<!</ACTION_verb>)<(ACTION_verb|VerbP)>[^<](來|去)了</(ACTION_verb|VerbP)>"
         },
         "飛不起來": {
             "id": "aea3dad4-dc3a-4cc9-9e8e-f995a052e60e",
@@ -98,6 +106,15 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(飛不起來|扭屁股|照做了|貪嘴|做窩|中暑了|想跳過|復合了|惹哭|釀醋|照做)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<有響帶想回修接起連越讓要縫貼過不拼收做合黏綁關包看聽]+不[上下進出回過起](來|去)</(ACTION_verb|VerbP)>"
+        },
+        "他要起來了": {
+            "id": "a94bf2eb-2003-4bbc-9218-eea99d826588",
+            "pos": "<ENTITY_pronoun>他</ENTITY_pronoun><ACTION_verb>要</ACTION_verb><VerbP>起來了</VerbP>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(要|想要|需要|想拿|想買|渴望|渴求|真要|得照|更要|要去)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(起來了|起來|出來了|下來了|飽了|變小了|進去了|算了|完了|行了|消失了)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</MODIFIER_color>)<ACTION_verb>要</ACTION_verb><(ACTION_verb|VerbP)>起來(了)?</(ACTION_verb|VerbP)>"
         },
         "塞不進去了": {
             "id": "658c8025-615c-4d88-9402-78c77aaaabb9",
@@ -166,6 +183,12 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(等|久等|稍等|等候|等到|等待|等第|等級|候補|安排|待遇)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "<ENTITY_nouny>(過來|出來)</ENTITY_nouny>"
+        },
+        "還有那個噎把這個長長的收進去": {
+            "id": "04ec8bd0-8b1b-47fc-8832-bfff15dca6e6",
+            "pos": "<FUNC_conjunction>還有</FUNC_conjunction><ENTITY_DetPhrase>那個</ENTITY_DetPhrase><ENTITY_nouny>噎</ENTITY_nouny><ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_DetPhrase>這個</ENTITY_DetPhrase><MODIFIER>長長</MODIFIER><FUNC_inner>的</FUNC_inner><ENTITY_nouny>收進去</ENTITY_nouny>",
+            "lexy": [],
+            "pattern": "<ENTITY_nouny>[^<]進去</ENTITY_nouny>"
         }
     },
     "alias": {},

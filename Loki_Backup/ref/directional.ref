@@ -22,7 +22,10 @@
             "車車",
             "遊樂設施",
             "風",
-            "飛船"
+            "飛船",
+            "兵兵病",
+            "三角站",
+            "肚子痛"
         ],
         "_asVerb": [
             "下床",
@@ -35,13 +38,25 @@
             "id": "08978f81-8268-4b50-a5be-902c4e86d655",
             "pos": "<RANGE_locality>外面</RANGE_locality>",
             "lexy": [],
-            "pattern": "(?<!<MODIFIER>另</MODIFIER>)<RANGE_locality>[^<]+</RANGE_locality>(?!<ACTION_verb>去)(?!<ACTION_verb>來)"
+            "pattern": "(?<!<MODIFIER>另</MODIFIER>)(?<!<ACTION_verb>閉</ACTION_verb>)(?<!<ACTION_verb>有</ACTION_verb>)(?<!<ACTION_verb>接</ACTION_verb>)(?<!<FUNC_negation>不</FUNC_negation>)<RANGE_locality>[^<]+</RANGE_locality>(?!<ACTION_verb>去)(?!<ACTION_verb>來)"
         },
         "這裡": {
             "id": "a0623b0f-9624-4c49-9a2b-3d862ff4288c",
             "pos": "<LOCATION>這裡</LOCATION>",
             "lexy": [],
             "pattern": "<LOCATION>(這|那)(裡|裏|邊)</LOCATION>"
+        },
+        "嗯這下頭": {
+            "id": "7e0b685c-b094-4d93-9b3d-b76f1932d3c2",
+            "pos": "<CLAUSE_particle>嗯</CLAUSE_particle><ENTITY_nouny>這下頭</ENTITY_nouny>",
+            "lexy": [],
+            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>這(上|下|裡|外)(頭|邊)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "是這裡的嗎": {
+            "id": "9a14b0d9-2af8-462c-920e-385c9ee23c53",
+            "pos": "<AUX>是</AUX><FUNC_determiner>這裡</FUNC_determiner><FUNC_inner>的</FUNC_inner><CLAUSE_YesNoQ>嗎</CLAUSE_YesNoQ>",
+            "lexy": [],
+            "pattern": "<FUNC_determiner>(這|那)(裡|裏|邊)</FUNC_determiner>"
         }
     },
     "alias": {},
