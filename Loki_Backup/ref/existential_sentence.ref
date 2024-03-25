@@ -22,7 +22,10 @@
             "車車",
             "遊樂設施",
             "風",
-            "飛船"
+            "飛船",
+            "兵兵病",
+            "三角站",
+            "肚子痛"
         ],
         "_asVerb": [
             "下床",
@@ -63,7 +66,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(住了|待了|居住了|坐了|等待了|躺了|度過了|住|逗留了|停留了|休息了)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<多少]+了</(ACTION_verb|VerbP)>(<ENTITY_classifier>[^<]+</ENTITY_classifier>|<DegreeP>很多</DegreeP>|<QUANTIFIER>許多</QUANTIFIER>||<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>)"
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<多少]+了</(ACTION_verb|VerbP)>(<ENTITY_classifier>[^<]+</ENTITY_classifier>|<DegreeP>很多</DegreeP>|<QUANTIFIER>許多</QUANTIFIER>|<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>)"
         },
         "有車要進來了": {
             "id": "77a865ad-4afe-4f05-a1c5-cd2b20a746d7",
@@ -81,7 +84,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(躺著|站著|躺|睡著|呆坐|放著|睡去|躺臥|鑽進|睡覺|坐到)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(<RANGE_locality>[^<]+</RANGE_locality>|<LOCATION>[^<]+</LOCATION>)<(ACTION_verb|VerbP)>[^<]+著</(ACTION_verb|VerbP)>(<ENTITY_classifier>[^<]+</ENTITY_classifier>|<DegreeP>很多</DegreeP>|<QUANTIFIER>許多</QUANTIFIER>||<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>)"
+            "pattern": "(<RANGE_locality>[^<]+</RANGE_locality>|<LOCATION>[^<]+</LOCATION>)<(ACTION_verb|VerbP)>[^<]+著</(ACTION_verb|VerbP)>(<ENTITY_classifier>[^<]+</ENTITY_classifier>|<DegreeP>很多</DegreeP>|<QUANTIFIER>許多</QUANTIFIER>|<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>)"
         }
     },
     "alias": {},
