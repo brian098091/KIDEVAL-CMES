@@ -25,7 +25,8 @@
             "飛船",
             "兵兵病",
             "三角站",
-            "肚子痛"
+            "肚子痛",
+            "塗塗"
         ],
         "_asVerb": [
             "下床",
@@ -44,19 +45,19 @@
             "id": "a0623b0f-9624-4c49-9a2b-3d862ff4288c",
             "pos": "<LOCATION>這裡</LOCATION>",
             "lexy": [],
-            "pattern": "<LOCATION>(這|那)(裡|裏|邊)</LOCATION>"
+            "pattern": "<LOCATION>[這那][裡裏邊]</LOCATION>"
         },
         "嗯這下頭": {
             "id": "7e0b685c-b094-4d93-9b3d-b76f1932d3c2",
             "pos": "<CLAUSE_particle>嗯</CLAUSE_particle><ENTITY_nouny>這下頭</ENTITY_nouny>",
             "lexy": [],
-            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>這(上|下|裡|外)(頭|邊)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>這[上下裡外][頭邊]</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
         "是這裡的嗎": {
             "id": "9a14b0d9-2af8-462c-920e-385c9ee23c53",
             "pos": "<AUX>是</AUX><FUNC_determiner>這裡</FUNC_determiner><FUNC_inner>的</FUNC_inner><CLAUSE_YesNoQ>嗎</CLAUSE_YesNoQ>",
             "lexy": [],
-            "pattern": "<FUNC_determiner>(這|那)(裡|裏|邊)</FUNC_determiner>"
+            "pattern": "<FUNC_determiner>[這那][裡裏邊]</FUNC_determiner>"
         }
     },
     "alias": {},
