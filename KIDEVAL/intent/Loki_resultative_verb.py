@@ -217,8 +217,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["結果補語"].append(1)
-
+            pass
+        
     if utterance == "說錯了":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
