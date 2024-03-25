@@ -97,7 +97,16 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(進來了|進入|進去|上來|下來|來到|供認|前來|回來|承認|招認)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</MODIFIER_color>)(?<!</FUNC_negation>)(?<!</ACTION_verb>)<(ACTION_verb|VerbP)>[^<](來|去)了</(ACTION_verb|VerbP)>"
+            "pattern": "(?<!</MODIFIER_color>)(?<!不</FUNC_negation>)(?<!</ACTION_verb>)<(ACTION_verb|VerbP)>[^<](來|去)(了)?</(ACTION_verb|VerbP)>"
+        },
+        "帶他們來": {
+            "id": "b4f35309-e5fc-442d-b027-d72925063b4b",
+            "pos": "<ACTION_verb>帶</ACTION_verb><ENTITY_pronoun>他們</ENTITY_pronoun><ACTION_verb>來</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(帶|佩帶|夾帶|帶病|帶走|挾帶|攜帶|隨帶|佩戴|承接|披掛)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(來|上來|下來|來到|前來|回來|進來|值來|性來|出來|去)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))><(ACTION_verb|VerbP)>來</(ACTION_verb|VerbP)>"
         },
         "飛不起來": {
             "id": "aea3dad4-dc3a-4cc9-9e8e-f995a052e60e",
