@@ -219,7 +219,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(拼起來|貪吃熊|信良|小轟)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[拼合黏綁包貼關縫蓋扶抓蓋關響合疊收做](不)?起來</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[拼合黏綁包貼關縫蓋扶抓蓋關響疊收做](不)?起來</(ACTION_verb|VerbP)>"
         },
         "收好了": {
             "id": "7008ffbe-8076-4e43-a2f5-45b5d3d1c1f4",
