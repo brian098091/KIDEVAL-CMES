@@ -274,6 +274,12 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             pass
         
+    if utterance == "拼起來":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["結果補語"].append(1)
+
     if utterance == "完成了":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
