@@ -67,18 +67,6 @@
         ]
     },
     "utterance": {
-        "你就": {
-            "id": "d9a7b5e8-efe8-4bf8-9ac8-e5d09abe897e",
-            "pos": "<ENTITY_pronoun>你</ENTITY_pronoun><FUNC_inner>就</FUNC_inner>",
-            "lexy": [],
-            "pattern": "(?<!</FUNC_determiner>)<ENTITY_pronoun>[^<]+</ENTITY_pronoun><FUNC_inner>就</FUNC_inner>"
-        },
-        "就會": {
-            "id": "27af1629-ba2c-4020-87ab-f6ae3aa862e1",
-            "pos": "<FUNC_inner>就</FUNC_inner><MODAL>會</MODAL>",
-            "lexy": [],
-            "pattern": "<FUNC_inner>就</FUNC_inner><MODAL>[^<]+</MODAL>"
-        },
         "才不會苦": {
             "id": "6eda18c8-d9a3-43b4-bcd1-9a8883168bec",
             "pos": "<MODAL>才</MODAL><FUNC_negation>不</FUNC_negation><MODAL>會</MODAL><MODIFIER>苦</MODIFIER>",
@@ -148,6 +136,15 @@
             ],
             "pattern": "(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?(<(MODIFIER|ModifierP)>先</(MODIFIER|ModifierP)>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<(MODIFIER|ModifierP)>再</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
+        "吃一次就行了": {
+            "id": "ba09012d-0cbf-453a-b73b-bc499782c892",
+            "pos": "<ACTION_verb>吃</ACTION_verb><ACTION_eventQuantifier>一次</ACTION_eventQuantifier><FUNC_inner>就</FUNC_inner><VerbP>行了</VerbP>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃|吃掉|吸收|攝入|耗損|花掉|吃著|煮|啃|喝|吃了)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(行了|夠了|怕了|管了|出門了|完了|給糖|願屈|算了|算真|存在了)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<ACTION_eventQuantifier>[^<]+</ACTION_eventQuantifier>)?<FUNC_in(ner|ter)>就</FUNC_in(ner|ter)>(<(ACTION_verb|VerbP)>行了</(ACTION_verb|VerbP)>|<FUNC_degreeHead>好</FUNC_degreeHead>(<ASPECT>[^<]+</ASPECT>)?)"
+        },
         "收好就變這樣": {
             "id": "7f29d192-4029-4886-a5ee-cc9b9a9ef4c3",
             "pos": "<ACTION_verb>收</ACTION_verb><FUNC_degreeHead>好</FUNC_degreeHead><FUNC_inner>就</FUNC_inner><ACTION_verb>變</ACTION_verb><ENTITY_DetPhrase>這樣</ENTITY_DetPhrase>",
@@ -191,6 +188,15 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃|吃掉|吸收|攝入|耗損|花掉|吃著|煮|啃|喝|吃了)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><CLAUSE_WhatQ>[^<]+</CLAUSE_WhatQ><QUANTIFIER>都</QUANTIFIER>(<FUNC_negation>[^<]+</FUNC_negation>)?(<MODAL>[^<]+</MODAL>)?(<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>)?"
+        },
+        "我想可以再玩一次": {
+            "id": "9494b3c7-33e7-48cf-bf76-206cd38040d5",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>想</ACTION_verb><MODAL>可以</MODAL><MODIFIER>再</MODIFIER><ACTION_verb>玩</ACTION_verb><ACTION_eventQuantifier>一次</ACTION_eventQuantifier>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(想|假想|冥想|回想|想像|想出|想到|想念|想拿|想望|想要)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(玩|玩忽|玩狎|玩著|玩樂|買東西|散步|遊玩|打電動|玩了|玩耍)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<(ACTION_verb|VerbP)>想</(ACTION_verb|VerbP)>(<MODAL>[^<]+</MODAL>)?<(MODIFIER|ModifierP)>再</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>玩</(ACTION_verb|VerbP)><ACTION_eventQuantifier>[^<]+</ACTION_eventQuantifier>"
         },
         "放一個圓形就好了": {
             "id": "35e3b9bd-cb9a-4770-98f1-db443e07d930",
