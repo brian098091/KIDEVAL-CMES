@@ -73,7 +73,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(下雨|降雨|降水|放晴|結霜|降雪|起霧|結冰|漲潮|開燈|下雪)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<FUNC_in(ner|ter)>(如果|除非|但是|否則|不過|而且|但|因為|所以|可是)</FUNC_in(ner|ter)>(.*?)(<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>|<FUNC_negation>[^<]+有</FUNC_negation>)"
+            "pattern": "<FUNC_in(ner|ter)>(如果|除非|但是|否則|不過|而且|但|因為|所以|可是|然後)</FUNC_in(ner|ter)>(.+?)"
         },
         "下雨然後放晴": {
             "id": "798d004c-ad72-43fa-ae9f-351947931ea6",
@@ -122,15 +122,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(到|到了|到約|到受|到離|到包|到經過|到回|到隨|到死|到愛)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>可</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><AUX>是</AUX>(.*?)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
-        },
-        "是有這個螺絲可是不見了": {
-            "id": "2d48175f-0166-47d4-9dba-a0ded3a0a4b2",
-            "pos": "<AUX>是</AUX><ACTION_verb>有</ACTION_verb><ENTITY_DetPhrase>這個</ENTITY_DetPhrase><UserDefined>螺絲</UserDefined><ENTITY_oov>可</ENTITY_oov><AUX>是</AUX><MODIFIER>不見</MODIFIER><ASPECT>了</ASPECT>",
-            "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
-            ],
-            "pattern": "</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>可</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><AUX>是</AUX><(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>(<ASPECT>[^<]+</ASPECT>)?"
+            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>可</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><AUX>是</AUX>"
         }
     },
     "alias": {},
