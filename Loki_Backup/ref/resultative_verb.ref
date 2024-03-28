@@ -119,7 +119,7 @@
             "id": "28176228-456c-48c3-806e-f2990fd4bddf",
             "pos": "<ENTITY_oov>曡</ENTITY_oov><ASPECT>完</ASPECT>",
             "lexy": [],
-            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(曡|拆掉)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(?!<MODIFIER>高)(<ASPECT>[^<]+</ASPECT>)?"
+            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(曡|拆掉)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(?!(<MODIFIER>高|<DegreeP>好高))(<ASPECT>[^<]+</ASPECT>)?"
         },
         "用倒": {
             "id": "eef0e241-9f3e-4957-b7e5-795c32fa2627",
@@ -136,7 +136,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(聽到|傾聽|聆聽|聽來|聽取|聽聞|聽見|聽說|得知|獲知|聞悉)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[聽看想噎玩跳用](不)?[到懂完](了)?</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[聽看想噎玩用](不)?[到懂完](了)?</(ACTION_verb|VerbP)>"
         },
         "醒來": {
             "id": "62e72f68-891a-408d-b73d-dd15d58f21e1",
@@ -189,14 +189,6 @@
             ],
             "pattern": "<(ACTION_verb|VerbP)>[壞亂拿]掉(了)?</(ACTION_verb|VerbP)>"
         },
-        "夾起來": {
-            "id": "1a5c6787-223d-43e6-94c1-09758e2d298a",
-            "pos": "<ACTION_verb>夾起來</ACTION_verb>",
-            "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(夾起來|扶起來|捆起來|壓扁了|縫起來|放回去|給殺了|握好|轟走|剝掉|壓扁)</(ACTION_verb|VerbP)>"
-            ],
-            "pattern": "<(ACTION_verb|VerbP)>[夾拼合黏綁包貼關縫蓋扶抓蓋關響合疊](不)?起來</(ACTION_verb|VerbP)>"
-        },
         "完成了": {
             "id": "ff849c8e-b8cd-42ef-ba15-87c74ee4366f",
             "pos": "<VerbP>完成了</VerbP>",
@@ -213,14 +205,6 @@
             ],
             "pattern": "(<(ACTION_verb|VerbP)>[^<]完(了)?</(ACTION_verb|VerbP)>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>錄影</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>完了</(ACTION_verb|VerbP)>)"
         },
-        "戴得了": {
-            "id": "bccb4925-fba1-47b1-acd6-30ab6a479f07",
-            "pos": "<VerbP>戴得了</VerbP>",
-            "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(戴得了|)</(ACTION_verb|VerbP)>"
-            ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+得了</(ACTION_verb|VerbP)>"
-        },
         "打針完": {
             "id": "ee572234-e64d-4672-b089-963a2272526e",
             "pos": "<VerbP>打針完</VerbP>",
@@ -228,6 +212,14 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(打針完|)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+完</(ACTION_verb|VerbP)>"
+        },
+        "拼起來": {
+            "id": "87576f8b-789e-4328-aae9-adbd44aa1e89",
+            "pos": "<ACTION_verb>拼起來</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(拼起來|貪吃熊|信良|小轟)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>[拼合黏綁包貼關縫蓋扶抓蓋關響合疊收做](不)?起來</(ACTION_verb|VerbP)>"
         },
         "收好了": {
             "id": "7008ffbe-8076-4e43-a2f5-45b5d3d1c1f4",
