@@ -68,7 +68,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            pat = re.compile("<ACTION_quantifiedVerb>([^<])\\1</ACTION_quantifiedVerb><ACTION_verb>\\1</ACTION_verb>")
+            pat = re.compile("<ACTION_quantifiedVerb>([^<])\\1</ACTION_quantifiedVerb><ACTION_verb>\\1</ACTION_verb>|<ACTION_quantifiedVerb>[^<]+</ACTION_quantifiedVerb><ACTION_quantifiedVerb>[^<]+</ACTION_quantifiedVerb>")
             try:
                 resultPOS = articut.parse(inputSTR)["result_pos"][0]
                 if pat.match(resultPOS):
