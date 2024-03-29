@@ -7,31 +7,63 @@
     },
     "user_defined": {
         "_asNoun": [
+            "三角形",
+            "三角站",
+            "人行道",
             "佩佩豬",
+            "兵兵病",
             "叮咚",
+            "哈啾",
+            "喝開水",
+            "嗶嗶",
+            "圈圈",
+            "圓柱體",
+            "圓筒形",
+            "塗塗",
             "客人",
+            "小熊維尼",
             "屋頂",
             "巧虎",
+            "彎彎形",
+            "憤怒鳥",
+            "摩天輪",
+            "旋轉木馬",
             "杯子",
             "東西",
+            "柱子",
+            "桌子",
+            "橋",
+            "溜滑梯",
+            "漢堡排",
             "炸彈",
+            "爸比",
+            "發高燒",
             "盤子",
+            "眼鏡",
+            "紅蘿蔔",
+            "縫縫",
+            "肚子痛",
             "菜市場",
             "藥",
             "螺絲",
+            "要地方",
             "車車",
             "遊樂設施",
+            "長方形",
             "風",
-            "飛船",
-            "兵兵病",
-            "三角站",
-            "肚子痛",
-            "塗塗"
+            "飛船"
         ],
         "_asVerb": [
             "下床",
             "便便",
-            "尿尿"
+            "喝開水",
+            "尿尿",
+            "抹抹",
+            "泡一泡",
+            "流血",
+            "發高燒",
+            "看看",
+            "闖關"
         ]
     },
     "utterance": {
@@ -57,7 +89,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(覺得|察覺|感覺|感覺到|懂得|覺察|企盼|估摸|假想|假設|冥想)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>(知道|以為|認為|想|覺得|記得|希望|發現|發覺|知道)</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>(以為|認為|覺得|記得|希望|發覺)</(ACTION_verb|VerbP)>"
         },
         "猜一猜": {
             "id": "4fbf4faa-cc8b-4b45-9ca0-051dc6cdd557",
@@ -76,6 +108,14 @@
             "pos": "<ACTION_quantifiedVerb>猜看看</ACTION_quantifiedVerb>",
             "lexy": [],
             "pattern": "<ACTION_quantifiedVerb>[猜想]看看</ACTION_quantifiedVerb>"
+        },
+        "我不知道是什麼": {
+            "id": "6f569f0c-6158-47af-a9de-849f5cf1a976",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><FUNC_negation>不</FUNC_negation><ACTION_verb>知道</ACTION_verb><AUX>是</AUX><CLAUSE_WhatQ>什麼</CLAUSE_WhatQ>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(知道|得知|明知|深知|獲知|知悉|知情|知曉|知足|確知|了解)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(<FUNC_negation>不</FUNC_negation>)?<(ACTION_verb|VerbP)>(想要|想|知道)</(ACTION_verb|VerbP)>(?!<CLAUSE)(.+)+"
         },
         "我想玩這個玩具": {
             "id": "1f9c9444-a68f-4d57-a50e-aa7593f217b8",

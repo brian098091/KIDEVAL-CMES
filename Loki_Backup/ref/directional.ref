@@ -7,57 +7,71 @@
     },
     "user_defined": {
         "_asNoun": [
+            "三角形",
+            "三角站",
+            "人行道",
             "佩佩豬",
+            "兵兵病",
             "叮咚",
+            "哈啾",
+            "喝開水",
+            "嗶嗶",
+            "圈圈",
+            "圓柱體",
+            "圓筒形",
+            "塗塗",
             "客人",
+            "小熊維尼",
             "屋頂",
             "巧虎",
+            "彎彎形",
+            "憤怒鳥",
+            "摩天輪",
+            "旋轉木馬",
             "杯子",
             "東西",
+            "柱子",
+            "桌子",
+            "橋",
+            "溜滑梯",
+            "漢堡排",
             "炸彈",
+            "爸比",
+            "發高燒",
             "盤子",
+            "眼鏡",
+            "紅蘿蔔",
+            "縫縫",
+            "肚子痛",
             "菜市場",
             "藥",
             "螺絲",
+            "要地方",
             "車車",
             "遊樂設施",
+            "長方形",
             "風",
-            "飛船",
-            "兵兵病",
-            "三角站",
-            "肚子痛",
-            "塗塗"
+            "飛船"
         ],
         "_asVerb": [
             "下床",
             "便便",
-            "尿尿"
+            "喝開水",
+            "尿尿",
+            "抹抹",
+            "泡一泡",
+            "流血",
+            "發高燒",
+            "看看",
+            "闖關"
         ]
     },
     "utterance": {
-        "外面": {
-            "id": "08978f81-8268-4b50-a5be-902c4e86d655",
-            "pos": "<RANGE_locality>外面</RANGE_locality>",
+        "房間外面": {
+            "id": "e7ab9ed8-6d3e-4cb0-a78a-bf634229d9c4",
+            "pos": "<ENTITY_oov>房間</ENTITY_oov><RANGE_locality>外面</RANGE_locality>",
             "lexy": [],
-            "pattern": "(?<!<MODIFIER>另</MODIFIER>)(?<!<ACTION_verb>閉</ACTION_verb>)(?<!<ACTION_verb>有</ACTION_verb>)(?<!<ACTION_verb>接</ACTION_verb>)(?<!<FUNC_negation>不</FUNC_negation>)<RANGE_locality>[^<]+</RANGE_locality>(?!<ACTION_verb>去)(?!<ACTION_verb>來)"
-        },
-        "這裡": {
-            "id": "a0623b0f-9624-4c49-9a2b-3d862ff4288c",
-            "pos": "<LOCATION>這裡</LOCATION>",
-            "lexy": [],
-            "pattern": "<LOCATION>[這那][裡裏邊]</LOCATION>"
-        },
-        "嗯這下頭": {
-            "id": "7e0b685c-b094-4d93-9b3d-b76f1932d3c2",
-            "pos": "<CLAUSE_particle>嗯</CLAUSE_particle><ENTITY_nouny>這下頭</ENTITY_nouny>",
-            "lexy": [],
-            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>這[上下裡外][頭邊]</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
-        },
-        "是這裡的嗎": {
-            "id": "9a14b0d9-2af8-462c-920e-385c9ee23c53",
-            "pos": "<AUX>是</AUX><FUNC_determiner>這裡</FUNC_determiner><FUNC_inner>的</FUNC_inner><CLAUSE_YesNoQ>嗎</CLAUSE_YesNoQ>",
-            "lexy": [],
-            "pattern": "<FUNC_determiner>[這那][裡裏邊]</FUNC_determiner>"
+            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>(<FUNC_inner>的</FUNC_inner>)?(?<!<MODIFIER>另</MODIFIER>)(?<!<ACTION_verb>閉</ACTION_verb>)(?<!<ACTION_verb>有</ACTION_verb>)(?<!<ACTION_verb>接</ACTION_verb>)(?<!<FUNC_negation>不</FUNC_negation>)<RANGE_locality>[^<]+</RANGE_locality>(?!<ACTION_verb>去)(?!<ACTION_verb>來)"
         }
     },
     "alias": {},
