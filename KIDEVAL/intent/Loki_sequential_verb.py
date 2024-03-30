@@ -68,7 +68,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            pat = re.compile("<ACTION_quantifiedVerb>([^<])\\1</ACTION_quantifiedVerb><ACTION_verb>\\1</ACTION_verb>")
+            pat = re.compile("<ACTION_(verb|quantifiedVerb)>([^<]+)\\2(\\2\\2)?</ACTION_(verb|quantifiedVerb)><ACTION_(verb|quantifiedVerb)>\\2(到|\\2)?</ACTION_(verb|quantifiedVerb)>|<ACTION_verb>([^<]+)</ACTION_verb><ACTION_verb>\\4</ACTION_verb>|(<ACTION_verb>[^<]+</ACTION_verb>)\\9\\9?")
             try:
                 resultPOS = articut.parse(inputSTR)["result_pos"][0]
                 if pat.match(resultPOS):
@@ -103,6 +103,12 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["連謂/兼語"].append(1)
             
     if utterance == "你幫我曡高高":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["連謂/兼語"].append(1)
+            
+    if utterance == "幫我的連起來":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
