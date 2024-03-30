@@ -410,9 +410,11 @@ if __name__ == "__main__":
     count = 1
     sentencesLIST = []
     itemScoreDICT ={}
-    with open('./inputSTR.txt', 'r', encoding='utf-8') as f:
+    with open('./A07.cha', 'r', encoding='utf-8') as f:
         for line in f:
             inputSTR = re.sub(r'[^\u4e00-\u9fa5]', '', line)
+            if inputSTR == "":
+                continue
             resultDICT = execLoki(content=inputSTR, splitLIST=splitLIST, refDICT=refDICT,filterLIST=filterLIST)
             
             sentencesLIST =[str(count),inputSTR]
@@ -468,7 +470,7 @@ if __name__ == "__main__":
         outputData["Scores"].append(list)
     
     outputJson = json.dumps(outputData,ensure_ascii=False) 
-    pprint(outputJson)    
+    print(outputJson)    
 
     
     
