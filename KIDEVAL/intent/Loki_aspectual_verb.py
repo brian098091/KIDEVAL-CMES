@@ -161,6 +161,18 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             resultDICT["體貌"].append(1)
 
+    if utterance == "換你吃飯了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
+    if utterance == "換你站起來了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
     if utterance == "我要切一切":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
