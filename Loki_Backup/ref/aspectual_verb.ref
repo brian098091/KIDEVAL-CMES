@@ -7,49 +7,64 @@
     },
     "user_defined": {
         "_asNoun": [
+            "三角形",
+            "三角站",
+            "人行道",
             "佩佩豬",
+            "兵兵病",
             "叮咚",
+            "哈啾",
+            "喝開水",
+            "嗶嗶",
+            "圈圈",
+            "圓柱體",
+            "圓筒形",
+            "塗塗",
             "客人",
+            "小熊維尼",
             "屋頂",
             "巧虎",
+            "彎彎形",
+            "憤怒鳥",
+            "摩天輪",
+            "旋轉木馬",
             "杯子",
             "東西",
+            "柱子",
             "桌子",
+            "橋",
+            "溜滑梯",
+            "漢堡排",
             "炸彈",
+            "爸比",
+            "病人",
+            "發高燒",
             "盤子",
+            "眼鏡",
             "紅蘿蔔",
+            "縫縫",
+            "肚子痛",
             "菜市場",
             "藥",
             "螺絲",
+            "要地方",
             "車車",
             "遊樂設施",
-            "風",
-            "飛船",
-            "縫縫",
-            "眼鏡",
-            "柱子",
-            "圈圈",
-            "摩天輪",
-            "旋轉木馬",
             "長方形",
-            "圓筒形",
-            "三角形",
-            "彎彎形",
-            "圓柱體",
-            "屋頂",
-            "溜滑梯",
-            "漢堡排",
-            "人行道",
-            "爸比",
-            "哈啾"
+            "風",
+            "飛船"
         ],
         "_asVerb": [
             "下床",
             "便便",
-            "尿尿",
-            "發高燒",
             "喝開水",
-            "泡一泡"
+            "尿尿",
+            "抹抹",
+            "泡一泡",
+            "流血",
+            "發高燒",
+            "看看",
+            "闖關"
         ]
     },
     "utterance": {
@@ -73,13 +88,7 @@
             "id": "b57ed880-07c8-4b80-aa12-f9940a55bfbf",
             "pos": "<ENTITY_oov>生</ENTITY_oov><ASPECT>了</ASPECT>",
             "lexy": [],
-            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(生|哈啾)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><ASPECT>了</ASPECT>"
-        },
-        "可以了": {
-            "id": "0a8066e1-a5fb-448c-9085-fd2208576360",
-            "pos": "<MODAL>可以</MODAL><ASPECT>了</ASPECT>",
-            "lexy": [],
-            "pattern": "<MODAL>[^<]+</MODAL><ASPECT>了</ASPECT>"
+            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(生|哈啾|流血)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><ASPECT>了</ASPECT>"
         },
         "喝完了": {
             "id": "00d7609b-c702-423f-8de0-a7527d90f2db",
@@ -87,7 +96,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(喝完了|沐浴膠|燒炙|喝滾|浸著|燒沸|炒蜆|挑入|延榆|摻了|摸出來)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^算行到謝得少多<]+[了]</(ACTION_verb|VerbP)>"
+            "pattern": "(?<![時間]</ENTITY_noun>)(?<!</TIME_holiday>)(?<!</TIME_justtime>)(?<!</TIME_day>)(?<!</TIME_week>)(?<!</TIME_month>)(?<!</TIME_season>)(?<!</TIME_year>)(?<!</TIME_decade>)(?<!</MODAL>)(?<!</FUNC_negation>)(?<!</CLAUSE_whoQ>)(?<![想要來去]</ACTION_verb>)<(ACTION_verb|VerbP)>[^算行謝得少多<]+[了]</(ACTION_verb|VerbP)>"
         },
         "在尿尿": {
             "id": "19dcd977-c8c6-4161-be30-f41d874279a0",
@@ -95,19 +104,27 @@
             "lexy": [],
             "pattern": "<FUNC_in(ner|ter)>在</FUNC_in(ner|ter)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>尿尿|便便</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
+        "好多了": {
+            "id": "216ab164-afbc-4b79-8aa1-409d9b15ea49",
+            "pos": "<DegreeP>好多</DegreeP><ASPECT>了</ASPECT>",
+            "lexy": [],
+            "pattern": "(?<!</ACTION_verb>)<DegreeP>好多</DegreeP><ASPECT>了</ASPECT>"
+        },
+        "換好了": {
+            "id": "e5c95685-a89f-4c5c-9ad9-bb716d5a8e76",
+            "pos": "<ACTION_verb>換</ACTION_verb><FUNC_degreeHead>好</FUNC_degreeHead><ASPECT>了</ASPECT>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(換|更換|換了|買|換到|轉換|換回|換成|有換|拆開|換購)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>換</(ACTION_verb|VerbP)>(<FUNC_degreeHead>好</FUNC_degreeHead>)?<ASPECT>了</ASPECT>"
+        },
         "正在玩": {
             "id": "2b4da344-8522-444d-9a9c-21e11a1ebb35",
             "pos": "<ASPECT>正在</ASPECT><ACTION_verb>玩</ACTION_verb>",
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(玩|玩忽|玩狎|玩著|玩樂|買東西|散步|遊玩|打電動|玩了|玩耍)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<ASPECT>[^<]在+</ASPECT>(.*?)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
-        },
-        "沒有了": {
-            "id": "7dc0d0db-f479-4259-9b7e-4436829240c4",
-            "pos": "<FUNC_negation>沒有</FUNC_negation><ACTION_verb>了</ACTION_verb>",
-            "lexy": [],
-            "pattern": "<FUNC_negation>[沒]+[^<]+</FUNC_negation><(ACTION_verb|VerbP)>了</(ACTION_verb|VerbP)>"
+            "pattern": "<ASPECT>(正在|在)</ASPECT><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "泡一泡": {
             "id": "01bc51c4-f06d-4d0c-8156-8984693c7fea",
@@ -121,45 +138,39 @@
             "lexy": [],
             "pattern": "<ACTION_quantifiedVerb>([^<]+看|([^<]+)一\\2)</ACTION_quantifiedVerb>"
         },
-        "腳好了": {
-            "id": "68eee141-87ef-4347-85a1-365d4b108f92",
-            "pos": "<ENTITY_noun>腳</ENTITY_noun><FUNC_degreeHead>好</FUNC_degreeHead><ASPECT>了</ASPECT>",
+        "我看看 ": {
+            "id": "21fbd9dd-9fd2-44e7-89da-079d923e6249",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><UserDefined>看看</UserDefined>",
             "lexy": [],
-            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(手|腳|肚子|眼睛|傷口)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><FUNC_degreeHead>好</FUNC_degreeHead><ASPECT>了</ASPECT>"
+            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>看看</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
         "在跟我玩": {
             "id": "47a9728b-e2fc-471e-9a23-e1df9317016c",
             "pos": "<FUNC_inner>在</FUNC_inner><FUNC_conjunction>跟</FUNC_conjunction><ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>玩</ACTION_verb>",
             "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(玩|玩忽|玩狎|玩著|玩樂|買東西|散步|遊玩|打電動|玩了|玩耍)</(ACTION_verb|VerbP)>"
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(玩|玩忽|玩狎|玩了|散步|玩著|買東西|玩耍|逛|打電動|玩水)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<FUNC_in(ner|ter)>在</FUNC_in(ner|ter)>(<FUNC_conjunction>[^<]+</FUNC_conjunction>)?(.*?)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+            "pattern": "<FUNC_in(ner|ter)>在</FUNC_in(ner|ter)><FUNC_conjunction>[^<]+</FUNC_conjunction><(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "抹抹好了": {
             "id": "571a7d6e-0303-4d1c-bdc2-a1df160fd47e",
             "pos": "<ACTION_quantifiedVerb>抹抹</ACTION_quantifiedVerb><FUNC_degreeHead>好</FUNC_degreeHead><ASPECT>了</ASPECT>",
             "lexy": [],
-            "pattern": "<ACTION_quantifiedVerb>[^<]+</ACTION_quantifiedVerb><FUNC_degreeHead>好</FUNC_degreeHead><ASPECT>了</ASPECT>"
+            "pattern": "(?<!</MODAL>)(?<!</FUNC_negation>)(?<!</CLAUSE_whoQ>)(?<![想要來去]</ACTION_verb>)<ACTION_quantifiedVerb>[^<]+</ACTION_quantifiedVerb><FUNC_degreeHead>好</FUNC_degreeHead><ASPECT>了</ASPECT>"
         },
         "救救大象": {
             "id": "ce5ba7ca-322c-475a-bae6-88db3b3e76c9",
             "pos": "<ACTION_quantifiedVerb>救救</ACTION_quantifiedVerb><ENTITY_nouny>大象</ENTITY_nouny>",
             "lexy": [],
-            "pattern": "<ACTION_quantifiedVerb>[^<]+</ACTION_quantifiedVerb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>"
+            "pattern": "<ACTION_quantifiedVerb>[^<翹來]+</ACTION_quantifiedVerb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>"
         },
-        "沒警衛了": {
-            "id": "82ac173c-75ee-443b-8675-5c9a6f6a50c3",
-            "pos": "<FUNC_negation>沒</FUNC_negation><ENTITY_nouny>警衛</ENTITY_nouny><ASPECT>了</ASPECT>",
-            "lexy": [],
-            "pattern": "<FUNC_negation>沒*[^<]+</FUNC_negation><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><ASPECT>了+</ASPECT>"
-        },
-        "黏起來了": {
-            "id": "7cab724f-6c63-45b4-95cd-cdef0d659e25",
+        "黏起來了 ": {
+            "id": "40401daf-cea1-463a-bf90-788f1ba7c62e",
             "pos": "<ACTION_verb>黏起來</ACTION_verb><ASPECT>了</ASPECT>",
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(黏起來|覺起來|長排|解老|捏緊|舉站|念間|肩挑起|覺到|按同|端嵌)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(?:(?!<MODIFIER>[^<]+</MODIFIER>|<DegreeP>[^<]+</DegreeP>).)*?<ASPECT>了</ASPECT>"
+            "pattern": "(?<!</MODAL>)(?<!</FUNC_negation>)(?<!</CLAUSE_whoQ>)(?<![想要來去]</ACTION_verb>)<(ACTION_verb|VerbP)>[^<換掉要]+</(ACTION_verb|VerbP)>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov|))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?(<FUNC_degreeHead>好</FUNC_degreeHead>)?<ASPECT>了</ASPECT>"
         },
         "我要切一切": {
             "id": "0084f101-a68f-46f0-9c77-c542f241bf71",
@@ -168,15 +179,33 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(要|想要|需要|想拿|想買|渴望|渴求|真要|得照|更要|要去)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(切|扎|更紮|有切|紮|有紮|闊勒|佩|更扎|方切|切著)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>切</(ACTION_verb|VerbP)><QUANTIFIER>一切</QUANTIFIER>"
+            "pattern": "<(ACTION_verb|VerbP)>([^<]+)</(ACTION_verb|VerbP)><QUANTIFIER>一\\2</QUANTIFIER>"
+        },
+        "換你吃飯了": {
+            "id": "7df69f75-c56a-4d2e-81ef-3683bf7b452b",
+            "pos": "<ACTION_verb>換</ACTION_verb><ENTITY_pronoun>你</ENTITY_pronoun><VerbP>吃飯了</VerbP>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(換|更換|換了|買|換到|轉換|換回|換成|有換|拆開|換購)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃飯了|洗澡了|賺錢了|喝酒了|核武化|撩落|呼吸了|來嘸|罵人家|坐牢了|開車了)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>換</(ACTION_verb|VerbP)><UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun)>[^<]+</UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun)><(ACTION_verb|VerbP)>[^<]+[了]</(ACTION_verb|VerbP)>"
         },
         "握住了然後": {
-            "id": "07f73d9a-99c5-41ee-9c4a-a4a8569e1e23",
+            "id": "4ede95ae-8d25-4e49-96eb-861920719ea4",
             "pos": "<ACTION_verb>握住</ACTION_verb><ENTITY_nouny>了</ENTITY_nouny><FUNC_inter>然後</FUNC_inter>",
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(握住|抓握|捉住|緊握|扼抓|緊握著|握著|握到|拉住|抬起|抱住)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>了</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>了</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "換你站起來了": {
+            "id": "9bcd8bdc-43cf-4ddd-9420-82a996a5eb48",
+            "pos": "<ACTION_verb>換</ACTION_verb><ENTITY_pronoun>你</ENTITY_pronoun><ACTION_verb>站起來</ACTION_verb><ASPECT>了</ASPECT>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(換|更換|換了|買|換到|轉換|換回|換成|有換|拆開|換購)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(站起來|站住|站立|站起|跑出來|起身|衝出來|振作|走回|跳起來|跳起)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>換</(ACTION_verb|VerbP)><UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun)>[^<]+</UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><ASPECT>了</ASPECT>"
         }
     },
     "alias": {},
