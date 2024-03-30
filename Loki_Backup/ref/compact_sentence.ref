@@ -14,8 +14,6 @@
             "兵兵病",
             "叮咚",
             "哈啾",
-            "喝開水",
-            "嗶嗶",
             "圈圈",
             "圓柱體",
             "圓筒形",
@@ -36,8 +34,6 @@
             "漢堡排",
             "炸彈",
             "爸比",
-            "病人",
-            "發高燒",
             "盤子",
             "眼鏡",
             "紅蘿蔔",
@@ -46,7 +42,6 @@
             "菜市場",
             "藥",
             "螺絲",
-            "要地方",
             "車車",
             "遊樂設施",
             "長方形",
@@ -58,12 +53,12 @@
             "便便",
             "喝開水",
             "尿尿",
-            "抹抹",
             "泡一泡",
             "流血",
             "發高燒",
+            "闖關",
             "看看",
-            "闖關"
+            "抹抹"
         ]
     },
     "utterance": {
@@ -169,7 +164,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(蓋|罩住|裹|拆下來|蓋了|鋪上|蓋滿|拱頂|沾|蓋起|加蓋)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(<ENTITY_possessive>[^<]+</ENTITY_possessive>)?<ENTITY_pronoun>[^<]+</ENTITY_pronoun><MODAL>[^<]+</MODAL><ENTITY_pronoun>[^<]+</ENTITY_pronoun><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+            "pattern": "(<ENTITY_possessive>[^<]+</ENTITY_possessive>)?<ENTITY_pronoun>[^<]+</ENTITY_pronoun>(<MODAL>[^<]+</MODAL>)?(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "固定起來就是門了": {
             "id": "87402c09-a74a-4001-a97d-2f396be376a0",
