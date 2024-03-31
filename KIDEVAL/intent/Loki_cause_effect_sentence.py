@@ -51,89 +51,107 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
-    
+
     if utterance == "只要下雨我就出門":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["帶連詞複句"].append(1)
-            pass
 
     if utterance == "可以幫他聽聽":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["帶連詞複句"].append(1)
-            pass
 
     if utterance == "因為下雨所以":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["帶連詞複句"].append(1)
-            pass
 
     if utterance == "如果下雨":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["帶連詞複句"].append(1)
-            pass
 
     if utterance == "對可是你剛才沒有打到":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["帶連詞複句"].append(1)
-            pass
 
     if utterance == "下雨然後":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["帶連詞複句"].append(1)
-            pass
 
     if utterance == "但都不知道在那":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["帶連詞複句"].append(1)
-            pass
 
     if utterance == "然後":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["帶連詞複句"].append(1)
-            pass
 
     if utterance == "下雨然後放晴":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["帶連詞複句"].append(1)
-            pass
 
     if utterance == "可是你的只有一個":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["帶連詞複句"].append(1)
-            pass
 
     if utterance == "是有這個螺絲可是不見了":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["帶連詞複句"].append(1)
-            pass
+
+    if utterance == "可是這":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "所以我":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "然後再":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "然後呢":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "然後如果":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
 
     if utterance == "因為下雨":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["帶連詞複句"].append(1)
-            pass
 
     return resultDICT
