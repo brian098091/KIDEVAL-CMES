@@ -177,6 +177,12 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             resultDICT["動前介詞"].append(1)
 
+    if utterance == "在裡面等一下會跑出來":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["動前介詞"].append(1)
+
     if utterance == "跟你講":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
