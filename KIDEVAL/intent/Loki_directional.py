@@ -63,7 +63,7 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
-    if utterance == "外面":
+    if utterance == "房間外面":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -71,27 +71,88 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
                 resultPOS = articut.parse(inputSTR)["result_pos"][0]
                 if resultPOS.startswith("<ENTITY") or resultPOS.startswith("<LOCATION"):
                     resultDICT["方位"].append(1)
+                elif "</ENTITY_nounHead><RANGE_locality>" in resultPOS:
+                    resultDICT["方位"].append(1)
+                elif "</ENTITY_nouny><RANGE_locality>" in resultPOS:
+                    resultDICT["方位"].append(1)
+                elif "</ENTITY_noun><RANGE_locality>" in resultPOS:
+                    resultDICT["方位"].append(1)
+                elif "</ENTITY_oov><RANGE_locality>" in resultPOS:
+                    resultDICT["方位"].append(1)
                 else:
                     pass
             except:
                 pass
-            
-    if utterance == "這裡":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["方位"].append(1)
-            
-    if utterance == "是這裡的嗎":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["方位"].append(1)
-            
-    if utterance == "嗯這下頭":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["方位"].append(1)        
 
+    if utterance == "這邊":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "這上面":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "這下頭":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "上面":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "這裡的":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "是上面":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "放下面":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "裡面":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "這裡面":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "這個下面":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "的後面":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "旁邊要":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
     return resultDICT
