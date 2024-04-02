@@ -75,12 +75,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             resultDICT["動後介詞"].append(1)
 
-    if utterance == "擺在一起":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass #intentional pass
-
     if utterance == "放在桌子上":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)

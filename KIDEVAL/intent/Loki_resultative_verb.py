@@ -19,6 +19,7 @@
 from random import sample
 import json
 import os
+import re
 
 DEBUG = True
 CHATBOT_MODE = False
@@ -55,7 +56,10 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["結果補語"].append(1)
+            if args[1].endswith("了"):
+                pass
+            else:
+                resultDICT["結果補語"].append(1)
 
     if utterance == "固定起來":
         if CHATBOT_MODE:
@@ -116,12 +120,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["結果補語"].append(1)
-
-    if utterance == "倒出來":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass #intentional pass
         
     if utterance == "曡完":
         if CHATBOT_MODE:
@@ -206,12 +204,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["結果補語"].append(1)
-
-    if utterance == "發燒了":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass #intentional pass
         
     if utterance == "說錯了":
         if CHATBOT_MODE:
@@ -225,12 +217,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["結果補語"].append(1)
-
-    if utterance == "換下一個":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass #intentional pass
         
     if utterance == "夾起來":
         if CHATBOT_MODE:
@@ -261,12 +247,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["結果補語"].append(1)
-        
-    if utterance == "倒了":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass  #intentional pass
         
     if utterance == "拼起來":
         if CHATBOT_MODE:
