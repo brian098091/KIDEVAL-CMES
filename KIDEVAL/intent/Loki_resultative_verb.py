@@ -121,13 +121,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            pass
-        
-    if utterance == "戴得了":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
+            pass #intentional pass
         
     if utterance == "曡完":
         if CHATBOT_MODE:
@@ -217,7 +211,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            pass
+            pass #intentional pass
         
     if utterance == "說錯了":
         if CHATBOT_MODE:
@@ -236,7 +230,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            pass
+            pass #intentional pass
         
     if utterance == "夾起來":
         if CHATBOT_MODE:
@@ -266,13 +260,13 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            pass
+            resultDICT["結果補語"].append(1)
         
     if utterance == "倒了":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            pass
+            pass  #intentional pass
         
     if utterance == "拼起來":
         if CHATBOT_MODE:
