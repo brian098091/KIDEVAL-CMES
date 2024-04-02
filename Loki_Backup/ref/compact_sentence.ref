@@ -12947,15 +12947,6 @@
             ],
             "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><CLAUSE_WhatQ>[^<]+</CLAUSE_WhatQ><QUANTIFIER>都</QUANTIFIER>(<FUNC_negation>[^<]+</FUNC_negation>)?(<MODAL>[^<]+</MODAL>)?(<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>)?"
         },
-        "我想可以再玩一次": {
-            "id": "9494b3c7-33e7-48cf-bf76-206cd38040d5",
-            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>想</ACTION_verb><MODAL>可以</MODAL><MODIFIER>再</MODIFIER><ACTION_verb>玩</ACTION_verb><ACTION_eventQuantifier>一次</ACTION_eventQuantifier>",
-            "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(想|假想|冥想|回想|想像|想出|想到|想念|想拿|想望|想要)</(ACTION_verb|VerbP)>",
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(玩|玩忽|玩狎|玩著|玩樂|買東西|散步|遊玩|打電動|玩了|玩耍)</(ACTION_verb|VerbP)>"
-            ],
-            "pattern": "(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<(ACTION_verb|VerbP)>想</(ACTION_verb|VerbP)>(<MODAL>[^<]+</MODAL>)?<(MODIFIER|ModifierP)>再</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>玩</(ACTION_verb|VerbP)><ACTION_eventQuantifier>[^<]+</ACTION_eventQuantifier>"
-        },
         "放一個圓形就好了": {
             "id": "35e3b9bd-cb9a-4770-98f1-db443e07d930",
             "pos": "<ACTION_verb>放</ACTION_verb><ENTITY_classifier>一個</ENTITY_classifier><ENTITY_nouny>圓形</ENTITY_nouny><FUNC_inner>就</FUNC_inner><FUNC_degreeHead>好</FUNC_degreeHead><ASPECT>了</ASPECT>",
