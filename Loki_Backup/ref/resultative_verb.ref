@@ -12912,15 +12912,6 @@
             ],
             "pattern": "<(ACTION_verb|VerbP)>[^<有加]+</(ACTION_verb|VerbP)><RANGE_(locality|period)>上</RANGE_(locality|period)>(?!<ACTION_verb>去</ACTION_verb>)"
         },
-        "倒下來": {
-            "id": "1758be4b-1b57-4cf8-b7e8-5369e21cafe5",
-            "pos": "<ACTION_verb>倒下</ACTION_verb><ACTION_verb>來</ACTION_verb>",
-            "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(倒下|倒坍|倒塌|崩倒|傾翻|傾陷|坍塌|垮塌|崩坍|崩塌|崩毀)</(ACTION_verb|VerbP)>",
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(來|上來|下來|來到|前來|回來|進來|值來|性來|出來|去)</(ACTION_verb|VerbP)>"
-            ],
-            "pattern": "<(ACTION_verb|VerbP)>倒下</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>來</(ACTION_verb|VerbP)>"
-        },
         "倒出來": {
             "id": "abe38312-1e55-43a3-b7f2-872f93fab6c3",
             "pos": "<ACTION_verb>倒出</ACTION_verb><ACTION_verb>來</ACTION_verb>",
@@ -12928,7 +12919,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(倒出|倒入|倒進|倒掉|烤出|裝入|洗淨|煮沸|磨成|洗乾淨|撈出)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(來|上來|下來|來到|前來|回來|進來|值來|性來|出來|去)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+出</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>來</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+出</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>[來去]</(ACTION_verb|VerbP)>"
         },
         "做過來": {
             "id": "269a95e0-99a2-4350-9f27-79e040616a8e",
