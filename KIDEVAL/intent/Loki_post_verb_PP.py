@@ -56,131 +56,107 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["動後介詞"].append(1)
-            pass
 
     if utterance == "回到家":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["動後介詞"].append(1)
-            pass
 
     if utterance == "打電話給阿公":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["動後介詞"].append(1)
-            pass
 
     if utterance == "扣在這個":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["動後介詞"].append(1)
-            pass
-
-    if utterance == "擺在一起":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
 
     if utterance == "放在桌子上":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["動後介詞"].append(1)
-            pass
 
     if utterance == "放在這裡":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["動後介詞"].append(1)
-            pass
 
     if utterance == "跳到這裡":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["動後介詞"].append(1)
-            pass
 
     if utterance == "這裡是到警察局的辦公室":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["動後介詞"].append(1)
-            pass
 
     if utterance == "都不知道在那":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["動後介詞"].append(1)
-            pass
 
     if utterance == "長在泥土裡 ":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["動後介詞"].append(1)
-            pass
 
     if utterance == "打在屁屁":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["動後介詞"].append(1)
-            pass
 
     if utterance == "打給你":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["動後介詞"].append(1)
-            pass
 
     if utterance == "剪到這邊":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["動後介詞"].append(1)
-            pass
 
     if utterance == "放在":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["動後介詞"].append(1)
-            pass
 
     if utterance == "然後你再把這放在這裡好嗎":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["動後介詞"].append(1)
-            pass
 
     if utterance == "這拿給我":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["動後介詞"].append(1)
-            pass
 
     if utterance == "你要照著我的方法出來用":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["動後介詞"].append(1)
-            pass
 
     if utterance == "飛到上面":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["動後介詞"].append(1)
-            pass
 
     return resultDICT
