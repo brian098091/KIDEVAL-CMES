@@ -58,8 +58,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             if args[1].endswith("了"):
                 pass
-            elif re.match("[^<][下上]一個", inputSTR) != None:
-                pass
             else:
                 resultDICT["結果補語"].append(1)
 

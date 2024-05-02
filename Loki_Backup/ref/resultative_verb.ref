@@ -12855,7 +12855,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(打開|張開|開啟|關上|彈出|推開|緊閉|敲開|撬開|打開了|鎖住)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>([^<斷起出丟行燒多回想傷血講剪錯謝坐退贏用夾有得加進看拾過要聞澡病放爬去掉備痛站飛忘跳到少等來知睡聽開摸][近斷住善乾鬆了完遠歪下齊準壞上大穩濕平過直白髒黑掉空正好到緊滿開楚小亂成])</(ACTION_verb|VerbP)>(<(ACTION_verb|VerbP)>[^<來去]+</(ACTION_verb|VerbP)>)?"
+            "pattern": "<(ACTION_verb|VerbP)>([^<斷起出丟行燒多回想傷血講剪錯謝坐退贏用夾有得加進看拾過要聞澡病放爬去掉備痛站飛忘跳到少等來知睡聽開摸][近斷住善乾鬆了完遠歪下齊準壞上大穩濕平過直白髒黑掉空正好到緊滿開楚小亂成])</(ACTION_verb|VerbP)>(?!<ENTITY_classifier>[^<]+</ENTITY_classifier>)(<(ACTION_verb|VerbP)>[^<來去]+</(ACTION_verb|VerbP)>)?"
         },
         "放大": {
             "id": "3205380a-8725-4062-91b3-ba84b81c86cd",
