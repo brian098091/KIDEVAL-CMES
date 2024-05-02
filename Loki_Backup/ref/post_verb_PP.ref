@@ -12917,12 +12917,12 @@
             "pattern": "<(ACTION_verb|VerbP)>[^<請要有來去這]+</(ACTION_verb|VerbP)>(<ACTION_eventQuantifier>[^<]+</ACTION_eventQuantifier>)?(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?<(ACTION_verb|VerbP)>給</(ACTION_verb|VerbP)>(<ENTITY_pronoun>[^<你]+</ENTITY_pronoun>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)"
         },
         "都不知道在那": {
-            "id": "7883d467-b519-4a83-a81e-30bb8d955cf0",
+            "id": "c030a4a0-1a7a-4f8c-b95b-fc31eafa57f6",
             "pos": "<QUANTIFIER>都</QUANTIFIER><FUNC_negation>不</FUNC_negation><ACTION_verb>知道</ACTION_verb><FUNC_inner>在</FUNC_inner><FUNC_determiner>那</FUNC_determiner>",
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(知道|得知|明知|深知|獲知|知悉|知情|知曉|知足|確知|了解)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_in(ner|ter)>在</FUNC_in(ner|ter)>(<FUNC_determiner>[^<]+</FUNC_determiner>)"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_in(ner|ter)>在</FUNC_in(ner|ter)><FUNC_determiner>[^<]+</FUNC_determiner>"
         },
         "你要照著我的方法出來用": {
             "id": "553658ef-428e-4d0d-b277-985967b29adf",
