@@ -24,7 +24,6 @@ import re
 DEBUG = True
 CHATBOT_MODE = False
 
-userDefinedDICT = {}
 try:
     userDefinedDICT = json.load(open(os.path.join(os.path.dirname(__file__), "USER_DEFINED.json"), encoding="utf-8"))
 except Exception as e:
@@ -249,6 +248,12 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["結果補語"].append(1)
         
     if utterance == "拼起來":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["結果補語"].append(1)
+
+    if utterance == "疊出":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
