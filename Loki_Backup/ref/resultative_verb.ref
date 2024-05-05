@@ -12894,7 +12894,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(聽到|傾聽|聆聽|聽來|聽取|聽聞|聽見|聽說|得知|獲知|聞悉)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[聽看想噎玩用](不)?[到懂完](了)?</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[聽看想噎玩用][到懂完](了)?</(ACTION_verb|VerbP)>"
         },
         "變回": {
             "id": "b01fbfde-aeff-45b4-b613-27cf0cffbfb9",

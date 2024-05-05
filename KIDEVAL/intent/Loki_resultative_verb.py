@@ -57,9 +57,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             if args[1].endswith("了"):
                 pass
-            elif args[1].endswith("下") or args[1].endswith("上"):
-                if (args[1] + "一個") in inputSTR:
-                    pass
+            elif re.search("[換給讓玩][上下]一[^<]", inputSTR) != None:
+                pass
             else:
                 resultDICT["結果補語"].append(1)
 
