@@ -23,7 +23,6 @@ import os
 DEBUG = True
 CHATBOT_MODE = False
 
-userDefinedDICT = {}
 try:
     userDefinedDICT = json.load(open(os.path.join(os.path.dirname(__file__), "USER_DEFINED.json"), encoding="utf-8"))
 except Exception as e:
