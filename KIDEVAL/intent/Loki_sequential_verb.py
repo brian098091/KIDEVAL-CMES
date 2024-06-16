@@ -77,41 +77,41 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
                     resultDICT["連謂/兼語"].append(1)
             except:
                 pass
-            
+
     if utterance == "你先去外面等一下":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["連謂/兼語"].append(1)
-            
+
     if utterance == "我等一下可以玩第三籃嗎":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["連謂/兼語"].append(1)
-            
+
     if utterance == "媽媽幫我拿":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["連謂/兼語"].append(1)
-            
+
     if utterance == "出去玩":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["連謂/兼語"].append(1)
-            
+
     if utterance == "你幫我曡高高":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["連謂/兼語"].append(1)
-            
+
     if utterance == "幫我的連起來":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["連謂/兼語"].append(1)        
+            resultDICT["連謂/兼語"].append(1)
 
     return resultDICT
