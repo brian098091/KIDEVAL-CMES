@@ -192,6 +192,114 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             resultDICT["方位"].append(1)
 
+    if utterance == "他前面上車":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "他哪裡要":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "你哪裡有":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "前面也一樣":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "在哪邊":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "在手上":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "在裡面跳舞":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "在這裡":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "寶盒裡面有":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "打他哪裡":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "放這邊短":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "旁邊要有":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "是這邊":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "裡面有":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "這裡也可以":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "這裡也是":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "這邊再兩個":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "短扁放這邊短":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
     if utterance == "旁邊要":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)

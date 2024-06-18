@@ -183,6 +183,48 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             resultDICT["趨向補語"].append(1)
 
+    if utterance == "倒進去":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["趨向補語"].append(1)
+
+    if utterance == "回去拿":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["趨向補語"].append(1)
+
+    if utterance == "從上面飛過去":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["趨向補語"].append(1)
+
+    if utterance == "滾過去":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["趨向補語"].append(1)
+
+    if utterance == "發出":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["趨向補語"].append(1)
+
+    if utterance == "走過去":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["趨向補語"].append(1)
+
+    if utterance == "進去叫":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["趨向補語"].append(1)
+
     if utterance == "玩回來了":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)

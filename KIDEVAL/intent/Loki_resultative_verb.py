@@ -56,9 +56,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            if args[1].endswith("了"):
-                pass
-            elif re.match("[^<][下上]一個", inputSTR) != None:
+            #if args[1].endswith("了"):
+                #pass
+            if re.match("[^<][下上]一個", inputSTR) != None:
                 pass
             else:
                 resultDICT["結果補語"].append(1)
