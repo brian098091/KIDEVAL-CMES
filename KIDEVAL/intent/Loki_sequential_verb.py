@@ -22,6 +22,7 @@ import os
 import re
 from ArticutAPI import Articut
 BASE_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PAT = re.compile("<ACTION_(verb|quantifiedVerb)>([^<]+)\\2(\\2\\2)?</ACTION_(verb|quantifiedVerb)><ACTION_(verb|quantifiedVerb)>\\2(到|\\2)?</ACTION_(verb|quantifiedVerb)>|<ACTION_verb>([^<]+)</ACTION_verb><ACTION_verb>\\4</ACTION_verb>|(<ACTION_verb>[^<]+</ACTION_verb>)\\9\\9?")
 try:
     accountInfo = json.load(open(os.path.join(BASE_PATH, "account.info"), encoding="utf-8"))
     USERNAME = accountInfo["username"]
@@ -68,10 +69,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            pat = re.compile("<ACTION_(verb|quantifiedVerb)>([^<]+)\\2(\\2\\2)?</ACTION_(verb|quantifiedVerb)><ACTION_(verb|quantifiedVerb)>\\2(到|\\2)?</ACTION_(verb|quantifiedVerb)>|<ACTION_verb>([^<]+)</ACTION_verb><ACTION_verb>\\4</ACTION_verb>|(<ACTION_verb>[^<]+</ACTION_verb>)\\9\\9?")
             try:
                 resultPOS = articut.parse(inputSTR)["result_pos"][0]
-                if pat.match(resultPOS):
+                if PAT.match(resultPOS):
                     pass
                 else:
                     resultDICT["連謂/兼語"].append(1)
