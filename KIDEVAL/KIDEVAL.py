@@ -65,6 +65,8 @@ for modulePath in glob("{}/intent/Loki_*.py".format(BASE_PATH)):
     lokiIntentDICT[moduleNameSTR] = globals()[moduleNameSTR]
 
 LOKI_URL = "https://api.droidtown.co/Loki/BulkAPI/"
+LOKI_URL = "http://localhost:50269/Loki/BulkAPI"
+PROJECT = "KIDEVAL"
 try:
     accountInfo = json.load(open(os.path.join(BASE_PATH, "account.info"), encoding="utf-8"))
     USERNAME = accountInfo["username"]
@@ -99,6 +101,7 @@ class LokiResult():
 
         try:
             result = post(LOKI_URL, json={
+                "project":PROJECT,
                 "username": USERNAME,
                 "input_list": inputLIST,
                 "loki_key": LOKI_KEY,
@@ -195,7 +198,8 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
                     lokiResultDICT = lokiIntentDICT[lokiRst.getIntent(index, resultIndex)].getResult(
                         key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex),
                         lokiResultDICT, refDICT, pattern=lokiRst.getPattern(index, resultIndex))
-
+                    print(lokiRst.getIntent(index, resultIndex))
+                    print(lokiResultDICT)
             # save lokiResultDICT to resultDICT
             for k in lokiResultDICT:
                 if k not in resultDICT:
@@ -368,7 +372,7 @@ def testIntent():
 
 
 if __name__ == "__main__":
-    
+
     # 測試所有意圖
     #testIntent()
 
@@ -398,7 +402,7 @@ if __name__ == "__main__":
         '帶連詞複句': [],
         '緊縮複句': [],
         '感知/心理狀態': []
-    }    
+    }
 
     outputData = {
         "Scores":[],
@@ -411,12 +415,12 @@ if __name__ == "__main__":
     sentencesLIST = []
     itemScoreDICT ={}
     with open('./inputSTR.txt', 'r', encoding='utf-8') as f:
-        for line in f:
+        inputLIST = [l.replace("\n", "") for l in f.readlines()]
+        for line in inputLIST:
             inputSTR = re.sub(r'[^\u4e00-\u9fa5]', '', line)
             resultDICT = execLoki(content=inputSTR, splitLIST=splitLIST, refDICT=refDICT,filterLIST=filterLIST)
-            
-            sentencesLIST =[str(count),inputSTR]
 
+            sentencesLIST =[str(count),inputSTR]
             for key,value in resultDICT.items():
                 if key not in itemScoreDICT:
                     itemScoreDICT[key] = 0
@@ -430,10 +434,10 @@ if __name__ == "__main__":
 
     itemScoreSum = 0
     categoryScoreSum = 0
-    
+
     for key,value in itemScoreDICT.items():
         itemScoreSum = itemScoreSum + value
-    
+
     categoryScoreDICT = deepcopy(itemScoreDICT)
     for key,value in categoryScoreDICT.items():
         if categoryScoreDICT[key]-2 >= 0:
@@ -441,7 +445,7 @@ if __name__ == "__main__":
         else:
             pass
         categoryScoreSum = categoryScoreSum + categoryScoreDICT[key]
-    
+
     scoreLIST = []
     npLIST =[0,0]
     vpLIST =[0,0]
@@ -466,14 +470,14 @@ if __name__ == "__main__":
     calLIST = [npLIST,vpLIST,ppLIST,sLIST,sumLIST]
     for list in calLIST:
         outputData["Scores"].append(list)
-    
-    outputJson = json.dumps(outputData,ensure_ascii=False) 
-    pprint(outputJson)    
 
-    
-    
-    
-    
+    outputJson = json.dumps(outputData,ensure_ascii=False)
+    pprint(outputJson)
+
+
+
+
+
     # print("項目總分：")
     # pprint(itemScoreDICT)
     # print("=====")
@@ -481,6 +485,6 @@ if __name__ == "__main__":
     # pprint(categoryScoreDICT)
     # print("項目總分：",itemScoreSum)
     # print("類型總分：",categoryScoreSum)
-   
-# json_object = json.dumps(outputData,ensure_ascii=False) 
+
+# json_object = json.dumps(outputData,ensure_ascii=False)
 # print(json_object)

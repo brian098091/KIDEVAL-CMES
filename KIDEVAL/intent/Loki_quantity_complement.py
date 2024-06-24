@@ -57,6 +57,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             resultDICT["數量補語"].append(1)
 
+
     if utterance == "吃一口":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -122,6 +123,54 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["數量補語"].append(1)
 
     if utterance == "打了兩通":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["數量補語"].append(1)
+
+    if utterance == "借我一下":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["數量補語"].append(1)
+
+    if utterance == "出來一點":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["數量補語"].append(1)
+
+    if utterance == "打一次":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["數量補語"].append(1)
+
+    if utterance == "等一下":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["數量補語"].append(1)
+
+    if utterance == "再量體溫一次":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["數量補語"].append(1)
+
+    if utterance == "再張開嘴巴一下":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["數量補語"].append(1)
+
+    if utterance == "等一下再量":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["數量補語"].append(1)
+
+    if utterance == "教我一下":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

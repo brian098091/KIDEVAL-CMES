@@ -15,7 +15,7 @@
     Output:
         resultDICT    dict
 """
-
+from ArticutAPI import Articut
 from random import sample
 import json
 import os
@@ -28,6 +28,12 @@ try:
     userDefinedDICT = json.load(open(os.path.join(os.path.dirname(__file__), "USER_DEFINED.json"), encoding="utf-8"))
 except Exception as e:
     print("[ERROR] userDefinedDICT => {}".format(str(e)))
+try:
+    accountDICT = json.load(open("../account.info", encoding="utf-8"))
+    articut = Articut(username=accountDICT["username"], apikey=accountDICT["apikey"])
+except:
+    #pass
+    articut = Articut()
 
 responseDICT = {}
 if CHATBOT_MODE:
@@ -118,7 +124,16 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if inputSTR == utterance:
                 pass
             else:
-                resultDICT["帶連詞複句"].append(1)
+                try:
+                    articutDICT = articut.parse(inputSTR)
+                    if articutDICT["msg"] == True:
+                        if "ACTION_" in articutDICT["result_pos"][0]:
+                            resultDICT["帶連詞複句"].append(1)
+                        else:
+                            pass
+                except:
+                    pass
+
 
     if utterance == "然後呢":
         if CHATBOT_MODE:
