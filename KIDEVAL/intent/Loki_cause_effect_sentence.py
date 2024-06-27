@@ -109,7 +109,15 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["帶連詞複句"].append(1)
+            try:
+                articutDICT = articut.parse(inputSTR)
+                if articutDICT["status"] == True:
+                    if "ACTION_" in articutDICT["result_pos"][0] or "VerbP" in articutDICT["result_pos"][0]:
+                        resultDICT["帶連詞複句"].append(1)
+                    else:
+                        pass
+            except:
+                pass
 
     if utterance == "所以我":
         if CHATBOT_MODE:
@@ -126,11 +134,41 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             else:
                 try:
                     articutDICT = articut.parse(inputSTR)
-                    if articutDICT["msg"] == True:
-                        if "ACTION_" in articutDICT["result_pos"][0]:
-                            resultDICT["帶連詞複句"].append(1)
-                        else:
+                    if articutDICT["status"] == True:
+                        if "<ACTION_verb>爬<" in articutDICT["result_pos"][0] and articutDICT["result_pos"][0].count("<ACTION_verb")==1:
                             pass
+                        elif "<ACTION_verb>跳<" in articutDICT["result_pos"][0] and articutDICT["result_pos"][0].count("<ACTION_verb")==1:
+                            pass
+                        elif "<ACTION_verb>住<" in articutDICT["result_pos"][0] and articutDICT["result_pos"][0].count("<ACTION_verb")==1:
+                            pass
+                        elif "<ACTION_verb>坐<" in articutDICT["result_pos"][0] and articutDICT["result_pos"][0].count("<ACTION_verb")==1:
+                            pass
+                        elif "<ACTION_verb>蓋" in articutDICT["result_pos"][0] and articutDICT["result_pos"][0].count("<ACTION_verb")==1:
+                            pass
+                        elif "<ACTION_verb>有<" in articutDICT["result_pos"][0] and articutDICT["result_pos"][0].count("<ACTION_verb")==1:
+                            pass
+                        elif "<ACTION_verb>擺<" in articutDICT["result_pos"][0] and articutDICT["result_pos"][0].count("<ACTION_verb")==1:
+                            pass
+                        elif "<ACTION_verb>放<" in articutDICT["result_pos"][0] and articutDICT["result_pos"][0].count("<ACTION_verb")==1:
+                            pass
+                        elif "<ACTION_verb>換<" in articutDICT["result_pos"][0] and articutDICT["result_pos"][0].count("<ACTION_verb")==1:
+                            pass
+                        elif "<ACTION_verb>拿<" in articutDICT["result_pos"][0] and articutDICT["result_pos"][0].count("<ACTION_verb")==1:
+                            pass
+                        elif "<ACTION_verb>按<" in articutDICT["result_pos"][0] and articutDICT["result_pos"][0].count("<ACTION_verb")==1:
+                            pass
+                        elif "<ACTION_verb>切<" in articutDICT["result_pos"][0] and articutDICT["result_pos"][0].count("<ACTION_verb")==1:
+                            pass
+                        elif "<ACTION_verb>變<" in articutDICT["result_pos"][0] and articutDICT["result_pos"][0].count("<ACTION_verb")==1:
+                            pass
+                        elif "<ACTION_verb>量<" in articutDICT["result_pos"][0] and articutDICT["result_pos"][0].count("<ACTION_verb")==1:
+                            pass
+                        elif "要</ACTION_verb>" in articutDICT["result_pos"][0] and articutDICT["result_pos"][0].count("<ACTION_verb")==1:
+                            pass
+                        elif "ACTION_" not in articutDICT["result_pos"][0]:
+                            pass
+                        else:
+                            resultDICT["帶連詞複句"].append(1)
                 except:
                     pass
 
@@ -139,13 +177,10 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["帶連詞複句"].append(1)
-
-    if utterance == "嗯可是我沒有":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["帶連詞複句"].append(1)
+            if inputSTR.endswith(utterance):
+                pass
+            else:
+                resultDICT["帶連詞複句"].append(1)
 
     if utterance == "然後我再":
         if CHATBOT_MODE:
@@ -154,6 +189,168 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["帶連詞複句"].append(1)
 
     if utterance == "然後我把":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "如果有生病的":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "可是也沒有藥膏":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "可是只有一個":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "可是我沒有叉子":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "可是背又不是心臟":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "可是這裡還沒有這一種":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "囉可是不夠":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "因為他不乖":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "因為你很勇敢":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "因為你的手比較大":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "因為呢這個沒有顏色":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "因為它就長啊":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "因為我的花園在這裡":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "因為這個下面是藍的":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "因為這個本來就冰冰的":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "因為這是一個魔法":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "因為這是他的翅膀":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "因為這樣子才可以":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "因為這樣子才對":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "因為這樣子是":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "因為還有更多人":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "因為那這樣就好喔":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "所以不要":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "所以沒有紅色":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "然後再加藥水進去":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "然後再蓋一個這個":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
+    if utterance == "然後再量體溫一次":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

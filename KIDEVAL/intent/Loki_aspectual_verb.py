@@ -135,12 +135,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             resultDICT["體貌"].append(1)
 
-    if utterance == "黏起來了":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            resultDICT["體貌"].append(1)
-
     if utterance == "好多了":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -196,6 +190,48 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["體貌"].append(1)
 
     if utterance == "肚子好了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["體貌"].append(1)
+
+    if utterance == "不拼了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["體貌"].append(1)
+
+    if utterance == "可以打開第二箱了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["體貌"].append(1)
+
+    if utterance == "在這邊休息":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["體貌"].append(1)
+
+    if utterance == "換玩具了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["體貌"].append(1)
+
+    if utterance == "爸爸去上班了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["體貌"].append(1)
+
+    if utterance == "膠帶黏起來啊":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["體貌"].append(1)
+
+    if utterance == "要收拾了":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
