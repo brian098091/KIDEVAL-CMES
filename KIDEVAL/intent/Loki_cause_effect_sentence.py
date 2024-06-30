@@ -356,6 +356,12 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             resultDICT["帶連詞複句"].append(1)
 
+    if utterance == "給你吃":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["帶連詞複句"].append(1)
+
     if utterance == "然後如果":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)

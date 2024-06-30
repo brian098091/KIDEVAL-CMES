@@ -300,6 +300,30 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             resultDICT["方位"].append(1)
 
+    if utterance == "去鐵路上":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "在天上":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "放在旁邊":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
+    if utterance == "放在籠子裡":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["方位"].append(1)
+
     if utterance == "旁邊要":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)

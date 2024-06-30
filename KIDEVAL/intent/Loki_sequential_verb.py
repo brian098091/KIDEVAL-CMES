@@ -112,8 +112,103 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            pass
+            resultDICT["連謂/兼語"].append(1)
+
+    if utterance == "來幫忙":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["連謂/兼語"].append(1)
+
+    if utterance == "保證他不會倒":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["連謂/兼語"].append(1)
+
+    if utterance == "喝開水噎到了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["連謂/兼語"].append(1)
+
+    if utterance == "帶他們兩個來":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["連謂/兼語"].append(1)
+
+    if utterance == "幫你多吃":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["連謂/兼語"].append(1)
+
+    if utterance == "幫小豬打針":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["連謂/兼語"].append(1)
+
+    if utterance == "打開看":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["連謂/兼語"].append(1)
+
+    if utterance == "教你怎麼蓋":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["連謂/兼語"].append(1)
+
+    if utterance == "爬上去走一走":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["連謂/兼語"].append(1)
+
+    if utterance == "等一下可以玩":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["連謂/兼語"].append(1)
+
+    if utterance == "給人家坐":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["連謂/兼語"].append(1)
+
+    if utterance == "給公主住":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["連謂/兼語"].append(1)
+
+    if utterance == "要剪掉":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["連謂/兼語"].append(1)
+
+    if utterance == "要進去了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["連謂/兼語"].append(1)
+
+    if utterance == "開始玩了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["連謂/兼語"].append(1)
+
+    if utterance == "開始要用":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["連謂/兼語"].append(1)
 
     if utterance == "幫我的連起來":
         if CHATBOT_MODE:

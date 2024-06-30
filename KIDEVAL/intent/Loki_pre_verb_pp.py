@@ -183,6 +183,13 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             resultDICT["動前介詞"].append(1)
 
+    if utterance == "跟你合":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
     if utterance == "跟你講":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)

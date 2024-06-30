@@ -74,18 +74,18 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["X的"].append(1)
-            
+
     if utterance == "我的嗎":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["X的"].append(1)
-            
+
     if utterance == "我的只有":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-           resultDICT["X的"].append(1)
+            resultDICT["X的"].append(1)
 
     if utterance == "我的有":
         if CHATBOT_MODE:
@@ -100,6 +100,84 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["X的"].append(1)
 
     if utterance == "用掉的你知道嗎":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["X的"].append(1)
+
+    if utterance == "我的要弄":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["X的"].append(1)
+
+    if utterance == "找邊邊的":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["X的"].append(1)
+
+    if utterance == "把我的":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["X的"].append(1)
+
+    if utterance == "玩別的":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["X的"].append(1)
+
+    if utterance == "藍色的":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["X的"].append(1)
+
+    if utterance == "也是好的":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["X的"].append(1)
+
+    if utterance == "嗶嗶的":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["X的"].append(1)
+
+    if utterance == "我的蓋完了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["X的"].append(1)
+
+    if utterance == "我自己做的":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["X的"].append(1)
+
+    if utterance == "我要的":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["X的"].append(1)
+
+    if utterance == "有穩的":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["X的"].append(1)
+
+    if utterance == "藥藥的":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["X的"].append(1)
+
+    if utterance == "這是我要的":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
