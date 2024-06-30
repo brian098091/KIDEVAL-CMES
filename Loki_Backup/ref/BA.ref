@@ -77,6 +77,7 @@
             "學習時空",
             "客人",
             "小孩",
+            "維尼",
             "小熊維尼",
             "屋頂",
             "山上人家",
@@ -144,6 +145,7 @@
             "風",
             "飛比價格",
             "飛船",
+            "眼鏡",
             "馬崗厝",
             "（",
             "）"
@@ -164,7 +166,6 @@
             "泡一泡",
             "流血",
             "發高燒",
-            "看看",
             "闖關"
         ],
         "_schoolTW": [
@@ -12843,7 +12844,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(要|想要|需要|想拿|想買|渴望|渴求|真要|得照|更要|要去)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>要</(ACTION_verb|VerbP)><ACTION_lightVerb>把</ACTION_lightVerb>"
+            "pattern": "<(ACTION_verb|VerbP)>要</(ACTION_verb|VerbP)><ACTION_lightVerb>把</ACTION_lightVerb>(?!<FUNC_inter>)"
         },
         "把這個": {
             "id": "7fb62768-8ecf-461f-bdca-55704d96ddde",
@@ -12851,13 +12852,19 @@
             "lexy": [],
             "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>"
         },
+        "把這放": {
+            "id": "9b3749ae-ccdd-4435-9a6e-eb2d8984dece",
+            "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_nouny>這放</ENTITY_nouny>",
+            "lexy": [],
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>這放</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
         "把這個丟了": {
             "id": "a5c4bc33-378d-427b-ad38-a3cda98c0a9a",
             "pos": "<ACTION_lightVerb>把</ACTION_lightVerb><ENTITY_DetPhrase>這個</ENTITY_DetPhrase><VerbP>丟了</VerbP>",
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(丟了|丟掉|搶了|丟掉了|拿了|放下了|偷了|跑掉|要了|拿走了|搶走了)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(.+)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+            "pattern": "<ACTION_lightVerb>把</ACTION_lightVerb>(?!<ACTION)(?:(?!(<QUANTIFIER>都</QUANTIFIER><ENTITY_n|<FUNC_inter>)).)+?<(ACTION_verb|VerbP)>[^<拉]+</(ACTION_verb|VerbP)>"
         },
         "是把夾子丟": {
             "id": "fa4bed05-725e-43a5-8e24-10795848faa5",

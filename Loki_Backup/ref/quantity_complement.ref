@@ -77,6 +77,7 @@
             "學習時空",
             "客人",
             "小孩",
+            "維尼",
             "小熊維尼",
             "屋頂",
             "山上人家",
@@ -144,6 +145,7 @@
             "風",
             "飛比價格",
             "飛船",
+            "眼鏡",
             "馬崗厝",
             "（",
             "）"
@@ -164,7 +166,6 @@
             "泡一泡",
             "流血",
             "發高燒",
-            "看看",
             "闖關"
         ],
         "_schoolTW": [
@@ -12825,13 +12826,25 @@
         ]
     },
     "utterance": {
+        "再一次": {
+            "id": "9833dcdd-ad4d-43d1-ba3f-dacc9d523020",
+            "pos": "<MODIFIER>再</MODIFIER><ACTION_eventQuantifier>一次</ACTION_eventQuantifier>",
+            "lexy": [],
+            "pattern": "<(MODIFIER|ModifierP)>再</(MODIFIER|ModifierP)><ACTION_eventQuantifier>[^<]+次</ACTION_eventQuantifier>"
+        },
+        "再一點": {
+            "id": "0cf8837a-d25a-46fb-8617-9b50b3c17501",
+            "pos": "<MODIFIER>再</MODIFIER><QUANTIFIER>一點</QUANTIFIER>",
+            "lexy": [],
+            "pattern": "<MODIFIER>再</MODIFIER><QUANTIFIER>一點</QUANTIFIER>"
+        },
         "切兩半": {
             "id": "2c231513-e312-4135-ad49-f9df4ea17b63",
             "pos": "<ACTION_verb>切</ACTION_verb><MODIFIER>兩半</MODIFIER>",
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(切|扎|更紮|有切|紮|有紮|闊勒|佩|更扎|方切|切著)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(.+)?<(MODIFIER|ModifierP)>[^<]+半</(MODIFIER|ModifierP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(MODIFIER|ModifierP)>[^<]+半</(MODIFIER|ModifierP)>"
         },
         "吃一口": {
             "id": "0edb9d6f-0e86-4aa2-b6de-fec3449c33ed",
@@ -12839,7 +12852,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃|吃掉|吸收|攝入|耗損|花掉|吃著|煮|啃|喝|吃了)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(.+)?<ENTITY_classifier>[^<]+[口]</ENTITY_classifier>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><ENTITY_classifier>[^<]+口</ENTITY_classifier>"
         },
         "吃一點": {
             "id": "0240ac64-20c9-44e8-ad7c-a6c442024566",
@@ -12847,7 +12860,13 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃|吃掉|吸收|攝入|耗損|花掉|煮|啃|吃著|喝|常吃)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><TIME_(holiday|justtime|day|week|month|season|year|decade)>一點</TIME_(holiday|justtime|day|week|month|season|year|decade)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<來去加減]+</(ACTION_verb|VerbP)><TIME_(holiday|justtime|day|week|month|season|year|decade)>一點</TIME_(holiday|justtime|day|week|month|season|year|decade)>"
+        },
+        "打一次": {
+            "id": "bd44a048-221f-47c4-ac96-a7678d7398f6",
+            "pos": "<ACTION_lightVerb>打</ACTION_lightVerb><ACTION_eventQuantifier>一次</ACTION_eventQuantifier>",
+            "lexy": [],
+            "pattern": "<ACTION_lightVerb>打</ACTION_lightVerb><ACTION_eventQuantifier>[^<]+次</ACTION_eventQuantifier>"
         },
         "玩一次": {
             "id": "91384ea2-e5d5-4034-b3fe-5be1c2f5997d",
@@ -12855,7 +12874,15 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(玩|玩忽|玩狎|玩著|玩樂|買東西|散步|遊玩|打電動|玩了|玩耍)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(.*?)<ACTION_eventQuantifier>[^<個]+</ACTION_eventQuantifier>"
+            "pattern": "(?<!就</FUNC_inner>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><ACTION_eventQuantifier>[^<個]+</ACTION_eventQuantifier>"
+        },
+        "等一下": {
+            "id": "61d6a64a-180b-4491-8006-fb1efd6bd0ac",
+            "pos": "<ACTION_verb>等</ACTION_verb><ENTITY_num>一</ENTITY_num><ENTITY_oov>下</ENTITY_oov>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(等|久等|稍等|等候|等到|等待|等第|等級|候補|安排|待遇)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>等</(ACTION_verb|VerbP)><ENTITY_num>一</ENTITY_num><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>下</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(?!<ENTITY_pronoun>)(?!<FUNC_negation>)(?!<MODIFIER>[再好])(?!<ENTITY_DetPhrase>)(?!<FUNC_determiner>)(?!<ACTION_verb>要)(?!<MODAL>會)"
         },
         "量一下": {
             "id": "6771f4fb-21a8-4b4d-a281-f44b5f32e35f",
@@ -12863,13 +12890,92 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(量|估量|度量|測量|量度|量測|量身|估測|合算|掐算|推估)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<等]+</(ACTION_verb|VerbP)>(.+)?<ENTITY_num>[^<]+</ENTITY_num><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>下</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<等教]+</(ACTION_verb|VerbP)><ENTITY_num>[^<]+</ENTITY_num><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>下</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
-        "打了兩通電話": {
-            "id": "9773357f-a700-4b8d-bb90-7fd2474520a0",
-            "pos": "<ACTION_lightVerb>打</ACTION_lightVerb><ASPECT>了</ASPECT><ACTION_eventQuantifier>兩通</ACTION_eventQuantifier><ENTITY_noun>電話</ENTITY_noun>",
+        "高一點": {
+            "id": "3687cbe2-c729-4dcc-a86f-2f084ee75d04",
+            "pos": "<UserDefined>高一</UserDefined><QUANTIFIER>點</QUANTIFIER>",
             "lexy": [],
-            "pattern": "<ACTION_lightVerb>打</ACTION_lightVerb>(.+)?<ACTION_eventQuantifier>[^<]+</ACTION_eventQuantifier>"
+            "pattern": "(?<!蓋</ACTION_verb>)(?<!高</MODIFIER>)<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>高一</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><QUANTIFIER>點</QUANTIFIER>"
+        },
+        "借我一下": {
+            "id": "1283b8bd-77e2-4694-9e6f-1aedbd8d2dbf",
+            "pos": "<ACTION_verb>借</ACTION_verb><ENTITY_pronoun>我</ENTITY_pronoun><ACTION_eventQuantifier>一下</ACTION_eventQuantifier>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(借|借出|借給|出借|外借|借錢|借來|借了|索取|借用|商借)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>借</ACTION_verb>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<ACTION_eventQuantifier>一[^<]+</ACTION_eventQuantifier>"
+        },
+        "出來一點": {
+            "id": "d0bd31b8-6cf4-4dbc-a6f3-be10e268665b",
+            "pos": "<ACTION_verb>出來</ACTION_verb><TIME_justtime>一點</TIME_justtime>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(出來|出來了|出去|進去|拿出來|出|過來|下來|出了|進來|上來)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>出[^<]+</(ACTION_verb|VerbP)>(<TIME_(holiday|justtime|day|week|month|season|year|decade)>一點</TIME_(holiday|justtime|day|week|month|season|year|decade)>){1,10}"
+        },
+        "打了兩通": {
+            "id": "2cc838bf-846d-4cc1-8b1f-ef893ae16083",
+            "pos": "<ACTION_lightVerb>打</ACTION_lightVerb><ASPECT>了</ASPECT><ENTITY_num>兩</ENTITY_num><MODIFIER>通</MODIFIER>",
+            "lexy": [],
+            "pattern": "<ACTION_lightVerb>[^<]+</ACTION_lightVerb>(<ASPECT>[^<]+</ASPECT>)?<ENTITY_num>兩</ENTITY_num>(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?"
+        },
+        "教我一下": {
+            "id": "8dfb7ca4-3897-4982-b327-f25962e1699d",
+            "pos": "<ACTION_verb>教</ACTION_verb><ENTITY_pronoun>我</ENTITY_pronoun><ACTION_eventQuantifier>一下</ACTION_eventQuantifier>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(教|教授|教過|教給|教了|教導|教程|教席|講授|教會了|選修了)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>教</ACTION_verb><ENTITY_pronoun>[^<]+</ENTITY_pronoun><ACTION_eventQuantifier>[^<]+下</ACTION_eventQuantifier>"
+        },
+        "等一下我": {
+            "id": "091980b3-41e8-45d0-9533-933b00ad2eb1",
+            "pos": "<ACTION_verb>等</ACTION_verb><ENTITY_num>一</ENTITY_num><ENTITY_oov>下</ENTITY_oov><ENTITY_pronoun>我</ENTITY_pronoun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(等|久等|稍等|等候|等到|等待|等第|等級|候補|安排|待遇)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>等</(ACTION_verb|VerbP)><ENTITY_num>一</ENTITY_num><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>下</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><ENTITY_pronoun>[^<]+</ENTITY_pronoun>(?!<MODIFIER>)(?!<ACTION_verb>)(?!<FUNC_inner>[^還])"
+        },
+        "不要等一下": {
+            "id": "60a539ee-7109-41cd-b981-81c8b294a8a3",
+            "pos": "<FUNC_negation>不要</FUNC_negation><ACTION_verb>等</ACTION_verb><ENTITY_num>一</ENTITY_num><ENTITY_oov>下</ENTITY_oov>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(等|久等|稍等|等候|等到|等待|等第|等級|候補|安排|待遇)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<FUNC_negation>[^<]+</FUNC_negation><(ACTION_verb|VerbP)>等</(ACTION_verb|VerbP)><ENTITY_num>一</ENTITY_num><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>下</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "再來一下下": {
+            "id": "76e82161-f27d-4f5c-85d3-afbff9934de8",
+            "pos": "<MODIFIER>再</MODIFIER><ACTION_verb>來</ACTION_verb><ENTITY_num>一</ENTITY_num><ENTITY_oov>下下</ENTITY_oov>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(來|上來|下來|來到|前來|回來|進來|值來|性來|出來|去)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(MODIFIER|ModifierP)>再</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><ENTITY_num>一</ENTITY_num><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>下下</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "等一下再量": {
+            "id": "c8400f09-100d-4956-9ec9-19a68a4966fc",
+            "pos": "<ACTION_verb>等</ACTION_verb><ENTITY_num>一</ENTITY_num><ENTITY_oov>下</ENTITY_oov><MODIFIER>再</MODIFIER><ACTION_verb>量</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(等|久等|稍等|等候|等到|等待|等第|等級|候補|安排|待遇)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(量|估量|度量|測量|量度|量測|量身|估測|合算|掐算|推估)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>等</(ACTION_verb|VerbP)><ENTITY_num>一</ENTITY_num><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>下</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(MODIFIER|ModifierP)>再</(MODIFIER|ModifierP)><ACTION_verb>[^<]</ACTION_verb>"
+        },
+        "再量體溫一次": {
+            "id": "6bb93f3a-982e-4a55-8706-d6095224398c",
+            "pos": "<MODIFIER>再</MODIFIER><ACTION_verb>量</ACTION_verb><ENTITY_nouny>體溫</ENTITY_nouny><ACTION_eventQuantifier>一次</ACTION_eventQuantifier>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(量|估量|度量|測量|量度|量測|量身|估測|合算|掐算|推估)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<MODIFIER>再</MODIFIER><ACTION_verb>[^<]+</ACTION_verb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><ACTION_eventQuantifier>[^<]+次</ACTION_eventQuantifier>"
+        },
+        "再張開嘴巴一下": {
+            "id": "2f2b71c9-9bd1-4438-a4c8-52f51ab90176",
+            "pos": "<MODIFIER>再</MODIFIER><ACTION_verb>張開</ACTION_verb><ENTITY_nouny>嘴巴</ENTITY_nouny><ACTION_eventQuantifier>一下</ACTION_eventQuantifier>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(張開|張揚|擴張|傳播|公佈|公開|分佈|分發|分送|分配|刊印)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<MODIFIER>再</MODIFIER><ACTION_verb>[^<]+</ACTION_verb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><ACTION_eventQuantifier>[^<]+下</ACTION_eventQuantifier>"
         }
     },
     "alias": {},

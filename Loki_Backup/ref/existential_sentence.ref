@@ -77,6 +77,7 @@
             "學習時空",
             "客人",
             "小孩",
+            "維尼",
             "小熊維尼",
             "屋頂",
             "山上人家",
@@ -144,6 +145,7 @@
             "風",
             "飛比價格",
             "飛船",
+            "眼鏡",
             "馬崗厝",
             "（",
             "）"
@@ -164,7 +166,6 @@
             "泡一泡",
             "流血",
             "發高燒",
-            "看看",
             "闖關"
         ],
         "_schoolTW": [
@@ -12829,7 +12830,13 @@
             "id": "db91f883-6ed3-48cc-916e-0847732a5576",
             "pos": "<MODIFIER>有錢</MODIFIER>",
             "lexy": [],
-            "pattern": "(?<!<ACTION_verb>還</ACTION_verb>)(?<!<AUX>還是</AUX>)(?<!為什麼</CLAUSE_WhyQ>)<(MODIFIER|ModifierP)>有[^<]+</(MODIFIER|ModifierP)>(?!<CLAUSE_YesNoQ>嗎)(?!<FUNC_inner>的</FUNC_inner><CLAUSE_particle>喔</CLAUSE_particle>)"
+            "pattern": "(?<!<AUX>還是</AUX>)(?<!為什麼</CLAUSE_WhyQ>)<(MODIFIER|ModifierP)>有[^<]+</(MODIFIER|ModifierP)>(?!<CLAUSE_YesNoQ>嗎)(?!<FUNC_inner>的</FUNC_inner><CLAUSE_particle>喔</CLAUSE_particle>)"
+        },
+        "這有": {
+            "id": "9f59ab25-91af-4a27-8da0-cae51bec3e0a",
+            "pos": "<ENTITY_nouny>這有</ENTITY_nouny>",
+            "lexy": [],
+            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>這有</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(?!<VerbP>用)"
         },
         "有一瓶": {
             "id": "24a13d25-154b-493c-ae5e-65fe45de0d3b",
@@ -12837,7 +12844,103 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!<ACTION_verb>還</ACTION_verb>)(?<!<AUX>還是</AUX>)(?<!為什麼</CLAUSE_WhyQ>)(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>有</(ACTION_verb|VerbP)>(<ENTITY_classifier>[^<]+</ENTITY_classifier>|<DegreeP>很多</DegreeP>|<QUANTIFIER>許多</QUANTIFIER>|<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>)(?!<CLAUSE_YesNoQ>嗎)(?!<FUNC_inner>的</FUNC_inner><CLAUSE_particle>喔</CLAUSE_particle>)"
+            "pattern": "(?<!還</ACTION_verb>)(?<!<AUX>還是</AUX>)(?<!為什麼</CLAUSE_WhyQ>)(?<!</FUNC_negation>)(?<!</LOCATION>)(?<!</ENTITY\\_DetPhrase>)(?<!</MODIFIER><FUNC_inner>的</FUNC_inner>)(?<!才</ENTITY_nouny>)(?<!</MODIFIER_color>)(?<!</ENTITY_pronoun>)(?<!</RANGE_locality>)(?<!也</MODIFIER>)(?<!已經</ASPECT>)(?<!</MODAL>)<ACTION_verb>有</ACTION_verb>(<ENTITY_classifier>[^<輛些十眼]+</ENTITY_classifier>|<DegreeP>很多</DegreeP>|<QUANTIFIER>許多</QUANTIFIER>|<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>)(?!<IDIOM>)(?!<ENTITY_noun>人)(?!<ENTITY_nouny>[大小][^<])(?!<CLAUSE_YesNoQ>嗎)(?!<FUNC_inner>的</FUNC_inner><CLAUSE_particle>喔</CLAUSE_particle>)"
+        },
+        "這邊有": {
+            "id": "8310bf60-b47b-4678-9b25-5831bd8cf0ff",
+            "pos": "<LOCATION>這邊</LOCATION><ACTION_verb>有</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</ENTITY_pronoun>)<LOCATION>這邊</LOCATION><(ACTION_verb|VerbP)>有</(ACTION_verb|VerbP)>"
+        },
+        "還有ok繃": {
+            "id": "6bd39eb5-640c-41fc-b277-7e2dc0dd0960",
+            "pos": "<FUNC_conjunction>還有</FUNC_conjunction><ENTITY_oov>ok</ENTITY_oov><ENTITY_oov>繃</ENTITY_oov>",
+            "lexy": [],
+            "pattern": "<FUNC_conjunction>[^<]+有</FUNC_conjunction><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<藥警變王寶吐茄果手垃眼熊彎]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(?!<CLAUSE_YesNoQ>)"
+        },
+        "上面還有": {
+            "id": "8cb10a87-3328-4aa8-98dd-414834664ff9",
+            "pos": "<RANGE_locality>上面</RANGE_locality><FUNC_conjunction>還有</FUNC_conjunction>",
+            "lexy": [],
+            "pattern": "<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)><FUNC_conjunction>還有</FUNC_conjunction>"
+        },
+        "我們家有": {
+            "id": "99c40289-53ac-47c5-b22f-6fc2f9ef26f3",
+            "pos": "<ENTITY_possessive>我們</ENTITY_possessive><ENTITY_noun>家</ENTITY_noun><ACTION_verb>有</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(<ENTITY_possessive>[^<]+</ENTITY_possessive>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>家</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>有</(ACTION_verb|VerbP)>"
+        },
+        "有一個人": {
+            "id": "7cfa4bd4-3666-4cf9-bd83-0bb35b3392d9",
+            "pos": "<ACTION_verb>有</ACTION_verb><ENTITY_classifier>一個</ENTITY_classifier><ENTITY_noun>人</ENTITY_noun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>有</(ACTION_verb|VerbP)>(<ENTITY_classifier>[^<]+</ENTITY_classifier>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>人</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "有漱口水": {
+            "id": "96226e34-a709-4035-9cad-273cb8572d23",
+            "pos": "<ACTION_verb>有</ACTION_verb><ENTITY_nouny>漱口水</ENTITY_nouny>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>有</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>([^<]+[水菌]|可樂|[oO][kK])</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "裡面沒有": {
+            "id": "c8ee6d58-8774-41ab-88a7-9331846392ec",
+            "pos": "<RANGE_locality>裡面</RANGE_locality><FUNC_negation>沒有</FUNC_negation>",
+            "lexy": [],
+            "pattern": "<RANGE_locality>[^<]+</RANGE_locality><FUNC_negation>沒有</FUNC_negation>(?!<ENTITY_nouny>病)"
+        },
+        "這裡會有": {
+            "id": "38114895-68f3-46de-880d-fc15c5b900d4",
+            "pos": "<LOCATION>這裡</LOCATION><MODAL>會</MODAL><ACTION_verb>有</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<LOCATION>[^<]+</LOCATION><MODAL>[^<]+</MODAL><ACTION_verb>有</ACTION_verb>"
+        },
+        "可以有一個": {
+            "id": "da2e4e41-9674-4a74-9db5-d394f77eaf85",
+            "pos": "<MODAL>可以</MODAL><ACTION_verb>有</ACTION_verb><ENTITY_classifier>一個</ENTITY_classifier>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<MODAL>可以</MODAL><ACTION_verb>有</ACTION_verb><ENTITY_classifier>[^<]+</ENTITY_classifier>"
+        },
+        "外面有一個": {
+            "id": "af2e4e18-6f90-4a70-b32c-89f94a8ee3bd",
+            "pos": "<RANGE_locality>外面</RANGE_locality><ACTION_verb>有</ACTION_verb><ENTITY_classifier>一個</ENTITY_classifier>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<RANGE_locality>[^<]+</RANGE_locality><ACTION_verb>有</ACTION_verb><ENTITY_classifier>[^<]+</ENTITY_classifier>"
+        },
+        "捷運站才有": {
+            "id": "1deaa34f-d7cf-4e62-8507-249c3740a47a",
+            "pos": "<ENTITY_noun>捷運站</ENTITY_noun><MODAL>才</MODAL><ACTION_verb>有</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+站</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<MODAL>才</MODAL>)?<ACTION_verb>有</ACTION_verb>"
+        },
+        "這裡有兩個": {
+            "id": "985a4e50-f957-4ece-bb34-a864cf83a2e6",
+            "pos": "<LOCATION>這裡</LOCATION><ACTION_verb>有</ACTION_verb><ENTITY_classifier>兩個</ENTITY_classifier>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<LOCATION>[^<]+</LOCATION>(<MODIFIER>也</MODIFIER>)?<ACTION_verb>有</ACTION_verb>(<ENTITY_classifier>[^<]+</ENTITY_classifier>|<DegreeP>[^<]+</DegreeP>)"
+        },
+        "還有一個車": {
+            "id": "ee0ac247-30fd-40fd-8e5a-9166cb3753f0",
+            "pos": "<FUNC_conjunction>還有</FUNC_conjunction><ENTITY_classifier>一個</ENTITY_classifier><ENTITY_noun>車</ENTITY_noun>",
+            "lexy": [],
+            "pattern": "<FUNC_conjunction>[^<]+有</FUNC_conjunction><ENTITY_classifier>[^<]+</ENTITY_classifier><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<盤翅花垃]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
         "住了很多公主": {
             "id": "d04c6c17-7da4-4514-998e-774ef4abff35",
@@ -12845,7 +12948,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(住了|待了|居住了|坐了|等待了|躺了|度過了|住|逗留了|停留了|休息了)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<做多少]+了</(ACTION_verb|VerbP)>(<ENTITY_classifier>[^<]+</ENTITY_classifier>|<DegreeP>很多</DegreeP>|<QUANTIFIER>許多</QUANTIFIER>|<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>)"
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<做多少按]+了</(ACTION_verb|VerbP)>(<ENTITY_classifier>[^<]+</ENTITY_classifier>|<DegreeP>很多</DegreeP>|<QUANTIFIER>許多</QUANTIFIER>|<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>)"
         },
         "有車要進來了": {
             "id": "77a865ad-4afe-4f05-a1c5-cd2b20a746d7",
@@ -12855,7 +12958,24 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(要|想要|需要|想拿|想買|渴望|渴求|餓了|得照|需|更要)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(進來了|進入|進去|上來|下來|來到|供認|前來|回來|承認|招認)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!<ACTION_verb>還</ACTION_verb>)(?<!<AUX>還是</AUX>)(?<!為什麼</CLAUSE_WhyQ>)<(ACTION_verb|VerbP)>有</(ACTION_verb|VerbP)>(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>|<FUNC_inner>的</FUNC_inner>|<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)*?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(?!<CLAUSE_YesNoQ>嗎)(?!<FUNC_inner>的</FUNC_inner><CLAUSE_particle>喔</CLAUSE_particle>)"
+            "pattern": "(?<![還要]</ACTION_verb>)(?<!<AUX>還是</AUX>)(?<!為什麼</CLAUSE_WhyQ>)(?<!</CLAUSE_particle>)(?<!</MODAL>)(?<![家子]</ENTITY_noun>)(?<!</ENTITY_pronoun>)(?<!</ENTITY_nouny>)<ACTION_verb>有</ACTION_verb>(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>|<FUNC_inner>的</FUNC_inner>|<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)*?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<大小鏡味樂藥口鼻]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(?!<CLAUSE_YesNoQ>嗎)(?!<FUNC_negation>)(?!<FUNC_inner>的</FUNC_inner><CLAUSE_particle>喔</CLAUSE_particle>)"
+        },
+        "這樣才有五個": {
+            "id": "71fb0979-19bf-4cf4-8503-432a21c16382",
+            "pos": "<ENTITY_DetPhrase>這樣</ENTITY_DetPhrase><ENTITY_nouny>才</ENTITY_nouny><ACTION_verb>有</ACTION_verb><ENTITY_classifier>五個</ENTITY_classifier>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>才</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>有</(ACTION_verb|VerbP)><ENTITY_classifier>[^<]+</ENTITY_classifier>"
+        },
+        "都要有三角形": {
+            "id": "497d61e9-090c-4724-a2ff-6149a7a49679",
+            "pos": "<QUANTIFIER>都</QUANTIFIER><ACTION_verb>要</ACTION_verb><ACTION_verb>有</ACTION_verb><UserDefined>三角形</UserDefined>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(要|想要|需要|想拿|想買|渴望|渴求|餓了|得照|需|更要)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<QUANTIFIER>都</QUANTIFIER>(<ACTION_verb>要</ACTION_verb>)?<ACTION_verb>有</ACTION_verb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
         "地上躺著一隻狗": {
             "id": "5df2f194-31d2-4740-a0e5-653b3b376c3d",
@@ -12864,6 +12984,14 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(躺著|站著|躺|睡著|呆坐|放著|睡去|躺臥|鑽進|睡覺|坐到)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "(<RANGE_locality>[^<]+</RANGE_locality>|<LOCATION>[^<]+</LOCATION>)<(ACTION_verb|VerbP)>[^<]+著</(ACTION_verb|VerbP)>(<ENTITY_classifier>[^<]+</ENTITY_classifier>|<DegreeP>很多</DegreeP>|<QUANTIFIER>許多</QUANTIFIER>|<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>)"
+        },
+        "有一個細細長長的街": {
+            "id": "467dbe5a-2413-4954-a0ca-41c7dfcf28ed",
+            "pos": "<ACTION_verb>有</ACTION_verb><ENTITY_classifier>一個</ENTITY_classifier><IDIOM>細細長長</IDIOM><FUNC_inner>的</FUNC_inner><ENTITY_nouny>街</ENTITY_nouny>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>有</(ACTION_verb|VerbP)><ENTITY_classifier>[^<]+</ENTITY_classifier><IDIOM>[^<]+</IDIOM><FUNC_inner>的</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         }
     },
     "alias": {},

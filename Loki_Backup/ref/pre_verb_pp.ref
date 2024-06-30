@@ -77,6 +77,7 @@
             "學習時空",
             "客人",
             "小孩",
+            "維尼",
             "小熊維尼",
             "屋頂",
             "山上人家",
@@ -144,6 +145,7 @@
             "風",
             "飛比價格",
             "飛船",
+            "眼鏡",
             "馬崗厝",
             "（",
             "）"
@@ -164,7 +166,6 @@
             "泡一泡",
             "流血",
             "發高燒",
-            "看看",
             "闖關"
         ],
         "_schoolTW": [
@@ -12833,6 +12834,14 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(踢|玩踢|經抽|踢進|踢了|傳接|打球|有棒|練完|投接|愛踢)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "<(ACTION_verb|VerbP)>用</(ACTION_verb|VerbP)>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "跟你合": {
+            "id": "e318ad95-5835-48cc-9c11-8925d179fad5",
+            "pos": "<FUNC_conjunction>跟</FUNC_conjunction><ENTITY_pronoun>你</ENTITY_pronoun><ACTION_verb>合</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(合|合併|合圍|合攏|接合|聯合|併吞|侵吞|倒閉|兼併|加入)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<FUNC_conjunction>[跟和]</FUNC_conjunction><ENTITY_pronoun>[^<]+</ENTITY_pronoun><ACTION_verb>[^<]+?</ACTION_verb>"
         },
         "往前面蓋": {
             "id": "41e3ade0-fae1-44a9-a07e-e849d320e03a",

@@ -77,6 +77,7 @@
             "學習時空",
             "客人",
             "小孩",
+            "維尼",
             "小熊維尼",
             "屋頂",
             "山上人家",
@@ -144,6 +145,7 @@
             "風",
             "飛比價格",
             "飛船",
+            "眼鏡",
             "馬崗厝",
             "（",
             "）"
@@ -164,7 +166,6 @@
             "泡一泡",
             "流血",
             "發高燒",
-            "看看",
             "闖關"
         ],
         "_schoolTW": [
@@ -12825,13 +12826,25 @@
         ]
     },
     "utterance": {
+        "誰的ok": {
+            "id": "0ffe9105-e71a-478a-bad6-7cab1e461d7c",
+            "pos": "<CLAUSE_WhoQ>誰</CLAUSE_WhoQ><FUNC_inner>的</FUNC_inner><ENTITY_oov>ok</ENTITY_oov>",
+            "lexy": [],
+            "pattern": "<CLAUSE_WhoQ>[^<]+</CLAUSE_WhoQ><FUNC_inner>的</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "河的另": {
+            "id": "8013d2ca-3077-4747-9953-d2528b2ca27b",
+            "pos": "<ENTITY_oov>河</ENTITY_oov><FUNC_inner>的</FUNC_inner><MODIFIER>另</MODIFIER>",
+            "lexy": [],
+            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><FUNC_inner>的</FUNC_inner><(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>"
+        },
         "說的話": {
             "id": "b88219fd-fa53-413c-8e5f-c86023d38b29",
             "pos": "<ACTION_verb>說</ACTION_verb><FUNC_inner>的</FUNC_inner><ENTITY_nouny>話</ENTITY_nouny>",
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(說|演說|說話|宣判|拼讀|談到|辯護|說真|有說|講出|說過)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[說|講]</(ACTION_verb|VerbP)><FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>話</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+            "pattern": "<(ACTION_verb|VerbP)>[說|講]</(ACTION_verb|VerbP)><FUNC_inner>的</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>話</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
         "你的工作": {
             "id": "484bfc39-867a-4547-93cc-cefe324996e7",
@@ -12839,13 +12852,73 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(工作|勞動|賣笑|運轉|打工|拍戲|工作過|兼職|休假|工作了|待業)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><(ACTION_verb|VerbP)>工作</(ACTION_verb|VerbP)>"
+            "pattern": "<FUNC_inner>的</FUNC_inner><(ACTION_verb|VerbP)>工作</(ACTION_verb|VerbP)>"
+        },
+        "你的這邊": {
+            "id": "d40d481e-c610-498a-aaa4-09a19b222e05",
+            "pos": "<ENTITY_pronoun>你</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><LOCATION>這邊</LOCATION>",
+            "lexy": [],
+            "pattern": "<ENTITY_pronoun>[^<]+</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><LOCATION>[^<]+</LOCATION>"
+        },
+        "假的剪刀": {
+            "id": "756daf15-7314-465e-b6cc-29a45ce2b41a",
+            "pos": "<MODIFIER>假</MODIFIER><FUNC_inner>的</FUNC_inner><ENTITY_nouny>剪刀</ENTITY_nouny>",
+            "lexy": [],
+            "pattern": "(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>|<MODIFIER_color>[^<]+</MODIFIER_color>|<QUANTIFIER>[^<]+</QUANTIFIER>)<FUNC_inner>的</FUNC_inner>(<MODIFIER_color>[^<]+</MODIFIER_color>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<來去出入扁有]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "很苦的藥": {
+            "id": "3a89ebdf-3bc7-44c4-8e50-945a29f36eef",
+            "pos": "<DegreeP>很苦</DegreeP><FUNC_inner>的</FUNC_inner><UserDefined>藥</UserDefined>",
+            "lexy": [],
+            "pattern": "</DegreeP><FUNC_inner>的</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "我的平板": {
+            "id": "d6d14dc1-b002-4802-8b98-76c5ecdd874e",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><ENTITY_noun>平板</ENTITY_noun>",
+            "lexy": [],
+            "pattern": "<ENTITY_pronoun>[^<]+</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<拖眼擺]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "我的後面": {
+            "id": "783c0125-8e6f-4adb-aebe-37b68a1ae157",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><RANGE_locality>後面</RANGE_locality>",
+            "lexy": [],
+            "pattern": "<ENTITY_pronoun>[^<]+</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>"
         },
         "我的東西": {
             "id": "8082291e-9ab7-4ade-8d3c-c2b1a02d8ae7",
             "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><UserDefined>東西</UserDefined>",
             "lexy": [],
-            "pattern": "(?<!<ACTION_verb>[^<]</ACTION_verb><ENTITY_nounHead>[^<]</ENTITY_nounHead>)(?<!<ACTION_verb>[^<]</ACTION_verb><ENTITY_nouny>[^<]{2}</ENTITY_nouny>)(?<!<ACTION_verb>[<^]</ACTION_verb><ENTITY_noun>[^<]{2}</ENTITY_noun>)(?<!</FUNC_in(ner|ter)>)(?<!</ACTION_verb>)(?<!</Verb_P>)(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>|<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)<FUNC_inner>的</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+            "pattern": "(?<!<ACTION_verb>[^<]</ACTION_verb><ENTITY_nounHead>[^<]</ENTITY_nounHead>)(?<!<ACTION_verb>[^<]</ACTION_verb><ENTITY_nouny>[^<]{2}</ENTITY_nouny>)(?<!<ACTION_verb>[<^]</ACTION_verb><ENTITY_noun>[^<]{2}</ENTITY_noun>)(?<!</FUNC_in(ner|ter)>)(?<!</ACTION_verb>)(?<!</Verb_P>)<ENTITY_pronoun>[^<]+</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<有話拖擺]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "我的綠色": {
+            "id": "fb0b3809-7f6b-45cb-a570-a3cf4e0789de",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><MODIFIER_color>綠色</MODIFIER_color>",
+            "lexy": [],
+            "pattern": "<ENTITY_pronoun>[^<]+</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><MODIFIER_color>[^<]+</MODIFIER_color>"
+        },
+        "我的這個": {
+            "id": "491db0e8-0e19-407e-b9cc-8716a6dd9752",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><ENTITY_DetPhrase>這個</ENTITY_DetPhrase>",
+            "lexy": [],
+            "pattern": "(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>|<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)<FUNC_inner>的</FUNC_inner><ENTITY_DetPhrase>[^<樣]+</ENTITY_DetPhrase>"
+        },
+        "月亮的家": {
+            "id": "1debeb40-7314-4d25-a890-1d3ba34c96e2",
+            "pos": "<LOCATION>月亮</LOCATION><FUNC_inner>的</FUNC_inner><ENTITY_noun>家</ENTITY_noun>",
+            "lexy": [],
+            "pattern": "<LOCATION>[^<]+</LOCATION><FUNC_inner>的</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "牠的眼睛": {
+            "id": "29fa9abd-53ea-471d-b56c-06efacacdfbb",
+            "pos": "<ENTITY_pronoun>牠</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><ENTITY_nouny>眼睛</ENTITY_nouny>",
+            "lexy": [],
+            "pattern": "<ENTITY_pronoun>牠</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>眼睛</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "獅子的家": {
+            "id": "5275fbbe-000b-4697-80e5-cf9e07c68541",
+            "pos": "<ENTITY_oov>獅子</ENTITY_oov><FUNC_inner>的</FUNC_inner><ENTITY_noun>家</ENTITY_noun>",
+            "lexy": [],
+            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<蒸]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><FUNC_inner>的</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<有話]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
         "用掉的你": {
             "id": "a0f38bbb-7f01-458a-ad0b-e9c90cb8dd5a",
@@ -12853,7 +12926,69 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(用掉|花掉|存了|用完|籌到|賣了|用完了|用罄|募到|賺進|丟掉)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><ENTITY_pronoun>[^<]+</ENTITY_pronoun>(?!<(ACTION_verb|VerbP)>知道</(ACTION_verb|VerbP)><CLAUSE_YesNoQ>[^<]+</CLAUSE_YesNoQ>)"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_inner>的</FUNC_inner><ENTITY_pronoun>[^<]+</ENTITY_pronoun>(?!<(ACTION_verb|VerbP)>知道</(ACTION_verb|VerbP)><CLAUSE_YesNoQ>[^<]+</CLAUSE_YesNoQ>)"
+        },
+        "一樣的顏色": {
+            "id": "b4c95322-4d88-40a8-b4d1-6b58a8aca177",
+            "pos": "<ENTITY_classifier>一樣</ENTITY_classifier><FUNC_inner>的</FUNC_inner><ENTITY_nouny>顏色</ENTITY_nouny>",
+            "lexy": [],
+            "pattern": "<ENTITY_classifier>[^<]+</ENTITY_classifier><FUNC_inner>的</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "一零一的底": {
+            "id": "41cf269a-ffd0-479b-a198-67872fb8264c",
+            "pos": "<ENTITY_num>一零一</ENTITY_num><FUNC_inner>的</FUNC_inner><ENTITY_nouny>底</ENTITY_nouny>",
+            "lexy": [],
+            "pattern": "<ENTITY_num>[^<]+</ENTITY_num><FUNC_inner>的</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "不好的東西": {
+            "id": "52ccf0c7-0994-49f8-a838-3736fcda61aa",
+            "pos": "<FUNC_negation>不</FUNC_negation><FUNC_degreeHead>好</FUNC_degreeHead><FUNC_inner>的</FUNC_inner><UserDefined>東西</UserDefined>",
+            "lexy": [],
+            "pattern": "<FUNC_negation>[^<]+</FUNC_negation><FUNC_degreeHead>[^<]+</FUNC_degreeHead><FUNC_inner>的</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "他們的媽媽": {
+            "id": "3218631c-99ef-4892-96ae-a7dd22a70781",
+            "pos": "<ENTITY_pronoun>他們</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><ENTITY_pronoun>媽媽</ENTITY_pronoun>",
+            "lexy": [],
+            "pattern": "<ENTITY_pronoun>[^<]+</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><ENTITY_pronoun>[^<]+</ENTITY_pronoun>"
+        },
+        "他的第五腳": {
+            "id": "854c6910-a42f-4d99-bafb-f2ff9b3f75b4",
+            "pos": "<ENTITY_pronoun>他</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><MODIFIER>第五</MODIFIER><ENTITY_noun>腳</ENTITY_noun>",
+            "lexy": [],
+            "pattern": "<ENTITY_pronoun>[^<]+</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "切人類的肉": {
+            "id": "c22af9dc-acac-42ba-b75e-ab70e310b090",
+            "pos": "<ACTION_verb>切</ACTION_verb><ENTITY_noun>人類</ENTITY_noun><FUNC_inner>的</FUNC_inner><ENTITY_nounHead>肉</ENTITY_nounHead>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(切|扎|更紮|有切|紮|有紮|闊勒|佩|更扎|方切|切著)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<蒸]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><FUNC_inner>的</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "城堡的上面": {
+            "id": "9deeb5d6-be4a-4979-8b16-0a54d6dd4069",
+            "pos": "<ENTITY_noun>城堡</ENTITY_noun><FUNC_inner>的</FUNC_inner><RANGE_locality>上面</RANGE_locality>",
+            "lexy": [],
+            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><FUNC_inner>的</FUNC_inner><RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>"
+        },
+        "小小的時候": {
+            "id": "f666b3d4-6c52-46ef-8609-6f61dd9f5edd",
+            "pos": "<MODIFIER>小小</MODIFIER><FUNC_inner>的</FUNC_inner><TIME_justtime>時候</TIME_justtime>",
+            "lexy": [],
+            "pattern": "<(MODIFIER|ModifierP)>[^<大]+</(MODIFIER|ModifierP)><FUNC_inner>的</FUNC_inner>(<TIME_(holiday|justtime|day|week|month|season|year|decade)>[^<]+</TIME_(holiday|justtime|day|week|month|season|year|decade)>)"
+        },
+        "紫色的這個": {
+            "id": "5dd9d80f-e1ce-4d61-9b33-05d2abcd8552",
+            "pos": "<MODIFIER_color>紫色</MODIFIER_color><FUNC_inner>的</FUNC_inner><ENTITY_DetPhrase>這個</ENTITY_DetPhrase>",
+            "lexy": [],
+            "pattern": "(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>|<MODIFIER_color>[^<]+</MODIFIER_color>|<QUANTIFIER>[^<]+</QUANTIFIER>)<FUNC_inner>的</FUNC_inner><ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>(?!<AUX>是)"
+        },
+        "裡面的東西": {
+            "id": "0a409fd0-e2fd-4668-836a-f00f78c50cb7",
+            "pos": "<RANGE_locality>裡面</RANGE_locality><FUNC_inner>的</FUNC_inner><UserDefined>東西</UserDefined>",
+            "lexy": [],
+            "pattern": "<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)><FUNC_inner>的</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<擺]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
         "開心的跑著": {
             "id": "960bbdf3-1c69-4682-9c4b-e6d9f59e3b86",
@@ -12861,7 +12996,13 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(跑著|走著|發愣|踩著|跑起來|繞了|滾到|跳來|呆坐|走去|望著)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(MODIFIER|ModifierP)>[^<大小方圓長短胖瘦]+</(MODIFIER|ModifierP)><FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+            "pattern": "<(MODIFIER|ModifierP)>[^<大小方圓長短胖瘦]+</(MODIFIER|ModifierP)><FUNC_inner>的</FUNC_inner><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "指指看的遊戲": {
+            "id": "337414a2-8ba7-429e-be6b-9c33a6a9bf74",
+            "pos": "<ACTION_quantifiedVerb>指指看</ACTION_quantifiedVerb><FUNC_inner>的</FUNC_inner><ENTITY_noun>遊戲</ENTITY_noun>",
+            "lexy": [],
+            "pattern": "<ACTION_quantifiedVerb>[^<]+</ACTION_quantifiedVerb><FUNC_inner>的</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
         "放出來的玩具": {
             "id": "84ebbe6e-e754-427e-9255-1b7027c61657",
@@ -12869,7 +13010,31 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(放出來|救出來|關起來|抓起來|推下去|拉出來|抓回|送出去|吃掉了|打昏|丟到)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov|DetPhrase))>((?!(知道|有|剪|舉|話|擺|扁)).)+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|DetPhrase))>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_inner>的</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov|DetPhrase))>((?!(知道|有|剪|舉|話|擺|扁)).)+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|DetPhrase))>"
+        },
+        "綠色的圓圓的": {
+            "id": "b481859f-4e39-49a8-8029-506ce27b073b",
+            "pos": "<MODIFIER_color>綠色</MODIFIER_color><FUNC_inner>的</FUNC_inner><MODIFIER>圓圓</MODIFIER><FUNC_inner>的</FUNC_inner>",
+            "lexy": [],
+            "pattern": "<MODIFIER_color>[^<]+</MODIFIER_color><FUNC_inner>的</FUNC_inner><(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>"
+        },
+        "這一種的東西": {
+            "id": "9787e534-062c-4c4d-b244-cb3ecac13503",
+            "pos": "<ENTITY_DetPhrase>這一種</ENTITY_DetPhrase><FUNC_inner>的</FUNC_inner><UserDefined>東西</UserDefined>",
+            "lexy": [],
+            "pattern": "<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase><FUNC_inner>的</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "這樣子的這個": {
+            "id": "56272418-b499-4fc5-9a5b-15ff8783b38d",
+            "pos": "<FUNC_determiner>這</FUNC_determiner><ENTITY_noun>樣子</ENTITY_noun><FUNC_inner>的</FUNC_inner><ENTITY_DetPhrase>這個</ENTITY_DetPhrase>",
+            "lexy": [],
+            "pattern": "<FUNC_determiner>[^<]+</FUNC_determiner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><FUNC_inner>的</FUNC_inner><ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>"
+        },
+        "一模一樣的剪刀": {
+            "id": "f635107e-013d-465a-a739-71d493c2d014",
+            "pos": "<IDIOM>一模一樣</IDIOM><FUNC_inner>的</FUNC_inner><ENTITY_nouny>剪刀</ENTITY_nouny>",
+            "lexy": [],
+            "pattern": "<IDIOM>[^<]+</IDIOM><FUNC_inner>的</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
         "這裡是機器人關卡的游戲": {
             "id": "79096b88-efde-4ef8-9dce-dcfd7bcd5ba2",
@@ -12877,7 +13042,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(游戲|集換|捲軸|跨平)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<FUNC_in(ner|ter)>的</FUNC_in(ner|ter)><(ACTION_verb|VerbP)>游戲</(ACTION_verb|VerbP)>"
+            "pattern": "<FUNC_inner>的</FUNC_inner><(ACTION_verb|VerbP)>游戲</(ACTION_verb|VerbP)>"
         }
     },
     "alias": {},
