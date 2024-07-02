@@ -121,7 +121,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["結果補語"].append(1)
-        
+
     if utterance == "曡完":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -205,7 +205,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["結果補語"].append(1)
-        
+
     if utterance == "說錯了":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -217,7 +217,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["結果補語"].append(1)
-        
+
     if utterance == "夾起來":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -247,7 +247,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["結果補語"].append(1)
-        
+
     if utterance == "拼起來":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)

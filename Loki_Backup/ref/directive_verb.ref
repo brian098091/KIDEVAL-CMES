@@ -77,6 +77,7 @@
             "學習時空",
             "客人",
             "小孩",
+            "維尼",
             "小熊維尼",
             "屋頂",
             "山上人家",
@@ -144,6 +145,7 @@
             "風",
             "飛比價格",
             "飛船",
+            "眼鏡",
             "馬崗厝",
             "（",
             "）"
@@ -164,7 +166,6 @@
             "泡一泡",
             "流血",
             "發高燒",
-            "看看",
             "闖關"
         ],
         "_schoolTW": [
@@ -12831,7 +12832,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(去|要去|回去|想去|去了|跑去|回來|跑來|趕去|出去|來)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<RANGE_locality>[上下]</RANGE_locality><(ACTION_verb|VerbP)>去</(ACTION_verb|VerbP)>"
+            "pattern": "(?<!</FUNC_negation>)<RANGE_locality>[上下]</RANGE_locality><(ACTION_verb|VerbP)>去</(ACTION_verb|VerbP)>"
         },
         "回去": {
             "id": "cce5ba8a-a2b9-4eb9-8c77-c04735bc9ff5",
@@ -12839,7 +12840,31 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(回去|回來|回報|回擊|回敬|回老家|回返|回饋|返回|退回|報答)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</ACTION_verb>)(<ACTION_verb>要</ACTION_verb>)?<(ACTION_verb|VerbP)>[回過進出][來去]了?</(ACTION_verb|VerbP)>"
+            "pattern": "(?<!</ACTION_verb>)(<ACTION_verb>要</ACTION_verb>)?(?<!誰</CLAUSE_whoQ>)(?<!</FUNC_negation>)(?<!</AUX>)<(ACTION_verb|VerbP)>[回進出][來去]了?</(ACTION_verb|VerbP)>(?!<ACTION_verb>)"
+        },
+        "發出": {
+            "id": "9b331d37-e1ed-4c9d-8a4f-52672cda9a84",
+            "pos": "<ACTION_verb>發出</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(發出|作出|做出|出具|出動|出聲|寄出|射出|派出|釋出|下令)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>發出</ACTION_verb>"
+        },
+        "進門": {
+            "id": "fe0eaaab-c698-456c-a963-8ce9e42e9c89",
+            "pos": "<ACTION_verb>進門</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(進門|進屋|坐下|進房|離去|走進去|回宮|跑開|喝醉|開門|進宮)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>[進出回來去過起][^家房站發國車事帳錢來去床關]</ACTION_verb>(?!<ACTION_verb>)"
+        },
+        "倒進去": {
+            "id": "35bb630a-5058-4a42-8a78-15bc8453e0d1",
+            "pos": "<ACTION_verb>倒進去</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(倒進去|停好|燒融|停進去|塗裹|冰鋪|挑入|舀到|停滿了|沐浴膠|撈上來)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>倒進去</ACTION_verb>"
         },
         "叉起來": {
             "id": "419923e4-24ec-44f9-b088-243fb4ba87c6",
@@ -12849,13 +12874,31 @@
             ],
             "pattern": "<ENTITY_oov>叉</ENTITY_oov><(ACTION_verb|VerbP)>起來</(ACTION_verb|VerbP)>"
         },
+        "回去拿": {
+            "id": "826c3d85-a4b3-4d32-9e15-b6b8db621f44",
+            "pos": "<ACTION_verb>回去</ACTION_verb><ACTION_verb>拿</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(回去|回來|回報|回擊|回敬|回老家|回返|回饋|返回|退回|報答)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(拿|捉拿|捕拿|懂得|抓包|抓姦|捉住|捉姦|捕捉|捕撈|捕獲)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>回去</ACTION_verb><ACTION_verb>拿</ACTION_verb>"
+        },
         "拿出來": {
             "id": "91bdd52e-31b5-4edb-9c1e-6a98c9641197",
             "pos": "<ACTION_verb>拿出來</ACTION_verb>",
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(拿出來|拿去|拿來|藏起來|放進去|收起來|拿起來|送出去|講出來|拿回來|翻出來)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!<ACTION_verb>固定</ACTION_verb>)<(ACTION_verb|VerbP)>[^<有響帶想回修接起連越讓要縫重用貼過看不拼收做合黏綁關包]+[上下進出回過起]?來了?</(ACTION_verb|VerbP)>"
+            "pattern": "(?<!<ACTION_verb>固定</ACTION_verb>)<(ACTION_verb|VerbP)>[^<有響帶想回修接起連越讓要縫蓋重用貼過看不拼收做合黏綁關包抓捉疊]+[上下進出回過起]?來了?</(ACTION_verb|VerbP)>"
+        },
+        "滾過去": {
+            "id": "c061228a-d1d4-4704-bbb9-a34b931de8e8",
+            "pos": "<ACTION_verb>滾</ACTION_verb><ACTION_verb>過去</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(滾|捶|滾了|棒敲|帶跑|破近|搥|進單|野滾|伸卡|攪)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(過去|逝去)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>滾</ACTION_verb><ACTION_verb>過[來去]</ACTION_verb>"
         },
         "走進去": {
             "id": "e06b48d7-e0a0-4403-90c3-496984632124",
@@ -12863,7 +12906,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(走進去|坐到|坐下|躺下|走近|走進來|閉嘴|睡覺了|坐上去|抽了|睡覺)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<有響帶想回修接起連越讓要貼聽看不要出得]+[上下進出回過]?去</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<有響帶想回修接起連越讓要貼聽看不要出得亂髒壞剪切割破倒炸弄拿歪]+[上下進出回過掉][去來了]</(ACTION_verb|VerbP)>"
         },
         "走進門": {
             "id": "eda9db10-0e98-4017-9418-a805ee4eb120",
@@ -12873,6 +12916,15 @@
             ],
             "pattern": "<(ACTION_verb|VerbP)>[^<響帶想回修接起連越讓要縫貼過不拼收做合黏綁關蓋包看聽]+[進出]</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
+        "走過去": {
+            "id": "f08498d4-0170-488b-bf84-b662c721f1ce",
+            "pos": "<ACTION_verb>走</ACTION_verb><ACTION_verb>過去</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(走|出走|溜走|行走|走入|走出|走動|走去|走掉|走步|走秀)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(過去|逝去)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>走</ACTION_verb><ACTION_verb>過去</ACTION_verb>"
+        },
         "跳過來": {
             "id": "e9afccf5-1121-49b9-9170-fba752b6b2a4",
             "pos": "<ACTION_verb>跳</ACTION_verb><ACTION_verb>過來</ACTION_verb>",
@@ -12880,7 +12932,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(跳|彈跳|跳出|跳動|跳級|跳躍|跳進|跳閘|跳電|蹦跳|暴漲)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(過來|過來了|回來|出去|出來|回去|進來|出來了|跑出來|下來|上來)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<有響帶想回修接起連越讓要縫重用貼過看不拼收做合黏綁關蓋包]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>(過來|出去)</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<有響帶想回修接起連越讓要縫重用貼過看不拼收做合黏綁關蓋包]+</(ACTION_verb|VerbP)><ACTION_verb>(過來|[出進]去)</ACTION_verb>"
         },
         "進來了": {
             "id": "4f54a783-f6c9-4c4c-9844-6c9756236ffd",
@@ -12888,7 +12940,16 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(進來了|進入|進去|上來|下來|來到|供認|前來|回來|承認|招認)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</MODIFIER_color>)(?<!不</FUNC_negation>)(?<!</ACTION_verb>)<(ACTION_verb|VerbP)>[^<要回][來去]了?</(ACTION_verb|VerbP)>"
+            "pattern": "(?<!</MODIFIER_color>)(?<!不</FUNC_negation>)(?<!</ACTION_verb>)(?<!連</FUNC_inner>)(?<!</AUX>)<(ACTION_verb|VerbP)>[^<要回][來去]了?</(ACTION_verb|VerbP)>(?!<ACTION_verb>)(?!<LOCATION>)"
+        },
+        "進去叫": {
+            "id": "e36590af-ac27-4844-a33d-5e03def5c5be",
+            "pos": "<ACTION_verb>進去</ACTION_verb><ACTION_verb>叫</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(進去|進來|進入|拿出來|藏起來|回來|跑出來|回去|出去|進去了|拿起來)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(叫|叫作|叫喊|呼叫|傳呼|傳見|召開|吆喝|呼召|嗔喝|宣告)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>進去</ACTION_verb><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "帶他們來": {
             "id": "b4f35309-e5fc-442d-b027-d72925063b4b",
@@ -12897,7 +12958,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(帶|佩帶|夾帶|帶病|帶走|挾帶|攜帶|隨帶|佩戴|承接|披掛)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(來|上來|下來|來到|前來|回來|進來|值來|性來|出來|去)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))><(ACTION_verb|VerbP)>來</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>[^<我]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))><(ACTION_verb|VerbP)>[來去]</(ACTION_verb|VerbP)>(?!<ENTITY_pronoun>)(?!<FUNC_inner>的)(?!<ACTION_verb>)"
         },
         "玩回來了": {
             "id": "e7dd4086-9992-452d-bde5-3138c59253b9",
@@ -12906,7 +12967,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(玩|玩忽|玩狎|玩著|玩樂|買東西|散步|遊玩|打電動|玩了|玩耍)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(回來了|回去|回報|回擊|回敬|回返|回饋|返回|退回|上來|下來)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>回來了?</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>回[來去]了?</(ACTION_verb|VerbP)>"
         },
         "飛不起來": {
             "id": "aea3dad4-dc3a-4cc9-9e8e-f995a052e60e",
@@ -12914,7 +12975,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(飛不起來|扭屁股|照做了|貪嘴|做窩|中暑了|想跳過|復合了|惹哭|釀醋|照做)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<蓋有響帶想回修接起連越讓要縫貼過不拼收做合黏綁關包看聽]+不[上下進出回過起][來去]</(ACTION_verb|VerbP)>"
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<蓋有響帶想回修接起連越讓要縫貼過不拼收做合黏拔綁關包看聽]+不[上下進出回過起][來去]</(ACTION_verb|VerbP)>"
         },
         "他要起來了": {
             "id": "a94bf2eb-2003-4bbc-9218-eea99d826588",
@@ -12960,6 +13021,15 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(去|要去|回去|想去|去了|跑去|回來|跑來|趕去|出去|來)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "<(ACTION_verb|VerbP)>[^<有響帶想回修接起連越讓要縫貼過不拼收做合黏綁關蓋包看聽]+[上下進出回]</(ACTION_verb|VerbP)>(<ENTITY_classifier>[^<]+</ENTITY_classifier>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>去</(ACTION_verb|VerbP)>"
+        },
+        "從上面飛過去": {
+            "id": "a7d18084-f1b6-4bdc-b74b-99b7ea0e5386",
+            "pos": "<FUNC_inner>從</FUNC_inner><RANGE_locality>上面</RANGE_locality><ACTION_verb>飛</ACTION_verb><ACTION_verb>過去</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(飛|飛出|飛揚|飛翔|飛越|集飛|有飛|正飛|直飛|發開|特飛)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(過去|逝去)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)><ACTION_verb>[^<]+</ACTION_verb><ACTION_verb>過去</ACTION_verb>"
         },
         "拿一本書出來": {
             "id": "cc7ef313-0963-4942-a233-7c03f6802c3e",

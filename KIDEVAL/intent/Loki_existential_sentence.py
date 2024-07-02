@@ -56,41 +56,149 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["存現句"].append(1)
-            
+
     if utterance == "有錢":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["存現句"].append(1)
-            
+
     if utterance == "住了很多公主":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["存現句"].append(1)
-            
+
     if utterance == "地上躺著一隻狗":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["存現句"].append(1)
-            
+
     if utterance == "還有車":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["存現句"].append(1)
-            
+
     if utterance == "還有一個":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["存現句"].append(1)
-            
+
+    if utterance == "上面還有":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["存現句"].append(1)
+
+    if utterance == "外面有一個":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["存現句"].append(1)
+
+    if utterance == "我們家有":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["存現句"].append(1)
+
+    if utterance == "有一個人":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["存現句"].append(1)
+
+    if utterance == "裡面沒有":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["存現句"].append(1)
+
+    if utterance == "這有":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["存現句"].append(1)
+
+    if utterance == "這裡會有":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["存現句"].append(1)
+
+    if utterance == "這裡有兩個":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["存現句"].append(1)
+
+    if utterance == "這邊有":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["存現句"].append(1)
+
+    if utterance == "還有一個車":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["存現句"].append(1)
+
+    if utterance == "才有五個":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["存現句"].append(1)
+
+    if utterance == "捷運站才有":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["存現句"].append(1)
+
+    if utterance == "還有ok繃":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["存現句"].append(1)
+
+    if utterance == "有一個細細長長的街":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["存現句"].append(1)
+
+    if utterance == "有漱口水":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["存現句"].append(1)
+
+    if utterance == "可以有一個":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["存現句"].append(1)
+
+    if utterance == "這樣才有五個":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["存現句"].append(1)
+
+    if utterance == "都要有三角形":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["存現句"].append(1)
+
     if utterance == "有車要進來了":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["存現句"].append(1)        
+            resultDICT["存現句"].append(1)
 
     return resultDICT

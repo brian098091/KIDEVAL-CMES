@@ -3,7 +3,7 @@
     "type": "advance",
     "version": {
         "atk": "v269",
-        "intent": "1.0"
+        "intent": "0066d0f"
     },
     "user_defined": {
         "_FAC": [
@@ -77,6 +77,7 @@
             "學習時空",
             "客人",
             "小孩",
+            "維尼",
             "小熊維尼",
             "屋頂",
             "山上人家",
@@ -144,6 +145,7 @@
             "風",
             "飛比價格",
             "飛船",
+            "眼鏡",
             "馬崗厝",
             "（",
             "）"
@@ -164,7 +166,6 @@
             "泡一泡",
             "流血",
             "發高燒",
-            "看看",
             "闖關"
         ],
         "_schoolTW": [
@@ -12825,6 +12826,18 @@
         ]
     },
     "utterance": {
+        "所以": {
+            "id": "696934aa-dc24-450a-97ea-b5f675a7d2b3",
+            "pos": "<FUNC_inter>所以</FUNC_inter>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>(因為|所以|[可但]是)</FUNC_inter>"
+        },
+        "然後": {
+            "id": "23962738-505b-4108-9c96-05769e83a6c0",
+            "pos": "<FUNC_inter>然後</FUNC_inter>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>然後</FUNC_inter>(?!<ACTION_verb>)(?!<ACTION_eventQuantifier>)(?!<FUNC_inner>就)(?!<ENTITY_pronoun>)(?!<CLAUSE_particle>)(?!<ENTITY_noun>湯)(?!<FUNC_conjunction>)(?!<MODIFIER>[再小])(?!<LOCATION>[這那][裡邊]</LOCATION><AUX>)(?!<LOCATION>[這那][裡邊]</LOCATION><ACTION_verb>[有住]<)(?!<FUNC_determiner>[^<]</FUNC_determiner><AUX>)"
+        },
         "可是這": {
             "id": "7a1f0fe9-9fbc-4858-8fc3-c66d7bb2d822",
             "pos": "<FUNC_inter>可是</FUNC_inter><FUNC_determiner>這</FUNC_determiner>",
@@ -12841,7 +12854,16 @@
             "id": "d47db7dc-3a9b-4909-9ded-9dae9c9b3f6c",
             "pos": "<FUNC_inter>然後</FUNC_inter><CLAUSE_particle>呢</CLAUSE_particle>",
             "lexy": [],
-            "pattern": "<FUNC_inter>[^<因如可]+</FUNC_inter><CLAUSE_particle>[^<]+</CLAUSE_particle>"
+            "pattern": "<FUNC_inter>然後</FUNC_inter><CLAUSE_particle>[^<]+</CLAUSE_particle>(?!<ACTION_verb>有</ACTION_verb>)(?!<MODIFIER>再)"
+        },
+        "給你吃": {
+            "id": "3a4e92b9-6d5d-47e4-998a-3b78ed6d5131",
+            "pos": "<ACTION_verb>給</ACTION_verb><ENTITY_pronoun>你</ENTITY_pronoun><ACTION_verb>吃</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(給|供給|帶給|提供|發放|資助|給老|交給|留給|給聖|分給)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃|吃掉|吸收|攝入|耗損|花掉|煮|啃|吃著|喝|常吃)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>給</ACTION_verb>((<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)|(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>))<ACTION_verb>吃</ACTION_verb>"
         },
         "如果下雨": {
             "id": "598300e1-c797-45f3-b3c6-fb7136390fea",
@@ -12851,11 +12873,41 @@
             ],
             "pattern": "^<FUNC_in(ner|ter)>(如果|除非|但是|否則|不過|而且|但|因為|所以)</FUNC_in(ner|ter)>(?!<ACTION_verb>[有變]</ACTION_verb>)(?!<FUNC_inner>就)(?!<ENTITY_pronoun>)(?!<AUX>就)(?!$)"
         },
+        "所以不要": {
+            "id": "aacdbd3e-45f6-4115-8c97-c6639cc6913a",
+            "pos": "<FUNC_inter>所以</FUNC_inter><FUNC_negation>不要</FUNC_negation>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>所以</FUNC_inter><FUNC_negation>[^<]+要</FUNC_negation>"
+        },
         "然後如果": {
             "id": "afcade35-a577-493a-9301-59c9bf4e0d4b",
             "pos": "<FUNC_inter>然後</FUNC_inter><FUNC_inter>如果</FUNC_inter>",
             "lexy": [],
             "pattern": "<FUNC_inter>[^<]+</FUNC_inter><FUNC_inter>[^<]+</FUNC_inter>"
+        },
+        "然後我再": {
+            "id": "b79de243-2d05-4555-a720-8aea6253ec18",
+            "pos": "<FUNC_inter>然後</FUNC_inter><ENTITY_pronoun>我</ENTITY_pronoun><MODIFIER>再</MODIFIER>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>然後</FUNC_inter><ENTITY_pronoun>[^<]+</ENTITY_pronoun><(MODIFIER|ModifierP)>再</(MODIFIER|ModifierP)>"
+        },
+        "然後我把": {
+            "id": "305a091b-724f-4c8f-99a7-b0942b1baefd",
+            "pos": "<FUNC_inter>然後</FUNC_inter><ENTITY_pronoun>我</ENTITY_pronoun><ACTION_lightVerb>把</ACTION_lightVerb>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>然後</FUNC_inter><ENTITY_pronoun>[^<]+</ENTITY_pronoun><ACTION_lightVerb>[^<]+</ACTION_lightVerb>"
+        },
+        "囉可是不夠": {
+            "id": "ff692ba8-e31a-4341-a4b8-fa72c997536f",
+            "pos": "<CLAUSE_particle>囉</CLAUSE_particle><ENTITY_oov>可</ENTITY_oov><AUX>是</AUX><MODIFIER>不夠</MODIFIER>",
+            "lexy": [],
+            "pattern": "<CLAUSE_particle>[^<]+</CLAUSE_particle><ENTITY_oov>可</ENTITY_oov><AUX>是</AUX><MODIFIER>[^<]+夠</MODIFIER>"
+        },
+        "因為他不乖": {
+            "id": "1bc85a65-6826-4c01-b5d0-6108f9b53b6f",
+            "pos": "<FUNC_inter>因為</FUNC_inter><ENTITY_pronoun>他</ENTITY_pronoun><MODIFIER>不乖</MODIFIER>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>因為</FUNC_inter><ENTITY_pronoun>[^<]+</ENTITY_pronoun><(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>"
         },
         "下雨然後放晴": {
             "id": "798d004c-ad72-43fa-ae9f-351947931ea6",
@@ -12866,6 +12918,12 @@
             ],
             "pattern": "(?<=.)<FUNC_in(ner|ter)>然後</FUNC_in(ner|ter)>(.*?)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
+        "可是只有一個": {
+            "id": "5c75a9fe-b0a1-4fca-81cf-8f3acfef0a11",
+            "pos": "<FUNC_inter>可是</FUNC_inter><MODIFIER>只有</MODIFIER><ENTITY_classifier>一個</ENTITY_classifier>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>可是</FUNC_inter><MODIFIER>[^<]+有</MODIFIER><ENTITY_classifier>[^<]+</ENTITY_classifier>"
+        },
         "因為下雨所以": {
             "id": "dc13d87d-783d-4c8b-8d85-4c5c920af76b",
             "pos": "<FUNC_inter>因為</FUNC_inter><ACTION_verb>下雨</ACTION_verb><FUNC_inter>所以</FUNC_inter>",
@@ -12874,6 +12932,39 @@
             ],
             "pattern": "<FUNC_inter>因為</FUNC_inter>(.+?)<FUNC_inter>所以</FUNC_inter>"
         },
+        "因為你很勇敢": {
+            "id": "8e7df50a-796a-419f-882e-87e8781c0430",
+            "pos": "<FUNC_inter>因為</FUNC_inter><ENTITY_pronoun>你</ENTITY_pronoun><DegreeP>很勇敢</DegreeP>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>因為</FUNC_inter><ENTITY_pronoun>[^<]+</ENTITY_pronoun><DegreeP>[^<]+</DegreeP>"
+        },
+        "因為它就長啊": {
+            "id": "c7fc578a-8d24-4cf7-95f1-6208eef53ec4",
+            "pos": "<FUNC_inter>因為</FUNC_inter><ENTITY_pronoun>它</ENTITY_pronoun><FUNC_inner>就</FUNC_inner><MODIFIER>長</MODIFIER><CLAUSE_particle>啊</CLAUSE_particle>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>因為</FUNC_inter>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<FUNC_inner>就</FUNC_inner><MODIFIER>長</MODIFIER>(<CLAUSE_particle>[^<]+</CLAUSE_particle>)?"
+        },
+        "因為這樣子是": {
+            "id": "5e5715e2-3637-43e7-9c55-f0511569f571",
+            "pos": "<FUNC_inter>因為</FUNC_inter><FUNC_determiner>這</FUNC_determiner><ENTITY_noun>樣子</ENTITY_noun><AUX>是</AUX>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>因為</FUNC_inter><FUNC_determiner>[^<]+</FUNC_determiner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><AUX>是</AUX>"
+        },
+        "如果有生病的": {
+            "id": "1f68ab90-04ad-4795-8ef6-56f904449a9b",
+            "pos": "<FUNC_inter>如果</FUNC_inter><ACTION_verb>有</ACTION_verb><ACTION_verb>生病</ACTION_verb><FUNC_inner>的</FUNC_inner>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(生病|患病|得病|病重|病倒|重病|染病|打針|罹病|拉肚子|病危)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<FUNC_inter>如果</FUNC_inter><ACTION_verb>有</ACTION_verb><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?"
+        },
+        "所以沒有紅色": {
+            "id": "da96fbe9-cdd7-4fa6-8a1f-0e054f8022ca",
+            "pos": "<FUNC_inter>所以</FUNC_inter><FUNC_negation>沒有</FUNC_negation><MODIFIER_color>紅色</MODIFIER_color>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>所以</FUNC_inter><FUNC_negation>[^<]+有</FUNC_negation><MODIFIER_color>[^<]+色</MODIFIER_color>"
+        },
         "但都不知道在那": {
             "id": "a95a771c-f8ca-468e-85fd-f9e448561095",
             "pos": "<FUNC_inter>但</FUNC_inter><QUANTIFIER>都</QUANTIFIER><FUNC_negation>不</FUNC_negation><ACTION_verb>知道</ACTION_verb><FUNC_inner>在</FUNC_inner><FUNC_determiner>那</FUNC_determiner>",
@@ -12881,6 +12972,30 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(知道|得知|明知|深知|獲知|知悉|知情|知曉|知足|確知|了解)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "(<FUNC_in(ner|ter)>[^<然如]+</FUNC_in(ner|ter)>)?(<QUANTIFIER>[^<]+</QUANTIFIER>)?<FUNC_negation>[^<]+</FUNC_negation><(ACTION_verb|VerbP)>知道</(ACTION_verb|VerbP)>(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<FUNC_determiner>[^<]+</FUNC_determiner>"
+        },
+        "可是也沒有藥膏": {
+            "id": "97441878-67ef-48dc-81c1-45f336d514b5",
+            "pos": "<FUNC_inter>可是</FUNC_inter><MODIFIER>也</MODIFIER><FUNC_negation>沒有</FUNC_negation><UserDefined>藥</UserDefined><ENTITY_oov>膏</ENTITY_oov>",
+            "lexy": [],
+            "pattern": "(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<FUNC_negation>[^<]+</FUNC_negation><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>藥</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>膏</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "可是我沒有叉子": {
+            "id": "2b35f9bd-6c9b-42e0-b8a1-17f253997966",
+            "pos": "<FUNC_inter>可是</FUNC_inter><ENTITY_pronoun>我</ENTITY_pronoun><FUNC_negation>沒有</FUNC_negation><ENTITY_noun>叉子</ENTITY_noun>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>可是</FUNC_inter><ENTITY_pronoun>[^<]+</ENTITY_pronoun><FUNC_negation>沒有</FUNC_negation><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "因為這樣子才對": {
+            "id": "c1b890d1-510e-4a5b-bad5-7249f3ffc74e",
+            "pos": "<FUNC_inter>因為</FUNC_inter><FUNC_determiner>這</FUNC_determiner><ENTITY_noun>樣子</ENTITY_noun><MODAL>才</MODAL><MODIFIER>對</MODIFIER>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>因為</FUNC_inter><FUNC_determiner>[^<]+</FUNC_determiner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<MODAL>[^<]+</MODAL>)?<MODIFIER>[^<]+</MODIFIER>"
+        },
+        "因為還有更多人": {
+            "id": "ca779822-e6ef-4847-9107-de092393aac7",
+            "pos": "<FUNC_inter>因為</FUNC_inter><FUNC_conjunction>還有</FUNC_conjunction><DegreeP>更多</DegreeP><ENTITY_noun>人</ENTITY_noun>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>因為</FUNC_inter><FUNC_conjunction>[^<]+有</FUNC_conjunction><DegreeP>[^<]+</DegreeP><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
         "只要下雨我就出門": {
             "id": "94a092f8-f55b-4aee-906b-57f70d60bbed",
@@ -12896,7 +13011,98 @@
             "id": "22f98c00-1a6d-4665-8de4-5738985587a4",
             "pos": "<FUNC_inter>可是</FUNC_inter><ENTITY_pronoun>你</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><MODIFIER>只有</MODIFIER><ENTITY_classifier>一個</ENTITY_classifier>",
             "lexy": [],
-            "pattern": "<FUNC_in(ner|ter)>可是</FUNC_in(ner|ter)>(.+?)<(MODIFIER|ModifierP)>只有</(MODIFIER|ModifierP)><ENTITY_classifier>[^<]+</ENTITY_classifier>"
+            "pattern": "<FUNC_inter>可是</FUNC_inter>(.+?)<(MODIFIER|ModifierP)>只有</(MODIFIER|ModifierP)><ENTITY_classifier>[^<]+</ENTITY_classifier>"
+        },
+        "可是背又不是心臟": {
+            "id": "c29052c0-34d5-4f0c-b301-01bcea8180de",
+            "pos": "<FUNC_inter>可是</FUNC_inter><ENTITY_nouny>背</ENTITY_nouny><FUNC_inner>又</FUNC_inner><FUNC_negation>不</FUNC_negation><AUX>是</AUX><ENTITY_noun>心臟</ENTITY_noun>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>可是</FUNC_inter><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><FUNC_in(ner|ter)>又</FUNC_in(ner|ter)><FUNC_negation>[^<]+</FUNC_negation><AUX>[^<]+</AUX><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "因為你的手比較大": {
+            "id": "e43c8e29-bfbe-41f3-ae7a-33b529c3447c",
+            "pos": "<FUNC_inter>因為</FUNC_inter><ENTITY_pronoun>你</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><ENTITY_nouny>手</ENTITY_nouny><DegreeP>比較大</DegreeP>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>因為</FUNC_inter>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?(<FUNC_inner>[^<]+</FUNC_inner>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><DegreeP>[^<]+</DegreeP>"
+        },
+        "因為這是一個魔法": {
+            "id": "3664a413-55d4-4055-8461-7605f1d18186",
+            "pos": "<FUNC_inter>因為</FUNC_inter><FUNC_determiner>這</FUNC_determiner><AUX>是</AUX><ENTITY_classifier>一個</ENTITY_classifier><ENTITY_nouny>魔法</ENTITY_nouny>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>因為</FUNC_inter><FUNC_determiner>[^<]+</FUNC_determiner><AUX>[^<]+</AUX><ENTITY_classifier>[^<]+</ENTITY_classifier><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "因為這是他的翅膀": {
+            "id": "6a7e751d-ccdd-4b5c-8236-f0653940fd27",
+            "pos": "<FUNC_inter>因為</FUNC_inter><FUNC_determiner>這</FUNC_determiner><AUX>是</AUX><ENTITY_pronoun>他</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><ENTITY_nouny>翅膀</ENTITY_nouny>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>因為</FUNC_inter><FUNC_determiner>[^<]+</FUNC_determiner><AUX>是</AUX>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "因為這樣子才可以": {
+            "id": "49d6ba96-9ec0-4e5a-882c-ac63af913a8d",
+            "pos": "<FUNC_inter>因為</FUNC_inter><FUNC_determiner>這</FUNC_determiner><ENTITY_noun>樣子</ENTITY_noun><MODAL>才</MODAL><MODAL>可以</MODAL>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>因為</FUNC_inter><FUNC_determiner>[^<]+</FUNC_determiner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>樣子</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><MODAL>[^<]+</MODAL>(<MODAL>[^<]+</MODAL>)?"
+        },
+        "因為那這樣就好喔": {
+            "id": "036e3e69-aeeb-40fa-a71f-5dc8707b17c1",
+            "pos": "<FUNC_inter>因為</FUNC_inter><FUNC_determiner>那</FUNC_determiner><ENTITY_DetPhrase>這樣</ENTITY_DetPhrase><FUNC_inner>就</FUNC_inner><FUNC_degreeHead>好</FUNC_degreeHead><CLAUSE_particle>喔</CLAUSE_particle>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>因為</FUNC_inter><FUNC_determiner>[^<]+</FUNC_determiner><ENTITY_DetPhrase>這樣</ENTITY_DetPhrase><FUNC_inner>就</FUNC_inner><FUNC_degreeHead>[^<]+</FUNC_degreeHead>(<CLAUSE_particle>[^<]+</CLAUSE_particle>)?"
+        },
+        "然後再加藥水進去": {
+            "id": "30655967-eeba-4abf-844c-d2a3517e8109",
+            "pos": "<FUNC_inter>然後</FUNC_inter><MODIFIER>再</MODIFIER><ACTION_verb>加</ACTION_verb><UserDefined>藥</UserDefined><ENTITY_oov>水</ENTITY_oov><ACTION_verb>進去</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(加|懶加|給加|加也|長加|見加|致加|舊加|經加|付雙|加了)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(進去|進來|進入|拿出來|藏起來|回來|跑出來|回去|出去|進去了|拿起來)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<FUNC_inter>然後</FUNC_inter>(<MODIFIER>再</MODIFIER>)?<ACTION_verb>加</ACTION_verb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>水</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(ACTION_verb|VerbP)>進去</(ACTION_verb|VerbP)>"
+        },
+        "然後再蓋一個這個": {
+            "id": "ccf3853f-de53-4aa0-9c9b-e0d742de375d",
+            "pos": "<FUNC_inter>然後</FUNC_inter><MODIFIER>再</MODIFIER><ACTION_verb>蓋</ACTION_verb><ENTITY_classifier>一個</ENTITY_classifier><ENTITY_DetPhrase>這個</ENTITY_DetPhrase>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(蓋|罩住|蓋建|蓋了|拱頂|加蓋|鋪上|蓋起|蓋滿|拆下來|沾)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<FUNC_inter>然後</FUNC_inter><(MODIFIER|ModifierP)>再</(MODIFIER|ModifierP)><ACTION_verb>蓋</ACTION_verb><ENTITY_classifier>[^<]+</ENTITY_classifier><ENTITY_DetPhrase>[^<]+個</ENTITY_DetPhrase>"
+        },
+        "然後再量體溫一次": {
+            "id": "ea2efe73-d4c5-4fc6-bb65-a3b99ee29c90",
+            "pos": "<FUNC_inter>然後</FUNC_inter><MODIFIER>再</MODIFIER><ACTION_verb>量</ACTION_verb><ENTITY_nouny>體溫</ENTITY_nouny><ACTION_eventQuantifier>一次</ACTION_eventQuantifier>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(量|估量|度量|測量|量度|量測|量身|估測|合算|掐算|推估)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<(MODIFIER|ModifierP)>再</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>[^<開]+</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><ACTION_eventQuantifier>[^<]+</ACTION_eventQuantifier>"
+        },
+        "因為呢這個沒有顏色": {
+            "id": "98eeb4b8-ec19-4656-b1d4-76249902f41e",
+            "pos": "<FUNC_inter>因為</FUNC_inter><CLAUSE_particle>呢</CLAUSE_particle><ENTITY_DetPhrase>這個</ENTITY_DetPhrase><FUNC_negation>沒有</FUNC_negation><ENTITY_nouny>顏色</ENTITY_nouny>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>因為</FUNC_inter>(<CLAUSE_particle>[^<]+</CLAUSE_particle>)?<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase><FUNC_negation>[^<]+</FUNC_negation><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "因為我的花園在這裡": {
+            "id": "97c0bf4f-ee21-4ad9-9059-15d750ea8626",
+            "pos": "<FUNC_inter>因為</FUNC_inter><ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><ENTITY_noun>花園</ENTITY_noun><FUNC_inner>在</FUNC_inner><LOCATION>這裡</LOCATION>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>因為</FUNC_inter>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?<LOCATION>[這那]裡</LOCATION>"
+        },
+        "因為這個下面是藍的": {
+            "id": "2f64f1d4-66d1-4cc7-962e-34fae7b31336",
+            "pos": "<FUNC_inter>因為</FUNC_inter><ENTITY_DetPhrase>這個</ENTITY_DetPhrase><RANGE_locality>下面</RANGE_locality><AUX>是</AUX><MODIFIER_color>藍</MODIFIER_color><FUNC_inner>的</FUNC_inner>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>因為</FUNC_inter><ENTITY_DetPhrase>這個</ENTITY_DetPhrase><RANGE_(locality|period)>[^<]+</RANGE_(locality|period)><AUX>[^<]+</AUX><MODIFIER_color>藍</MODIFIER_color>"
+        },
+        "可是這裡還沒有這一種": {
+            "id": "d44e6fb9-b5c1-4240-91ce-3e3b4ab505d8",
+            "pos": "<FUNC_inter>可是</FUNC_inter><LOCATION>這裡</LOCATION><FUNC_inner>還</FUNC_inner><FUNC_negation>沒有</FUNC_negation><ENTITY_DetPhrase>這一種</ENTITY_DetPhrase>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>可是</FUNC_inter><LOCATION>這裡</LOCATION><FUNC_inner>還</FUNC_inner><FUNC_negation>[^<]+</FUNC_negation><ENTITY_DetPhrase>這一種</ENTITY_DetPhrase>"
+        },
+        "因為這個本來就冰冰的": {
+            "id": "e4a2c88e-d7e4-4415-bba8-ad71b18c3a22",
+            "pos": "<FUNC_inter>因為</FUNC_inter><ENTITY_DetPhrase>這個</ENTITY_DetPhrase><ENTITY_nouny>本來</ENTITY_nouny><FUNC_inner>就</FUNC_inner><MODIFIER>冰冰</MODIFIER><FUNC_inner>的</FUNC_inner>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>因為</FUNC_inter><ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>本來</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><FUNC_inner>就</FUNC_inner><MODIFIER>[^<]+</MODIFIER>(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?"
         },
         "對可是你剛才沒有打到": {
             "id": "4f0460c5-2f2e-40a4-b4a3-c77435bde6d2",

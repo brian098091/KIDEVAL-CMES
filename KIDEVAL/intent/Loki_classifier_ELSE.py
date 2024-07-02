@@ -149,6 +149,66 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             resultDICT["量-特"].append(1)
 
+    if utterance == "再一點":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "吃一點藥":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "大一點":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "好一點":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "有一點點":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "有點發燒":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "蓋小樓一點":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "吃一口":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "這一些":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "這些":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
     if utterance == "這班":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)

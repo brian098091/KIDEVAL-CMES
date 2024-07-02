@@ -77,6 +77,7 @@
             "學習時空",
             "客人",
             "小孩",
+            "維尼",
             "小熊維尼",
             "屋頂",
             "山上人家",
@@ -144,6 +145,7 @@
             "風",
             "飛比價格",
             "飛船",
+            "眼鏡",
             "馬崗厝",
             "（",
             "）"
@@ -164,7 +166,6 @@
             "泡一泡",
             "流血",
             "發高燒",
-            "看看",
             "闖關"
         ],
         "_schoolTW": [
@@ -12829,7 +12830,7 @@
             "id": "41dc1b3e-fde3-41f7-8be1-9fb9441ddc89",
             "pos": "<ENTITY_classifier>一瓶</ENTITY_classifier>",
             "lexy": [],
-            "pattern": "<ENTITY_classifier>[^<]*[^把個樣門彎次頭]</ENTITY_classifier>"
+            "pattern": "<ENTITY_classifier>[^<]*[^把個樣門彎次頭口發]</ENTITY_classifier>(?!<ENTITY_nouny>[子鏡圈]</ENTITY_nouny>)"
         },
         "多瓶": {
             "id": "3a7fc169-1bdb-420b-b4eb-3129fe916580",
@@ -12838,6 +12839,12 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(多|到多|更多|獲多|作多|分多|較多|受多|供多|處多|赴多)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>多</(ACTION_verb|VerbP)><ENTITY_classifier>[^<個樣]</ENTITY_classifier>"
+        },
+        "這些": {
+            "id": "b3f5a699-1016-4955-8b21-3d7c3f5c57b2",
+            "pos": "<ENTITY_DetPhrase>這些</ENTITY_DetPhrase>",
+            "lexy": [],
+            "pattern": "^<ENTITY_DetPhrase>這些</ENTITY_DetPhrase>"
         },
         "這班": {
             "id": "9f6d0280-85e7-41bb-97ca-9d1ccce73e2c",
@@ -12849,13 +12856,39 @@
             "id": "3159a8e0-8103-4840-939b-d19efbb9ecc9",
             "pos": "<ENTITY_DetPhrase>那瓶</ENTITY_DetPhrase>",
             "lexy": [],
-            "pattern": "<ENTITY_DetPhrase>[哪這那某整][^<]*[^把個樣門彎頭]</ENTITY_DetPhrase>"
+            "pattern": "<ENTITY_DetPhrase>[哪這那某整][^<]*[^把個樣門彎頭些]</ENTITY_DetPhrase>(?!<ENTITY_nouny>子)"
         },
         "一頭牛": {
             "id": "8bb2623a-4a86-4d73-ad35-2c951bd61e14",
             "pos": "<ENTITY_classifier>一頭</ENTITY_classifier><ENTITY_noun>牛</ENTITY_noun>",
             "lexy": [],
             "pattern": "<ENTITY_classifier>[^<]頭+</ENTITY_classifier>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?"
+        },
+        "再一點": {
+            "id": "70d68940-fafc-4ec7-88fd-62f94dd5a432",
+            "pos": "<MODIFIER>再</MODIFIER><QUANTIFIER>一點</QUANTIFIER>",
+            "lexy": [],
+            "pattern": "<MODIFIER>[再多少]</MODIFIER><QUANTIFIER>一點</QUANTIFIER>"
+        },
+        "吃一口": {
+            "id": "7d3fba13-c752-4c27-9c1e-561920e6a6a8",
+            "pos": "<ACTION_verb>吃</ACTION_verb><ENTITY_classifier>一口</ENTITY_classifier>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃|吃掉|吸收|攝入|耗損|花掉|煮|啃|吃著|喝|常吃)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>[吃喝咬]</ACTION_verb><ENTITY_classifier>[^<]+口</ENTITY_classifier>"
+        },
+        "大一點": {
+            "id": "c577120e-3af9-40d6-828d-4ee499531f78",
+            "pos": "<UserDefined>大一</UserDefined><QUANTIFIER>點</QUANTIFIER>",
+            "lexy": [],
+            "pattern": "(?<!</MODIFIER>)(?<!</ACTION_verb>)<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>大一</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><QUANTIFIER>點</QUANTIFIER>(?!<FUNC_inner>的)"
+        },
+        "好一點": {
+            "id": "7873ca23-23d9-43a5-b417-e0aa2e399bd3",
+            "pos": "<FUNC_degreeHead>好</FUNC_degreeHead><TIME_justtime>一點</TIME_justtime>",
+            "lexy": [],
+            "pattern": "<FUNC_degreeHead>好</FUNC_degreeHead><TIME_justtime>一點</TIME_justtime>"
         },
         "就一次": {
             "id": "46c42997-355e-4431-8fbd-141f764b7071",
@@ -12895,6 +12928,12 @@
             ],
             "pattern": "<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>關</(ACTION_verb|VerbP)>"
         },
+        "這一些": {
+            "id": "19e67fa6-a7f6-424c-8701-6909eb4f6a32",
+            "pos": "<ENTITY_DetPhrase>這一些</ENTITY_DetPhrase>",
+            "lexy": [],
+            "pattern": "<ENTITY_DetPhrase>[這那]一些</ENTITY_DetPhrase>"
+        },
         "一把夾子": {
             "id": "bac66796-0e89-4755-ba7d-9ccaa3422314",
             "pos": "<ENTITY_classifier>一把</ENTITY_classifier><ENTITY_noun>夾子</ENTITY_noun>",
@@ -12909,13 +12948,30 @@
             ],
             "pattern": "<ENTITY_num>一</ENTITY_num><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>班車</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
         },
-        "吃一點藥 ": {
-            "id": "a66ad6e1-b3e1-4356-9183-352bd083f113",
+        "吃一點藥": {
+            "id": "e5a7cb4f-4636-4341-9138-1274c9c4ff8f",
             "pos": "<ACTION_verb>吃</ACTION_verb><TIME_justtime>一點</TIME_justtime><UserDefined>藥</UserDefined>",
             "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃|吃掉|吸收|攝入|耗損|花掉|吃著|煮|啃|喝|吃了)</(ACTION_verb|VerbP)>"
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃|吃掉|吸收|攝入|耗損|花掉|煮|啃|吃著|喝|常吃)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<TIME_(holiday|justtime|day|week|month|season|year|decade)>一點</TIME_(holiday|justtime|day|week|month|season|year|decade)>){1,10}<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><TIME_justtime>一點</TIME_justtime><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(?!<CLAUSE_YesNoQ>)"
+        },
+        "有一點點": {
+            "id": "0b906d07-548b-4e47-8566-aa2559603a95",
+            "pos": "<ACTION_verb>有</ACTION_verb><QUANTIFIER>一點點</QUANTIFIER>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>有</ACTION_verb><QUANTIFIER>一點{1,2}</QUANTIFIER>(?!<ENTITY_noun>關)"
+        },
+        "有點發燒": {
+            "id": "b8ae28ee-24aa-4ded-917b-9c232b58f103",
+            "pos": "<ACTION_verb>有</ACTION_verb><QUANTIFIER>點</QUANTIFIER><ACTION_verb>發燒</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(發燒|咳嗽|嘔吐|高燒|鼻塞|頭暈|嗜睡|乾咳|發病|感冒|抽搐)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>有</ACTION_verb><QUANTIFIER>[^<]*點</QUANTIFIER><ACTION_verb>發[^<]</ACTION_verb>"
         },
         "下一班火車": {
             "id": "016f31c9-7926-4fed-a5f9-c3325db41f81",
@@ -12924,6 +12980,14 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(下|恐下|下目|讓下|度下|上|到下|有下|給下|彎打)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "<ENTITY_num>一</ENTITY_num><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>班</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+車</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "蓋小樓一點": {
+            "id": "70ed4bb3-9fee-432d-92dd-eedaff926c76",
+            "pos": "<ACTION_verb>蓋</ACTION_verb><ENTITY_nouny>小樓</ENTITY_nouny><TIME_justtime>一點</TIME_justtime>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(蓋|罩住|蓋建|蓋了|拱頂|加蓋|鋪上|蓋起|蓋滿|拆下來|沾)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>蓋</ACTION_verb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[小大][^<]</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><TIME_justtime>一點</TIME_justtime>"
         }
     },
     "alias": {},

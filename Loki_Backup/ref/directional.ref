@@ -77,6 +77,7 @@
             "學習時空",
             "客人",
             "小孩",
+            "維尼",
             "小熊維尼",
             "屋頂",
             "山上人家",
@@ -144,6 +145,7 @@
             "風",
             "飛比價格",
             "飛船",
+            "眼鏡",
             "馬崗厝",
             "（",
             "）"
@@ -164,7 +166,6 @@
             "泡一泡",
             "流血",
             "發高燒",
-            "看看",
             "闖關"
         ],
         "_schoolTW": [
@@ -12829,19 +12830,61 @@
             "id": "6dcffe92-eadd-4d82-ac96-ab0f54111ebb",
             "pos": "<RANGE_locality>上面</RANGE_locality>",
             "lexy": [],
-            "pattern": "^<RANGE_locality>[上下裡外前後]面</RANGE_locality>$"
+            "pattern": "^<RANGE_locality>[上裡外前]面</RANGE_locality>$"
+        },
+        "兩邊": {
+            "id": "ef319841-4feb-4902-9e1e-b9a33b081091",
+            "pos": "<RANGE_locality>兩邊</RANGE_locality>",
+            "lexy": [],
+            "pattern": "<RANGE_locality>[兩三]邊</RANGE_locality>"
+        },
+        "哪裡": {
+            "id": "726b9890-e268-4977-8f01-d0ba754cfa53",
+            "pos": "<CLAUSE_WhereQ>哪裡</CLAUSE_WhereQ>",
+            "lexy": [],
+            "pattern": "(?<!^<FUNC_inner>在</FUNC_inner>)(?<!有</ACTION_verb>)(?<!</ENTITY_pronoun>)<CLAUSE_WhereQ>[^<什]+</CLAUSE_WhereQ>"
         },
         "裡面": {
             "id": "8e9dab71-5114-4fcd-9e20-245d216f4a51",
             "pos": "<RANGE_locality>裡面</RANGE_locality>",
             "lexy": [],
-            "pattern": "^<RANGE_locality>[上下裡外前後]面</RANGE_locality>"
+            "pattern": "^<RANGE_locality>[上裡外前後]面</RANGE_locality>(?!<MODAL>)(?!<CLAUSE)(?!<MODIFIER>)(?!<ACTION_verb>[要有])"
         },
         "這邊": {
             "id": "c76ac1d1-3435-42ab-953f-43860ad7aa6c",
             "pos": "<LOCATION>這邊</LOCATION>",
             "lexy": [],
-            "pattern": "<LOCATION>[那這][裡邊]</LOCATION>"
+            "pattern": "(?<!</RANGE_locality>)<LOCATION>[那這哪][裡邊]</LOCATION>(?!<MODIFIER>)(?!<ACTION_verb>要)"
+        },
+        "在哪邊": {
+            "id": "c5ef5a8a-f827-47ea-800c-c7fbdfaa188a",
+            "pos": "<FUNC_inner>在</FUNC_inner><CLAUSE_WhereQ>哪</CLAUSE_WhereQ><RANGE_locality>邊</RANGE_locality>",
+            "lexy": [],
+            "pattern": "<FUNC_inner>在</FUNC_inner><CLAUSE_WhereQ>[^<]+</CLAUSE_WhereQ><RANGE_locality>邊</RANGE_locality>"
+        },
+        "在天上": {
+            "id": "6000dfbf-83a8-44af-ad8d-0844153a9e78",
+            "pos": "<FUNC_inner>在</FUNC_inner><ENTITY_nouny>天</ENTITY_nouny><RANGE_locality>上</RANGE_locality>",
+            "lexy": [],
+            "pattern": "<FUNC_inner>在</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[天床]</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><RANGE_locality>[^<]+</RANGE_locality>"
+        },
+        "在後面": {
+            "id": "231359f0-92d3-40b1-b8ad-d6b5d8ba0e43",
+            "pos": "<FUNC_inner>在</FUNC_inner><RANGE_locality>後面</RANGE_locality>",
+            "lexy": [],
+            "pattern": "(?<![放擺用弄]</ACTION_verb>)(?<![人路]</ENTITY_noun>)(?<!</MODIFIER_color>)(?<!</MODAL>)(?<!</AUX>)<FUNC_inner>[在從]</FUNC_inner><RANGE_locality>[^<旁對外裡]+[面邊]</RANGE_locality>(?!<ACTION_verb>按)"
+        },
+        "在手上": {
+            "id": "c04848f4-efed-4857-a83f-41ca00a37857",
+            "pos": "<FUNC_inner>在</FUNC_inner><ENTITY_nouny>手</ENTITY_nouny><RANGE_locality>上</RANGE_locality>",
+            "lexy": [],
+            "pattern": "(?<![抹躺]</ACTION_verb>)<FUNC_inner>在</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<天]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><RANGE_locality>上</RANGE_locality>"
+        },
+        "在這裡": {
+            "id": "f91e8f34-5246-4638-b335-038c2eb82891",
+            "pos": "<FUNC_inner>在</FUNC_inner><LOCATION>這裡</LOCATION>",
+            "lexy": [],
+            "pattern": "<FUNC_inner>在</FUNC_inner><LOCATION>[這那]裡</LOCATION>"
         },
         "放下面": {
             "id": "edb3d80c-76f3-4540-becc-6d3845797818",
@@ -12849,7 +12892,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(放|放下|放任|放入|放出|放告|放寬|放手|放水|放置|放羊)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<=</ACTION_verb>)<RANGE_locality>[上下裡外前後]面</RANGE_locality>$"
+            "pattern": "(?<=[^到住蓋停]</ACTION_verb>)<RANGE_locality>[上下裡外前後]面</RANGE_locality>$"
         },
         "旁邊要": {
             "id": "739975bd-2017-4a5a-9efd-9b6a0853a8f0",
@@ -12857,25 +12900,39 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(要|想要|需要|想拿|想買|渴望|渴求|餓了|得照|需|更要)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<RANGE_locality>[上下裡外前後旁][面邊]</RANGE_locality>((<ACTION_verb>要</ACTION_verb>)|((<MODIFIER>[^<]</MODIFIER>)?<MODAL>[^<]+</MODAL>))"
+            "pattern": "<RANGE_locality>[上下裡外前後旁][面邊]</RANGE_locality>((<ACTION_verb>要</ACTION_verb>(?!<ACTION_verb>有)(?!<ENTITY_classifier>))|((<MODIFIER>[^<]</MODIFIER>)?<MODAL>[^<]+</MODAL>(?!<ACTION_verb>有)))"
         },
         "是上面": {
             "id": "40cbf1b5-5ade-42bc-8427-71cdea61de3f",
             "pos": "<AUX>是</AUX><RANGE_locality>上面</RANGE_locality>",
             "lexy": [],
-            "pattern": "<AUX>[^<]+</AUX><RANGE_locality>[上下裡外前後]面</RANGE_locality>"
+            "pattern": "<AUX>[^<]+</AUX><RANGE_locality>[上下裡外後]面</RANGE_locality>(?!<MODIFIER>)"
+        },
+        "是這邊": {
+            "id": "5005979b-c1a2-4f38-89e5-d57df4aa3b07",
+            "pos": "<AUX>是</AUX><LOCATION>這邊</LOCATION>",
+            "lexy": [],
+            "pattern": "<AUX>是</AUX><LOCATION>[這那]邊</LOCATION>"
         },
         "的後面": {
             "id": "c0082f81-57ce-4170-bcc8-f8595f6c8a4a",
             "pos": "<FUNC_inner>的</FUNC_inner><RANGE_locality>後面</RANGE_locality>",
             "lexy": [],
-            "pattern": "<FUNC_inner>的</FUNC_inner><RANGE_locality>[上下裡外前後]面</RANGE_locality>"
+            "pattern": "(?<!<ACTION_verb>蓋</ACTION_verb><FUNC_inner>在</FUNC_inner><ENTITY_noun>[^<]{2}</ENTITY_noun>)<FUNC_inner>的</FUNC_inner><RANGE_locality>[上下裡外前後]面</RANGE_locality>(?!<ACTION_verb>有)"
+        },
+        "裡面有": {
+            "id": "4e2869ff-b3cf-4209-96d4-ec29d43ec014",
+            "pos": "<RANGE_locality>裡面</RANGE_locality><ACTION_verb>有</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<RANGE_locality>[^<]+</RANGE_locality><ACTION_verb>有</ACTION_verb>(?!<ENTITY_noun>玩)(?!<ENTITY_classifier>[^<]個)(?!<ACTION_verb>藏)"
         },
         "這上面": {
             "id": "0b4e4c6e-80ec-45a5-b957-cb5675d76c0d",
             "pos": "<FUNC_determiner>這</FUNC_determiner><RANGE_locality>上面</RANGE_locality>",
             "lexy": [],
-            "pattern": "<FUNC_determiner>[這那]</FUNC_determiner><RANGE_(locality|period)>[上下]面</RANGE_(locality|period)>"
+            "pattern": "(?<!從</FUNC_inner>)<FUNC_determiner>[這那]</FUNC_determiner><RANGE_locality>[上下]面</RANGE_locality>"
         },
         "這下頭": {
             "id": "765ef0ca-af1a-4c68-8ac9-692019cfd091",
@@ -12893,19 +12950,160 @@
             "id": "53e85d37-ef04-4592-8b60-d0d6035aa647",
             "pos": "<FUNC_determiner>這</FUNC_determiner><RANGE_locality>裡面</RANGE_locality>",
             "lexy": [],
-            "pattern": "<FUNC_determiner>[這那]</FUNC_determiner><RANGE_locality>[上下裡外前後兩][邊面]</RANGE_locality>"
+            "pattern": "(?<!從</FUNC_inner>)<FUNC_determiner>[這那]</FUNC_determiner><RANGE_locality>[上下裡外前後兩][邊面]</RANGE_locality>"
+        },
+        "他哪裡要": {
+            "id": "415b4e31-aa12-424b-9b9b-a600b8d18060",
+            "pos": "<ENTITY_pronoun>他</ENTITY_pronoun><CLAUSE_WhereQ>哪裡</CLAUSE_WhereQ><ACTION_verb>要</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(要|想要|需要|想拿|想買|渴望|渴求|餓了|得照|需|更要)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ENTITY_pronoun>[^<]+</ENTITY_pronoun><CLAUSE_WhereQ>[^<]+</CLAUSE_WhereQ><ACTION_verb>[要痛]</ACTION_verb>"
+        },
+        "你哪裡有": {
+            "id": "5a8119be-0303-4144-b980-71a2642ba197",
+            "pos": "<ENTITY_pronoun>你</ENTITY_pronoun><CLAUSE_WhereQ>哪裡</CLAUSE_WhereQ><ACTION_verb>有</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ENTITY_pronoun>[^<]+</ENTITY_pronoun><CLAUSE_WhereQ>[^<]+</CLAUSE_WhereQ><ACTION_verb>有[^<]*</ACTION_verb>"
+        },
+        "去鐵路上": {
+            "id": "51e2af60-1db5-49fe-b908-eb5ab552f064",
+            "pos": "<ACTION_verb>去</ACTION_verb><ENTITY_noun>鐵路</ENTITY_noun><RANGE_locality>上</RANGE_locality>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(去|要去|回去|想去|去了|跑去|回來|跑來|趕去|出去|來)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>去</ACTION_verb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><RANGE_locality>[^<]+</RANGE_locality>"
+        },
+        "另外一邊": {
+            "id": "6322dba9-b0ce-4641-860d-d1b3cd567ecb",
+            "pos": "<FUNC_inter>另外</FUNC_inter><RANGE_locality>一邊</RANGE_locality>",
+            "lexy": [],
+            "pattern": "<FUNC_inter>另外</FUNC_inter><RANGE_locality>一[^<]+</RANGE_locality>(?!<AUX>)"
         },
         "房間外面": {
             "id": "e7ab9ed8-6d3e-4cb0-a78a-bf634229d9c4",
             "pos": "<ENTITY_oov>房間</ENTITY_oov><RANGE_locality>外面</RANGE_locality>",
             "lexy": [],
-            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>(<FUNC_inner>的</FUNC_inner>)?(?<!<MODIFIER>另</MODIFIER>)(?<!<ACTION_verb>閉</ACTION_verb>)(?<!<ACTION_verb>有</ACTION_verb>)(?<!<ACTION_verb>接</ACTION_verb>)(?<!<FUNC_negation>不</FUNC_negation>)<RANGE_locality>[^<]+</RANGE_locality>(?!<ACTION_verb>去)(?!<ACTION_verb>來)"
+            "pattern": "(?<!</ACTION_verb><FUNC_inner>在</FUNC_inner>)<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<天墊人看路菌屋]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<FUNC_inner>[^<]</FUNC_inner>)?<RANGE_locality>[^<]+</RANGE_locality>(?!<ACTION_verb>有)"
+        },
+        "打他哪裡": {
+            "id": "f9cabc80-93d7-4835-b8e5-1a1148f4d114",
+            "pos": "<ACTION_lightVerb>打</ACTION_lightVerb><ENTITY_pronoun>他</ENTITY_pronoun><CLAUSE_WhereQ>哪裡</CLAUSE_WhereQ>",
+            "lexy": [],
+            "pattern": "<ACTION_lightVerb>打</ACTION_lightVerb>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<CLAUSE_WhereQ>[^<]+</CLAUSE_WhereQ>"
+        },
+        "放在旁邊": {
+            "id": "1d5f2686-45ea-4f52-bf8c-0e8e5aa4aed4",
+            "pos": "<ACTION_verb>放</ACTION_verb><FUNC_inner>在</FUNC_inner><RANGE_locality>旁邊</RANGE_locality>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(放|放下|放任|放入|放出|放告|放寬|放手|放水|放置|放羊)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>[^<]</ACTION_verb><FUNC_inner>在</FUNC_inner><RANGE_locality>[^<]+</RANGE_locality>"
+        },
+        "放這邊短": {
+            "id": "91e0d7b1-e0e7-4582-b1c1-95a76cad8870",
+            "pos": "<ACTION_verb>放</ACTION_verb><LOCATION>這邊</LOCATION><MODIFIER>短</MODIFIER>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(放|放下|放任|放入|放出|放告|放寬|放手|放水|放置|放羊)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>放</ACTION_verb><LOCATION>這邊</LOCATION><MODIFIER>短</MODIFIER>"
+        },
+        "旁邊要有": {
+            "id": "8811847f-b047-4028-8ccc-7a4a16ebaea7",
+            "pos": "<RANGE_locality>旁邊</RANGE_locality><ACTION_verb>要</ACTION_verb><ACTION_verb>有</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(要|想要|需要|想拿|想買|渴望|渴求|餓了|得照|需|更要)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<RANGE_locality>[^<]+</RANGE_locality><ACTION_verb>要</ACTION_verb><ACTION_verb>有</ACTION_verb>(?!<ENTITY_classifier>)"
         },
         "這個下面": {
             "id": "e208f446-8fc4-4978-9ac5-7f8b055d3120",
             "pos": "<ENTITY_DetPhrase>這個</ENTITY_DetPhrase><RANGE_locality>下面</RANGE_locality>",
             "lexy": [],
             "pattern": "<ENTITY_DetPhrase>[這那]個</ENTITY_DetPhrase><RANGE_locality>[上下裡外前後]面</RANGE_locality>"
+        },
+        "這裡也是": {
+            "id": "de8ea6df-9ba3-4b0c-aa67-69a326d7266b",
+            "pos": "<LOCATION>這裡</LOCATION><MODIFIER>也</MODIFIER><AUX>是</AUX>",
+            "lexy": [],
+            "pattern": "<LOCATION>這裡</LOCATION><MODIFIER>也</MODIFIER><AUX>[^<]+</AUX>"
+        },
+        "他前面上車": {
+            "id": "6a5af7b4-2dcf-47c1-87aa-488a1164a878",
+            "pos": "<ENTITY_pronoun>他</ENTITY_pronoun><RANGE_locality>前面</RANGE_locality><ACTION_verb>上車</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(上車|下車|入站|進站|入閘|乘車|折返|轉車|拍卡|掉頭|下船)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ENTITY_pronoun>[^<]+</ENTITY_pronoun><RANGE_locality>[^<]+</RANGE_locality><ACTION_verb>上車</ACTION_verb>"
+        },
+        "前面也一樣": {
+            "id": "1797ed35-334c-43aa-ab7f-9df9daed2c61",
+            "pos": "<RANGE_locality>前面</RANGE_locality><MODIFIER>也</MODIFIER><MODIFIER>一樣</MODIFIER>",
+            "lexy": [],
+            "pattern": "(?<!</AUX>)<RANGE_locality>[^<]+</RANGE_locality>(<MODIFIER>也</MODIFIER>)?<(MODIFIER|ModifierP)>[^<也再]+</(MODIFIER|ModifierP)>"
+        },
+        "在裡面跳舞": {
+            "id": "c594eff1-de54-4fff-a96d-baff392e5f6f",
+            "pos": "<FUNC_inner>在</FUNC_inner><RANGE_locality>裡面</RANGE_locality><ACTION_verb>跳舞</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(跳舞|唱歌|玩耍|彈琴|演戲|嬉戲|熱舞|起舞|練舞|邊跳|爬樹)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<FUNC_inner>在</FUNC_inner><RANGE_locality>[^<]+</RANGE_locality><ACTION_verb>跳舞</ACTION_verb>"
+        },
+        "坐另外一邊": {
+            "id": "4ac199ed-cb93-404a-9eb7-adae9e810d7f",
+            "pos": "<ACTION_verb>坐</ACTION_verb><MODIFIER>另</MODIFIER><RANGE_locality>外</RANGE_locality><RANGE_locality>一邊</RANGE_locality>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(坐|坐著|躺|原坐|端坐|躺臥|躲|坐到|站著|圍坐|坐下)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(MODIFIER|ModifierP)>另</(MODIFIER|ModifierP)><RANGE_locality>外</RANGE_locality><RANGE_locality>一[^<]+</RANGE_locality>"
+        },
+        "寶盒裡面有": {
+            "id": "c53dc551-9d24-4041-8920-30bfeeb98bee",
+            "pos": "<ENTITY_oov>寶盒</ENTITY_oov><RANGE_locality>裡面</RANGE_locality><ACTION_verb>有</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>寶盒</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><RANGE_(locality|period)>[^<]+</RANGE_(locality|period)><(ACTION_verb|VerbP)>有[^<]*</(ACTION_verb|VerbP)>"
+        },
+        "放在籠子裡": {
+            "id": "1dd95dc4-add3-4cf4-9fa7-ea7a1559ab8a",
+            "pos": "<ACTION_verb>放</ACTION_verb><FUNC_inner>在</FUNC_inner><ENTITY_noun>籠子</ENTITY_noun><RANGE_locality>裡</RANGE_locality>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(放|放下|放任|放入|放出|放告|放寬|放手|放水|放置|放羊)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>[^<]</ACTION_verb><FUNC_inner>在</FUNC_inner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><RANGE_locality>[^<]+</RANGE_locality>"
+        },
+        "貼在這個上": {
+            "id": "81389616-af08-43b6-9abe-b519e604804f",
+            "pos": "<ACTION_verb>貼</ACTION_verb><FUNC_inner>在</FUNC_inner><ENTITY_DetPhrase>這個</ENTITY_DetPhrase><RANGE_locality>上</RANGE_locality>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(貼|貼了|張貼|貼滿|貼著|黏貼|掛|貼到|有貼|撕下|寫著)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_inner>在</FUNC_inner><ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase><RANGE_locality>[^<]+</RANGE_locality>"
+        },
+        "這裡也可以": {
+            "id": "062d3b25-d623-4838-83c8-49927e1b4211",
+            "pos": "<LOCATION>這裡</LOCATION><MODIFIER>也</MODIFIER><MODAL>可以</MODAL>",
+            "lexy": [],
+            "pattern": "<LOCATION>這裡</LOCATION><MODIFIER>也</MODIFIER><MODAL>[^<]+</MODAL>"
+        },
+        "這邊再兩個": {
+            "id": "1f8a87db-ca2e-462e-a4ef-26e4300ba35e",
+            "pos": "<LOCATION>這邊</LOCATION><MODIFIER>再</MODIFIER><ENTITY_classifier>兩個</ENTITY_classifier>",
+            "lexy": [],
+            "pattern": "<LOCATION>[^<]+</LOCATION>(<MODIFIER>[再也]</MODIFIER>)?(<ENTITY_classifier>[^<]+</ENTITY_classifier>|<ACTION_verb>[^<要]+</ACTION_verb>)"
+        },
+        "短扁放這邊短": {
+            "id": "5aab93c6-e678-4d91-8b53-6654264c6a13",
+            "pos": "<MODIFIER>短</MODIFIER><ACTION_verb>扁放</ACTION_verb><LOCATION>這邊</LOCATION><MODIFIER>短</MODIFIER>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(扁放|)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(MODIFIER|ModifierP)>短</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>扁放</(ACTION_verb|VerbP)><LOCATION>這邊</LOCATION><(MODIFIER|ModifierP)>短</(MODIFIER|ModifierP)>"
         }
     },
     "alias": {},

@@ -80,7 +80,17 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["把字句"].append(1)
+            if inputSTR[-2] in "這那":
+                pass
+            else:
+                resultDICT["把字句"].append(1)
+
+    if utterance == "把這放":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
 
     if utterance == "要把":
         if CHATBOT_MODE:

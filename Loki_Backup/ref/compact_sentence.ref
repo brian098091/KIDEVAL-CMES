@@ -77,6 +77,7 @@
             "學習時空",
             "客人",
             "小孩",
+            "維尼",
             "小熊維尼",
             "屋頂",
             "山上人家",
@@ -144,6 +145,7 @@
             "風",
             "飛比價格",
             "飛船",
+            "眼鏡",
             "馬崗厝",
             "（",
             "）"
@@ -164,7 +166,6 @@
             "泡一泡",
             "流血",
             "發高燒",
-            "看看",
             "闖關"
         ],
         "_schoolTW": [
@@ -12855,6 +12856,24 @@
             ],
             "pattern": "<ENTITY_pronoun>[^<]+</ENTITY_pronoun><FUNC_inner>就</FUNC_inner><(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
+        "你就可以到": {
+            "id": "892797d8-46f3-4d21-a850-b696c13f83a9",
+            "pos": "<ENTITY_pronoun>你</ENTITY_pronoun><FUNC_inner>就</FUNC_inner><MODAL>可以</MODAL><ACTION_verb>到</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(到|到了|到約|到受|到離|到包|到經過|到回|到隨|到死|到愛)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ENTITY_pronoun>[^<]+</ENTITY_pronoun><FUNC_inner>就</FUNC_inner>(<MODAL>[^<]+</MODAL>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "出去就要叫": {
+            "id": "84aa2eb0-d208-4866-af13-c2f0a92f9c1b",
+            "pos": "<ACTION_verb>出去</ACTION_verb><FUNC_inner>就</FUNC_inner><ACTION_verb>要</ACTION_verb><ACTION_verb>叫</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(出去|出來|回來|進去|進來|回去|過來|回家|出來了|開去|出去了)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(要|想要|需要|想拿|想買|渴望|渴求|餓了|得照|需|更要)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(叫|叫作|叫喊|呼叫|傳呼|傳見|召開|吆喝|呼召|嗔喝|宣告)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>[^<]+</ACTION_verb><FUNC_inner>就</FUNC_inner><ACTION_verb>[^<]</ACTION_verb><ACTION_verb>[^<]</ACTION_verb>"
+        },
         "叠一個就夠": {
             "id": "fd6c9fc8-9144-47b1-967d-01c475643780",
             "pos": "<ENTITY_oov>叠</ENTITY_oov><ENTITY_classifier>一個</ENTITY_classifier><FUNC_inner>就</FUNC_inner><MODIFIER>夠</MODIFIER>",
@@ -12878,6 +12897,14 @@
             ],
             "pattern": "<(ACTION_verb|VerbP)>[^<等]+</(ACTION_verb|VerbP)><ENTITY_num>一</ENTITY_num><ENTITY_oov>下</ENTITY_oov>(<MODAL>[^<]+</MODAL>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
+        "擺好就好了": {
+            "id": "beae07d5-efbb-42b2-a045-561802403810",
+            "pos": "<ACTION_verb>擺</ACTION_verb><FUNC_degreeHead>好</FUNC_degreeHead><FUNC_inner>就</FUNC_inner><FUNC_degreeHead>好</FUNC_degreeHead><ASPECT>了</ASPECT>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(擺|擺布|擺放|擺盤|擺設|安排|待遇|接洽|搬鋪|搭配|操辦)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_degreeHead>好</FUNC_degreeHead><FUNC_inner>就</FUNC_inner><FUNC_degreeHead>好</FUNC_degreeHead>(<ASPECT>[^<]+</ASPECT>)?"
+        },
         "疊一個就夠": {
             "id": "beed4811-f85d-466c-a47f-617febec6684",
             "pos": "<ACTION_verb>疊</ACTION_verb><ENTITY_classifier>一個</ENTITY_classifier><FUNC_inner>就</FUNC_inner><MODIFIER>夠</MODIFIER>",
@@ -12894,6 +12921,14 @@
             ],
             "pattern": "(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?(<(MODIFIER|ModifierP)>先</(MODIFIER|ModifierP)>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<(MODIFIER|ModifierP)>再</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
+        "到基隆就可以": {
+            "id": "fc5d558b-ff45-40a5-9f8e-45ea2307b756",
+            "pos": "<ACTION_verb>到</ACTION_verb><LOCATION>基隆</LOCATION><FUNC_inner>就</FUNC_inner><MODAL>可以</MODAL>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(到|到了|到約|到受|到離|到包|到經過|到回|到隨|到死|到愛)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><LOCATION>[^<]+</LOCATION><FUNC_inner>就</FUNC_inner><MODAL>[^<]+</MODAL>"
+        },
         "吃一次就行了": {
             "id": "ba09012d-0cbf-453a-b73b-bc499782c892",
             "pos": "<ACTION_verb>吃</ACTION_verb><ACTION_eventQuantifier>一次</ACTION_eventQuantifier><FUNC_inner>就</FUNC_inner><VerbP>行了</VerbP>",
@@ -12901,7 +12936,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃|吃掉|吸收|攝入|耗損|花掉|吃著|煮|啃|喝|吃了)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(行了|夠了|怕了|管了|出門了|完了|給糖|願屈|算了|算真|存在了)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<ACTION_eventQuantifier>[^<]+</ACTION_eventQuantifier>)?<FUNC_in(ner|ter)>就</FUNC_in(ner|ter)>(<(ACTION_verb|VerbP)>行了</(ACTION_verb|VerbP)>|<FUNC_degreeHead>好</FUNC_degreeHead>(<ASPECT>[^<]+</ASPECT>)?)"
+            "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><ACTION_eventQuantifier>[^<]+</ACTION_eventQuantifier><FUNC_in(ner|ter)>就</FUNC_in(ner|ter)>(<(ACTION_verb|VerbP)>行了</(ACTION_verb|VerbP)>|<FUNC_degreeHead>好</FUNC_degreeHead>(<ASPECT>[^<]+</ASPECT>)?)"
         },
         "收好就變這樣": {
             "id": "7f29d192-4029-4886-a5ee-cc9b9a9ef4c3",
@@ -12911,6 +12946,32 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(變|改變|蛻變|變化|變換|轉變|改建|改造|翻過|轉換|轉移)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_degreeHead>好</FUNC_degreeHead><FUNC_inner>就</FUNC_inner><(ACTION_verb|VerbP)>變</(ACTION_verb|VerbP)><ENTITY_DetPhrase>這樣</ENTITY_DetPhrase>"
+        },
+        "用這個就好了": {
+            "id": "2ab3267e-79d1-4f67-b2f2-f39ced9831c9",
+            "pos": "<ACTION_verb>用</ACTION_verb><ENTITY_DetPhrase>這個</ENTITY_DetPhrase><FUNC_inner>就</FUNC_inner><FUNC_degreeHead>好</FUNC_degreeHead><ASPECT>了</ASPECT>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(用|使用|利用|採用|施用|活用|運用|假借|憑靠|中用|常用)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><ENTITY_DetPhrase>這個</ENTITY_DetPhrase><FUNC_inner>就</FUNC_inner><FUNC_degreeHead>好</FUNC_degreeHead>(<ASPECT>[^<]+</ASPECT>)?"
+        },
+        "給我看書就有": {
+            "id": "f656da72-fa54-46a4-8c5e-f2ce39b30eb3",
+            "pos": "<ACTION_verb>給</ACTION_verb><ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>看</ACTION_verb><ENTITY_noun>書</ENTITY_noun><FUNC_inner>就</FUNC_inner><ACTION_verb>有</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(給|供給|帶給|提供|發放|資助|給老|交給|留給|給聖|分給)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(看|探看|收看|看守|看戲|看望|看護|看顧|觀看|光顧|探望)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>給</(ACTION_verb|VerbP)><ENTITY_pronoun>[^<]+</ENTITY_pronoun><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><FUNC_inner>就</FUNC_inner><(ACTION_verb|VerbP)>[^<]</(ACTION_verb|VerbP)>"
+        },
+        "裝就這樣子裝": {
+            "id": "72259414-b932-4921-821d-9ae0ca228a9a",
+            "pos": "<ACTION_verb>裝</ACTION_verb><FUNC_inner>就</FUNC_inner><FUNC_determiner>這</FUNC_determiner><ENTITY_noun>樣子</ENTITY_noun><ACTION_verb>裝</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(裝|包裝|填裝|封裝|裝入|裝卸|裝彈|裝載|配裝|包住|包紮)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>[^<]+</ACTION_verb><FUNC_inner>就</FUNC_inner><FUNC_determiner>這</FUNC_determiner><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>樣子?</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><ACTION_verb>[^<]+</ACTION_verb>"
         },
         "倒掉就重新做啊": {
             "id": "1bec34dd-30df-4671-913c-5893d17494ae",
@@ -12928,6 +12989,31 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(蓋|罩住|裹|拆下來|蓋了|鋪上|蓋滿|拱頂|沾|蓋起|加蓋)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "(<ENTITY_possessive>[^<]+</ENTITY_possessive>)?<ENTITY_pronoun>[^<]+</ENTITY_pronoun><MODAL>[^<]+</MODAL><ENTITY_pronoun>[^<]+</ENTITY_pronoun><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "撞到他就這樣了": {
+            "id": "318ff5af-8258-4d3d-9b87-d58320451ddb",
+            "pos": "<ACTION_verb>撞到</ACTION_verb><ENTITY_pronoun>他</ENTITY_pronoun><FUNC_inner>就</FUNC_inner><ENTITY_DetPhrase>這樣</ENTITY_DetPhrase><ASPECT>了</ASPECT>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(撞到|撞倒|撞上|撞傷|絆倒|輾過|撞斷|砸到|滑倒|撞到了|撞死)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><ENTITY_pronoun>[^<]+</ENTITY_pronoun><FUNC_inner>就</FUNC_inner><ENTITY_DetPhrase>這樣</ENTITY_DetPhrase>(<ASPECT>[^<]+</ASPECT>)?"
+        },
+        "看醫生就會哭哭": {
+            "id": "0520d63b-7d1e-480b-8ca2-bd75ca1f86fe",
+            "pos": "<ACTION_verb>看醫生</ACTION_verb><FUNC_inner>就</FUNC_inner><MODAL>會</MODAL><ACTION_quantifiedVerb>哭哭</ACTION_quantifiedVerb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(看醫生|看病|打針|探病|吃藥|求醫|看診|探望|就診|出診|撩落)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_inner>就</FUNC_inner>(<MODAL>[^<]+</MODAL>)?<ACTION_quantifiedVerb>[^<]+</ACTION_quantifiedVerb>"
+        },
+        "只要疊最高就好了": {
+            "id": "d9e97bce-9b75-404f-a0f8-e4bf907a8bec",
+            "pos": "<MODIFIER>只</MODIFIER><ACTION_verb>要</ACTION_verb><ACTION_verb>疊</ACTION_verb><DegreeP>最高</DegreeP><FUNC_inner>就</FUNC_inner><FUNC_degreeHead>好</FUNC_degreeHead><ASPECT>了</ASPECT>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(要|想要|需要|想拿|想買|渴望|渴求|真要|得照|更要|要去)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(疊|堆疊|黏合|疊合|堆砌|粘合|交疊|排列成|鋪滿|疊加|拼接)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<MODIFIER>只</MODIFIER><ACTION_verb>要</ACTION_verb><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><DegreeP>[^<]+</DegreeP><FUNC_inner>就</FUNC_inner><FUNC_degreeHead>[^<]+</FUNC_degreeHead>(<ASPECT>[^<]+</ASPECT>)?"
         },
         "固定起來就是門了": {
             "id": "87402c09-a74a-4001-a97d-2f396be376a0",
@@ -12947,6 +13033,15 @@
             ],
             "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><CLAUSE_WhatQ>[^<]+</CLAUSE_WhatQ><QUANTIFIER>都</QUANTIFIER>(<FUNC_negation>[^<]+</FUNC_negation>)?(<MODAL>[^<]+</MODAL>)?(<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>)?"
         },
+        "拿什麼你就幫他拿": {
+            "id": "1a1bbc87-2ae0-4342-8fa6-0422b75af6a2",
+            "pos": "<ACTION_verb>拿</ACTION_verb><CLAUSE_WhatQ>什麼</CLAUSE_WhatQ><ENTITY_pronoun>你</ENTITY_pronoun><FUNC_inner>就</FUNC_inner><ACTION_verb>幫</ACTION_verb><ENTITY_pronoun>他</ENTITY_pronoun><ACTION_verb>拿</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(拿|捉拿|捕拿|懂得|抓包|抓姦|捉住|捉姦|捕捉|捕撈|捕獲)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(幫|幫助|協助|扶助|援助|輔助|想幫|陪著|替|幫著|幫了)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><CLAUSE_WhatQ>[^<]+</CLAUSE_WhatQ>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<FUNC_inner>就</FUNC_inner><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><ENTITY_pronoun>[^<]+</ENTITY_pronoun><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
         "放一個圓形就好了": {
             "id": "35e3b9bd-cb9a-4770-98f1-db443e07d930",
             "pos": "<ACTION_verb>放</ACTION_verb><ENTITY_classifier>一個</ENTITY_classifier><ENTITY_nouny>圓形</ENTITY_nouny><FUNC_inner>就</FUNC_inner><FUNC_degreeHead>好</FUNC_degreeHead><ASPECT>了</ASPECT>",
@@ -12962,6 +13057,12 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃|吃掉|吸收|攝入|耗損|花掉|吃著|煮|啃|喝|吃了)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<ENTITY_classifier>[^<]+</ENTITY_classifier>)?<FUNC_inner>就</FUNC_inner><(MODIFIER|ModifierP)>好</(MODIFIER|ModifierP)>"
+        },
+        "沒關係我們就兩個": {
+            "id": "36375f14-1110-422c-afb0-55523f1b0f2f",
+            "pos": "<FUNC_negation>沒</FUNC_negation><ENTITY_noun>關係</ENTITY_noun><ENTITY_pronoun>我們</ENTITY_pronoun><FUNC_inner>就</FUNC_inner><ENTITY_classifier>兩個</ENTITY_classifier>",
+            "lexy": [],
+            "pattern": "<FUNC_negation>[^<]+</FUNC_negation><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>關係</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<FUNC_inner>就</FUNC_inner><ENTITY_classifier>[^<]+</ENTITY_classifier>"
         },
         "跳到這裡再跳過來": {
             "id": "67e97f09-5ac8-4bd0-b824-b9fac94029e7",
@@ -13000,6 +13101,15 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(給|供給|帶給|提供|發放|資助|給老|交給|留給|給聖|分給)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "<AUX>是</AUX><ENTITY_pronoun>[^<]+</ENTITY_pronoun><FUNC_in(ner|ter)>的</FUNC_in(ner|ter)>(.*?)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?"
+        },
+        "弄好就可以蓋起來了": {
+            "id": "c5848845-1d90-4395-afad-41c5a66d1d19",
+            "pos": "<ACTION_verb>弄</ACTION_verb><FUNC_degreeHead>好</FUNC_degreeHead><FUNC_inner>就</FUNC_inner><MODAL>可以</MODAL><ACTION_verb>蓋起來</ACTION_verb><ASPECT>了</ASPECT>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(弄|呼弄|唬弄|弄亂|弄糟|愚弄|瞎弄|亂來|亂搞|搞亂|搞砸)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(蓋起來|封起來|吐出來|捲起來|裝好|乾了|撿起來|放回去|吞下去|放下來|砸開)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)><FUNC_degreeHead>好</FUNC_degreeHead><FUNC_inner>就</FUNC_inner><MODAL>[^<]+</MODAL><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>(<ASPECT>[^<]+</ASPECT>)?"
         },
         "火車這樣就可以過去": {
             "id": "056cf23c-ddf8-465b-a9eb-35df71e845ed",
