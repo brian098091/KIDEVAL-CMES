@@ -77,6 +77,7 @@
             "學習時空",
             "客人",
             "小孩",
+            "維尼",
             "小熊維尼",
             "屋頂",
             "山上人家",
@@ -108,6 +109,7 @@
             "特留分",
             "甲建",
             "申報戶",
+            "病人",
             "發高燒",
             "白沙島",
             "白玉",
@@ -143,6 +145,7 @@
             "風",
             "飛比價格",
             "飛船",
+            "眼鏡",
             "馬崗厝",
             "（",
             "）"
@@ -163,7 +166,6 @@
             "泡一泡",
             "流血",
             "發高燒",
-            "看看",
             "闖關"
         ],
         "_schoolTW": [
@@ -12824,13 +12826,21 @@
         ]
     },
     "utterance": {
-        "看到": {
-            "id": "4ba64392-3325-4473-835e-b3e65934c323",
-            "pos": "<ACTION_verb>看到</ACTION_verb>",
+        "保證": {
+            "id": "94a4744f-9af5-44ff-b486-d18d1cf9811b",
+            "pos": "<ACTION_verb>保證</ACTION_verb>",
             "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(看到|看見|見到|睇見|瞅見|瞧見|看過|看到了|聽到|聽見|看著)</(ACTION_verb|VerbP)>"
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(保證|保修|保固|保管|保障|力保|擔保|確保|宣示|昭示|確信)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(看|聽|聞|摸|嚐|感覺|感|意識|感知|感受|料|見|夢|想)到</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>保證</(ACTION_verb|VerbP)>"
+        },
+        "想到": {
+            "id": "a3d16bad-fdb7-42a4-a564-a7440a6a05d6",
+            "pos": "<ACTION_verb>想到</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(想到|假想|冥想|回想|想像|想出|想起|感到|推想|料想|暗想)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(感覺|感|意識|感知|感受|料|夢|想)到</(ACTION_verb|VerbP)>"
         },
         "看見": {
             "id": "703216d3-eb12-41f2-9b87-a62b7dcf6ac6",
@@ -12838,15 +12848,31 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(看見|看到|睇見|瞅見|瞧見|細看|見到|凝視|懂得|抓包|抓姦)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[看瞧瞥瞅窺聽聞]見</(ACTION_verb|VerbP)>"
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[看瞧瞥瞅窺]見</(ACTION_verb|VerbP)>"
         },
-        "覺得": {
-            "id": "559cf100-62c0-460c-b3a1-076e6243b861",
-            "pos": "<ACTION_verb>覺得</ACTION_verb>",
+        "不知道": {
+            "id": "9f77f71f-a903-4f0d-a1b8-4bd0968a1cf6",
+            "pos": "<FUNC_negation>不</FUNC_negation><ACTION_verb>知道</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(知道|得知|明知|深知|獲知|知悉|知情|知曉|知足|確知|了解)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<![也又還再]</MODIFIER>)(?<!</ENTITY_pronoun>)(?<!</QUANTIFIER>)(?<!</CLAUSE_particle>)(?<!</AUX>)<FUNC_negation>[^<]+</FUNC_negation><(ACTION_verb|VerbP)>知道</(ACTION_verb|VerbP)>(?!<ENTITY_DetPhrase>)(?!<CLAUSE)(?!<ACTION_verb>要)(?!<AUX>)"
+        },
+        "我知道": {
+            "id": "d823bdfa-8a75-46e9-bf90-9986e5d2a771",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>知道</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(知道|得知|明知|深知|獲知|知悉|知情|知曉|知足|確知|了解)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ENTITY_pronoun>我</ENTITY_pronoun><(ACTION_verb|VerbP)>知道</(ACTION_verb|VerbP)>(?!<CLAUSE_[yhwp])(?!<FUNC_inner>的)"
+        },
+        "我覺得": {
+            "id": "48c9d8d9-cf8c-4bcf-8db7-b78a9e28cc00",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>覺得</ACTION_verb>",
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(覺得|察覺|感覺|感覺到|懂得|覺察|企盼|估摸|假想|假設|冥想)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>(以為|認為|覺得|記得|希望|發覺)</(ACTION_verb|VerbP)>"
+            "pattern": "(?<=我</ENTITY_pronoun>)<(ACTION_verb|VerbP)>(以為|認為|覺得|記得|希望|發覺)</(ACTION_verb|VerbP)>"
         },
         "猜一猜": {
             "id": "4fbf4faa-cc8b-4b45-9ca0-051dc6cdd557",
@@ -12866,13 +12892,88 @@
             "lexy": [],
             "pattern": "<ACTION_quantifiedVerb>[猜想]看看</ACTION_quantifiedVerb>"
         },
+        "知道你": {
+            "id": "05d1dce5-bd45-4a27-b2b3-9f867471a80f",
+            "pos": "<ACTION_verb>知道</ACTION_verb><ENTITY_pronoun>你</ENTITY_pronoun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(知道|得知|明知|深知|獲知|知悉|知情|知曉|知足|確知|了解)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>知道</(ACTION_verb|VerbP)><ENTITY_pronoun>[^<]+</ENTITY_pronoun>"
+        },
+        "想換另外": {
+            "id": "3c543949-8aa3-4dff-b5c7-9afce270931d",
+            "pos": "<ACTION_verb>想換</ACTION_verb><MODIFIER>另</MODIFIER><RANGE_locality>外</RANGE_locality>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(想換|想找|得找|辭掉了|做完了|換了|想睡|嫁了|失業了|丟了|常換)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>想換</(ACTION_verb|VerbP)><(MODIFIER|ModifierP)>另</(MODIFIER|ModifierP)><RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>"
+        },
+        "想現在玩": {
+            "id": "6bcec63b-5e91-4b5b-b953-d34b5233e95f",
+            "pos": "<ACTION_verb>想</ACTION_verb><TIME_justtime>現在</TIME_justtime><ACTION_verb>玩</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(想|假想|冥想|回想|想像|想出|想到|想念|想拿|想望|想要)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(玩|玩忽|玩狎|玩了|散步|玩著|買東西|玩耍|逛|打電動|玩水)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>想</(ACTION_verb|VerbP)>(<TIME_(holiday|justtime|day|week|month|season|year|decade)>[^<]+</TIME_(holiday|justtime|day|week|month|season|year|decade)>){1,10}(?=<ACTION)"
+        },
+        "想要先把": {
+            "id": "567af49d-bc5a-42ec-b5b6-b7173191baff",
+            "pos": "<ACTION_verb>想要</ACTION_verb><MODIFIER>先</MODIFIER><ACTION_lightVerb>把</ACTION_lightVerb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(想要|想拿|想買|需要|希望|試圖|想讓|願意|打算|試著|想)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>想要</(ACTION_verb|VerbP)>(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?<ACTION_lightVerb>把</ACTION_lightVerb>"
+        },
+        "想要和你": {
+            "id": "525a6dfe-06ef-4c15-8136-179980dfdf40",
+            "pos": "<ACTION_verb>想要</ACTION_verb><FUNC_conjunction>和</FUNC_conjunction><ENTITY_pronoun>你</ENTITY_pronoun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(想要|想拿|想買|需要|渴望|試圖|更想|願意|想讓|打算|希望)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>想要</(ACTION_verb|VerbP)><FUNC_conjunction>[^<]+</FUNC_conjunction><ENTITY_pronoun>[^<]+</ENTITY_pronoun>"
+        },
+        "我不喜歡": {
+            "id": "5b15542a-7c12-43fc-bcc5-dde98b055fcb",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><FUNC_negation>不</FUNC_negation><ACTION_verb>喜歡</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(喜歡|喜愛|崇拜|愛戴|愛護|愛過|憐愛|深愛|熱愛|疼愛|相愛)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ENTITY_pronoun>我</ENTITY_pronoun>(<FUNC_negation>[^<]+</FUNC_negation>)?<(ACTION_verb|VerbP)>喜歡</(ACTION_verb|VerbP)>(?!<CLAUSE_[yhw])"
+        },
+        "我聽到你": {
+            "id": "f8f664b9-b2eb-4da1-b48e-0404c31650fa",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>聽到</ACTION_verb><ENTITY_pronoun>你</ENTITY_pronoun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(聽到|傾聽|聆聽|聽來|聽取|聽聞|聽見|聽說|得知|獲知|聞悉)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ENTITY_pronoun>我</ENTITY_pronoun><(ACTION_verb|VerbP)>聽到</(ACTION_verb|VerbP)><ENTITY_pronoun>[^<]+</ENTITY_pronoun>"
+        },
+        "想先玩那個": {
+            "id": "0ea3b942-2790-4bff-80df-ca298231d542",
+            "pos": "<ACTION_verb>想</ACTION_verb><MODIFIER>先</MODIFIER><ACTION_verb>玩</ACTION_verb><ENTITY_DetPhrase>那個</ENTITY_DetPhrase>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(想|假想|冥想|回想|想像|想出|想到|想念|想拿|想望|想要)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(玩|玩忽|玩狎|玩了|散步|玩著|買東西|玩耍|逛|打電動|玩水)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>想</(ACTION_verb|VerbP)>(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>)?(?=<ACTION_verb>[^當打])"
+        },
+        "我想可以再玩": {
+            "id": "8c0ec99e-6df0-449c-8cee-6ed26450de58",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>想</ACTION_verb><MODAL>可以</MODAL><MODIFIER>再</MODIFIER><ACTION_verb>玩</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(想|假想|冥想|回想|想像|想出|想到|想念|想拿|想望|想要)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(玩|玩忽|玩狎|玩著|玩樂|買東西|散步|遊玩|打電動|玩了|玩耍)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(<ENTITY_pronoun>我</ENTITY_pronoun>)<(ACTION_verb|VerbP)>想</(ACTION_verb|VerbP)>(<MODAL>[^<]+</MODAL>)?<(MODIFIER|ModifierP)>再</(MODIFIER|ModifierP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
         "我不知道是什麼": {
             "id": "6f569f0c-6158-47af-a9de-849f5cf1a976",
             "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><FUNC_negation>不</FUNC_negation><ACTION_verb>知道</ACTION_verb><AUX>是</AUX><CLAUSE_WhatQ>什麼</CLAUSE_WhatQ>",
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(知道|得知|明知|深知|獲知|知悉|知情|知曉|知足|確知|了解)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(<FUNC_negation>不</FUNC_negation>)?<(ACTION_verb|VerbP)>(想要|想|知道)</(ACTION_verb|VerbP)>(?!<CLAUSE)(.+)+"
+            "pattern": "(<FUNC_negation>不</FUNC_negation>)?<(ACTION_verb|VerbP)>(想要|想|知道)</(ACTION_verb|VerbP)>((?=<AUX>)|(?=<ACTION_verb>[^當要玩越愈打拼]))"
         },
         "我想玩這個玩具": {
             "id": "1f9c9444-a68f-4d57-a50e-aa7593f217b8",
@@ -12880,7 +12981,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(想玩|獲酷|愛玩|重製了|玩了|玩完|常玩|玩過|有玩過|想聽|愛死了)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>想[^<]+</(ACTION_verb|VerbP)>"
+            "pattern": "(?<!</MODIFIER>)<(ACTION_verb|VerbP)>想[^<拼做要]+</(ACTION_verb|VerbP)>(<MODIFIER>[^<]+</MODIFIER>)?((?=<ACTION_verb)|(?=<ENTITY_DetPhrase>))"
         }
     },
     "alias": {},

@@ -77,6 +77,7 @@
             "學習時空",
             "客人",
             "小孩",
+            "維尼",
             "小熊維尼",
             "屋頂",
             "山上人家",
@@ -108,6 +109,7 @@
             "特留分",
             "甲建",
             "申報戶",
+            "病人",
             "發高燒",
             "白沙島",
             "白玉",
@@ -143,6 +145,7 @@
             "風",
             "飛比價格",
             "飛船",
+            "眼鏡",
             "馬崗厝",
             "（",
             "）"
@@ -163,7 +166,6 @@
             "泡一泡",
             "流血",
             "發高燒",
-            "看看",
             "闖關"
         ],
         "_schoolTW": [
@@ -12824,6 +12826,15 @@
         ]
     },
     "utterance": {
+        "來幫忙": {
+            "id": "e64bdf09-5921-47ed-9d4c-8be055103826",
+            "pos": "<ACTION_verb>來</ACTION_verb><ACTION_verb>幫忙</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(來|上來|下來|來到|前來|回來|進來|來語|端來|出來|值來)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(幫忙|幫助|幫辦|互助|力挺|協助|協辦|扶助|扶持|援助|援救)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_verb>來</ACTION_verb><ACTION_verb>幫忙</ACTION_verb>"
+        },
         "出去玩": {
             "id": "0c94b9cd-029c-4e88-9f36-f6484bdcd1b0",
             "pos": "<ACTION_verb>出去</ACTION_verb><ACTION_verb>玩</ACTION_verb>",
@@ -12832,6 +12843,88 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(玩|玩忽|玩狎|玩了|散步|玩著|買東西|玩耍|逛|打電動|玩水)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "<(ACTION_verb|VerbP)>(進|出|過)去</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
+        "打開看": {
+            "id": "7dd93042-83a1-4ac0-b9bb-305ffc6ae76c",
+            "pos": "<ACTION_verb>打開</ACTION_verb><ACTION_verb>看</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(打開|張開|開啟|敞開|彈出|打開了|關上|鎖住|敲開|推開|撬開)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(看|探看|收看|看守|看戲|看望|看護|看顧|觀看|光顧|探望)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>(打開|繼續|開始|幫忙)</ACTION_verb><ACTION_verb>[看蓋玩做][^<]?</ACTION_verb>"
+        },
+        "給你吃": {
+            "id": "3836b807-4217-4876-87d1-2ead9f9bbc1f",
+            "pos": "<ACTION_verb>給</ACTION_verb><ENTITY_pronoun>你</ENTITY_pronoun><ACTION_verb>吃</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(給|供給|帶給|提供|發放|資助|給對|分給|留給|交給|送給)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃|吃掉|吸收|攝入|耗損|花掉|吃著|煮|啃|喝|吃了)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>給</ACTION_verb><ENTITY_pronoun>[^<]+</ENTITY_pronoun><ACTION_verb>[^<看]</ACTION_verb>"
+        },
+        "要剪掉": {
+            "id": "8e104edb-1d41-4bc6-aea1-6c05f12b75e4",
+            "pos": "<ACTION_verb>要</ACTION_verb><ACTION_verb>剪掉</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(要|想要|需要|想拿|想買|渴望|渴求|餓了|得照|需|更要)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(剪掉|修剪|刪剪|剪成|剪接|剪斷|剪裁|裁剪|中斷|分割|切割)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_verb>要</ACTION_verb><ACTION_verb>[^<]掉</ACTION_verb>"
+        },
+        "幫你多吃": {
+            "id": "3ddebc0d-1d0f-46a2-bc1b-49be205a362b",
+            "pos": "<ACTION_verb>幫</ACTION_verb><ENTITY_pronoun>你</ENTITY_pronoun><MODIFIER>多</MODIFIER><ACTION_verb>吃</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(幫|幫助|協助|扶助|援助|輔助|幫著|常幫|替|想請|想幫)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃|吃掉|吸收|攝入|耗損|花掉|吃著|煮|啃|喝|吃了)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_verb>[^<呼來帶用蓋餵]</ACTION_verb><ENTITY_pronoun>[^<]+</ENTITY_pronoun>(<MODIFIER>[^<]+</MODIFIER>)?<ACTION_verb>[^<餵載看當要坐勾]+</ACTION_verb>"
+        },
+        "給人家坐": {
+            "id": "00004022-6f23-4021-ad99-7e5ec8090431",
+            "pos": "<ACTION_verb>給</ACTION_verb><ENTITY_pronoun>人家</ENTITY_pronoun><ACTION_verb>坐</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(給|供給|帶給|提供|發放|資助|給對|分給|留給|交給|送給)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(坐|坐著|躺|原坐|端坐|躺臥|躲|坐到|站著|圍坐|坐下)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_verb>[給換]</ACTION_verb><ENTITY_pronoun>[^<]+</ENTITY_pronoun><(ACTION_verb|VerbP)>[^<看]+</(ACTION_verb|VerbP)>"
+        },
+        "給公主住": {
+            "id": "46969316-e3a6-456f-9cbd-f593fbdd6d21",
+            "pos": "<ACTION_verb>給</ACTION_verb><ENTITY_nouny>公主</ENTITY_nouny><ACTION_verb>住</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(給|供給|帶給|提供|發放|資助|給老|交給|留給|給聖|分給)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(住|居住|獨處|生存|生活|討生活|過活|借住|同住|寄住|暫住)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_verb>[給去]</ACTION_verb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>公主|公園</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><ACTION_verb>[^<]+</ACTION_verb>"
+        },
+        "要進去了": {
+            "id": "c9bcc925-3bbf-4c4a-a069-e903f4a91fa4",
+            "pos": "<ACTION_verb>要</ACTION_verb><VerbP>進去了</VerbP>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(要|想要|需要|想拿|想買|渴望|渴求|餓了|得照|需|更要)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(進去了|進來|進入|要死了|回去了|糟了|生氣了|長大了|飽了|要走了|慘了)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>要</ACTION_verb><(ACTION_verb|VerbP)>進去了</(ACTION_verb|VerbP)>"
+        },
+        "開始玩了": {
+            "id": "9e6b6e2d-2ae1-4c0f-82df-4902ed022340",
+            "pos": "<ACTION_verb>開始</ACTION_verb><VerbP>玩了</VerbP>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(開始|啟用|開創|結束|展開|停止|停止了|開始了)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(玩了|聊了|跑了|哭了|飛了|跳了|放了|睡了|坐了|練了|站了)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>開始</ACTION_verb><VerbP>[^<]了</VerbP>"
+        },
+        "開始要用": {
+            "id": "4e5b3041-bf3c-41ee-856c-8e4fd5f1b2ab",
+            "pos": "<ACTION_verb>開始</ACTION_verb><ACTION_verb>要</ACTION_verb><ACTION_verb>用</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(開始|啟用|開創|結束|展開|停止|停止了|開始了)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(要|想要|需要|想拿|想買|渴望|渴求|餓了|得照|需|更要)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(用|使用|利用|採用|施用|活用|運用|假借|憑靠|中用|常用)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>開始</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>要</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>用</(ACTION_verb|VerbP)>"
         },
         "媽媽幫我拿": {
             "id": "2f428f86-b7c5-4b11-b8ff-ff316aac92c3",
@@ -12842,6 +12935,24 @@
             ],
             "pattern": "<(ACTION_verb|VerbP)>幫</(ACTION_verb|VerbP)><ENTITY_pronoun>[^<]+</ENTITY_pronoun><(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
+        "幫小豬打針": {
+            "id": "cdbcf2fc-f99d-454f-96e1-5ed9bb6bc2ce",
+            "pos": "<ACTION_verb>幫</ACTION_verb><ENTITY_nouny>小豬</ENTITY_nouny><ACTION_verb>打針</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(幫|幫助|協助|扶助|援助|輔助|想幫|陪著|替|幫著|幫了)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(打針|吃藥|看醫生|拔牙|看病|生病|拉肚子|吃東西|洗澡|出診|開刀)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<ACTION_verb>幫</ACTION_verb><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><ACTION_verb>打針</ACTION_verb>"
+        },
+        "教你怎麼蓋": {
+            "id": "8536d5e0-2106-4808-beeb-c696a464d6d8",
+            "pos": "<ACTION_verb>教</ACTION_verb><ENTITY_pronoun>你</ENTITY_pronoun><CLAUSE_HowQ>怎麼</CLAUSE_HowQ><ACTION_verb>蓋</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(教|教授|教過|教給|教了|教導|教程|教席|講授|教會了|選修了)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(蓋|罩住|裹|拆下來|蓋了|鋪上|蓋滿|拱頂|沾|蓋起|加蓋)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_verb>[^<]</ACTION_verb><ENTITY_pronoun>[^<]+</ENTITY_pronoun><CLAUSE_HowQ>[^<]+</CLAUSE_HowQ><ACTION_verb>[^<]</ACTION_verb>"
+        },
         "你幫我曡高高": {
             "id": "93e3593e-df42-48c0-8946-fe22aec01374",
             "pos": "<ENTITY_pronoun>你</ENTITY_pronoun><ACTION_verb>幫</ACTION_verb><ENTITY_pronoun>我</ENTITY_pronoun><ENTITY_nouny>曡</ENTITY_nouny><MODIFIER>高高</MODIFIER>",
@@ -12849,6 +12960,31 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(幫|幫助|協助|扶助|援助|輔助|想幫|陪著|替|幫著|幫了)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "<(ACTION_verb|VerbP)>幫</(ACTION_verb|VerbP)><ENTITY_pronoun>[^<]+</ENTITY_pronoun><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>曡</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>"
+        },
+        "保證他不會倒": {
+            "id": "84b8102d-5c99-41a4-8404-aaa857dda497",
+            "pos": "<ACTION_verb>保證</ACTION_verb><ENTITY_pronoun>他</ENTITY_pronoun><FUNC_negation>不</FUNC_negation><MODAL>會</MODAL><ACTION_verb>倒</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(保證|保修|保固|保管|保障|力保|擔保|確保|宣示|昭示|確信)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(倒|倒反|丟掉|扔出|扔掉|扔棄|投入|投出|投射|投擲|投放)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_verb>[^<]+</ACTION_verb><ENTITY_pronoun>[^<]+</ENTITY_pronoun><FUNC_negation>不</FUNC_negation><MODAL>會</MODAL><ACTION_verb>[^<]+</ACTION_verb>"
+        },
+        "喝開水噎到了": {
+            "id": "aadf3219-eabb-4c28-828f-5024b765240a",
+            "pos": "<UserDefined>喝開水</UserDefined><VerbP>噎到了</VerbP>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(噎到了|)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>喝開水</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><VerbP>噎到了</VerbP>"
+        },
+        "帶他們兩個來": {
+            "id": "58342c01-6eb2-4304-a8c0-8401ac4fb7f7",
+            "pos": "<ACTION_verb>帶</ACTION_verb><ENTITY_pronoun>他們</ENTITY_pronoun><ENTITY_classifier>兩個</ENTITY_classifier><ENTITY_nouny>來</ENTITY_nouny>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(帶|佩帶|夾帶|帶病|帶走|挾帶|攜帶|隨帶|佩戴|承接|披掛)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_verb>帶</ACTION_verb><ENTITY_pronoun>[^<]+</ENTITY_pronoun><ENTITY_classifier>[^<]+</ENTITY_classifier>(<ACTION_verb>來</ACTION_verb>|<ENTITY_nouny>來</ENTITY_nouny>)"
         },
         "幫我的連起來": {
             "id": "1f23ec0b-3ceb-4ee2-a83a-5ce4f06451bd",
@@ -12859,6 +12995,24 @@
             ],
             "pattern": "<ACTION_verb>幫</ACTION_verb><ENTITY_pronoun>我</ENTITY_pronoun><FUNC_inner>的</FUNC_inner><FUNC_inner>連</FUNC_inner><ACTION_verb>起來</ACTION_verb>"
         },
+        "爬上去走一走": {
+            "id": "a93e5711-49c0-4296-9f1e-0cd7e2298535",
+            "pos": "<ACTION_verb>爬</ACTION_verb><RANGE_locality>上</RANGE_locality><ACTION_verb>去</ACTION_verb><ACTION_quantifiedVerb>走一走</ACTION_quantifiedVerb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(爬|攀爬|爬升|爬行|匍伏|攀附|爬下|吊|攀|爬到|抬)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(去|要去|回去|想去|去了|跑去|回來|跑來|趕去|出去|來)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ACTION_verb>去</ACTION_verb><ACTION_quantifiedVerb>[^<]+</ACTION_quantifiedVerb>"
+        },
+        "等一下可以玩": {
+            "id": "63b780f6-b825-4e71-acf0-2adff6667907",
+            "pos": "<ACTION_verb>等</ACTION_verb><ENTITY_num>一</ENTITY_num><ENTITY_oov>下</ENTITY_oov><MODAL>可以</MODAL><ACTION_verb>玩</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(等|久等|稍等|等候|等到|等待|等第|等級|候補|安排|待遇)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(玩|玩忽|玩狎|玩了|散步|玩著|買東西|玩耍|逛|打電動|玩水)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>等</(ACTION_verb|VerbP)><ENTITY_num>一</ENTITY_num><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>下</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<MODAL>[^<]+</MODAL>)?<ACTION_verb>[^<知要擦]+</ACTION_verb>"
+        },
         "去鐵路上載客人": {
             "id": "bd17df7f-4243-480a-ac82-9c2d03d7ff28",
             "pos": "<ACTION_verb>去</ACTION_verb><ENTITY_noun>鐵路</ENTITY_noun><RANGE_locality>上</RANGE_locality><ACTION_verb>載</ACTION_verb><UserDefined>客人</UserDefined>",
@@ -12866,7 +13020,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(去|要去|回去|想去|去了|跑去|回來|跑來|趕去|出去|來)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(載|裝載|負載|載人|載入|載攜|載荷|載貨|運載|佩帶|填入)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!請</ACTION_verb>)(?<!來</ACTION_verb>)(?<!去</ACTION_verb>)(?<!得</ACTION_verb>)<(ACTION_(verb|quantifiedVerb)|VerbP)>([^<換癢等到給敢快想要用做喜歡謝假裝還]+|(想|有)[^<]+|需要)</(ACTION_(verb|quantifiedVerb)|VerbP)>(?!<RANGE_locality>上</RANGE_locality><ACTION_verb>去</ACTION_verb>)(?!<ACTION_verb>起來</ACTION_verb>)(?!<ACTION_verb>下來</ACTION_verb>)(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>|<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>|<ENTITY_classifier>[^<]+</ENTITY_classifier>|<FUNC_negation>[^<]+</FUNC_negation>|<MODAL>[^<]+</MODAL>|(<TIME_(holiday|justtime|day|week|month|season|year|decade)>[^<]+</TIME_(holiday|justtime|day|week|month|season|year|decade)>){1,10}|<FUNC_(inner|inter|determiner)>[^<]+</FUNC_(inner|inter|determiner)>|<DegreeP>[^<]+</DegreeP>|<CLAUSE_(HowQ|AnotAQ|YesNoQ|WhoQ|WhatQ|WhereQ|WhenQ|WhyQ)>[^<]+</CLAUSE_(HowQ|AnotAQ|YesNoQ|WhoQ|WhatQ|WhereQ|WhenQ|WhyQ)>|<LOCATION>[^<]+</LOCATION>|<ASPECT>[^<]+</ASPECT>|<ACTION_verb>(來|開始|需要)</ACTION_verb>)*?(?!<ACTION_verb>過來</ACTION_verb>)(?<!再</MODIFIER>)(?<!請</ACTION_verb>)(?<!</CLAUSE_HowQ>)(?<!去</ACTION_verb>)(?<!得</ACTION_verb>)(<(ACTION_(verb|quantifiedVerb)|VerbP)>([^<要敢快來給有謝動了過痛進]+|[^<]+進去)了?</(ACTION_(verb|quantifiedVerb)|VerbP)>|<ACTION_lightVerb>打</ACTION_lightVerb>)(?!<FUNC_inner>的</FUNC_inner>)"
+            "pattern": "(?<!請</ACTION_verb>)(?<!來</ACTION_verb>)(?<!去</ACTION_verb>)(?<!得</ACTION_verb>)<(ACTION_(verb|quantifiedVerb)|VerbP)>([^<希看針餵出來生換癢等到給敢快想要用做喜歡謝假裝還有]+|(想|有)[^<]+|需要)</(ACTION_(verb|quantifiedVerb)|VerbP)>(?!<MODAL>)(?!<CLAUSE)(?!<RANGE_locality>上</RANGE_locality><ACTION_verb>去</ACTION_verb>)(?!<ACTION_verb>起來</ACTION_verb>)(?!<ACTION_verb>下來</ACTION_verb>)(<(MODIFIER|ModifierP)>[^<]+</(MODIFIER|ModifierP)>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|pronoun))>|<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>|<ENTITY_classifier>[^<]+</ENTITY_classifier>|<FUNC_negation>[^<]+</FUNC_negation>|<MODAL>[^<]+</MODAL>|(<TIME_(holiday|justtime|day|week|month|season|year|decade)>[^<]+</TIME_(holiday|justtime|day|week|month|season|year|decade)>){1,10}|<FUNC_(inner|inter|determiner)>[^<]+</FUNC_(inner|inter|determiner)>|<DegreeP>[^<]+</DegreeP>|<CLAUSE_(HowQ|AnotAQ|YesNoQ|WhoQ|WhatQ|WhereQ|WhenQ|WhyQ)>[^<]+</CLAUSE_(HowQ|AnotAQ|YesNoQ|WhoQ|WhatQ|WhereQ|WhenQ|WhyQ)>|<LOCATION>[^<]+</LOCATION>|<ASPECT>[^<]+</ASPECT>|<ACTION_verb>(來|開始|需要)</ACTION_verb>)*?(?!<ACTION_verb>過來</ACTION_verb>)(?<!再</MODIFIER>)(?<!請</ACTION_verb>)(?<!</CLAUSE_HowQ>)(?<!去</ACTION_verb>)(?<!得</ACTION_verb>)(<(ACTION_(verb|quantifiedVerb)|VerbP)>([^< 丟放停坐拿疊扭換定選退得做吃打開集知猜倒幫玩蓋要敢快來給有謝動了過痛進當找看擦剪用長變轉]+|[^<]+進去)了?</(ACTION_(verb|quantifiedVerb)|VerbP)>|<ACTION_lightVerb>打</ACTION_lightVerb>(?!<ACTION_verb>下))(?!<FUNC_inner>的</FUNC_inner>)"
         },
         "你先去外面等一下": {
             "id": "073ce37d-1955-4c8b-95d4-3ea34c61386e",

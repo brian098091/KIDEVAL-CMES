@@ -23,7 +23,6 @@ import os
 DEBUG = True
 CHATBOT_MODE = False
 
-userDefinedDICT = {}
 try:
     userDefinedDICT = json.load(open(os.path.join(os.path.dirname(__file__), "USER_DEFINED.json"), encoding="utf-8"))
 except Exception as e:
@@ -172,6 +171,24 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["動前介詞"].append(1)
 
     if utterance == "跟姐姐吃飯":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["動前介詞"].append(1)
+
+    if utterance == "在裡面等一下會跑出來":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["動前介詞"].append(1)
+
+    if utterance == "我要跟媽媽一樣":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["動前介詞"].append(1)
+
+    if utterance == "是跟姐姐吃飯":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

@@ -19,6 +19,7 @@
 from random import sample
 import json
 import os
+import re
 
 DEBUG = True
 CHATBOT_MODE = False
@@ -145,7 +146,10 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["緊縮複句"].append(1)
+            if inputSTR == "我想可以再玩一次":
+                pass
+            else:
+                resultDICT["緊縮複句"].append(1)
 
     if utterance == "這我的這也是你的":
         if CHATBOT_MODE:
@@ -223,62 +227,48 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             resultDICT["緊縮複句"].append(1)
 
-    if utterance == "你就":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            pass
-        
     if utterance == "你就先帶著":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             resultDICT["緊縮複句"].append(1)
 
     if utterance == "就會":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             resultDICT["緊縮複句"].append(1)
 
     if utterance == "我自己會自己蓋":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             resultDICT["緊縮複句"].append(1)
 
     if utterance == "才不會苦":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             resultDICT["緊縮複句"].append(1)
 
     if utterance == "收好就變這樣":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             resultDICT["緊縮複句"].append(1)
 
     if utterance == "疊一個就夠":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             resultDICT["緊縮複句"].append(1)
 
     if utterance == "要就是要":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             resultDICT["緊縮複句"].append(1)
 
     if utterance == "吃一次就行了":
@@ -286,13 +276,84 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["緊縮複句"].append(1)
-            pass
 
-    if utterance == "我想可以再玩一次":
+    if utterance == "你就可以到":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            pass
+            resultDICT["緊縮複句"].append(1)
+
+    if utterance == "出去就要叫":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["緊縮複句"].append(1)
+
+    if utterance == "到基隆就可以":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["緊縮複句"].append(1)
+
+    if utterance == "只要疊最高就好了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["緊縮複句"].append(1)
+
+    if utterance == "弄好就可以蓋起來了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["緊縮複句"].append(1)
+
+    if utterance == "拿什麼你就幫他拿":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["緊縮複句"].append(1)
+
+    if utterance == "撞到他就這樣了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["緊縮複句"].append(1)
+
+    if utterance == "擺好就好了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["緊縮複句"].append(1)
+
+    if utterance == "沒關係我們就兩個":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["緊縮複句"].append(1)
+
+    if utterance == "用這個就好了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["緊縮複句"].append(1)
+
+    if utterance == "看醫生就會哭哭":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["緊縮複句"].append(1)
+
+    if utterance == "給我看書就有":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["緊縮複句"].append(1)
+
+    if utterance == "裝就這樣子裝":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["緊縮複句"].append(1)
 
     if utterance == "越挖越大":
         if CHATBOT_MODE:

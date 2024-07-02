@@ -64,7 +64,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         elif len(resultDICT["量-特"])  == 0:
             resultDICT["量-特"].append(1)
 
-    
+
     if utterance == "很少瓶":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -100,7 +100,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["response"] = getResponse(utterance, args)
         elif len(resultDICT["量-特"])  == 0:
             resultDICT["量-特"].append(1)
-    
+
     if utterance == "一把夾子":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -138,6 +138,72 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["量-特"].append(1)
 
     if utterance == "吃一點藥 ":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "就一次":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "再一點":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "吃一點藥":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "大一點":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "好一點":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "有一點點":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "有點發燒":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "蓋小樓一點":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "吃一口":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "這一些":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["量-特"].append(1)
+
+    if utterance == "這些":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
