@@ -24,7 +24,6 @@ import re
 DEBUG = True
 CHATBOT_MODE = False
 
-userDefinedDICT = {}
 try:
     userDefinedDICT = json.load(open(os.path.join(os.path.dirname(__file__), "USER_DEFINED.json"), encoding="utf-8"))
 except Exception as e:
@@ -56,7 +55,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            if re.match("[^<][下上]一個", inputSTR) != None:
+            if args[1].endswith("了"):
+                pass
+            elif re.search("[換給讓玩][上下]一[^<]", inputSTR) != None:
                 pass
             else:
                 resultDICT["結果補語"].append(1)
@@ -211,7 +212,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         else:
             resultDICT["結果補語"].append(1)
 
-
     if utterance == "醒來":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -265,5 +265,17 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["結果補語"].append(1)
-
+            
+    if utterance == "好聽好了":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["結果補語"].append(1)
+            
+    if utterance == "變回":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["結果補語"].append(1)
+            
     return resultDICT

@@ -12833,7 +12833,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(用|使用|利用|採用|施用|活用|運用|假借|憑靠|中用|常用)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(踢|玩踢|經抽|踢進|踢了|傳接|打球|有棒|練完|投接|愛踢)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>用</(ACTION_verb|VerbP)>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>用</(ACTION_verb|VerbP)>(<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>)?(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
         "跟你合": {
             "id": "e318ad95-5835-48cc-9c11-8925d179fad5",
@@ -12867,7 +12867,7 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(給|供給|帶給|提供|發放|資助|給老|交給|留給|給聖|分給)</(ACTION_verb|VerbP)>",
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃|吃掉|吸收|攝入|耗損|花掉|煮|啃|吃著|喝|常吃)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>給</(ACTION_verb|VerbP)>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>給</(ACTION_verb|VerbP)>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)<(ACTION_verb|VerbP)>[^<拜託]+</(ACTION_verb|VerbP)>"
         },
         "在睡前刷牙": {
             "id": "49b648e5-2477-40b8-b2dd-de12b1955e0a",
@@ -12926,7 +12926,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃飯|喝茶|喝酒|洗澡|逛街|煮飯|吃東西|睡覺|用膳|用餐|進餐)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)(?<!</FUNC_inner>)(?<!</FUNC_inter>)(?<!</ACTION_verb>)(?<!</AUX>)(?<!</ENTITY_nouny>)(?<!</ENTITY_noun>)<FUNC_conjunction>[^<]</FUNC_conjunction>((<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)(<(ACTION_verb|VerbP)>[^<蓋]+</(ACTION_verb|VerbP)>|<ENTITY_classifier>一樣</ENTITY_classifier>|<MODIFIER>一樣</MODIFIER>)"
+            "pattern": "(?<!</FUNC_inner>)(?<!</FUNC_inter>)(?<!</ACTION_verb>)(?<!</AUX>)(?<!</ENTITY_nouny>)(?<!</ENTITY_noun>)<FUNC_conjunction>[^<]</FUNC_conjunction>((<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)|<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)<(ACTION_verb|VerbP)>[^<蓋]+</(ACTION_verb|VerbP)>"
         },
         "他要跟他結婚": {
             "id": "53ed0955-eaef-4a8f-b866-7811ca476b51",
@@ -12945,6 +12945,14 @@
             ],
             "pattern": "(?<!</(ACTION_verb)>)<FUNC_in(ner|ter)>(在|從)</FUNC_in(ner|ter)>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[^<]+</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?(<RANGE_(locality|period)>[^<]+</RANGE_(locality|period)>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
         },
+        "是跟姐姐吃飯": {
+            "id": "f7d678b3-e7e8-44ac-b65f-4dc52cf7ec70",
+            "pos": "<AUX>是</AUX><FUNC_conjunction>跟</FUNC_conjunction><ENTITY_pronoun>姐姐</ENTITY_pronoun><ACTION_verb>吃飯</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(吃飯|喝茶|喝酒|洗澡|逛街|煮飯|吃東西|睡覺|用膳|用餐|進餐)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<FUNC_conjunction>跟</FUNC_conjunction>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<(ACTION_verb|VerbP)>[^<]+</(ACTION_verb|VerbP)>"
+        },
         "用這個跟你打": {
             "id": "79f67990-e582-4b73-bf36-91a91a275255",
             "pos": "<ACTION_verb>用</ACTION_verb><ENTITY_DetPhrase>這個</ENTITY_DetPhrase><FUNC_conjunction>跟</FUNC_conjunction><ENTITY_pronoun>你</ENTITY_pronoun><ACTION_lightVerb>打</ACTION_lightVerb>",
@@ -12952,6 +12960,14 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(用|使用|利用|採用|施用|活用|運用|假借|憑靠|中用|常用)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "<(ACTION_verb|VerbP)>用</(ACTION_verb|VerbP)><ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase>(<FUNC_conjunction>[^<]+</FUNC_conjunction>)?(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<ACTION_(lightVerb|verb|VerbP)>[^<]+</ACTION_(lightVerb|verb|VerbP)>"
+        },
+        "我要跟媽媽一樣": {
+            "id": "a3fd1461-4333-4170-91c2-f9572ce69e46",
+            "pos": "<ENTITY_pronoun>我</ENTITY_pronoun><ACTION_verb>要</ACTION_verb><FUNC_conjunction>跟</FUNC_conjunction><ENTITY_pronoun>媽媽</ENTITY_pronoun><MODIFIER>一樣</MODIFIER>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(要|想要|需要|想拿|想買|渴望|渴求|餓了|得照|需|更要)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<FUNC_conjunction>跟</FUNC_conjunction>(<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?(<(MODIFIER|ModifierP)>一樣</(MODIFIER|ModifierP)>|<ENTITY_classifier>一樣</ENTITY_classifier>)"
         },
         "從臭臭的地方跑出來": {
             "id": "32e4f0a8-b2f3-40e5-ac0a-6c88b2b530a0",

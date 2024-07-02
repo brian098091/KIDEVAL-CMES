@@ -12856,7 +12856,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(打開|張開|開啟|關上|彈出|推開|緊閉|敲開|撬開|打開了|鎖住)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>([^<斷起出丟行燒多回想傷血講剪錯謝坐退贏用夾有得加進看拾過要聞澡病放爬去掉備痛站飛忘跳到少等來知睡聽開摸][近斷住善乾鬆完遠歪下齊準壞上大穩濕平過直白髒黑掉空正好到緊滿開楚小亂成])</(ACTION_verb|VerbP)>(<(ACTION_verb|VerbP)>[^<來去了]+</(ACTION_verb|VerbP)>)?"
+            "pattern": "<(ACTION_verb|VerbP)>([^<斷起出丟行燒多回想傷血講剪錯謝坐退贏用夾有得加進看拾過要聞澡病放爬去掉備痛站飛忘跳到少等來知睡開摸][近斷住善乾鬆完遠歪下齊準壞上大穩濕平過直白髒黑掉空正好到緊滿開楚小亂成])</(ACTION_verb|VerbP)>(?!<ACTION_verb>來</ACTION_verb>)"
         },
         "放大": {
             "id": "3205380a-8725-4062-91b3-ba84b81c86cd",
@@ -12895,7 +12895,15 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(聽到|傾聽|聆聽|聽來|聽取|聽聞|聽見|聽說|得知|獲知|聞悉)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[聽看想噎玩用](不)?[到懂完](了)?</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[聽看想噎玩用][到懂完](了)?</(ACTION_verb|VerbP)>"
+        },
+        "變回": {
+            "id": "b01fbfde-aeff-45b4-b613-27cf0cffbfb9",
+            "pos": "<ACTION_verb>變回</ACTION_verb>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(變回|回退|換回|甦醒|回復|復活了|變成|轉生成|變回了|回復了|轉變成)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>變[回成]</(ACTION_verb|VerbP)>"
         },
         "醒來": {
             "id": "62e72f68-891a-408d-b73d-dd15d58f21e1",
@@ -12911,16 +12919,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(閉|有閉|閉合|緊閉|關上|開|緊集|重開|封閉|關掉|罩等)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<有加]+</(ACTION_verb|VerbP)><RANGE_(locality|period)>上</RANGE_(locality|period)>(?!<ACTION_verb>去</ACTION_verb>)"
-        },
-        "做過來": {
-            "id": "269a95e0-99a2-4350-9f27-79e040616a8e",
-            "pos": "<VerbP>做過</VerbP><ACTION_verb>來</ACTION_verb>",
-            "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(做過|作過|幹過|當過|做了|從事過|遇過|進行過|嘗試過|參與過|找過)</(ACTION_verb|VerbP)>",
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(來|上來|下來|來到|前來|回來|進來|來語|端來|出來|值來)</(ACTION_verb|VerbP)>"
-            ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]+過</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>來</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<有加]+</(ACTION_verb|VerbP)><RANGE_(locality|period)>上</RANGE_(locality|period)>(?!<ACTION_verb>[來去]</ACTION_verb>)"
         },
         "壞掉了": {
             "id": "02b0bf46-b64d-4f89-9a4f-8509b9dee9af",
@@ -12976,7 +12975,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(暈倒了|昏倒|暈厥|創玩)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<]倒(了)?</(ACTION_verb|VerbP)>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<用]倒(了)?</(ACTION_verb|VerbP)>"
         },
         "發動了": {
             "id": "74c815c8-9d71-47c5-840d-25e2235b190b",
@@ -13008,7 +13007,7 @@
             "lexy": [
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(開過|召開過|辦過|開了|舉行過|動過|出席過|發過|換過|開完|買過)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "<(ACTION_verb|VerbP)>[^<用]+過</(ACTION_verb|VerbP)><ASPECT>了</ASPECT>"
+            "pattern": "<(ACTION_verb|VerbP)>[^<用看聽聞來去]+過</(ACTION_verb|VerbP)>(?!<ACTION_verb>[來去]</ACTION_verb>)(<ASPECT>了</ASPECT>)?"
         },
         "固定起來": {
             "id": "5aa3b1ff-2cdf-4749-878a-c2cfc670e933",
@@ -13018,6 +13017,12 @@
                 "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(起來|起來了|下來|開來|出來|拉出來|弄得|拿出來|變成|出去|動到)</(ACTION_verb|VerbP)>"
             ],
             "pattern": "(<(ACTION_verb|VerbP)>[^<痛掉摸行玩回飛看剪病傷用斷吃退到要來去等睡出站跳想聞坐知靠喝進聽講開]+</(ACTION_verb|VerbP)>|<MODIFIER_color>[^<]+</MODIFIER_color>)<(ACTION_verb|VerbP)>(起來|倒|回去)(了)?</(ACTION_verb|VerbP)>"
+        },
+        "好聽好了": {
+            "id": "e97776e3-30f5-4c93-a7ec-662dc5aeb31f",
+            "pos": "<MODIFIER>好聽</MODIFIER><FUNC_degreeHead>好</FUNC_degreeHead><ASPECT>了</ASPECT>",
+            "lexy": [],
+            "pattern": "<(MODIFIER|ModifierP)>好聽</(MODIFIER|ModifierP)><FUNC_degreeHead>好</FUNC_degreeHead><ASPECT>了</ASPECT>"
         },
         "我要放好": {
             "id": "ae67c64d-5369-4171-b5d4-4947fb03ef66",
